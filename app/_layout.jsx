@@ -10,6 +10,12 @@ const RootLayout = ({ }) => {
                     headerShown: false
                 }}
             />
+            <Stack.Screen
+                name="(auth)"
+                options={{
+                    headerShown: false
+                }}
+            />
         </Stack>
     );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 
 import { View, Text, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { router } from 'expo-router';
 
 import FontProvider from '../hooks/providers/font-provider';
 import CustomButton from '../components/basic/custom-button';
@@ -19,11 +20,17 @@ const App = () => {
                 <Image
                     source={require('../assets/images/logo.png')}
                     className="w-1/2 h-1/2"
+                    testID="app-logo"
                 />
                 <View className="flex-row flex-wrap justify-center mt-4">
-                    <CustomButton text="Iniciar sesión" onPress={() => {}} />
-                    <CustomButton text="Registrarse" onPress={() => {}} />
+                    <CustomButton text="Iniciar sesión" onPress={() => router.push('login')} />
+                    <CustomButton text="Registrarse" onPress={() => router.push('register')} />
                 </View>
+                <Image
+                    source={require('../assets/images/waves.png')}
+                    className="absolute bottom-0 w-96 h-24"
+                    testID="waves"
+                />
             </SafeAreaView>
         </FontProvider>
     );

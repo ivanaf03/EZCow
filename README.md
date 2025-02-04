@@ -20,6 +20,7 @@ npm install nativewind@2.0.11
 npm install tailwindcss@3.3.2
 ```
 
+
 ### 2.Project configuration
 Create the file `tailwind.config.js` in the root of the project:
 
@@ -60,3 +61,23 @@ module.exports = function (api) {
 ```
 
 Edit the file `app.json` and choose the appropriate assets for the project.
+
+
+### 3.Testing
+Install the following packages:
+```
+npx expo install jest-expo jest
+
+npm install --save-dev @testing-library/react-native
+```
+
+### 4.Git format
+Branches:
+- main
+- develop
+- featureX
+
+Commits:
+- [FEATUREX] Commit message
+- [CONFIG] Commit message
+
