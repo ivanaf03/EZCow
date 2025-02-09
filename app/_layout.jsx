@@ -1,7 +1,13 @@
 import React from 'react';
 import { Stack } from 'expo-router';
+import { initDatabase } from './model/bd';
 
-const RootLayout = ({ }) => {
+const RootLayout = () => {
+
+    React.useEffect(() => {
+        initDatabase();
+    }, []);
+
     return (
         <Stack>
             <Stack.Screen
