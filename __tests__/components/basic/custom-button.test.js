@@ -6,6 +6,10 @@ import CustomButton from "../../../components/basic/custom-button";
 
 describe("CustomButton", () => {
 
+    beforeEach(() => {
+        jest.clearAllMocks();
+    });
+
     it("should render correctly", () => {
         const tree = render(<CustomButton text="Test" onPress={() => {}} />);
         expect(tree).toMatchSnapshot();

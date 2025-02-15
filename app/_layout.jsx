@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { Stack } from 'expo-router';
+
 import { initDatabase } from './model/bd';
 
 const RootLayout = () => {
@@ -22,7 +24,13 @@ const RootLayout = () => {
                     headerShown: false
                 }}
             />
-        </Stack>
+            <Stack.Screen
+                name="(tabs)"
+                options={{
+                    headerShown: false
+                }}
+            />
+        </Stack>    
     );
 };
 
