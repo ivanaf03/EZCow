@@ -7,15 +7,19 @@ import App from "../../app/index";
 
 jest.mock('expo-font', () => ({
     loadAsync: jest.fn(() => Promise.resolve()), 
-  }));
+}));
 
-  jest.mock("expo-router", () => ({
+jest.mock("expo-router", () => ({
     router: {
-      push: jest.fn(),
+        push: jest.fn(),
     },
-  }));
+}));
 
 describe("App", () => {
+
+    beforeEach(() => {
+        jest.clearAllMocks();
+    });
 
     it("should render the correct text", () => {
         const {getByText} = render(<App />);

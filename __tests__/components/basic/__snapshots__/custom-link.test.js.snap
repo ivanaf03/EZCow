@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CustomButton should render correctly 1`] = `
+exports[`CustomLink should render correctly 1`] = `
 <View
   accessibilityState={
     {
@@ -31,38 +31,10 @@ exports[`CustomButton should render correctly 1`] = `
   onResponderTerminate={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  style={
-    [
-      {
-        "backgroundColor": "#75009d",
-      },
-      {
-        "borderBottomLeftRadius": 9999,
-        "borderBottomRightRadius": 9999,
-        "borderTopLeftRadius": 9999,
-        "borderTopRightRadius": 9999,
-      },
-      {
-        "paddingBottom": 16,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 16,
-      },
-      {
-        "marginBottom": 8,
-        "marginLeft": 8,
-        "marginRight": 8,
-        "marginTop": 8,
-      },
-    ]
-  }
 >
   <Text
     style={
       [
-        {
-          "color": "#ffffff",
-        },
         {
           "fontSize": 20,
           "lineHeight": 28,

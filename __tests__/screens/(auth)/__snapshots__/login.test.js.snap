@@ -1,0 +1,633 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login should render correctly 1`] = `
+<RNCSafeAreaView
+  edges={
+    {
+      "bottom": "additive",
+      "left": "additive",
+      "right": "additive",
+      "top": "additive",
+    }
+  }
+  style={
+    [
+      {
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+      {
+        "backgroundColor": "#22072BFF",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "marginTop": 32,
+        },
+        {
+          "paddingBottom": 24,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 24,
+        },
+        {
+          "color": "#ffffff",
+        },
+        {
+          "fontSize": 48,
+          "lineHeight": 48,
+        },
+        {
+          "fontFamily": "Nunito-ExtraBold",
+        },
+      ]
+    }
+  >
+    Iniciar sesión
+  </Text>
+  <View
+    style={
+      [
+        {
+          "marginLeft": 8,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "marginTop": 40,
+          },
+          {
+            "marginRight": "auto",
+          },
+          {
+            "minWidth": 300,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "marginBottom": 8,
+              "marginLeft": 8,
+              "marginRight": 8,
+              "marginTop": 8,
+            },
+            {
+              "marginTop": -4,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#ffffff",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Light",
+              },
+              [
+                {
+                  "marginTop": 4,
+                },
+              ],
+            ]
+          }
+        >
+          Email
+          :
+        </Text>
+        <TextInput
+          onChangeText={[Function]}
+          placeholder="Email"
+          style={
+            [
+              {
+                "paddingBottom": 8,
+                "paddingLeft": 8,
+                "paddingRight": 8,
+                "paddingTop": 8,
+              },
+              {
+                "backgroundColor": "#ffffff",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#580088",
+                "borderLeftColor": "#580088",
+                "borderRightColor": "#580088",
+                "borderTopColor": "#580088",
+              },
+              {
+                "borderBottomLeftRadius": 9999,
+                "borderBottomRightRadius": 9999,
+                "borderTopLeftRadius": 9999,
+                "borderTopRightRadius": 9999,
+              },
+              [
+                {
+                  "marginTop": 4,
+                },
+              ],
+            ]
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "marginTop": 40,
+          },
+          {
+            "marginRight": "auto",
+          },
+          {
+            "minWidth": 300,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "marginBottom": 8,
+              "marginLeft": 8,
+              "marginRight": 8,
+              "marginTop": 8,
+            },
+            {
+              "marginTop": -4,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#ffffff",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Light",
+              },
+              [
+                {
+                  "marginTop": 4,
+                },
+              ],
+            ]
+          }
+        >
+          Contraseña
+          :
+        </Text>
+        <View
+          style={
+            [
+              {
+                "flexDirection": "row",
+              },
+              {
+                "alignItems": "center",
+              },
+              [
+                {
+                  "marginTop": 4,
+                },
+              ],
+            ]
+          }
+        >
+          <TextInput
+            onChangeText={[Function]}
+            placeholder="Contraseña"
+            secureTextEntry={true}
+            style={
+              [
+                {
+                  "paddingBottom": 8,
+                  "paddingLeft": 8,
+                  "paddingRight": 8,
+                  "paddingTop": 8,
+                },
+                {
+                  "marginRight": 8,
+                },
+                {
+                  "backgroundColor": "#ffffff",
+                },
+                {
+                  "borderBottomWidth": 2,
+                  "borderLeftWidth": 2,
+                  "borderRightWidth": 2,
+                  "borderTopWidth": 2,
+                },
+                {
+                  "borderBottomColor": "#580088",
+                  "borderLeftColor": "#580088",
+                  "borderRightColor": "#580088",
+                  "borderTopColor": "#580088",
+                },
+                {
+                  "borderBottomLeftRadius": 9999,
+                  "borderBottomRightRadius": 9999,
+                  "borderTopLeftRadius": 9999,
+                  "borderTopRightRadius": 9999,
+                },
+                {
+                  "flexBasis": "0%",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+              ]
+            }
+          />
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            testID="eye-icon"
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "flexDirection": "row",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "marginTop": 64,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "minWidth": 230,
+          },
+          {
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "backgroundColor": "#75009d",
+            },
+            {
+              "borderBottomLeftRadius": 9999,
+              "borderBottomRightRadius": 9999,
+              "borderTopLeftRadius": 9999,
+              "borderTopRightRadius": 9999,
+            },
+            {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            },
+            {
+              "marginBottom": 8,
+              "marginLeft": 8,
+              "marginRight": 8,
+              "marginTop": 8,
+            },
+          ]
+        }
+        testID="sign-in-button"
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#ffffff",
+              },
+              {
+                "fontSize": 20,
+                "lineHeight": 28,
+              },
+              {
+                "textAlign": "center",
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Iniciar sesión
+        </Text>
+      </View>
+    </View>
+  </View>
+  <Text
+    style={
+      [
+        {
+          "color": "#ffffff",
+        },
+        {
+          "fontSize": 20,
+          "lineHeight": 28,
+        },
+        {
+          "fontFamily": "Nunito-ExtraBold",
+        },
+        {
+          "marginTop": 8,
+        },
+        {
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    o
+  </Text>
+  <View
+    style={
+      [
+        {
+          "marginTop": 8,
+        },
+        {
+          "flexDirection": "row",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "alignItems": "center",
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "backgroundColor": "#75009d",
+          },
+          {
+            "borderBottomLeftRadius": 9999,
+            "borderBottomRightRadius": 9999,
+            "borderTopLeftRadius": 9999,
+            "borderTopRightRadius": 9999,
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "marginBottom": 8,
+            "marginLeft": 8,
+            "marginRight": 8,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 20,
+              "lineHeight": 28,
+            },
+            {
+              "textAlign": "center",
+            },
+            {
+              "fontFamily": "Nunito-Bold",
+            },
+          ]
+        }
+      >
+        Continuar con Google
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "marginTop": 48,
+        },
+        {
+          "flexDirection": "row",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "alignItems": "center",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontSize": 16,
+            "lineHeight": 24,
+          },
+          {
+            "fontFamily": "Nunito-ExtraBold",
+          },
+          {
+            "textAlign": "center",
+          },
+          {
+            "marginRight": 8,
+          },
+        ]
+      }
+    >
+      Todavía no tienes una cuenta?
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      testID="sign-up-link"
+    >
+      <Text
+        style={
+          [
+            {
+              "fontSize": 20,
+              "lineHeight": 28,
+            },
+            {
+              "textAlign": "center",
+            },
+            {
+              "fontFamily": "Nunito-Bold",
+            },
+          ]
+        }
+      >
+        Regístrate
+      </Text>
+    </View>
+  </View>
+</RNCSafeAreaView>
+`;
