@@ -62,6 +62,38 @@ module.exports = function (api) {
 
 Edit the file `app.json` and choose the appropriate assets for the project.
 
+#### Oauth config
+Install the following packages:
+```
+npx expo install expo-auth-session expo-crypto
+
+npm install react-native-dotenv
+```
+
+Edit the file `app.json` and add the following configuration:
+```
+"android": {
+  "package": "com.ezcow.app",
+  ...
+}
+```
+
+Install the following packages:
+```
+npm install -g eas-cli
+```
+
+Run the following commands:
+```
+eas login
+eas build:configure
+eas credentials
+```
+
+Simulate the production build:
+```
+npx expo prebuild --clean
+```
 
 ### 3.Testing
 Install the following packages:
@@ -81,3 +113,6 @@ Commits:
 - [FEATUREX] Commit message
 - [CONFIG] Commit message
 
+### 5.Bibliography
+https://docs.expo.dev/versions/latest/sdk/auth-session/ > OAuth2 library documentation
+https://youtu.be/ff9phJxk5ck?si=G4pFdbglUFRjHM6i > OAuth2 with Expo (Neunapp)

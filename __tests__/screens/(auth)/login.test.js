@@ -3,10 +3,10 @@ import React from "react";
 import {render, fireEvent, waitFor} from "@testing-library/react-native";
 import { router } from 'expo-router';
 import { Alert } from "react-native";
-import CryptoJS from "crypto-js";
+import * as Google from 'expo-auth-session/providers/google';
 
 import Login from "../../../app/(auth)/login";
-import { getUserByEmail } from "../../../app/model/users";
+import { getUserByEmail, insertUserGoogle } from "../../../app/model/users";
 
 jest.mock("expo-router", () => ({
     router: {
@@ -16,16 +16,33 @@ jest.mock("expo-router", () => ({
 
 jest.mock("../../../app/model/users", () => ({
     getUserByEmail: jest.fn(),
+    insertUserGoogle: jest.fn(),
 }));
 
 jest.mock("crypto-js", () => ({
     SHA256: jest.fn(data => data),
 }));
 
+jest.mock('jwt-decode', () => ({
+    jwtDecode: jest.fn().mockReturnValue({
+      name: 'Test User',
+      email: 'test@example.com',
+      sub: 'googleId123',
+    }),
+  }));
+
 jest.spyOn(Alert, "alert");
 
 jest.mock("@fortawesome/react-native-fontawesome", () => ({
     FontAwesomeIcon: () => null
+}));
+
+jest.mock("expo-auth-session/providers/google", () => ({
+    useAuthRequest: jest.fn(() => [
+        {},
+        {}, 
+        jest.fn(),
+    ]),
 }));
 
 describe("Login", () => {
@@ -99,7 +116,7 @@ describe("Login", () => {
         waitFor(() => expect(Alert.alert).toHaveBeenCalledWith('Error', 'Error al iniciar sesión. Inténtalo de nuevo. Comprueba que el email es correcto.'));
     });
 
-    it("works when email and password are correct", async () => {
+    it("works when email and password are correct", () => {
         const {getByPlaceholderText, getByTestId} = render(<Login />);
         const nameInput = getByPlaceholderText("Email");
         fireEvent.changeText(nameInput, "test@example.com");
@@ -108,7 +125,19 @@ describe("Login", () => {
         getUserByEmail.mockResolvedValue({email: "test@example.com", password: "12345678"});
         const signInButton = getByTestId("sign-in-button");
         fireEvent.press(signInButton);
-        await waitFor(() => expect(router.push).toHaveBeenCalledWith('home'));
+        waitFor(() => expect(router.push).toHaveBeenCalledWith('home'));
     });
-    
+
+    it("handles Google sign-in", async () => {
+        const mockPromptAsync = jest.fn().mockResolvedValue({ type: "success", params: { id_token: "mockToken" } });
+        Google.useAuthRequest.mockReturnValue([{}, { type: "success", params: { id_token: "mockToken" } }, mockPromptAsync]);
+        const { getByTestId } = render(<Login />);
+        const googleButton = getByTestId("sign-in-google-button");
+        fireEvent.press(googleButton);
+        await waitFor(() => {
+          expect(mockPromptAsync).toHaveBeenCalled();
+          expect(insertUserGoogle).toHaveBeenCalledWith("Test User", "test@example.com", "googleId123");
+          expect(router.push).toHaveBeenCalledWith("home");
+        });
+    });
 }); 

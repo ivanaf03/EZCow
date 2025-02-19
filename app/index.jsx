@@ -11,15 +11,15 @@ const App = () => {
     return (
         <FontProvider>
             <SafeAreaView className="flex-1 bg-c_layout items-center">
-                <Text className="mt-8 p-4 text-c_orange text-8xl font-Nunito_ExtraBold">
+                <Text className="mt-8 p-4 text-c_orange text-7xl font-Nunito_ExtraBold">
                     EZCow
                 </Text>
-                <Text className=" text-c_white text-2xl font-Nunito_Bold">
+                <Text className=" text-c_white text-xl font-Nunito_Bold">
                     Tu aplicación de gestión de ganado
                 </Text>
                 <Image
                     source={require('../assets/images/logo.png')}
-                    className="w-1/2 h-1/2"
+                    className="w-96 h-1/2"
                     testID="app-logo"
                 />
                 <View className="flex-row flex-wrap justify-center mt-4">

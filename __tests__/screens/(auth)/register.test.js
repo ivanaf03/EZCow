@@ -100,6 +100,58 @@ describe("Register", () => {
         waitFor(() => expect(Alert.alert).toHaveBeenCalledWith('Error', 'Error al registrar. Inténtalo de nuevo. Asegúrate de que no tengas ya una cuenta.'));
     });
 
+    it("shows an alert when email is empty", () => {
+        const {getByPlaceholderText, getAllByPlaceholderText, getByTestId} = render(<Register />);
+        const nameInput = getByPlaceholderText("Nombre");
+        fireEvent.changeText(nameInput, "A");
+        const passwordInput = getAllByPlaceholderText("Contraseña")[0];
+        fireEvent.changeText(passwordInput, "12345678");
+        const confirmPasswordInput = getAllByPlaceholderText("Contraseña")[1];
+        fireEvent.changeText(confirmPasswordInput, "12345678");
+        const signUpButton = getByTestId("sign-up-button");
+        fireEvent.press(signUpButton);
+        expect(Alert.alert).toHaveBeenCalledWith('Error', 'Por favor, rellena todos los campos.');
+    });
+
+    it("shows an alert when name is empty", () => {
+        const {getByPlaceholderText, getAllByPlaceholderText, getByTestId} = render(<Register />);
+        const emailInput = getByPlaceholderText("Email");
+        fireEvent.changeText(emailInput, "test@example.com");
+        const passwordInput = getAllByPlaceholderText("Contraseña")[0];
+        fireEvent.changeText(passwordInput, "12345678");
+        const confirmPasswordInput = getAllByPlaceholderText("Contraseña")[1];
+        fireEvent.changeText(confirmPasswordInput, "12345678");
+        const signUpButton = getByTestId("sign-up-button");
+        fireEvent.press(signUpButton);
+        expect(Alert.alert).toHaveBeenCalledWith('Error', 'Por favor, rellena todos los campos.');
+    });
+
+    it("shows an alert when password is empty", () => {
+        const {getByPlaceholderText, getAllByPlaceholderText, getByTestId} = render(<Register />);
+        const nameInput = getByPlaceholderText("Nombre");
+        fireEvent.changeText(nameInput, "A");
+        const emailInput = getByPlaceholderText("Email");
+        fireEvent.changeText(emailInput, "test@example.com");
+        const confirmPasswordInput = getAllByPlaceholderText("Contraseña")[1];
+        fireEvent.changeText(confirmPasswordInput, "12345678");
+        const signUpButton = getByTestId("sign-up-button");
+        fireEvent.press(signUpButton);
+        expect(Alert.alert).toHaveBeenCalledWith('Error', 'Por favor, rellena todos los campos.');
+    });
+
+    it("shows an alert when confirm password is empty", () => {
+        const {getByPlaceholderText, getAllByPlaceholderText, getByTestId} = render(<Register />);
+        const nameInput = getByPlaceholderText("Nombre");
+        fireEvent.changeText(nameInput, "A");
+        const emailInput = getByPlaceholderText("Email");
+        fireEvent.changeText(emailInput, "test@example.com");
+        const passwordInput = getAllByPlaceholderText("Contraseña")[0];
+        fireEvent.changeText(passwordInput, "12345678");
+        const signUpButton = getByTestId("sign-up-button");
+        fireEvent.press(signUpButton);
+        expect(Alert.alert).toHaveBeenCalledWith('Error', 'Por favor, rellena todos los campos.');
+    });
+
     it("works when email, password and confirm password are correct", async() => {
         const {getByPlaceholderText, getAllByPlaceholderText, getByTestId} = render(<Register />);
         const nameInput = getByPlaceholderText("Nombre");

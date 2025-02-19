@@ -652,6 +652,10 @@ exports[`Register should render correctly 1`] = `
               {
                 "fontFamily": "Nunito-Bold",
               },
+              {
+                "marginLeft": 8,
+                "marginRight": 8,
+              },
             ]
           }
         >

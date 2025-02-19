@@ -5,18 +5,39 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { router } from 'expo-router';
 import CryptoJS from 'crypto-js';
+import * as Google from 'expo-auth-session/providers/google';
 
 import CustomInput from '../../components/basic/custom-input';
 import CustomPasswordInput from '../../components/basic/custom-password-input';
 import CustomButton from '../../components/basic/custom-button';
 import icons from '../../constants/icons';
 import CustomLink from '../../components/basic/custom-link';
-import { getUserByEmail } from '../model/users';
+import { getUserByEmail, insertUserGoogle } from '../model/users';
+import { jwtDecode } from 'jwt-decode';
 
 const Login = () => {
 
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
+    
+    const [request, response, promptAsync] = Google.useAuthRequest({
+        androidClientId: process.env.EXPO_PUBLIC_ANDROID_CLIENT_ID,
+        iosClientId: undefined,
+    });
+
+    React.useEffect(() => {
+        if (response?.type === 'success') {
+            const { id_token } = response.params;
+            const decodedToken = jwtDecode(id_token);
+            
+            const name = decodedToken.name;
+            const email = decodedToken.email;
+            const googleId = decodedToken.sub;
+
+            insertUserGoogle(name, email, googleId);
+            router.push('home');
+        }
+    }, [response]);
 
     const checkPasswordLength = () => {
         return password.length >= 8;
@@ -89,7 +110,11 @@ const Login = () => {
                     size={25}
                     color="white"
                 />
-                <CustomButton text="Continuar con Google" onPress={handleLogin} />
+                <CustomButton 
+                text="Continuar con Google" 
+                onPress={() => promptAsync().catch((e) => console.log(e))}
+                buttonTestID="sign-in-google-button"
+                />
             </View>
             <View className="mt-12 flex-row justify-center items-center">
                 <Text className="text-c_white text-base font-Nunito_ExtraBold text-center mr-2">
