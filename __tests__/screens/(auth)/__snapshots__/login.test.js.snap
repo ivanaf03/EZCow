@@ -406,6 +406,10 @@ exports[`Login should render correctly 1`] = `
               {
                 "fontFamily": "Nunito-Bold",
               },
+              {
+                "marginLeft": 8,
+                "marginRight": 8,
+              },
             ]
           }
         >
@@ -511,6 +515,7 @@ exports[`Login should render correctly 1`] = `
           },
         ]
       }
+      testID="sign-in-google-button"
     >
       <Text
         style={
@@ -527,6 +532,10 @@ exports[`Login should render correctly 1`] = `
             },
             {
               "fontFamily": "Nunito-Bold",
+            },
+            {
+              "marginLeft": 8,
+              "marginRight": 8,
             },
           ]
         }

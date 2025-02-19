@@ -9,7 +9,7 @@ const CustomButton = ({ text, onPress, buttonTestID}) => {
             onPress={onPress}
             testID={buttonTestID}
         >
-            <Text className="text-c_white text-xl text-center font-Nunito_Bold">
+            <Text className="text-c_white text-xl text-center font-Nunito_Bold mx-2">
                 {text}
             </Text>
         </Pressable>
