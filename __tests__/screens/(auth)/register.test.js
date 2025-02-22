@@ -164,6 +164,6 @@ describe("Register", () => {
         fireEvent.changeText(confirmPasswordInput, "12345678");
         const signUpButton = getByTestId("sign-up-button");
         fireEvent.press(signUpButton);
-        await waitFor(() => expect(router.push).toHaveBeenCalledWith('home'));
+        await waitFor(() => expect(router.push).toHaveBeenCalledWith('livestock'));
     });
 });

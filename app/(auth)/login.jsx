@@ -35,7 +35,7 @@ const Login = () => {
             const googleId = decodedToken.sub;
 
             insertUserGoogle(name, email, googleId);
-            router.push('home');
+            router.push('livestock');
         }
     }, [response]);
 
@@ -66,7 +66,7 @@ const Login = () => {
         try {
             const result = await getUserByEmail(email);
             if (CryptoJS.SHA256(password).toString() === result.password) {
-                router.push('home');
+                router.push('livestock');
             } else {
                 Alert.alert('Error', 'Contraseña incorrecta.');
             }

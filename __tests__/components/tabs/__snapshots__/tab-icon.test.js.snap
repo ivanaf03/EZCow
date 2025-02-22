@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabIcon should render correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "display": "flex",
+      },
+      {
+        "marginLeft": -4,
+        "marginTop": -4,
+      },
+      {
+        "alignItems": "center",
+      },
+      {
+        "justifyContent": "center",
+      },
+      {
+        "minWidth": 40,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "fontFamily": "Nunito-Medium",
+        },
+        {
+          "color": "#ffffff",
+        },
+        {
+          "fontSize": 12,
+          "lineHeight": 16,
+        },
+        [
+          {
+            "marginLeft": 4,
+            "marginTop": 4,
+          },
+        ],
+      ]
+    }
+  >
+    Test
+  </Text>
+</View>
+`;
+
+exports[`TabIcon should render when is focused 1`] = `
+<View
+  style={
+    [
+      {
+        "display": "flex",
+      },
+      {
+        "marginLeft": -4,
+        "marginTop": -4,
+      },
+      {
+        "alignItems": "center",
+      },
+      {
+        "justifyContent": "center",
+      },
+      {
+        "minWidth": 40,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "fontFamily": "Nunito-ExtraBold",
+        },
+        {
+          "color": "#a526a9",
+        },
+        {
+          "fontSize": 12,
+          "lineHeight": 16,
+        },
+        [
+          {
+            "marginLeft": 4,
+            "marginTop": 4,
+          },
+        ],
+      ]
+    }
+  >
+    Test
+  </Text>
+</View>
+`;

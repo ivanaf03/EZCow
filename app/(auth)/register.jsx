@@ -52,7 +52,7 @@ const Register = () => {
 
         try {
             await insertUser(name, email, password);            
-            router.push('home');
+            router.push('livestock');
         } catch (error) {
             Alert.alert('Error', 'Error al registrar. Inténtalo de nuevo. Asegúrate de que no tengas ya una cuenta.');
         }
