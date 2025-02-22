@@ -125,7 +125,7 @@ describe("Login", () => {
         getUserByEmail.mockResolvedValue({email: "test@example.com", password: "12345678"});
         const signInButton = getByTestId("sign-in-button");
         fireEvent.press(signInButton);
-        waitFor(() => expect(router.push).toHaveBeenCalledWith('home'));
+        waitFor(() => expect(router.push).toHaveBeenCalledWith('livestock'));
     });
 
     it("handles Google sign-in", async () => {
@@ -137,7 +137,7 @@ describe("Login", () => {
         await waitFor(() => {
           expect(mockPromptAsync).toHaveBeenCalled();
           expect(insertUserGoogle).toHaveBeenCalledWith("Test User", "test@example.com", "googleId123");
-          expect(router.push).toHaveBeenCalledWith("home");
+          expect(router.push).toHaveBeenCalledWith("livestock");
         });
     });
 }); 

@@ -114,5 +114,9 @@ Commits:
 - [CONFIG] Commit message
 
 ### 5.Bibliography
+https://reactnative.dev/docs/getting-started > React Native documentation
+https://docs.expo.dev > Expo docs
+https://docs.expo.dev/versions/latest/sdk/router/ > Expo docs for router
 https://docs.expo.dev/versions/latest/sdk/auth-session/ > OAuth2 library documentation
 https://youtu.be/ff9phJxk5ck?si=G4pFdbglUFRjHM6i > OAuth2 with Expo (Neunapp)
+https://docs.expo.dev/router/advanced/tabs/ > Expo docs for tabs
