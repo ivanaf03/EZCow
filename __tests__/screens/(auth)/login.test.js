@@ -7,6 +7,7 @@ import * as Google from 'expo-auth-session/providers/google';
 
 import Login from "../../../app/(auth)/login";
 import { getUserByEmail, insertUserGoogle } from "../../../app/model/users";
+import { useUser } from "../../../hooks/providers/user-provider";
 
 jest.mock("expo-router", () => ({
     router: {
@@ -30,6 +31,12 @@ jest.mock('jwt-decode', () => ({
       sub: 'googleId123',
     }),
   }));
+
+jest.mock("../../../hooks/providers/user-provider", () => ({
+    useUser: jest.fn(() => ({
+        login: jest.fn(),
+    })),
+}));
 
 jest.spyOn(Alert, "alert");
 

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { router } from 'expo-router';
 import CryptoJS from 'crypto-js';
 import * as Google from 'expo-auth-session/providers/google';
+import { jwtDecode } from 'jwt-decode';
 
 import CustomInput from '../../components/basic/custom-input';
 import CustomPasswordInput from '../../components/basic/custom-password-input';
@@ -13,12 +14,14 @@ import CustomButton from '../../components/basic/custom-button';
 import icons from '../../constants/icons';
 import CustomLink from '../../components/basic/custom-link';
 import { getUserByEmail, insertUserGoogle } from '../model/users';
-import { jwtDecode } from 'jwt-decode';
+import { useUser } from '../../hooks/providers/user-provider';
 
 const Login = () => {
 
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
+
+    const { login } = useUser();
     
     const [request, response, promptAsync] = Google.useAuthRequest({
         androidClientId: process.env.EXPO_PUBLIC_ANDROID_CLIENT_ID,
@@ -35,6 +38,7 @@ const Login = () => {
             const googleId = decodedToken.sub;
 
             insertUserGoogle(name, email, googleId);
+            login({ name: name, password: null, email: email});
             router.push('livestock');
         }
     }, [response]);
@@ -66,6 +70,7 @@ const Login = () => {
         try {
             const result = await getUserByEmail(email);
             if (CryptoJS.SHA256(password).toString() === result.password) {
+                login({ name: result.name, password: password, email: result.email});
                 router.push('livestock');
             } else {
                 Alert.alert('Error', 'Contraseña incorrecta.');
