@@ -5,7 +5,8 @@ import {
     faCow, 
     faEarthEurope, 
     faHeart, 
-    faKitMedical 
+    faKitMedical,
+    faCirclePlus,
 } from '@fortawesome/free-solid-svg-icons';
 
 export default {
@@ -16,4 +17,5 @@ export default {
     faEarthEurope,
     faHeart,
     faKitMedical,
+    faCirclePlus,
 };

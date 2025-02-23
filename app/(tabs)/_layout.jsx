@@ -21,7 +21,7 @@ const TabsLayout = () => {
             }}
         >
             <Tabs.Screen 
-            name="livestock"
+            name="(livestock)/livestock"
             options= {{
                 title: "Censo",
                 headerShown: false,
@@ -36,7 +36,7 @@ const TabsLayout = () => {
             }}
             />
             <Tabs.Screen
-                name="maps"
+                name="(maps)/maps"
                 options={{
                     title: "Mapas",
                     headerShown: false,
@@ -51,7 +51,7 @@ const TabsLayout = () => {
                 }}
             />
             <Tabs.Screen
-                name="breeding"
+                name="(breeding)/breeding"
                 options={{
                     title: "Crianza",
                     headerShown: false,
@@ -66,7 +66,7 @@ const TabsLayout = () => {
                 }}
             />
             <Tabs.Screen
-                name="health"
+                name="(health)/health"
                 options={{
                     title: "Salud",
                     headerShown: false,

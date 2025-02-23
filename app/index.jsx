@@ -6,11 +6,9 @@ import { router } from 'expo-router';
 
 import FontProvider from '../hooks/providers/font-provider';
 import CustomButton from '../components/basic/custom-button';
-import UserProvider from '../hooks/providers/user-provider';
 
 const App = () => {
     return (
-        <UserProvider>
             <FontProvider>
                 <SafeAreaView className="flex-1 bg-c_layout items-center">
                     <Text className="mt-8 p-4 text-c_orange text-7xl font-Nunito_ExtraBold">
@@ -35,7 +33,6 @@ const App = () => {
                     />
                 </SafeAreaView>
             </FontProvider>
-        </UserProvider>
     );
 };
 

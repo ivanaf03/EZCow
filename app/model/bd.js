@@ -14,5 +14,19 @@ export const initDatabase = async () => {
             google_id TEXT DEFAULT NULL,
             CHECK (password IS NOT NULL OR google_id IS NOT NULL)
         );
+
+        CREATE TABLE IF NOT EXISTS Cow (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            code TEXT NOT NULL UNIQUE,
+            name TEXT NOT NULL,
+            entryDate DATE NOT NULL,
+            exitDate DATE DEFAULT NULL,
+            gender TEXT NOT NULL,
+            breed TEXT NOT NULL,
+            user_fk INTEGER NOT NULL,
+            mother_fk INTEGER DEFAULT NULL,
+            FOREIGN KEY(user_fk) REFERENCES User(id),
+            FOREIGN KEY(mother_fk) REFERENCES Cow(id)
+        );
     `);
 };
