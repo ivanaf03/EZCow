@@ -46,7 +46,7 @@ const CowCard = ({ cow }) => {
                 </View>
                 <View className="flex-col">
                     <Text className="text-c_layout text-sm font-Nunito_Bold">
-                        Fecha de incorporación: {cow.entryDate}
+                        Fecha de incorporación: {new Date(cow.entryDate).toLocaleDateString('es-ES')}
                     </Text>
                     <Text className="text-c_layout  text-sm font-Nunito_Bold">
                         Sexo: {cow.gender}
