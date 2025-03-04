@@ -120,3 +120,7 @@ https://docs.expo.dev/versions/latest/sdk/router/ > Expo docs for router
 https://docs.expo.dev/versions/latest/sdk/auth-session/ > OAuth2 library documentation
 https://youtu.be/ff9phJxk5ck?si=G4pFdbglUFRjHM6i > OAuth2 with Expo (Neunapp)
 https://docs.expo.dev/router/advanced/tabs/ > Expo docs for tabs
+https://www.sqlite.org/datatype3.html > SQLite documentation
+https://reactnavigation.org/docs/nesting-navigators/?config=static > Nest tabs and stack
+https://github.com/react-native-datetimepicker/datetimepicker > Calendar input library
+https://github.com/react-native-picker/picker > Select input library

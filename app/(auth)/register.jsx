@@ -8,7 +8,8 @@ import CustomInput from '../../components/basic/custom-input';
 import CustomPasswordInput from '../../components/basic/custom-password-input';
 import CustomButton from '../../components/basic/custom-button';
 import CustomLink from '../../components/basic/custom-link';
-import { insertUser } from '../model/users';
+import { insertUser, getUserByEmail } from '../model/users';
+import { useUser } from '../../hooks/providers/user-provider';
 
 const Register = () => {
 
@@ -16,6 +17,8 @@ const Register = () => {
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
     const [confirmPassword, setConfirmPassword] = React.useState('');
+
+    const { login } = useUser();
 
     const checkPasswords = () => {
         return password === confirmPassword;
@@ -51,7 +54,10 @@ const Register = () => {
         }
 
         try {
-            await insertUser(name, email, password);            
+            await insertUser(name, email, password); 
+            const userId = await getUserByEmail(email).id;
+            // FIXME: Login
+            login({ id: userId, name: name, password: null, email: email});
             router.push('livestock');
         } catch (error) {
             Alert.alert('Error', 'Error al registrar. Inténtalo de nuevo. Asegúrate de que no tengas ya una cuenta.');

@@ -3,6 +3,7 @@ import React from 'react';
 import { Stack } from 'expo-router';
 
 import { initDatabase } from './model/bd';
+import UserProvider from '../hooks/providers/user-provider';
 
 const RootLayout = () => {
 
@@ -11,26 +12,28 @@ const RootLayout = () => {
     }, []);
 
     return (
-        <Stack>
-            <Stack.Screen
-                name='index'
-                options={{
-                    headerShown: false
-                }}
-            />
-            <Stack.Screen
-                name="(auth)"
-                options={{
-                    headerShown: false
-                }}
-            />
-            <Stack.Screen
-                name="(tabs)"
-                options={{
-                    headerShown: false
-                }}
-            />
-        </Stack>    
+        <UserProvider>
+            <Stack>
+                <Stack.Screen
+                    name='index'
+                    options={{
+                        headerShown: false
+                    }}
+                />
+                <Stack.Screen
+                    name="(auth)"
+                    options={{
+                        headerShown: false
+                    }}
+                />
+                <Stack.Screen
+                    name="(tabs)"
+                    options={{
+                        headerShown: false
+                    }}
+                />
+            </Stack>
+        </UserProvider>    
     );
 };
 
