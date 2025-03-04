@@ -29,19 +29,25 @@ const Login = () => {
     });
 
     React.useEffect(() => {
-        if (response?.type === 'success') {
-            const { id_token } = response.params;
-            const decodedToken = jwtDecode(id_token);
-            
-            const name = decodedToken.name;
-            const email = decodedToken.email;
-            const googleId = decodedToken.sub;
+        const handleGoogleLogin = async () => {
+            if (response?.type === 'success') {
+                const { id_token } = response.params;
+                const decodedToken = jwtDecode(id_token);
+                
+                const name = decodedToken.name;
+                const email = decodedToken.email;
+                const googleId = decodedToken.sub;
 
-            insertUserGoogle(name, email, googleId);
-            login({ name: name, password: null, email: email});
-            router.push('livestock');
-        }
-    }, [response]);
+                await insertUserGoogle(name, email, googleId); 
+    
+                const user = await getUserByEmail(email);
+                login({ id: user.id, name: user.name, password: null, email: user.email });
+                router.push('livestock');
+            }
+        };
+    
+        handleGoogleLogin();
+    }, [response]);    
 
     const checkPasswordLength = () => {
         return password.length >= 8;
@@ -70,7 +76,8 @@ const Login = () => {
         try {
             const result = await getUserByEmail(email);
             if (CryptoJS.SHA256(password).toString() === result.password) {
-                login({ name: result.name, password: password, email: result.email});
+                const userId = result.id;
+                login({ id: userId, name: result.name, password: password, email: result.email});
                 router.push('livestock');
             } else {
                 Alert.alert('Error', 'Contraseña incorrecta.');

@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomPicker should render correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "marginBottom": 8,
+        "marginLeft": 8,
+        "marginRight": 8,
+        "marginTop": 8,
+      },
+      {
+        "marginTop": -4,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#ffffff",
+        },
+        {
+          "fontSize": 14,
+          "lineHeight": 20,
+        },
+        {
+          "fontFamily": "Nunito-Light",
+        },
+        [
+          {
+            "marginTop": 4,
+          },
+        ],
+      ]
+    }
+  >
+    test
+    :
+  </Text>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#ffffff",
+        },
+        {
+          "borderBottomWidth": 2,
+          "borderLeftWidth": 2,
+          "borderRightWidth": 2,
+          "borderTopWidth": 2,
+        },
+        {
+          "borderBottomColor": "#580088",
+          "borderLeftColor": "#580088",
+          "borderRightColor": "#580088",
+          "borderTopColor": "#580088",
+        },
+        {
+          "borderBottomLeftRadius": 9999,
+          "borderBottomRightRadius": 9999,
+          "borderTopLeftRadius": 9999,
+          "borderTopRightRadius": 9999,
+        },
+        [
+          {
+            "marginTop": 4,
+          },
+        ],
+      ]
+    }
+  >
+    <View>
+      <RNCPicker
+        items={
+          [
+            {
+              "label": {
+                "label": "Option 1",
+                "value": "option1",
+              },
+              "testID": undefined,
+              "textColor": undefined,
+              "value": {
+                "label": "Option 1",
+                "value": "option1",
+              },
+            },
+            {
+              "label": {
+                "label": "Option 2",
+                "value": "option2",
+              },
+              "testID": undefined,
+              "textColor": undefined,
+              "value": {
+                "label": "Option 2",
+                "value": "option2",
+              },
+            },
+            {
+              "label": {
+                "label": "Option 3",
+                "value": "option3",
+              },
+              "testID": undefined,
+              "textColor": undefined,
+              "value": {
+                "label": "Option 3",
+                "value": "option3",
+              },
+            },
+            {
+              "label": {
+                "label": "Option 4",
+                "value": "option4",
+              },
+              "testID": undefined,
+              "textColor": undefined,
+              "value": {
+                "label": "Option 4",
+                "value": "option4",
+              },
+            },
+            {
+              "label": {
+                "label": "Option 5",
+                "value": "option5",
+              },
+              "testID": undefined,
+              "textColor": undefined,
+              "value": {
+                "label": "Option 5",
+                "value": "option5",
+              },
+            },
+          ]
+        }
+        numberOfLines={1}
+        onChange={[Function]}
+        selectedIndex={0}
+        style={
+          [
+            {
+              "height": 216,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

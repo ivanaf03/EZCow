@@ -21,7 +21,7 @@ const TabsLayout = () => {
             }}
         >
             <Tabs.Screen 
-            name="(livestock)/livestock"
+            name="(livestock)"
             options= {{
                 title: "Censo",
                 headerShown: false,

@@ -30,3 +30,9 @@ export const initDatabase = async () => {
         );
     `);
 };
+
+export const deleteDatabase = async () => {
+    const db = await SQLite.openDatabaseAsync('ezcow.db');
+    await db.closeAsync();
+    await SQLite.deleteDatabaseAsync('ezcow.db');
+};
