@@ -6,7 +6,7 @@ import CustomInput from '../../../components/basic/custom-input';
 import CustomCalendar from '../../../components/basic/custom-calendar';
 import { useUser } from '../../../hooks/providers/user-provider';
 import CustomButton from '../../../components/basic/custom-button';
-import { insertCow, getCowCodeByUserId, getCowIdByCode } from '../../model/cow';
+import { insertCow, getAvailableCowCodeByUserId, getCowIdByCode } from '../../model/cow';
 import CustomPicker from '../../../components/basic/custom-picker';
 import { router } from 'expo-router';
 
@@ -15,10 +15,10 @@ const LivestockForm = () => {
     const [code, setCode] = React.useState('');
     const [name, setName] = React.useState('');
     const [entryDate, setEntryDate] = React.useState(new Date());
-    const [gender, setGender] = React.useState('');
+    const [gender, setGender] = React.useState('Masculino');
     const [breed, setBreed] = React.useState('');
     const [mothers, setMothers] = React.useState([]);
-    const [mother, setMother] = React.useState('');
+    const [mother, setMother] = React.useState('Desconocida');
 
     const { user } = useUser();
 
@@ -31,7 +31,7 @@ const LivestockForm = () => {
     };
 
     const loadCowCodes = async () => {
-        const cowCodes = await getCowCodeByUserId(user.id);
+        const cowCodes = await getAvailableCowCodeByUserId(user.id);
         setMothers(['Desconocida', ...(cowCodes || [])]);
     };
 
