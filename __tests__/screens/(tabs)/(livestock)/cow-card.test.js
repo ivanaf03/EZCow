@@ -1,12 +1,11 @@
 import React from 'react';
-
 import { render, fireEvent, waitFor } from "@testing-library/react-native";
-
 import CowCard from "../../../../app/(tabs)/(livestock)/cow-card";
-import { getCowNameById } from '../../../../app/model/cow';
+import { getAvailableCowNameById, setExitDateByCowId } from '../../../../app/model/cow';
 
 jest.mock("../../../../app/model/cow", () => ({
-    getCowNameById: jest.fn(() => "Vaca Test"),
+    getAvailableCowNameById: jest.fn(() => "Vaca Test"),
+    setExitDateByCowId: jest.fn(), 
 }));
 
 jest.mock("@fortawesome/react-native-fontawesome", () => ({
@@ -14,7 +13,6 @@ jest.mock("@fortawesome/react-native-fontawesome", () => ({
 }));
 
 describe("CowCard", () => {
-
     beforeEach(() => {
         jest.clearAllMocks();
     });
@@ -27,9 +25,9 @@ describe("CowCard", () => {
             gender: "Femenino",
             breed: "Holstein",
             mother_fk: "1234",
-            entryDate: "2022-01-01T00:00:00.000Z",
+            entryDate: "2022-01-01",
         }} />);
-        await waitFor(() => expect(getCowNameById).toHaveBeenCalled());
+        await waitFor(() => expect(getAvailableCowNameById).toHaveBeenCalled());
         expect(tree).toMatchSnapshot();
     });
 
@@ -41,10 +39,25 @@ describe("CowCard", () => {
             gender: "Femenino",
             breed: "Holstein",
             mother_fk: null,
-            entryDate: "2022-01-01T00:00:00.000Z",
+            entryDate: "2022-01-01",
         }} />);
         expect(tree).toMatchSnapshot();
     });
 
-});
+    it("should delete cow card on press delete button", async () => {
+        const tree = render(<CowCard cow={{
+            id: "1",
+            name: "Vaca Test",
+            code: "COW001",
+            gender: "Femenino",
+            breed: "Holstein",
+            mother_fk: "1234",
+            entryDate: "2022-01-01",
+        }} />);
 
+        await waitFor(() => expect(getAvailableCowNameById).toHaveBeenCalled());
+        const deleteButton = tree.getByTestId("delete-cow-button");
+        fireEvent.press(deleteButton);
+        await waitFor(() => expect(setExitDateByCowId).toHaveBeenCalledWith("1"));
+    });
+});

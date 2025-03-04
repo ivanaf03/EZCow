@@ -7,7 +7,7 @@ import { router } from 'expo-router';
 import CustomButton from '../../../components/basic/custom-button';
 import icons from '../../../constants/icons';
 import CowCard from './cow-card';
-import { getAllCowsByUserId } from '../../model/cow';
+import { getAllCowsAvailableByUserId } from '../../model/cow';
 import { useUser } from '../../../hooks/providers/user-provider';
 
 const Livestock = () => {
@@ -18,10 +18,10 @@ const Livestock = () => {
 
     React.useEffect(() => {
         loadCows();
-    }, []);
+    }, [cows]);
 
     const loadCows = async () => {
-        setCows(await getAllCowsByUserId(user.id));
+        setCows(await getAllCowsAvailableByUserId(user.id));
     };
 
     return (
