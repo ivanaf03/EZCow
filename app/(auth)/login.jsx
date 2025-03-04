@@ -42,7 +42,7 @@ const Login = () => {
     
                 const user = await getUserByEmail(email);
                 login({ id: user.id, name: user.name, password: null, email: user.email });
-                router.push('livestock');
+                router.replace('livestock');
             }
         };
     
