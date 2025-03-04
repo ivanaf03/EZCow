@@ -188,7 +188,7 @@ exports[`CowCard should render correctly 1`] = `
         }
       >
         Fecha de incorporación: 
-        2022-01-01T00:00:00.000Z
+        1/1/2022
       </Text>
       <Text
         style={
@@ -440,7 +440,7 @@ exports[`CowCard should render correctly when mother is null 1`] = `
         }
       >
         Fecha de incorporación: 
-        2022-01-01T00:00:00.000Z
+        1/1/2022
       </Text>
       <Text
         style={
