@@ -10,8 +10,8 @@ import { getUserByEmail, insertUserGoogle } from "../../../app/model/users";
 
 jest.mock("expo-router", () => ({
     router: {
-        push: jest.fn(),
         replace: jest.fn(),
+        push: jest.fn(),
     },
 }));
 
@@ -132,7 +132,7 @@ describe("Login", () => {
         getUserByEmail.mockResolvedValue({email: "test@example.com", password: "12345678"});
         const signInButton = getByTestId("sign-in-button");
         fireEvent.press(signInButton);
-        waitFor(() => expect(router.push).toHaveBeenCalledWith('livestock'));
+        waitFor(() => expect(router.replace).toHaveBeenCalledWith('livestock'));
     });
 
     it("handles Google sign-in", async () => {

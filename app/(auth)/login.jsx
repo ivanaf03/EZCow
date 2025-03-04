@@ -78,7 +78,7 @@ const Login = () => {
             if (CryptoJS.SHA256(password).toString() === result.password) {
                 const userId = result.id;
                 login({ id: userId, name: result.name, password: password, email: result.email});
-                router.push('livestock');
+                router.replace('livestock');
             } else {
                 Alert.alert('Error', 'Contraseña incorrecta.');
             }

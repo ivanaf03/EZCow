@@ -11,7 +11,7 @@ jest.mock('expo-font', () => ({
 
 jest.mock("expo-router", () => ({
     router: {
-        push: jest.fn(),
+        replace: jest.fn(),
     },
 }));
 
@@ -30,14 +30,14 @@ describe("App", () => {
         const {getByText} = render(<App />);
         const registerButton = getByText("Registrarse");
         fireEvent.press(registerButton);
-        waitFor (() => expect(router.push).toHaveBeenCalledWith("register"));
+        waitFor (() => expect(router.replace).toHaveBeenCalledWith("register"));
     });
 
     it("login button should navigate to login screen", () => {
         const {getByText} = render(<App />);
         const loginButton = getByText("Iniciar sesión");
         fireEvent.press(loginButton);
-        waitFor (() => expect(router.push).toHaveBeenCalledWith("login"));
+        waitFor (() => expect(router.replace).toHaveBeenCalledWith("login"));
     });
 
 });
