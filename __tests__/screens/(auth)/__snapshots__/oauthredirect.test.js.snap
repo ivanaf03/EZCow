@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OauthRedirect should render correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+      {
+        "backgroundColor": "#22072BFF",
+      },
+      {
+        "alignItems": "center",
+      },
+      {
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "marginTop": 32,
+        },
+        {
+          "paddingBottom": 24,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 24,
+        },
+        {
+          "color": "#ffffff",
+        },
+        {
+          "fontSize": 30,
+          "lineHeight": 36,
+        },
+        {
+          "fontFamily": "Nunito-BoldItalic",
+        },
+      ]
+    }
+  >
+    Iniciando sesión con Google. Esto puede llevar unos segundos...
+  </Text>
+</View>
+`;

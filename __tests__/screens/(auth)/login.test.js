@@ -7,11 +7,11 @@ import * as Google from 'expo-auth-session/providers/google';
 
 import Login from "../../../app/(auth)/login";
 import { getUserByEmail, insertUserGoogle } from "../../../app/model/users";
-import { useUser } from "../../../hooks/providers/user-provider";
 
 jest.mock("expo-router", () => ({
     router: {
         push: jest.fn(),
+        replace: jest.fn(),
     },
 }));
 
@@ -144,7 +144,7 @@ describe("Login", () => {
         await waitFor(() => {
           expect(mockPromptAsync).toHaveBeenCalled();
           expect(insertUserGoogle).toHaveBeenCalledWith("Test User", "test@example.com", "googleId123");
-          expect(router.push).toHaveBeenCalledWith("livestock");
+          expect(router.replace).toHaveBeenCalledWith("livestock");
         });
     });
 }); 

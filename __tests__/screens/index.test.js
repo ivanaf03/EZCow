@@ -21,26 +21,9 @@ describe("App", () => {
         jest.clearAllMocks();
     });
 
-    it("should render the correct text", () => {
-        const {getByText} = render(<App />);
-        waitFor (() => expect(getByText("Tu aplicación de gestión de ganado")).toBeTruthy());
-        waitFor (() => expect(getByText("Iniciar sesión")).toBeTruthy());
-    });
-
-    test("should render the correct image", () => {
-        const { getByTestId } = render(<App />);
-        waitFor (() => expect(getByTestId("app-logo")).toBeTruthy());
-    });
-
-    it("should render the correct buttons", () => {
-        const {getByText} = render(<App />);
-        waitFor (() => expect(getByText("Iniciar sesión")).toBeTruthy());
-        waitFor (() => expect(getByText("Registrarse")).toBeTruthy());
-    });
-
-    it("should render the correct waves", () => {
-        const { getByTestId } = render(<App />);
-        waitFor (() => expect(getByTestId("waves")).toBeTruthy());
+    it("should render correctly",  async () => {    
+        const tree = render(<App />);
+        await waitFor(() => expect(tree).toMatchSnapshot());
     });
 
     it("register button should navigate to register screen", () => {
