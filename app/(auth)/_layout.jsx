@@ -17,6 +17,12 @@ const AuthLayout = () => {
                     headerShown: false 
                 }} 
             />
+            <Stack.Screen
+                name="oauthredirect"
+                options={{ 
+                    headerShown: false 
+                }}
+            />
         </Stack>
     );
 };
