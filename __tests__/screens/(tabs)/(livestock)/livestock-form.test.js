@@ -5,12 +5,11 @@ import { router } from "expo-router";
 import { Alert } from "react-native";
 
 import LivestockForm from "../../../../app/(tabs)/(livestock)/livestock-form";
-import { useUser } from "../../../../hooks/providers/user-provider";
-import { insertCow, getCowCodeByUserId, getCowIdByCode } from '../../../../app/model/cow';
+import { insertCow, getCowCodeByUserId } from '../../../../app/model/cow';
 
 jest.mock("expo-router", () => ({
     router: {
-        push: jest.fn(),
+        replace: jest.fn(),
     },
 }));
 
@@ -130,7 +129,7 @@ describe("LivestockForm", () => {
                 "1",
                 "ES1234"
             );
-            expect(router.push).toHaveBeenCalledWith("livestock");
+            expect(router.replace).toHaveBeenCalledWith("livestock");
         });
     });
 

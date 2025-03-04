@@ -53,7 +53,7 @@ const LivestockForm = () => {
     
             loadCowCodes();
     
-            router.push('livestock');
+            router.replace('livestock');
         } catch (error) {
             console.log(error);
             Alert.alert('Error', 'Error al añadir el animal. Inténtalo de nuevo.');

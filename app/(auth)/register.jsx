@@ -57,7 +57,7 @@ const Register = () => {
             await insertUser(name, email, password); 
             const user = await getUserByEmail(email);
             login({ id: user.id, name: name, password: null, email: email});
-            router.push('livestock');
+            router.replace('livestock');
         } catch (error) {
             Alert.alert('Error', 'Error al registrar. Inténtalo de nuevo. Asegúrate de que no tengas ya una cuenta.');
         }

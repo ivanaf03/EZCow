@@ -9,6 +9,7 @@ import { getUserByEmail } from "../../../app/model/users";
 
 jest.mock("expo-router", () => ({
     router: {
+        replace: jest.fn(),
         push: jest.fn(),
     },
 }));
@@ -173,6 +174,6 @@ describe("Register", () => {
         fireEvent.changeText(confirmPasswordInput, "12345678");
         const signUpButton = getByTestId("sign-up-button");
         fireEvent.press(signUpButton);
-        await waitFor(() => expect(router.push).toHaveBeenCalledWith('livestock'));
+        await waitFor(() => expect(router.replace).toHaveBeenCalledWith('livestock'));
     });
 });

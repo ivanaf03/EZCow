@@ -23,8 +23,8 @@ const App = () => {
                         testID="app-logo"
                     />
                     <View className="flex-row flex-wrap justify-center mt-4">
-                        <CustomButton text="Iniciar sesión" onPress={() => router.push('login')} />
-                        <CustomButton text="Registrarse" onPress={() => router.push('register')} />
+                        <CustomButton text="Iniciar sesión" onPress={() => router.replace('login')} />
+                        <CustomButton text="Registrarse" onPress={() => router.replace('register')} />
                     </View>
                     <Image
                         source={require('../assets/images/waves.png')}
