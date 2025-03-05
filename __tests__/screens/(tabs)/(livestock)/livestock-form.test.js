@@ -55,6 +55,7 @@ describe("LivestockForm", () => {
         fireEvent.changeText(getByPlaceholderText("Raza"), "Holstein");
         fireEvent(getByText("Género:"), "onValueChange", "Femenino");
         fireEvent(getByText("Madre:"), "onValueChange", "1234");
+        fireEvent(getByText("Fase:"), "onValueChange", "Ternero");
 
         const handleAddCowButton = getByTestId("handle-add-cow-button");
         fireEvent.press(handleAddCowButton);
@@ -70,6 +71,7 @@ describe("LivestockForm", () => {
         fireEvent.changeText(getByPlaceholderText("Raza"), "Holstein");
         fireEvent(getByText("Género:"), "onValueChange", "Femenino");
         fireEvent(getByText("Madre:"), "onValueChange", "1234");
+        fireEvent(getByText("Fase:"), "onValueChange", "Ternero");
 
         const handleAddCowButton = getByTestId("handle-add-cow-button");
         fireEvent.press(handleAddCowButton);
@@ -85,6 +87,7 @@ describe("LivestockForm", () => {
         fireEvent.changeText(getByPlaceholderText("Nombre"), "Vaca Test");
         fireEvent(getByText("Género:"), "onValueChange", "Femenino");
         fireEvent(getByText("Madre:"), "onValueChange", "1234");
+        fireEvent(getByText("Fase:"), "onValueChange", "Ternero");
 
         const handleAddCowButton = getByTestId("handle-add-cow-button");
         fireEvent.press(handleAddCowButton);
@@ -101,6 +104,7 @@ describe("LivestockForm", () => {
         fireEvent.changeText(getByPlaceholderText("Raza"), "Holstein");
         fireEvent(getByText("Género:"), "onValueChange", "Femenino");
         fireEvent(getByText("Madre:"), "onValueChange", "1234");
+        fireEvent(getByText("Fase:"), "onValueChange", "Ternero");
 
         fireEvent.press(getByTestId("handle-add-cow-button"));
 
@@ -111,6 +115,7 @@ describe("LivestockForm", () => {
                 expect.stringMatching(/\d{4}-\d{2}-\d{2}/),
                 "Femenino",
                 "Holstein",
+                "Ternero",
                 "1",
                 "ES1234"
             );

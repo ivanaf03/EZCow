@@ -17,6 +17,7 @@ const LivestockForm = () => {
     const [entryDate, setEntryDate] = React.useState(new Date());
     const [gender, setGender] = React.useState('Masculino');
     const [breed, setBreed] = React.useState('');
+    const [phase, setPhase] = React.useState('Ternero');
     const [mothers, setMothers] = React.useState([]);
     const [mother, setMother] = React.useState('Desconocida');
 
@@ -49,7 +50,7 @@ const LivestockForm = () => {
 
             const cowId = mother === 'Desconocida' ? null : await getCowIdByCode(mother);
             const formattedEntryDate = new Date(entryDate).toISOString().split("T")[0];
-            await insertCow(code, name, formattedEntryDate, gender, breed, user.id, cowId);
+            await insertCow(code, name, formattedEntryDate, gender, breed, phase, user.id, cowId);
     
             loadCowCodes();
     
@@ -91,6 +92,15 @@ const LivestockForm = () => {
                         onValueChange={setGender}
                         options={['Masculino', 'Femenino']}
                         pickerTestID="gender-picker"
+                    />
+                </View>
+                <View>
+                    <CustomPicker
+                        text="Fase"
+                        value={phase}
+                        onValueChange={setPhase}
+                        options={['Ternero', 'Adulto']}
+                        pickerTestID="phase-picker"
                     />
                 </View>
                 <View>

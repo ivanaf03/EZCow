@@ -60,6 +60,9 @@ const CowCard = ({ cow }) => {
                             Raza: {cow.breed}
                         </Text>
                         <Text className="text-c_layout  text-sm font-Nunito_Bold">
+                            Fase: {cow.phase}
+                        </Text>
+                        <Text className="text-c_layout  text-sm font-Nunito_Bold">
                             Es hijo/a de: {motherName}
                         </Text>
                     </View>

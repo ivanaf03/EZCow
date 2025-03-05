@@ -24,6 +24,7 @@ describe("CowCard", () => {
             code: "COW001",
             gender: "Femenino",
             breed: "Holstein",
+            phase: "Ternero",
             mother_fk: "1234",
             entryDate: "2022-01-01",
         }} />);
@@ -38,6 +39,7 @@ describe("CowCard", () => {
             code: "COW001",
             gender: "Femenino",
             breed: "Holstein",
+            phase: "Ternero",
             mother_fk: null,
             entryDate: "2022-01-01",
         }} />);
@@ -51,6 +53,7 @@ describe("CowCard", () => {
             code: "COW001",
             gender: "Femenino",
             breed: "Holstein",
+            phase: "Ternero",
             mother_fk: "1234",
             entryDate: "2022-01-01",
         }} />);

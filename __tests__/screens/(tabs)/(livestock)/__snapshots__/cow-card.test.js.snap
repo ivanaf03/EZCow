@@ -238,6 +238,25 @@ exports[`CowCard should render correctly 1`] = `
             ]
           }
         >
+          Fase: 
+          Ternero
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
           Es hijo/a de: 
           Vaca Test
         </Text>
@@ -560,6 +579,25 @@ exports[`CowCard should render correctly when mother is null 1`] = `
         >
           Raza: 
           Holstein
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Fase: 
+          Ternero
         </Text>
         <Text
           style={
