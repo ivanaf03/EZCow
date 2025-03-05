@@ -23,6 +23,7 @@ export const initDatabase = async () => {
             exitDate DATE DEFAULT NULL,
             gender TEXT NOT NULL,
             breed TEXT NOT NULL,
+            phase TEXT NOT NULL,
             user_fk INTEGER NOT NULL,
             mother_fk INTEGER DEFAULT NULL,
             FOREIGN KEY(user_fk) REFERENCES User(id),

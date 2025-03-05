@@ -313,7 +313,7 @@ exports[`LivestockForm should render correctly 1`] = `
           testID="date-picker-button"
         >
           <Text>
-            4/3/2025
+            5/3/2025
           </Text>
         </View>
       </View>
@@ -413,6 +413,120 @@ exports[`LivestockForm should render correctly 1`] = `
                     "testID": undefined,
                     "textColor": undefined,
                     "value": "Femenino",
+                  },
+                ]
+              }
+              numberOfLines={1}
+              onChange={[Function]}
+              selectedIndex={0}
+              style={
+                [
+                  {
+                    "height": 216,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "marginTop": 16,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "marginBottom": 8,
+              "marginLeft": 8,
+              "marginRight": 8,
+              "marginTop": 8,
+            },
+            {
+              "marginTop": -4,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#ffffff",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Light",
+              },
+              [
+                {
+                  "marginTop": 4,
+                },
+              ],
+            ]
+          }
+        >
+          Fase
+          :
+        </Text>
+        <View
+          style={
+            [
+              {
+                "backgroundColor": "#ffffff",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#580088",
+                "borderLeftColor": "#580088",
+                "borderRightColor": "#580088",
+                "borderTopColor": "#580088",
+              },
+              {
+                "borderBottomLeftRadius": 9999,
+                "borderBottomRightRadius": 9999,
+                "borderTopLeftRadius": 9999,
+                "borderTopRightRadius": 9999,
+              },
+              [
+                {
+                  "marginTop": 4,
+                },
+              ],
+            ]
+          }
+        >
+          <View>
+            <RNCPicker
+              items={
+                [
+                  {
+                    "label": "Ternero",
+                    "testID": undefined,
+                    "textColor": undefined,
+                    "value": "Ternero",
+                  },
+                  {
+                    "label": "Adulto",
+                    "testID": undefined,
+                    "textColor": undefined,
+                    "value": "Adulto",
                   },
                 ]
               }
