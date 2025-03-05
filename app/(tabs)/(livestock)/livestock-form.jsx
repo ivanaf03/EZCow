@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { View, SafeAreaView, Alert } from 'react-native';
+import { View, SafeAreaView, Alert, Text } from 'react-native';
 
 import CustomInput from '../../../components/basic/custom-input';
 import CustomCalendar from '../../../components/basic/custom-calendar';
@@ -108,6 +108,10 @@ const LivestockForm = () => {
                         options={mothers}
                         pickerTestID="mother-picker"
                     />
+                    <Text className="text-c_orange px-4 text-sm font-Nunito_Regular">
+                        Marcar como desconocida si el animal proviene de otra explotación o si la madre
+                        no está registrada en la explotación.
+                    </Text>
                 </View>
             </View>
             <View className="mt-8 flex-row justify-center">

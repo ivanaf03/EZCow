@@ -313,7 +313,7 @@ exports[`LivestockForm should render correctly 1`] = `
           testID="date-picker-button"
         >
           <Text>
-            4/3/2025
+            5/3/2025
           </Text>
         </View>
       </View>
@@ -641,6 +641,28 @@ exports[`LivestockForm should render correctly 1`] = `
           </View>
         </View>
       </View>
+      <Text
+        style={
+          [
+            {
+              "color": "#FF8018FF",
+            },
+            {
+              "paddingLeft": 16,
+              "paddingRight": 16,
+            },
+            {
+              "fontSize": 14,
+              "lineHeight": 20,
+            },
+            {
+              "fontFamily": "Nunito-Regular",
+            },
+          ]
+        }
+      >
+        Marcar como desconocida si el animal proviene de otra explotación o si la madre no está registrada en la explotación.
+      </Text>
     </View>
   </View>
   <View
