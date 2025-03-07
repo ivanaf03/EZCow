@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { View, SafeAreaView, Alert, Text } from 'react-native';
+import { View, ScrollView, Alert, Text } from 'react-native';
 
 import CustomInput from '../../../components/basic/custom-input';
 import CustomCalendar from '../../../components/basic/custom-calendar';
@@ -56,13 +56,12 @@ const LivestockForm = () => {
     
             router.replace('livestock');
         } catch (error) {
-            console.log(error);
             Alert.alert('Error', 'Error al añadir el animal. Inténtalo de nuevo.');
         }
     };    
 
     return (
-        <SafeAreaView className="flex-1 bg-c_background">
+        <ScrollView className="flex-1 bg-c_background">
             <View className="mt-8 space-y-4">
                 <View>
                     <CustomInput
@@ -124,10 +123,10 @@ const LivestockForm = () => {
                     </Text>
                 </View>
             </View>
-            <View className="mt-8 flex-row justify-center">
+            <View className="mt-6 mb-8 flex-row justify-center">
                 <CustomButton text="Añadir" onPress={handleAddCow} buttonTestID="handle-add-cow-button"/>
             </View>
-        </SafeAreaView>
+        </ScrollView>
     );
 };
 
