@@ -1,0 +1,717 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CowCard should render correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      {
+        "marginBottom": 8,
+        "marginTop": 8,
+      },
+      {
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      },
+      {
+        "marginLeft": -10,
+      },
+      {
+        "marginRight": 24,
+      },
+      {
+        "backgroundColor": "#ffffff",
+      },
+      {
+        "borderBottomRightRadius": 24,
+        "borderTopRightRadius": 24,
+      },
+      {
+        "borderBottomWidth": 4,
+        "borderLeftWidth": 4,
+        "borderRightWidth": 4,
+        "borderTopWidth": 4,
+      },
+      {
+        "borderBottomColor": "#580088",
+        "borderLeftColor": "#580088",
+        "borderRightColor": "#580088",
+        "borderTopColor": "#580088",
+      },
+    ]
+  }
+>
+  <View>
+    <View
+      style={
+        [
+          {
+            "flexDirection": "row",
+          },
+          {
+            "alignItems": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#0E041AFF",
+            },
+            {
+              "fontSize": 14,
+              "lineHeight": 20,
+            },
+            {
+              "fontFamily": "Nunito-Bold",
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#a526a9",
+            },
+            {
+              "fontSize": 24,
+              "lineHeight": 32,
+            },
+            {
+              "fontFamily": "Nunito-Bold",
+            },
+            [
+              {
+                "marginLeft": 16,
+              },
+            ],
+          ]
+        }
+      >
+        Vaca Test
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "flexDirection": "column",
+          },
+          {
+            "justifyContent": "space-between",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "flexDirection": "row",
+            },
+            {
+              "alignItems": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Crotal:
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontFamily": "Nunito-BoldItalic",
+              },
+              [
+                {
+                  "marginLeft": 8,
+                },
+              ],
+            ]
+          }
+        >
+          COW001
+        </Text>
+      </View>
+      <View
+        style={
+          [
+            {
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Fecha de incorporación: 
+          1/1/2022
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Sexo: 
+          Femenino
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Raza: 
+          Holstein
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Fase: 
+          Ternero
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Es hijo/a de: 
+          Vaca Test
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "flexDirection": "row",
+        },
+        {
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        },
+        {
+          "alignItems": "center",
+        },
+        {
+          "borderBottomWidth": 2,
+          "borderLeftWidth": 2,
+          "borderRightWidth": 2,
+          "borderTopWidth": 2,
+        },
+        {
+          "borderBottomLeftRadius": 16,
+          "borderBottomRightRadius": 16,
+          "borderTopLeftRadius": 16,
+          "borderTopRightRadius": 16,
+        },
+        {
+          "maxWidth": 135,
+        },
+        [
+          {
+            "marginTop": 16,
+          },
+        ],
+      ]
+    }
+    testID="delete-cow-button"
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#0E041AFF",
+          },
+          {
+            "fontSize": 18,
+            "lineHeight": 28,
+          },
+          {
+            "fontFamily": "Nunito-Bold",
+          },
+          [
+            {
+              "marginLeft": 8,
+            },
+          ],
+        ]
+      }
+    >
+      Dar de baja
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`CowCard should render correctly when mother is null 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      {
+        "marginBottom": 8,
+        "marginTop": 8,
+      },
+      {
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      },
+      {
+        "marginLeft": -10,
+      },
+      {
+        "marginRight": 24,
+      },
+      {
+        "backgroundColor": "#ffffff",
+      },
+      {
+        "borderBottomRightRadius": 24,
+        "borderTopRightRadius": 24,
+      },
+      {
+        "borderBottomWidth": 4,
+        "borderLeftWidth": 4,
+        "borderRightWidth": 4,
+        "borderTopWidth": 4,
+      },
+      {
+        "borderBottomColor": "#580088",
+        "borderLeftColor": "#580088",
+        "borderRightColor": "#580088",
+        "borderTopColor": "#580088",
+      },
+    ]
+  }
+>
+  <View>
+    <View
+      style={
+        [
+          {
+            "flexDirection": "row",
+          },
+          {
+            "alignItems": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#0E041AFF",
+            },
+            {
+              "fontSize": 14,
+              "lineHeight": 20,
+            },
+            {
+              "fontFamily": "Nunito-Bold",
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#a526a9",
+            },
+            {
+              "fontSize": 24,
+              "lineHeight": 32,
+            },
+            {
+              "fontFamily": "Nunito-Bold",
+            },
+            [
+              {
+                "marginLeft": 16,
+              },
+            ],
+          ]
+        }
+      >
+        Vaca Test
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "flexDirection": "column",
+          },
+          {
+            "justifyContent": "space-between",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "flexDirection": "row",
+            },
+            {
+              "alignItems": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Crotal:
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontFamily": "Nunito-BoldItalic",
+              },
+              [
+                {
+                  "marginLeft": 8,
+                },
+              ],
+            ]
+          }
+        >
+          COW001
+        </Text>
+      </View>
+      <View
+        style={
+          [
+            {
+              "flexDirection": "column",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Fecha de incorporación: 
+          1/1/2022
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Sexo: 
+          Femenino
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Raza: 
+          Holstein
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Fase: 
+          Ternero
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#0E041AFF",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Bold",
+              },
+            ]
+          }
+        >
+          Es hijo/a de: 
+          Desconocida
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "flexDirection": "row",
+        },
+        {
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        },
+        {
+          "alignItems": "center",
+        },
+        {
+          "borderBottomWidth": 2,
+          "borderLeftWidth": 2,
+          "borderRightWidth": 2,
+          "borderTopWidth": 2,
+        },
+        {
+          "borderBottomLeftRadius": 16,
+          "borderBottomRightRadius": 16,
+          "borderTopLeftRadius": 16,
+          "borderTopRightRadius": 16,
+        },
+        {
+          "maxWidth": 135,
+        },
+        [
+          {
+            "marginTop": 16,
+          },
+        ],
+      ]
+    }
+    testID="delete-cow-button"
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#0E041AFF",
+          },
+          {
+            "fontSize": 18,
+            "lineHeight": 28,
+          },
+          {
+            "fontFamily": "Nunito-Bold",
+          },
+          [
+            {
+              "marginLeft": 8,
+            },
+          ],
+        ]
+      }
+    >
+      Dar de baja
+    </Text>
+  </View>
+</View>
+`;
