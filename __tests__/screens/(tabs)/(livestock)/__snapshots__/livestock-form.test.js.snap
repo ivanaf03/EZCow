@@ -314,7 +314,7 @@ exports[`LivestockForm should render correctly 1`] = `
             testID="date-picker-button"
           >
             <Text>
-              7/3/2025
+              15/3/2025
             </Text>
           </View>
         </View>

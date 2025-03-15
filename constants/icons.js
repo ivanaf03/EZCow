@@ -8,6 +8,7 @@ import {
     faKitMedical,
     faCirclePlus,
     faTrash,
+    faUser,
 } from '@fortawesome/free-solid-svg-icons';
 
 export default {
@@ -20,4 +21,5 @@ export default {
     faKitMedical,
     faCirclePlus,
     faTrash,
+    faUser,
 };

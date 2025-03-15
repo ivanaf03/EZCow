@@ -1,12 +1,13 @@
-import * as SQLite from 'expo-sqlite';
 import CryptoJS from 'crypto-js';
+import { getDatabase } from './bd';
 
 const hashPassword = (password) => {
     return CryptoJS.SHA256(password).toString();
 };
 
 export const insertUser = async (name, email, password) => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+
+    db = await getDatabase();
 
     const hashedPassword = hashPassword(password);
 
@@ -19,7 +20,8 @@ export const insertUser = async (name, email, password) => {
 };
 
 export const insertUserGoogle = async (name, email, google_id) => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+    
+    db = await getDatabase();
 
     const existingUser = await db.getFirstAsync(
         `SELECT * FROM User WHERE email = ?`,
@@ -39,7 +41,9 @@ export const insertUserGoogle = async (name, email, google_id) => {
 };
 
 export const getUserByEmail = async (email) => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+    
+    db = await getDatabase();
+    
     const res = await db.getFirstAsync(
         `SELECT * FROM User WHERE email = ?`,
         [email]

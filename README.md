@@ -124,3 +124,4 @@ https://www.sqlite.org/datatype3.html > SQLite documentation
 https://reactnavigation.org/docs/nesting-navigators/?config=static > Nest tabs and stack
 https://github.com/react-native-datetimepicker/datetimepicker > Calendar input library
 https://github.com/react-native-picker/picker > Select input library
+https://github.com/dan96ct/sigpac-client > Sigpac library

@@ -1,5 +1,7 @@
 import * as SQLite from 'expo-sqlite';
 
+let db;
+
 export const initDatabase = async () => {
     const db = await SQLite.openDatabaseAsync('ezcow.db');
 
@@ -32,8 +34,26 @@ export const initDatabase = async () => {
     `);
 };
 
+export const getDatabase = async () => {
+    if (!db) {
+        db = await SQLite.openDatabaseAsync('ezcow.db');
+    }
+
+    return db;
+};
+
 export const deleteDatabase = async () => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
     await db.closeAsync();
     await SQLite.deleteDatabaseAsync('ezcow.db');
+};
+
+export const closeDatabase = async () => {
+    await db.closeAsync();
+    db = null;
+};
+
+export const syncDatabase = async () => {
+    await db.execAsync(`
+        PRAGMA wal_checkpoint(FULL);
+    `);
 };
