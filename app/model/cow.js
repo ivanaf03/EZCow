@@ -1,7 +1,9 @@
 import * as SQLite from 'expo-sqlite';
+import { getDatabase } from './bd';
 
 export const insertCow = async (code, name, entryDate, gender, breed, phase, user_fk, mother_fk) => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+
+    db = await getDatabase();
 
     const res = await db.runAsync(
         `INSERT INTO Cow (code, name, entryDate, gender, breed, phase, user_fk, mother_fk) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
@@ -12,7 +14,8 @@ export const insertCow = async (code, name, entryDate, gender, breed, phase, use
 };
 
 export const getCowIdByCode = async (code) => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+
+    db = await getDatabase();
 
     const res = await db.getFirstAsync(
         `SELECT id FROM Cow WHERE code = ?`,
@@ -23,7 +26,8 @@ export const getCowIdByCode = async (code) => {
 };
 
 export const getAvailableCowNameById = async (id) => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+
+    db = await getDatabase();
 
     const res = await db.getFirstAsync(
         `SELECT name FROM Cow WHERE id = ? AND exitDate is NULL`,
@@ -34,7 +38,8 @@ export const getAvailableCowNameById = async (id) => {
 };
 
 export const getAvailableCowCodeByUserId = async (userId) => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+
+    db = await getDatabase();
 
     const res = await db.getAllAsync(
         `SELECT code FROM Cow WHERE user_fk = ? and exitDate is NULL`,
@@ -45,7 +50,8 @@ export const getAvailableCowCodeByUserId = async (userId) => {
 };
 
 export const getAllCowsAvailableByUserId = async (userId) => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+
+    db = await getDatabase();
 
     const res = await db.getAllAsync(
         `SELECT * FROM Cow WHERE user_fk = ? AND exitDate is NULL`,
@@ -56,7 +62,8 @@ export const getAllCowsAvailableByUserId = async (userId) => {
 };
 
 export const getFemaleCowsAvailableByUserId = async (userId) => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+
+    db = await getDatabase();
 
     const res = await db.getAllAsync(
         `SELECT * FROM Cow WHERE user_fk = ? AND exitDate is NULL AND gender = 'Femenino' AND phase = 'Adulto'`,
@@ -67,7 +74,8 @@ export const getFemaleCowsAvailableByUserId = async (userId) => {
 };
 
 export const getMaleCowsAvailableByUserId = async (userId) => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+
+    db = await getDatabase();
 
     const res = await db.getAllAsync(
         `SELECT * FROM Cow WHERE user_fk = ? AND exitDate is NULL AND gender = 'Masculino' AND phase = 'Adulto'`,
@@ -78,7 +86,8 @@ export const getMaleCowsAvailableByUserId = async (userId) => {
 };
 
 export const getCalvesAvailableByUserId = async (userId) => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+
+    db = await getDatabase();
 
     const res = await db.getAllAsync(
         `SELECT * FROM Cow WHERE user_fk = ? AND exitDate is NULL AND phase = 'Ternero'`,
@@ -89,7 +98,9 @@ export const getCalvesAvailableByUserId = async (userId) => {
 };
 
 export const setExitDateByCowId = async (cowId) => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+
+    db = await getDatabase();
+
 
     const res = await db.runAsync(
         `UPDATE Cow SET exitDate = CURRENT_DATE WHERE id = ?`,
