@@ -16,7 +16,7 @@ const CustomPasswordInput = ({ text, placeholder, value, onChangeText }) => {
             </Text>
             <View className="flex-row items-center">
                 <TextInput
-                    className="p-2 mr-2 bg-c_white border-2 border-c_dark_violet rounded-full flex-1"
+                    className="p-2 mr-2 bg-c_white border-2 border-c_marine_blue rounded-2xl flex-1 font-Nunito_Medium"
                     placeholder={placeholder}
                     value={value}
                     onChangeText={onChangeText}

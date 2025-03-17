@@ -18,12 +18,12 @@ describe("CustomLink", () => {
     });
 
     it("should render correctly", () => {
-        const tree = render(<CustomLink text="Test" to="Test" color="c_white" />);
+        const tree = render(<CustomLink text="Test" to="Test"/>);
         expect(tree).toMatchSnapshot();
     });
 
     it("should navigate to the correct screen", () => {
-        const tree = render(<CustomLink text="Test" to="Test" color="c_white" />);
+        const tree = render(<CustomLink text="Test" to="Test"/>);
         fireEvent.press(tree.getByText("Test"));
         expect(router.push).toHaveBeenCalledWith("Test");
     });

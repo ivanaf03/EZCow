@@ -4,6 +4,7 @@ import { Stack } from 'expo-router';
 
 import { initDatabase } from './model/bd';
 import UserProvider from '../hooks/providers/user-provider';
+import FontProvider from '../hooks/providers/font-provider';
 
 const RootLayout = () => {
 
@@ -13,27 +14,29 @@ const RootLayout = () => {
 
     return (
         <UserProvider>
-            <Stack>
-                <Stack.Screen
-                    name='index'
-                    options={{
-                        headerShown: false
-                    }}
-                />
-                <Stack.Screen
-                    name="(auth)"
-                    options={{
-                        headerShown: false
-                    }}
-                />
-                <Stack.Screen
-                    name="(tabs)"
-                    options={{
-                        headerShown: false
-                    }}
-                />
-            </Stack>
-        </UserProvider>    
+            <FontProvider>
+                <Stack>
+                    <Stack.Screen
+                        name='index'
+                        options={{
+                            headerShown: false
+                        }}
+                    />
+                    <Stack.Screen
+                        name="(auth)"
+                        options={{
+                            headerShown: false
+                        }}
+                    />
+                    <Stack.Screen
+                        name="(tabs)"
+                        options={{
+                            headerShown: false
+                        }}
+                    />
+                </Stack>
+            </FontProvider>
+        </UserProvider>
     );
 };
 

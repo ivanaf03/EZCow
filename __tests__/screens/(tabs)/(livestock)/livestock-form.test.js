@@ -25,6 +25,10 @@ jest.mock("../../../../app/model/cow", () => ({
     getCowIdByCode: jest.fn(() => "ES1234"),
 }));
 
+jest.mock("@fortawesome/react-native-fontawesome", () => ({
+    FontAwesomeIcon: () => null
+}));
+
 jest.spyOn(Alert, "alert");
 
 describe("LivestockForm", () => {
@@ -121,6 +125,14 @@ describe("LivestockForm", () => {
             );
             expect(router.replace).toHaveBeenCalledWith("livestock");
         });
+    });
+
+    it('should navigate to livestock when pressing livestock button', async () => {
+        const { getByTestId } = render(<LivestockForm />);
+        await waitFor(() => expect(getAvailableCowCodeByUserId).toHaveBeenCalled());
+        const handleAddCowButton = getByTestId("livestock-button");
+        fireEvent.press(handleAddCowButton);
+        expect(router.replace).toHaveBeenCalledWith("livestock");
     });
 
 });

@@ -35,15 +35,15 @@ const Livestock = () => {
     };
 
     return (
-        <SafeAreaView className="flex-1 bg-c_background">
-            <Text className="mt-2 pt-4 mx-4 text-c_white text-4xl font-Nunito_ExtraBold border-b-2 border-c_white">
+        <SafeAreaView className="flex-1 bg-c_dark_gray">
+            <Text className="mt-2 pt-4 mx-4 text-c_white text-4xl font-Nunito_Bold border-b-2 border-c_white">
                 Censo
             </Text>
-            <View className="flex-1 flex-col bg-c_background">
+            <View className="flex-1 flex-col bg-c_dark_gray">
                 <View className="flex-row mt-2">
                     <CustomButton 
                         text={<View className="flex-row items-center">
-                                <Text className=" text-c_white text-xl font-Nunito_Bold">
+                                <Text className="text-c_white text-xl font-Nunito_Medium">
                                     Añadir vaca
                                 </Text>
                                 <View className="px-8">
@@ -55,7 +55,7 @@ const Livestock = () => {
                                 </View>
                             </View>}
                         onPress={() => router.push('livestock-form')}
-                        buttonTestID="sign-in-google-button"
+                        buttonTestID="livestock-form-button"
                     />
                 </View>
                 <View>

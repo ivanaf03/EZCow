@@ -33,30 +33,30 @@ const Register = () => {
     };
 
     const handleRegister = async () => {
-        if(!name || !email || !password || !confirmPassword) {
+        if (!name || !email || !password || !confirmPassword) {
             Alert.alert('Error', 'Por favor, rellena todos los campos.');
             return;
         }
 
-        if(!checkEmail()) {
+        if (!checkEmail()) {
             Alert.alert('Error', 'El email no es válido.');
             return;
         }
 
-        if(!checkPasswordLength()) {
+        if (!checkPasswordLength()) {
             Alert.alert('Error', 'La contraseña debe tener al menos 8 caracteres.');
             return;
         }
 
-        if(!checkPasswords()) {
+        if (!checkPasswords()) {
             Alert.alert('Error', 'Las contraseñas no coinciden.');
             return;
         }
 
         try {
-            await insertUser(name, email, password); 
+            await insertUser(name, email, password);
             const user = await getUserByEmail(email);
-            login({ id: user.id, name: name, password: null, email: email});
+            login({ id: user.id, name: name, password: null, email: email });
             router.replace('livestock');
         } catch (error) {
             Alert.alert('Error', 'Error al registrar. Inténtalo de nuevo. Asegúrate de que no tengas ya una cuenta.');
@@ -64,50 +64,52 @@ const Register = () => {
     };
 
     return (
-        <SafeAreaView className="flex-1 bg-c_background">
-            <Text className="mt-8 p-6 text-c_white text-5xl font-Nunito_ExtraBold">
+        <SafeAreaView className="flex-1 bg-c_dark_gray">
+            <Text className="mt-6 p-6 text-c_white text-5xl font-Nunito_Bold">
                 Registrarse
             </Text>
-            <View className="ml-2">
-                <View className="mt-10 mr-auto min-w-[300px]">
-                    <CustomInput
-                        text="Nombre de usuario"
-                        placeholder="Nombre"
-                        onChangeText={setName}
-                    />
+            <View className="mx-4 border-l-2 border-r-2 border-c_light_blue rounded-2xl p-4">
+                <View className="ml-2">
+                    <View className="w-full">
+                        <CustomInput
+                            text="Nombre de usuario"
+                            placeholder="Nombre"
+                            onChangeText={setName}
+                        />
+                    </View>
+                    <View className="mt-10 w-full">
+                        <CustomInput
+                            text="Email"
+                            placeholder="Email"
+                            onChangeText={setEmail}
+                        />
+                    </View>
+                    <View className="mt-10 w-full">
+                        <CustomPasswordInput
+                            text="Contraseña"
+                            placeholder="Contraseña"
+                            onChangeText={setPassword}
+                        />
+                    </View>
+                    <View className="mt-10 w-full">
+                        <CustomPasswordInput
+                            text="Confirmar contraseña"
+                            placeholder="Contraseña"
+                            onChangeText={setConfirmPassword}
+                        />
+                    </View>
                 </View>
-                <View className="mt-10 mr-auto min-w-[300px]">
-                    <CustomInput
-                        text="Email"
-                        placeholder="Email"
-                        onChangeText={setEmail}
-                    />
-                </View>
-                <View className="mt-10 mr-auto min-w-[300px]">
-                    <CustomPasswordInput
-                        text="Contraseña"
-                        placeholder="Contraseña"
-                        onChangeText={setPassword}
-                    />
-                </View>
-                <View className="mt-10 mr-auto min-w-[300px]">
-                    <CustomPasswordInput
-                        text="Confirmar contraseña"
-                        placeholder="Contraseña"
-                        onChangeText={setConfirmPassword}
-                    />
+                <View className="flex-row justify-center mt-12">
+                    <View className="w-[90%]">
+                        <CustomButton text="Registrarse" onPress={handleRegister} buttonTestID={"sign-up-button"} />
+                    </View>
                 </View>
             </View>
-            <View className="flex-row justify-center mt-16">
-                <View className="min-w-[230px] justify-center">
-                    <CustomButton text="Registrarse" onPress={handleRegister} buttonTestID={"sign-up-button"} />
-                </View>
-            </View>
-            <View className="mt-12 flex-row justify-center items-center">
-                <Text className="text-c_white text-base font-Nunito_ExtraBold text-center mr-2">
+            <View className="absolute bottom-0 w-full mb-14 flex-row justify-center items-center">
+                <Text className="text-c_white text-base font-Nunito_Medium text-center mr-2">
                     Ya tienes una cuenta?
                 </Text>
-                <CustomLink text="Iniciar sesión" to="login" color="c_orange" linkTestID={"sign-in-link"} />
+                <CustomLink text="Iniciar sesión" to="login" linkTestID={"sign-in-link"} />
             </View>
         </SafeAreaView>
     );

@@ -24,7 +24,7 @@ const CustomCalendar = ({ text, date, onChange }) => {
                 {text}:
             </Text>
             <Pressable 
-                className="p-2 bg-c_white border-2 border-c_dark_violet rounded-full"
+                className="p-2 bg-c_white border-2 border-c_marine_blue rounded-2xl font-Nunito_Medium"
                 onPress={togglePicker}
                 testID="date-picker-button"
             >

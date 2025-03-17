@@ -22,7 +22,7 @@ const Login = () => {
     const [password, setPassword] = React.useState('');
 
     const { login } = useUser();
-    
+
     const [request, response, promptAsync] = Google.useAuthRequest({
         androidClientId: process.env.EXPO_PUBLIC_ANDROID_CLIENT_ID,
         iosClientId: undefined,
@@ -33,21 +33,21 @@ const Login = () => {
             if (response?.type === 'success') {
                 const { id_token } = response.params;
                 const decodedToken = jwtDecode(id_token);
-                
+
                 const name = decodedToken.name;
                 const email = decodedToken.email;
                 const googleId = decodedToken.sub;
 
-                await insertUserGoogle(name, email, googleId); 
-    
+                await insertUserGoogle(name, email, googleId);
+
                 const user = await getUserByEmail(email);
                 login({ id: user.id, name: user.name, password: null, email: user.email });
                 router.replace('livestock');
             }
         };
-    
+
         handleGoogleLogin();
-    }, [response]);    
+    }, [response]);
 
     const checkPasswordLength = () => {
         return password.length >= 8;
@@ -58,17 +58,17 @@ const Login = () => {
     };
 
     const handleLogin = async () => {
-        if(!email || !password) {
+        if (!email || !password) {
             Alert.alert('Error', 'Por favor, rellena todos los campos.');
             return;
         }
 
-        if(!checkEmail()) {
+        if (!checkEmail()) {
             Alert.alert('Error', 'El email no es válido.');
             return;
         }
-    
-        if(!checkPasswordLength()) {
+
+        if (!checkPasswordLength()) {
             Alert.alert('Error', 'La contraseña debe tener al menos 8 caracteres.');
             return;
         }
@@ -77,7 +77,7 @@ const Login = () => {
             const result = await getUserByEmail(email);
             if (CryptoJS.SHA256(password).toString() === result.password) {
                 const userId = result.id;
-                login({ id: userId, name: result.name, password: password, email: result.email});
+                login({ id: userId, name: result.name, password: password, email: result.email });
                 router.replace('livestock');
             } else {
                 Alert.alert('Error', 'Contraseña incorrecta.');
@@ -88,51 +88,57 @@ const Login = () => {
     };
 
     return (
-        <SafeAreaView className="flex-1 bg-c_background">
-            <Text className="mt-8 p-6 text-c_white text-5xl font-Nunito_ExtraBold">
+        <SafeAreaView className="flex-1 bg-c_dark_gray">
+            <Text className="mt-6 p-6 text-c_white text-5xl font-Nunito_Bold">
                 Iniciar sesión
             </Text>
-            <View className="ml-2">
-                <View className="mt-10 mr-auto min-w-[300px]">
-                    <CustomInput
-                        text="Email"
-                        placeholder="Email"
-                        onChangeText={setEmail}
-                    />
+            <View className="mx-4 border-l-2 border-r-2 border-c_light_blue rounded-2xl p-4">
+                <View className="ml-2">
+                    <View className="mt-10 mr-auto w-full">
+                        <CustomInput
+                            text="Email"
+                            placeholder="Email"
+                            onChangeText={setEmail}
+                        />
+                    </View>
+                    <View className="mt-10 w-full">
+                        <CustomPasswordInput
+                            text="Contraseña"
+                            placeholder="Contraseña"
+                            onChangeText={setPassword}
+                        />
+                    </View>
+                    <View className="flex-row justify-center mt-12">
+                        <View className="w-[90%]">
+                            <CustomButton text="Iniciar sesión" onPress={handleLogin} buttonTestID="sign-in-button" />
+                        </View>
+                    </View>
                 </View>
-                <View className="mt-10 mr-auto min-w-[300px]">
-                    <CustomPasswordInput
-                        text="Contraseña"
-                        placeholder="Contraseña"
-                        onChangeText={setPassword}
-                    />
+                <View className="mt-10 border-t-2 border-c_light_blue border-dotted">
+                </View>
+                <View className="mt-10">
+                    <Text className="text-c_white text-lg font-Nunito_Medium">
+                        Si prefieres, puedes iniciar sesión con Google:
+                    </Text>
+                    <View className="mt-4 flex-row justify-center items-center">
+                        <FontAwesomeIcon
+                            icon={icons.faGoogle}
+                            size={36}
+                            color="white"
+                        />
+                        <CustomButton
+                            text="Continuar con Google"
+                            onPress={() => promptAsync().catch((e) => console.log(e))}
+                            buttonTestID="sign-in-google-button"
+                        />
+                    </View>
                 </View>
             </View>
-            <View className="flex-row justify-center mt-16">
-                <View className="min-w-[230px] justify-center">
-                    <CustomButton text="Iniciar sesión" onPress={handleLogin} buttonTestID="sign-in-button"/>
-                </View>
-            </View>
-            <Text className="text-c_white text-xl font-Nunito_ExtraBold mt-2 text-center">
-                o
-            </Text>
-            <View className="mt-2 flex-row justify-center items-center">
-                <FontAwesomeIcon
-                    icon={icons.faGoogle}
-                    size={25}
-                    color="white"
-                />
-                <CustomButton 
-                text="Continuar con Google" 
-                onPress={() => promptAsync().catch((e) => console.log(e))}
-                buttonTestID="sign-in-google-button"
-                />
-            </View>
-            <View className="mt-12 flex-row justify-center items-center">
-                <Text className="text-c_white text-base font-Nunito_ExtraBold text-center mr-2">
+            <View className="absolute bottom-0 w-full mb-10 flex-row justify-center items-center">
+                <Text className="text-c_white text-base font-Nunito_Medium text-center mr-2">
                     Todavía no tienes una cuenta?
                 </Text>
-                <CustomLink text="Regístrate" to="register" color="c_orange" linkTestID={"sign-up-link"} />
+                <CustomLink text="Regístrate" to="register" linkTestID={"sign-up-link"} />
             </View>
         </SafeAreaView>
     );

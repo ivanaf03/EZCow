@@ -34,13 +34,25 @@ exports[`CustomButton should render correctly 1`] = `
   style={
     [
       {
-        "backgroundColor": "#75009d",
+        "backgroundColor": "#272727",
       },
       {
-        "borderBottomLeftRadius": 9999,
-        "borderBottomRightRadius": 9999,
-        "borderTopLeftRadius": 9999,
-        "borderTopRightRadius": 9999,
+        "borderRightWidth": 8,
+      },
+      {
+        "borderLeftWidth": 8,
+      },
+      {
+        "borderBottomColor": "#2254ba",
+        "borderLeftColor": "#2254ba",
+        "borderRightColor": "#2254ba",
+        "borderTopColor": "#2254ba",
+      },
+      {
+        "borderBottomLeftRadius": 24,
+        "borderBottomRightRadius": 24,
+        "borderTopLeftRadius": 24,
+        "borderTopRightRadius": 24,
       },
       {
         "paddingBottom": 16,
@@ -64,14 +76,14 @@ exports[`CustomButton should render correctly 1`] = `
           "color": "#ffffff",
         },
         {
-          "fontSize": 20,
+          "fontSize": 18,
           "lineHeight": 28,
         },
         {
           "textAlign": "center",
         },
         {
-          "fontFamily": "Nunito-Bold",
+          "fontFamily": "Nunito-Medium",
         },
         {
           "marginLeft": 8,

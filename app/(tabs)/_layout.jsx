@@ -11,10 +11,10 @@ const TabsLayout = () => {
         <Tabs
             screenOptions={{
                 tabBarShowLabel: false,
-                tabBarActiveTintColor: colors.c_light_violet,
-                tabBarInactiveTintColor: colors.c_white,
+                tabBarActiveTintColor: colors.c_light_blue,
+                tabBarInactiveTintColor: colors.c_marine_blue,
                 tabBarStyle: {
-                    backgroundColor: colors.c_layout,
+                    backgroundColor: colors.c_light_gray,
                     height: 60,
                     paddingTop: 10,
                 }

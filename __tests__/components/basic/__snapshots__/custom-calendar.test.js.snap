@@ -88,16 +88,19 @@ exports[`CustomCalendar should render correctly 1`] = `
           "borderTopWidth": 2,
         },
         {
-          "borderBottomColor": "#580088",
-          "borderLeftColor": "#580088",
-          "borderRightColor": "#580088",
-          "borderTopColor": "#580088",
+          "borderBottomColor": "#2254ba",
+          "borderLeftColor": "#2254ba",
+          "borderRightColor": "#2254ba",
+          "borderTopColor": "#2254ba",
         },
         {
-          "borderBottomLeftRadius": 9999,
-          "borderBottomRightRadius": 9999,
-          "borderTopLeftRadius": 9999,
-          "borderTopRightRadius": 9999,
+          "borderBottomLeftRadius": 16,
+          "borderBottomRightRadius": 16,
+          "borderTopLeftRadius": 16,
+          "borderTopRightRadius": 16,
+        },
+        {
+          "fontFamily": "Nunito-Medium",
         },
         [
           {
