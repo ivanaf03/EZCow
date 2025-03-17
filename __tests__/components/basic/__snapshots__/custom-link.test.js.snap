@@ -36,14 +36,20 @@ exports[`CustomLink should render correctly 1`] = `
     style={
       [
         {
-          "fontSize": 20,
-          "lineHeight": 28,
+          "color": "#6bc0eb",
+        },
+        {
+          "fontSize": 24,
+          "lineHeight": 32,
         },
         {
           "textAlign": "center",
         },
         {
-          "fontFamily": "Nunito-Bold",
+          "fontFamily": "Nunito-Italic",
+        },
+        {
+          "textDecorationLine": "underline",
         },
       ]
     }

@@ -18,7 +18,7 @@ exports[`App should render correctly 1`] = `
         "flexShrink": 1,
       },
       {
-        "backgroundColor": "#0E041AFF",
+        "backgroundColor": "#1c1c1c",
       },
       {
         "alignItems": "center",
@@ -26,12 +26,9 @@ exports[`App should render correctly 1`] = `
     ]
   }
 >
-  <Text
+  <View
     style={
       [
-        {
-          "marginTop": 32,
-        },
         {
           "paddingBottom": 16,
           "paddingLeft": 16,
@@ -39,70 +36,114 @@ exports[`App should render correctly 1`] = `
           "paddingTop": 16,
         },
         {
-          "color": "#FF8018FF",
+          "marginTop": 56,
         },
         {
-          "fontSize": 72,
-          "lineHeight": 72,
+          "backgroundColor": "#272727",
         },
         {
-          "fontFamily": "Nunito-ExtraBold",
+          "alignItems": "center",
+        },
+        {
+          "borderRightWidth": 2,
+        },
+        {
+          "borderLeftWidth": 2,
+        },
+        {
+          "borderBottomColor": "#6bc0eb",
+          "borderLeftColor": "#6bc0eb",
+          "borderRightColor": "#6bc0eb",
+          "borderTopColor": "#6bc0eb",
+        },
+        {
+          "borderBottomLeftRadius": 16,
+          "borderBottomRightRadius": 16,
+          "borderTopLeftRadius": 16,
+          "borderTopRightRadius": 16,
         },
       ]
     }
   >
-    EZCow
-  </Text>
-  <Text
-    style={
-      [
-        {
-          "color": "#ffffff",
-        },
-        {
-          "fontSize": 20,
-          "lineHeight": 28,
-        },
-        {
-          "fontFamily": "Nunito-Bold",
-        },
-      ]
-    }
-  >
-    Tu aplicación de gestión de ganado
-  </Text>
-  <Image
-    source={
-      {
-        "testUri": "../../../assets/images/logo.png",
+    <Text
+      style={
+        [
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontSize": 96,
+            "lineHeight": 96,
+          },
+          {
+            "fontFamily": "Nunito-Black",
+          },
+        ]
       }
-    }
-    style={
-      [
-        {
-          "width": 384,
-        },
-        {
-          "height": "50%",
-        },
-      ]
-    }
-    testID="app-logo"
-  />
+    >
+      EZCow
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontSize": 24,
+            "lineHeight": 32,
+          },
+          {
+            "fontFamily": "Nunito-Italic",
+          },
+        ]
+      }
+    >
+      Tu aplicación de gestión de ganado
+    </Text>
+  </View>
   <View
     style={
       [
         {
-          "flexDirection": "row",
-        },
-        {
-          "flexWrap": "wrap",
+          "alignItems": "center",
         },
         {
           "justifyContent": "center",
         },
+      ]
+    }
+  >
+    <Image
+      source={
         {
-          "marginTop": 16,
+          "testUri": "../../../assets/images/logo.png",
+        }
+      }
+      style={
+        [
+          {
+            "width": 384,
+          },
+          {
+            "height": 384,
+          },
+        ]
+      }
+      testID="app-logo"
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "width": "75%",
         },
       ]
     }
@@ -140,13 +181,25 @@ exports[`App should render correctly 1`] = `
       style={
         [
           {
-            "backgroundColor": "#75009d",
+            "backgroundColor": "#272727",
           },
           {
-            "borderBottomLeftRadius": 9999,
-            "borderBottomRightRadius": 9999,
-            "borderTopLeftRadius": 9999,
-            "borderTopRightRadius": 9999,
+            "borderRightWidth": 8,
+          },
+          {
+            "borderLeftWidth": 8,
+          },
+          {
+            "borderBottomColor": "#2254ba",
+            "borderLeftColor": "#2254ba",
+            "borderRightColor": "#2254ba",
+            "borderTopColor": "#2254ba",
+          },
+          {
+            "borderBottomLeftRadius": 24,
+            "borderBottomRightRadius": 24,
+            "borderTopLeftRadius": 24,
+            "borderTopRightRadius": 24,
           },
           {
             "paddingBottom": 16,
@@ -170,14 +223,14 @@ exports[`App should render correctly 1`] = `
               "color": "#ffffff",
             },
             {
-              "fontSize": 20,
+              "fontSize": 18,
               "lineHeight": 28,
             },
             {
               "textAlign": "center",
             },
             {
-              "fontFamily": "Nunito-Bold",
+              "fontFamily": "Nunito-Medium",
             },
             {
               "marginLeft": 8,
@@ -222,13 +275,25 @@ exports[`App should render correctly 1`] = `
       style={
         [
           {
-            "backgroundColor": "#75009d",
+            "backgroundColor": "#272727",
           },
           {
-            "borderBottomLeftRadius": 9999,
-            "borderBottomRightRadius": 9999,
-            "borderTopLeftRadius": 9999,
-            "borderTopRightRadius": 9999,
+            "borderRightWidth": 8,
+          },
+          {
+            "borderLeftWidth": 8,
+          },
+          {
+            "borderBottomColor": "#2254ba",
+            "borderLeftColor": "#2254ba",
+            "borderRightColor": "#2254ba",
+            "borderTopColor": "#2254ba",
+          },
+          {
+            "borderBottomLeftRadius": 24,
+            "borderBottomRightRadius": 24,
+            "borderTopLeftRadius": 24,
+            "borderTopRightRadius": 24,
           },
           {
             "paddingBottom": 16,
@@ -252,14 +317,14 @@ exports[`App should render correctly 1`] = `
               "color": "#ffffff",
             },
             {
-              "fontSize": 20,
+              "fontSize": 18,
               "lineHeight": 28,
             },
             {
               "textAlign": "center",
             },
             {
-              "fontFamily": "Nunito-Bold",
+              "fontFamily": "Nunito-Medium",
             },
             {
               "marginLeft": 8,
@@ -272,29 +337,5 @@ exports[`App should render correctly 1`] = `
       </Text>
     </View>
   </View>
-  <Image
-    source={
-      {
-        "testUri": "../../../assets/images/waves.png",
-      }
-    }
-    style={
-      [
-        {
-          "position": "absolute",
-        },
-        {
-          "bottom": 0,
-        },
-        {
-          "width": 384,
-        },
-        {
-          "height": 96,
-        },
-      ]
-    }
-    testID="waves"
-  />
 </RNCSafeAreaView>
 `;

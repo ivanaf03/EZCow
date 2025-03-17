@@ -10,10 +10,7 @@ exports[`OauthRedirect should render correctly 1`] = `
         "flexShrink": 1,
       },
       {
-        "backgroundColor": "#22072BFF",
-      },
-      {
-        "alignItems": "center",
+        "backgroundColor": "#1c1c1c",
       },
       {
         "justifyContent": "center",
@@ -21,32 +18,74 @@ exports[`OauthRedirect should render correctly 1`] = `
     ]
   }
 >
-  <Text
+  <View
     style={
       [
         {
-          "marginTop": 32,
+          "marginTop": 40,
         },
         {
-          "paddingBottom": 24,
-          "paddingLeft": 24,
-          "paddingRight": 24,
-          "paddingTop": 24,
+          "marginLeft": 32,
+          "marginRight": 32,
         },
         {
-          "color": "#ffffff",
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
         },
         {
-          "fontSize": 30,
-          "lineHeight": 36,
+          "backgroundColor": "#272727",
         },
         {
-          "fontFamily": "Nunito-BoldItalic",
+          "alignItems": "center",
+        },
+        {
+          "borderRightWidth": 2,
+        },
+        {
+          "borderLeftWidth": 2,
+        },
+        {
+          "borderBottomColor": "#6bc0eb",
+          "borderLeftColor": "#6bc0eb",
+          "borderRightColor": "#6bc0eb",
+          "borderTopColor": "#6bc0eb",
+        },
+        {
+          "borderBottomLeftRadius": 16,
+          "borderBottomRightRadius": 16,
+          "borderTopLeftRadius": 16,
+          "borderTopRightRadius": 16,
         },
       ]
     }
   >
-    Iniciando sesión con Google. Esto puede llevar unos segundos...
-  </Text>
+    <Text
+      style={
+        [
+          {
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontSize": 30,
+            "lineHeight": 36,
+          },
+        ]
+      }
+    >
+      Iniciando sesión con Google. Esto puede llevar unos segundos...
+    </Text>
+    <ActivityIndicator
+      color="c_light_blue"
+      size="large"
+    />
+  </View>
 </View>
 `;

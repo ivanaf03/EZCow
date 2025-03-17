@@ -9,13 +9,13 @@ const ProfileLayout = () => {
         <GestureHandlerRootView>
             <Drawer 
                 screenOptions={{
-                    drawerActiveTintColor: colors.c_light_violet,
-                    drawerInactiveTintColor: colors.c_layout,
+                    drawerActiveTintColor: colors.c_marine_blue,
+                    drawerInactiveTintColor: colors.c_light_gray,
                     drawerActiveBackgroundColor: colors.c_white,
                     drawerInactiveBackgroundColor: colors.c_white,
                     drawerStyle: {
                         width: 300,
-                        backgroundColor: colors.c_dark_violet,
+                        backgroundColor: colors.c_dark_gray,
                     },
                     drawerItemStyle: {
                         backgroundColor: colors.c_white,

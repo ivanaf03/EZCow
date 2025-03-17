@@ -10,7 +10,7 @@ exports[`LivestockForm should render correctly 1`] = `
         "flexShrink": 1,
       },
       {
-        "backgroundColor": "#22072BFF",
+        "backgroundColor": "#1c1c1c",
       },
     ]
   }
@@ -22,10 +22,47 @@ exports[`LivestockForm should render correctly 1`] = `
           {
             "marginTop": 32,
           },
+          {
+            "paddingBottom": 16,
+            "paddingTop": 16,
+          },
+          {
+            "marginLeft": 16,
+            "marginRight": 16,
+          },
+          {
+            "alignItems": "center",
+          },
+          {
+            "borderLeftWidth": 2,
+          },
+          {
+            "borderRightWidth": 2,
+          },
+          {
+            "borderBottomColor": "#6bc0eb",
+            "borderLeftColor": "#6bc0eb",
+            "borderRightColor": "#6bc0eb",
+            "borderTopColor": "#6bc0eb",
+          },
+          {
+            "borderBottomLeftRadius": 16,
+            "borderBottomRightRadius": 16,
+            "borderTopLeftRadius": 16,
+            "borderTopRightRadius": 16,
+          },
         ]
       }
     >
-      <View>
+      <View
+        style={
+          [
+            {
+              "width": "90%",
+            },
+          ]
+        }
+      >
         <View
           style={
             [
@@ -52,7 +89,7 @@ exports[`LivestockForm should render correctly 1`] = `
                   "lineHeight": 20,
                 },
                 {
-                  "fontFamily": "Nunito-Light",
+                  "fontFamily": "Nunito-Medium",
                 },
                 [
                   {
@@ -86,16 +123,19 @@ exports[`LivestockForm should render correctly 1`] = `
                   "borderTopWidth": 2,
                 },
                 {
-                  "borderBottomColor": "#580088",
-                  "borderLeftColor": "#580088",
-                  "borderRightColor": "#580088",
-                  "borderTopColor": "#580088",
+                  "borderBottomColor": "#2254ba",
+                  "borderLeftColor": "#2254ba",
+                  "borderRightColor": "#2254ba",
+                  "borderTopColor": "#2254ba",
                 },
                 {
-                  "borderBottomLeftRadius": 9999,
-                  "borderBottomRightRadius": 9999,
-                  "borderTopLeftRadius": 9999,
-                  "borderTopRightRadius": 9999,
+                  "borderBottomLeftRadius": 16,
+                  "borderBottomRightRadius": 16,
+                  "borderTopLeftRadius": 16,
+                  "borderTopRightRadius": 16,
+                },
+                {
+                  "fontFamily": "Nunito-Medium",
                 },
                 [
                   {
@@ -111,8 +151,13 @@ exports[`LivestockForm should render correctly 1`] = `
         style={
           [
             {
-              "marginTop": 16,
+              "width": "90%",
             },
+            [
+              {
+                "marginTop": 16,
+              },
+            ],
           ]
         }
       >
@@ -142,7 +187,7 @@ exports[`LivestockForm should render correctly 1`] = `
                   "lineHeight": 20,
                 },
                 {
-                  "fontFamily": "Nunito-Light",
+                  "fontFamily": "Nunito-Medium",
                 },
                 [
                   {
@@ -176,16 +221,19 @@ exports[`LivestockForm should render correctly 1`] = `
                   "borderTopWidth": 2,
                 },
                 {
-                  "borderBottomColor": "#580088",
-                  "borderLeftColor": "#580088",
-                  "borderRightColor": "#580088",
-                  "borderTopColor": "#580088",
+                  "borderBottomColor": "#2254ba",
+                  "borderLeftColor": "#2254ba",
+                  "borderRightColor": "#2254ba",
+                  "borderTopColor": "#2254ba",
                 },
                 {
-                  "borderBottomLeftRadius": 9999,
-                  "borderBottomRightRadius": 9999,
-                  "borderTopLeftRadius": 9999,
-                  "borderTopRightRadius": 9999,
+                  "borderBottomLeftRadius": 16,
+                  "borderBottomRightRadius": 16,
+                  "borderTopLeftRadius": 16,
+                  "borderTopRightRadius": 16,
+                },
+                {
+                  "fontFamily": "Nunito-Medium",
                 },
                 [
                   {
@@ -201,8 +249,13 @@ exports[`LivestockForm should render correctly 1`] = `
         style={
           [
             {
-              "marginTop": 16,
+              "width": "90%",
             },
+            [
+              {
+                "marginTop": 16,
+              },
+            ],
           ]
         }
       >
@@ -293,16 +346,19 @@ exports[`LivestockForm should render correctly 1`] = `
                   "borderTopWidth": 2,
                 },
                 {
-                  "borderBottomColor": "#580088",
-                  "borderLeftColor": "#580088",
-                  "borderRightColor": "#580088",
-                  "borderTopColor": "#580088",
+                  "borderBottomColor": "#2254ba",
+                  "borderLeftColor": "#2254ba",
+                  "borderRightColor": "#2254ba",
+                  "borderTopColor": "#2254ba",
                 },
                 {
-                  "borderBottomLeftRadius": 9999,
-                  "borderBottomRightRadius": 9999,
-                  "borderTopLeftRadius": 9999,
-                  "borderTopRightRadius": 9999,
+                  "borderBottomLeftRadius": 16,
+                  "borderBottomRightRadius": 16,
+                  "borderTopLeftRadius": 16,
+                  "borderTopRightRadius": 16,
+                },
+                {
+                  "fontFamily": "Nunito-Medium",
                 },
                 [
                   {
@@ -314,7 +370,7 @@ exports[`LivestockForm should render correctly 1`] = `
             testID="date-picker-button"
           >
             <Text>
-              15/3/2025
+              17/3/2025
             </Text>
           </View>
         </View>
@@ -323,8 +379,13 @@ exports[`LivestockForm should render correctly 1`] = `
         style={
           [
             {
-              "marginTop": 16,
+              "width": "90%",
             },
+            [
+              {
+                "marginTop": 16,
+              },
+            ],
           ]
         }
       >
@@ -380,16 +441,19 @@ exports[`LivestockForm should render correctly 1`] = `
                   "borderTopWidth": 2,
                 },
                 {
-                  "borderBottomColor": "#580088",
-                  "borderLeftColor": "#580088",
-                  "borderRightColor": "#580088",
-                  "borderTopColor": "#580088",
+                  "borderBottomColor": "#2254ba",
+                  "borderLeftColor": "#2254ba",
+                  "borderRightColor": "#2254ba",
+                  "borderTopColor": "#2254ba",
                 },
                 {
-                  "borderBottomLeftRadius": 9999,
-                  "borderBottomRightRadius": 9999,
-                  "borderTopLeftRadius": 9999,
-                  "borderTopRightRadius": 9999,
+                  "borderBottomLeftRadius": 24,
+                  "borderBottomRightRadius": 24,
+                  "borderTopLeftRadius": 24,
+                  "borderTopRightRadius": 24,
+                },
+                {
+                  "fontFamily": "Nunito-Medium",
                 },
                 [
                   {
@@ -437,8 +501,13 @@ exports[`LivestockForm should render correctly 1`] = `
         style={
           [
             {
-              "marginTop": 16,
+              "width": "90%",
             },
+            [
+              {
+                "marginTop": 16,
+              },
+            ],
           ]
         }
       >
@@ -494,16 +563,19 @@ exports[`LivestockForm should render correctly 1`] = `
                   "borderTopWidth": 2,
                 },
                 {
-                  "borderBottomColor": "#580088",
-                  "borderLeftColor": "#580088",
-                  "borderRightColor": "#580088",
-                  "borderTopColor": "#580088",
+                  "borderBottomColor": "#2254ba",
+                  "borderLeftColor": "#2254ba",
+                  "borderRightColor": "#2254ba",
+                  "borderTopColor": "#2254ba",
                 },
                 {
-                  "borderBottomLeftRadius": 9999,
-                  "borderBottomRightRadius": 9999,
-                  "borderTopLeftRadius": 9999,
-                  "borderTopRightRadius": 9999,
+                  "borderBottomLeftRadius": 24,
+                  "borderBottomRightRadius": 24,
+                  "borderTopLeftRadius": 24,
+                  "borderTopRightRadius": 24,
+                },
+                {
+                  "fontFamily": "Nunito-Medium",
                 },
                 [
                   {
@@ -551,8 +623,13 @@ exports[`LivestockForm should render correctly 1`] = `
         style={
           [
             {
-              "marginTop": 16,
+              "width": "90%",
             },
+            [
+              {
+                "marginTop": 16,
+              },
+            ],
           ]
         }
       >
@@ -582,7 +659,7 @@ exports[`LivestockForm should render correctly 1`] = `
                   "lineHeight": 20,
                 },
                 {
-                  "fontFamily": "Nunito-Light",
+                  "fontFamily": "Nunito-Medium",
                 },
                 [
                   {
@@ -616,16 +693,19 @@ exports[`LivestockForm should render correctly 1`] = `
                   "borderTopWidth": 2,
                 },
                 {
-                  "borderBottomColor": "#580088",
-                  "borderLeftColor": "#580088",
-                  "borderRightColor": "#580088",
-                  "borderTopColor": "#580088",
+                  "borderBottomColor": "#2254ba",
+                  "borderLeftColor": "#2254ba",
+                  "borderRightColor": "#2254ba",
+                  "borderTopColor": "#2254ba",
                 },
                 {
-                  "borderBottomLeftRadius": 9999,
-                  "borderBottomRightRadius": 9999,
-                  "borderTopLeftRadius": 9999,
-                  "borderTopRightRadius": 9999,
+                  "borderBottomLeftRadius": 16,
+                  "borderBottomRightRadius": 16,
+                  "borderTopLeftRadius": 16,
+                  "borderTopRightRadius": 16,
+                },
+                {
+                  "fontFamily": "Nunito-Medium",
                 },
                 [
                   {
@@ -641,8 +721,13 @@ exports[`LivestockForm should render correctly 1`] = `
         style={
           [
             {
-              "marginTop": 16,
+              "width": "90%",
             },
+            [
+              {
+                "marginTop": 16,
+              },
+            ],
           ]
         }
       >
@@ -698,16 +783,19 @@ exports[`LivestockForm should render correctly 1`] = `
                   "borderTopWidth": 2,
                 },
                 {
-                  "borderBottomColor": "#580088",
-                  "borderLeftColor": "#580088",
-                  "borderRightColor": "#580088",
-                  "borderTopColor": "#580088",
+                  "borderBottomColor": "#2254ba",
+                  "borderLeftColor": "#2254ba",
+                  "borderRightColor": "#2254ba",
+                  "borderTopColor": "#2254ba",
                 },
                 {
-                  "borderBottomLeftRadius": 9999,
-                  "borderBottomRightRadius": 9999,
-                  "borderTopLeftRadius": 9999,
-                  "borderTopRightRadius": 9999,
+                  "borderBottomLeftRadius": 24,
+                  "borderBottomRightRadius": 24,
+                  "borderTopLeftRadius": 24,
+                  "borderTopRightRadius": 24,
+                },
+                {
+                  "fontFamily": "Nunito-Medium",
                 },
                 [
                   {
@@ -760,7 +848,7 @@ exports[`LivestockForm should render correctly 1`] = `
           style={
             [
               {
-                "color": "#FF8018FF",
+                "color": "#ffffff",
               },
               {
                 "paddingLeft": 16,
@@ -771,7 +859,7 @@ exports[`LivestockForm should render correctly 1`] = `
                 "lineHeight": 20,
               },
               {
-                "fontFamily": "Nunito-Regular",
+                "fontFamily": "Nunito-LightItalic",
               },
             ]
           }
@@ -779,16 +867,123 @@ exports[`LivestockForm should render correctly 1`] = `
           Marcar como desconocida si el animal proviene de otra explotación o si la madre no está registrada en la explotación.
         </Text>
       </View>
+      <View
+        style={
+          [
+            {
+              "marginTop": 24,
+            },
+            {
+              "width": "90%",
+            },
+            [
+              {
+                "marginTop": 16,
+              },
+            ],
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderRightWidth": 8,
+              },
+              {
+                "borderLeftWidth": 8,
+              },
+              {
+                "borderBottomColor": "#2254ba",
+                "borderLeftColor": "#2254ba",
+                "borderRightColor": "#2254ba",
+                "borderTopColor": "#2254ba",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "marginBottom": 8,
+                "marginLeft": 8,
+                "marginRight": 8,
+                "marginTop": 8,
+              },
+            ]
+          }
+          testID="handle-add-cow-button"
+        >
+          <Text
+            style={
+              [
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 18,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+                {
+                  "fontFamily": "Nunito-Medium",
+                },
+                {
+                  "marginLeft": 8,
+                  "marginRight": 8,
+                },
+              ]
+            }
+          >
+            Añadir
+          </Text>
+        </View>
+      </View>
     </View>
     <View
       style={
         [
-          {
-            "marginTop": 24,
-          },
-          {
-            "marginBottom": 32,
-          },
           {
             "flexDirection": "row",
           },
@@ -799,87 +994,155 @@ exports[`LivestockForm should render correctly 1`] = `
       }
     >
       <View
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": undefined,
-            "expanded": undefined,
-            "selected": undefined,
-          }
-        }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           [
             {
-              "backgroundColor": "#75009d",
+              "marginBottom": 16,
+              "marginLeft": 16,
+              "marginRight": 16,
+              "marginTop": 16,
             },
             {
-              "borderBottomLeftRadius": 9999,
-              "borderBottomRightRadius": 9999,
-              "borderTopLeftRadius": 9999,
-              "borderTopRightRadius": 9999,
-            },
-            {
-              "paddingBottom": 16,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 16,
-            },
-            {
-              "marginBottom": 8,
-              "marginLeft": 8,
-              "marginRight": 8,
-              "marginTop": 8,
+              "width": "80%",
             },
           ]
         }
-        testID="handle-add-cow-button"
       >
-        <Text
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             [
               {
-                "color": "#ffffff",
+                "backgroundColor": "#272727",
               },
               {
-                "fontSize": 20,
-                "lineHeight": 28,
+                "borderRightWidth": 8,
               },
               {
-                "textAlign": "center",
+                "borderLeftWidth": 8,
               },
               {
-                "fontFamily": "Nunito-Bold",
+                "borderBottomColor": "#2254ba",
+                "borderLeftColor": "#2254ba",
+                "borderRightColor": "#2254ba",
+                "borderTopColor": "#2254ba",
               },
               {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "marginBottom": 8,
                 "marginLeft": 8,
                 "marginRight": 8,
+                "marginTop": 8,
               },
             ]
           }
+          testID="livestock-button"
         >
-          Añadir
-        </Text>
+          <Text
+            style={
+              [
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 18,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+                {
+                  "fontFamily": "Nunito-Medium",
+                },
+                {
+                  "marginLeft": 8,
+                  "marginRight": 8,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                [
+                  {
+                    "flexDirection": "column",
+                  },
+                  {
+                    "alignItems": "center",
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "paddingLeft": 8,
+                      "paddingRight": 8,
+                    },
+                  ]
+                }
+              />
+              <Text
+                style={
+                  [
+                    {
+                      "color": "#ffffff",
+                    },
+                    {
+                      "fontSize": 18,
+                      "lineHeight": 28,
+                    },
+                    {
+                      "fontFamily": "Nunito-Medium",
+                    },
+                  ]
+                }
+              >
+                Ver censo
+              </Text>
+            </View>
+          </Text>
+        </View>
       </View>
     </View>
   </View>
