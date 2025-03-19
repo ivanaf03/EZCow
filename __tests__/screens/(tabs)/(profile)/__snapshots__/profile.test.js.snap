@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile should render correctly 1`] = `
+<RCTScrollView
+  style={
+    [
+      {
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+      {
+        "backgroundColor": "#1c1c1c",
+      },
+    ]
+  }
+>
+  <View>
+    <Text
+      style={
+        [
+          {
+            "marginTop": 8,
+          },
+          {
+            "paddingTop": 16,
+          },
+          {
+            "marginLeft": 16,
+            "marginRight": 16,
+          },
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontSize": 36,
+            "lineHeight": 40,
+          },
+          {
+            "fontFamily": "Nunito-Bold",
+          },
+          {
+            "borderBottomWidth": 2,
+          },
+          {
+            "borderBottomColor": "#ffffff",
+            "borderLeftColor": "#ffffff",
+            "borderRightColor": "#ffffff",
+            "borderTopColor": "#ffffff",
+          },
+        ]
+      }
+    >
+      Perfil
+    </Text>
+    <View
+      style={
+        [
+          {
+            "flexBasis": "0%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+          {
+            "flexDirection": "column",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "alignItems": "center",
+          },
+        ]
+      }
+    >
+      <Image
+        source={
+          {
+            "testUri": "../../../assets/images/farmer-profile.png",
+          }
+        }
+        style={
+          [
+            {
+              "width": 256,
+            },
+            {
+              "height": 256,
+            },
+          ]
+        }
+        testID="app-logo"
+      />
+      <View
+        style={
+          [
+            {
+              "marginTop": 16,
+            },
+            {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            },
+            {
+              "width": "90%",
+            },
+            {
+              "backgroundColor": "#272727",
+            },
+            {
+              "borderRightWidth": 2,
+            },
+            {
+              "borderLeftWidth": 2,
+            },
+            {
+              "borderBottomColor": "#6bc0eb",
+              "borderLeftColor": "#6bc0eb",
+              "borderRightColor": "#6bc0eb",
+              "borderTopColor": "#6bc0eb",
+            },
+            {
+              "borderBottomLeftRadius": 16,
+              "borderBottomRightRadius": 16,
+              "borderTopLeftRadius": 16,
+              "borderTopRightRadius": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#ffffff",
+              },
+              {
+                "fontSize": 24,
+                "lineHeight": 32,
+              },
+              {
+                "fontFamily": "Nunito-Medium",
+              },
+            ]
+          }
+        >
+          TestUser
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#ffffff",
+              },
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              {
+                "fontFamily": "Nunito-Italic",
+              },
+            ]
+          }
+        >
+          test@test.com
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

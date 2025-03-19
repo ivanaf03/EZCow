@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Text, View, Alert } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { Text, View, Alert, ScrollView } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { router } from 'expo-router';
 import CryptoJS from 'crypto-js';
@@ -88,7 +87,7 @@ const Login = () => {
     };
 
     return (
-        <SafeAreaView className="flex-1 bg-c_dark_gray">
+        <ScrollView className="flex-1 bg-c_dark_gray">
             <Text className="mt-6 p-6 text-c_white text-5xl font-Nunito_Bold">
                 Iniciar sesión
             </Text>
@@ -134,13 +133,13 @@ const Login = () => {
                     </View>
                 </View>
             </View>
-            <View className="absolute bottom-0 w-full mb-10 flex-row justify-center items-center">
+            <View className="mt-8 w-full mb-10 flex-row justify-center items-center">
                 <Text className="text-c_white text-base font-Nunito_Medium text-center mr-2">
                     Todavía no tienes una cuenta?
                 </Text>
                 <CustomLink text="Regístrate" to="register" linkTestID={"sign-up-link"} />
             </View>
-        </SafeAreaView>
+        </ScrollView>
     );
 };
 

@@ -52,5 +52,19 @@ export const getUserByEmail = async (email) => {
     return res;
 };
 
+export const changePassword = async (email, password) => {
+    
+    db = await getDatabase();
+
+    const hashedPassword = hashPassword(password);
+
+    
+    const res = await db.runAsync(
+        `UPDATE User SET password = ? WHERE email = ?`,
+        [hashedPassword, email]
+    );
+
+    return res;
+};
 
 

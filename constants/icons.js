@@ -9,6 +9,7 @@ import {
     faCirclePlus,
     faTrash,
     faUser,
+    faTriangleExclamation,
 } from '@fortawesome/free-solid-svg-icons';
 
 export default {
@@ -22,4 +23,5 @@ export default {
     faCirclePlus,
     faTrash,
     faUser,
+    faTriangleExclamation,
 };

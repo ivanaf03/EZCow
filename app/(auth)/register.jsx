@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Text, View, Alert } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { Text, View, Alert, ScrollView } from 'react-native';
 import { router } from 'expo-router';
 
 import CustomInput from '../../components/basic/custom-input';
@@ -56,7 +55,7 @@ const Register = () => {
         try {
             await insertUser(name, email, password);
             const user = await getUserByEmail(email);
-            login({ id: user.id, name: name, password: null, email: email });
+            login({ id: user.id, name: name, password: password, email: email });
             router.replace('livestock');
         } catch (error) {
             Alert.alert('Error', 'Error al registrar. Inténtalo de nuevo. Asegúrate de que no tengas ya una cuenta.');
@@ -64,7 +63,7 @@ const Register = () => {
     };
 
     return (
-        <SafeAreaView className="flex-1 bg-c_dark_gray">
+        <ScrollView className="flex-1 bg-c_dark_gray">
             <Text className="mt-6 p-6 text-c_white text-5xl font-Nunito_Bold">
                 Registrarse
             </Text>
@@ -105,13 +104,13 @@ const Register = () => {
                     </View>
                 </View>
             </View>
-            <View className="absolute bottom-0 w-full mb-14 flex-row justify-center items-center">
+            <View className="mt-8 w-full mb-14 flex-row justify-center items-center">
                 <Text className="text-c_white text-base font-Nunito_Medium text-center mr-2">
                     Ya tienes una cuenta?
                 </Text>
                 <CustomLink text="Iniciar sesión" to="login" linkTestID={"sign-in-link"} />
             </View>
-        </SafeAreaView>
+        </ScrollView>
     );
 };
 
