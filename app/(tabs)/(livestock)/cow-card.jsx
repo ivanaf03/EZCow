@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Pressable, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { getAvailableCowNameById, setExitDateByCowId } from '../../model/cow';
 

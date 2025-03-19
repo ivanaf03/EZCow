@@ -31,6 +31,13 @@ const ProfileLayout = () => {
                     }}
                 />
                 <Drawer.Screen
+                    name="change-password"
+                    options={{
+                        drawerLabel: "Cambiar contraseña",
+                        title: "Cambiar contraseña",
+                    }}
+                />
+                <Drawer.Screen
                     name="sync-database"
                     options={{
                         drawerLabel: "Sincronizar base de datos",

@@ -1,3 +1,5 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "testing.automaticallyOpenTestView": true,
+    "testing.autoRunEnabled": true
 }
