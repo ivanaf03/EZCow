@@ -3,6 +3,7 @@ import React from 'react';
 import { Text, View, ScrollView, Image } from 'react-native';
 
 import { useUser } from '../../../hooks/providers/user-provider';
+import CustomPasswordView from '../../../components/basic/custom-password-view';
 
 const Profile = () => {
 
@@ -26,6 +27,12 @@ const Profile = () => {
                     <Text className="text-c_white text-sm font-Nunito_Italic">
                         {user.email}
                     </Text>
+                    <View className="mt-10 w-full">
+                        <CustomPasswordView
+                            text="Ver contraseña"
+                            value={user.password}
+                        />
+                    </View>
                 </View>
             </View>
         </ScrollView>
