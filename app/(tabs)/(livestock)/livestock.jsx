@@ -1,36 +1,47 @@
 import React from 'react';
-
 import { Text, View, SafeAreaView, FlatList } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { router } from 'expo-router';
-
 import CustomButton from '../../../components/basic/custom-button';
 import icons from '../../../constants/icons';
 import CowCard from './cow-card';
 import { getAllCowsAvailableByUserId, getMaleCowsAvailableByUserId, getFemaleCowsAvailableByUserId, getCalvesAvailableByUserId } from '../../model/cow';
 import { useUser } from '../../../hooks/providers/user-provider';
 import CustomPicker from '../../../components/basic/custom-picker';
+import CustomSearchBar from '../../../components/basic/custom-search-bar';
 
 const Livestock = () => {
-
     const [cows, setCows] = React.useState([]);
+    const [allCows, setAllCows] = React.useState([]);
     const [filterValue, setFilterValue] = React.useState('Todo');
-
+    const [searchText, setSearchText] = React.useState('');
     const { user } = useUser();
 
     React.useEffect(() => {
         loadCows();
-    }, [cows, filterValue]);
+    }, [filterValue]);
 
     const loadCows = async () => {
-        if(filterValue === 'Todo') {
-            setCows(await getAllCowsAvailableByUserId(user.id));
-        } else if(filterValue === 'Ternero') {
-            setCows(await getCalvesAvailableByUserId(user.id));
-        } else if(filterValue === 'Toro') {
-            setCows(await getMaleCowsAvailableByUserId(user.id));
-        } else if(filterValue === 'Vaca') {
-            setCows(await getFemaleCowsAvailableByUserId(user.id));
+        let fetchedCows = [];
+        if (filterValue === 'Todo') {
+            fetchedCows = await getAllCowsAvailableByUserId(user.id);
+        } else if (filterValue === 'Ternero') {
+            fetchedCows = await getCalvesAvailableByUserId(user.id);
+        } else if (filterValue === 'Toro') {
+            fetchedCows = await getMaleCowsAvailableByUserId(user.id);
+        } else if (filterValue === 'Vaca') {
+            fetchedCows = await getFemaleCowsAvailableByUserId(user.id);
+        }
+        setAllCows(fetchedCows);
+        setCows(fetchedCows);
+    };
+
+    const handleShowCowsByName = (text) => {
+        setSearchText(text);
+        if (text === '') {
+            setCows(allCows);
+        } else {
+            setCows(allCows.filter((cow) => cow.name.toLowerCase().includes(text.toLowerCase())));
         }
     };
 
@@ -41,19 +52,19 @@ const Livestock = () => {
             </Text>
             <View className="flex-1 flex-col bg-c_dark_gray">
                 <View className="flex-row mt-2">
-                    <CustomButton 
+                    <CustomButton
                         text={<View className="flex-row items-center">
-                                <Text className="text-c_white text-xl font-Nunito_Medium">
-                                    Añadir vaca
-                                </Text>
-                                <View className="px-8">
-                                    <FontAwesomeIcon
-                                        icon={icons.faCirclePlus}
-                                        size={25}
-                                        color="white"
-                                    />
-                                </View>
-                            </View>}
+                            <Text className="text-c_white text-xl font-Nunito_Medium">
+                                Añadir vaca
+                            </Text>
+                            <View className="px-8">
+                                <FontAwesomeIcon
+                                    icon={icons.faCirclePlus}
+                                    size={25}
+                                    color="white"
+                                />
+                            </View>
+                        </View>}
                         onPress={() => router.push('livestock-form')}
                         buttonTestID="livestock-form-button"
                     />
@@ -61,12 +72,17 @@ const Livestock = () => {
                 <View>
                     <CustomPicker
                         text="Filtrar por fase"
-                        value="Todo"
+                        value={filterValue}
                         onValueChange={setFilterValue}
                         options={['Todo', 'Ternero', 'Vaca', 'Toro']}
                         pickerTestID="phase-picker"
                     />
                 </View>
+                <CustomSearchBar
+                    text="Buscar por nombre"
+                    value={searchText}
+                    onChangeText={handleShowCowsByName}
+                />
                 <FlatList
                     data={cows}
                     keyExtractor={(item) => item.id}
