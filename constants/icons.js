@@ -10,6 +10,7 @@ import {
     faTrash,
     faUser,
     faTriangleExclamation,
+    faMagnifyingGlass,
 } from '@fortawesome/free-solid-svg-icons';
 
 export default {
@@ -24,4 +25,5 @@ export default {
     faTrash,
     faUser,
     faTriangleExclamation,
+    faMagnifyingGlass,
 };

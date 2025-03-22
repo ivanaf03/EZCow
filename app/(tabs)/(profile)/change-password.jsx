@@ -21,8 +21,6 @@ const ChangePassword = () => {
 
     const handleChangePassword = async () => {
 
-        console.log(user);
-
         if (user.password === null) {
             Alert.alert('Error', 'Solo podrás cambiar la contraseña si no has iniciado sesión con Google.');
             return;
