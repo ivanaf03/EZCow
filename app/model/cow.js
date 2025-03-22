@@ -42,7 +42,7 @@ export const getAvailableCowCodeByUserId = async (userId) => {
     db = await getDatabase();
 
     const res = await db.getAllAsync(
-        `SELECT code FROM Cow WHERE user_fk = ? and exitDate is NULL`,
+        `SELECT code FROM Cow WHERE user_fk = ? AND exitDate is NULL AND gender='Femenino' AND phase='Adulto'`,
         [userId]
     );
 
