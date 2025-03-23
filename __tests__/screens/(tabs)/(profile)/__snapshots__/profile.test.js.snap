@@ -169,6 +169,129 @@ exports[`Profile should render correctly 1`] = `
         >
           test@test.com
         </Text>
+        <View
+          style={
+            [
+              {
+                "marginTop": 40,
+              },
+              {
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginTop": -4,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#ffffff",
+                  },
+                  {
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "fontFamily": "Nunito-Light",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            >
+              Ver contraseña
+              :
+            </Text>
+            <View
+              style={
+                [
+                  {
+                    "flexDirection": "row",
+                  },
+                  {
+                    "alignItems": "center",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "marginRight": 8,
+                    },
+                    {
+                      "backgroundColor": "#272727",
+                    },
+                    {
+                      "color": "#ffffff",
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                    {
+                      "fontFamily": "Nunito-Medium",
+                    },
+                  ]
+                }
+                testID="password-text"
+              >
+                ********
+              </Text>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                testID="eye-icon"
+              />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
   </View>

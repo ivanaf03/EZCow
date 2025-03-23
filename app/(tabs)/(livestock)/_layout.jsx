@@ -17,6 +17,12 @@ const LivestockLayout = () => {
                     headerShown: false 
                 }} 
             />
+            <Stack.Screen 
+                name="livestock-historic" 
+                options={{ 
+                    headerShown: false 
+                }}
+            />
         </Stack>
     );
 };
