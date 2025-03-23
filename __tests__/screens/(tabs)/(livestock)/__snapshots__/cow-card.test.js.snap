@@ -42,7 +42,15 @@ exports[`CowCard should render correctly 1`] = `
     ]
   }
 >
-  <View>
+  <View
+    style={
+      [
+        {
+          "marginBottom": 8,
+        },
+      ]
+    }
+  >
     <View
       style={
         [
@@ -274,15 +282,6 @@ exports[`CowCard should render correctly 1`] = `
     </View>
   </View>
   <View
-    style={
-      [
-        {
-          "marginTop": 16,
-        },
-      ]
-    }
-  />
-  <View
     accessibilityState={
       {
         "busy": undefined,
@@ -465,7 +464,15 @@ exports[`CowCard should render correctly when mother is null 1`] = `
     ]
   }
 >
-  <View>
+  <View
+    style={
+      [
+        {
+          "marginBottom": 8,
+        },
+      ]
+    }
+  >
     <View
       style={
         [
@@ -696,15 +703,6 @@ exports[`CowCard should render correctly when mother is null 1`] = `
       </View>
     </View>
   </View>
-  <View
-    style={
-      [
-        {
-          "marginTop": 16,
-        },
-      ]
-    }
-  />
   <View
     accessibilityState={
       {

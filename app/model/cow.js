@@ -61,25 +61,13 @@ export const getAllCowsAvailableByUserId = async (userId) => {
     return res;
 };
 
-export const getFemaleCowsAvailableByUserId = async (userId) => {
-
+export const getAllCowsAvailableByUserIdAndPhaseAndGender = async (userId, phase, gender) => {
+    
     db = await getDatabase();
 
     const res = await db.getAllAsync(
-        `SELECT * FROM Cow WHERE user_fk = ? AND exitDate is NULL AND gender = 'Femenino' AND phase = 'Adulto'`,
-        [userId]
-    );
-
-    return res;
-};
-
-export const getMaleCowsAvailableByUserId = async (userId) => {
-
-    db = await getDatabase();
-
-    const res = await db.getAllAsync(
-        `SELECT * FROM Cow WHERE user_fk = ? AND exitDate is NULL AND gender = 'Masculino' AND phase = 'Adulto'`,
-        [userId]
+        `SELECT * FROM Cow WHERE user_fk = ? AND exitDate is NULL AND phase = ? AND gender = ?`,
+        [userId, phase, gender]
     );
 
     return res;
@@ -105,6 +93,42 @@ export const setExitDateByCowId = async (cowId) => {
     const res = await db.runAsync(
         `UPDATE Cow SET exitDate = CURRENT_DATE WHERE id = ?`,
         [cowId]
+    );
+
+    return res;
+};
+
+export const getAllCowsExitedByUserIdAndPhaseAndGender = async (userId, phase, gender) => {
+
+    db = await getDatabase();
+
+    const res = await db.getAllAsync(
+        `SELECT * FROM Cow WHERE user_fk = ? AND exitDate is NOT NULL AND phase = ? AND gender = ?`,
+        [userId, phase, gender]
+    );
+
+    return res;
+};
+
+export const getAllCowsExitedByUserId = async (userId) => {
+
+    db = await getDatabase();
+
+    const res = await db.getAllAsync(
+        `SELECT * FROM Cow WHERE user_fk = ? AND exitDate is NOT NULL`,
+        [userId]
+    );
+
+    return res;
+};
+
+export const getAllCalvesExitedByUserId = async (userId) => {
+
+    db = await getDatabase();
+
+    const res = await db.getAllAsync(
+        `SELECT * FROM Cow WHERE user_fk = ? AND exitDate is NOT NULL AND phase = 'Ternero'`,
+        [userId]
     );
 
     return res;

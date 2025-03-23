@@ -7,7 +7,7 @@ import { getAvailableCowNameById, setExitDateByCowId } from '../../model/cow';
 import icons from '../../../constants/icons';
 import CustomButton from '../../../components/basic/custom-button';
 
-const CowCard = ({ cow }) => {
+const CowCard = ({ cow, isExited }) => {
 
     const [motherName, setMotherName] = React.useState('Desconocida');
 
@@ -28,7 +28,7 @@ const CowCard = ({ cow }) => {
 
     return (
         <View className="flex-col my-2 space-y-4 p-4 ml-[-10] mr-6 bg-c_light_gray rounded-r-3xl border-r-4 border-c_light_blue">
-            <View>
+            <View className="mb-2">
                 <View className="flex-row items-center space-x-4 border-y-2 border-r-2 rounded-2xl border-c_light_blue">
                     <Text className="text-c_white text-sm font-Nunito_Bold">
                         <FontAwesomeIcon
@@ -66,10 +66,7 @@ const CowCard = ({ cow }) => {
                     </View>
                 </View>
             </View>
-            <View>
-                
-            </View>
-            <CustomButton
+            {!isExited && <CustomButton
                 text={<View className="flex-row items-center w-[65%]">
                     <View className="px-2">
                         <FontAwesomeIcon
@@ -84,7 +81,7 @@ const CowCard = ({ cow }) => {
                 </View>}
                 onPress={() => handleDeleteCow(cow.id)}
                 buttonTestID="delete-cow-button"
-            />
+            /> }
         </View>
     );
 };
