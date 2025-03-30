@@ -37,7 +37,7 @@ const CowCard = ({ cow, isExited }) => {
                             color="white"
                         />
                     </Text>
-                    <Text className="text-c_white text-2xl font-Nunito_Bold">
+                    <Text className="text-c_white text-2xl font-Nunito_Bold over">
                         {cow.name}
                     </Text>
                 </View>

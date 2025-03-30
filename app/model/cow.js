@@ -1,4 +1,3 @@
-import * as SQLite from 'expo-sqlite';
 import { getDatabase } from './bd';
 
 export const insertCow = async (code, name, entryDate, gender, breed, phase, user_fk, mother_fk) => {

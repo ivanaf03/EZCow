@@ -276,7 +276,7 @@ exports[`CowCard should render correctly 1`] = `
           }
         >
           Es hijo/a de: 
-          Vaca Test
+          Desconocida
         </Text>
       </View>
     </View>

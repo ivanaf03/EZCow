@@ -14,6 +14,8 @@ jest.mock("@fortawesome/react-native-fontawesome", () => ({
     FontAwesomeIcon: () => null
 }));
 
+jest.mock("")
+
 jest.mock("../../../../hooks/providers/user-provider", () => ({
     useUser: jest.fn(() => ({
         user: { 

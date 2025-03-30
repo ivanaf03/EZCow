@@ -28,10 +28,10 @@ const Profile = () => {
                         {user.email}
                     </Text>
                     <View className="mt-10 w-full">
-                        <CustomPasswordView
+                        {user.password && <CustomPasswordView
                             text="Ver contraseña"
-                            value={user.password}
-                        />
+                            value ={user.password}
+                        />}
                     </View>
                 </View>
             </View>
