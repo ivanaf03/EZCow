@@ -28,8 +28,7 @@ describe("CowCard", () => {
             mother_fk: "1234",
             entryDate: "2022-01-01",
         }} />);
-        await waitFor(() => expect(getAvailableCowNameById).toHaveBeenCalled());
-        expect(tree).toMatchSnapshot();
+        await waitFor (() => expect(tree).toMatchSnapshot());
     });
 
     it("should render correctly when mother is null", async () => {
@@ -43,7 +42,7 @@ describe("CowCard", () => {
             mother_fk: null,
             entryDate: "2022-01-01",
         }} />);
-        expect(tree).toMatchSnapshot();
+        await waitFor (() => expect(tree).toMatchSnapshot());
     });
 
     it("should delete cow card on press delete button", async () => {

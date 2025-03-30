@@ -14,6 +14,8 @@ export const initDatabase = async () => {
             email TEXT NOT NULL UNIQUE,
             password TEXT DEFAULT NULL,
             google_id TEXT DEFAULT NULL,
+            latitude REAL DEFAULT 43.0,
+            longitude REAL DEFAULT -7.0,
             CHECK (password IS NOT NULL OR google_id IS NOT NULL)
         );
 

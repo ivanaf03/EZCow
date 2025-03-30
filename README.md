@@ -125,3 +125,4 @@ https://reactnavigation.org/docs/nesting-navigators/?config=static > Nest tabs a
 https://github.com/react-native-datetimepicker/datetimepicker > Calendar input library
 https://github.com/react-native-picker/picker > Select input library
 https://github.com/dan96ct/sigpac-client > Sigpac library
+https://github.com/react-native-maps/react-native-maps?tab=readme-ov-file > Maps library
