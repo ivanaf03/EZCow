@@ -36,7 +36,7 @@ const TabsLayout = () => {
             }}
             />
             <Tabs.Screen
-                name="(maps)/maps"
+                name="(maps)"
                 options={{
                     title: "Mapas",
                     headerShown: false,

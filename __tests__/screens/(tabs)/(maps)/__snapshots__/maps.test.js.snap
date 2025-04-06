@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Maps should render correctly 1`] = `
+exports[`Maps should navigate to fields 1`] = `
 <RCTSafeAreaView
   style={
     [
@@ -52,6 +52,115 @@ exports[`Maps should render correctly 1`] = `
   >
     Mapas
   </Text>
+  <View
+    style={
+      [
+        {
+          "marginTop": 16,
+        },
+        {
+          "marginLeft": 16,
+          "marginRight": 16,
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "backgroundColor": "#272727",
+          },
+          {
+            "borderRightWidth": 8,
+          },
+          {
+            "borderLeftWidth": 8,
+          },
+          {
+            "borderBottomColor": "#2254ba",
+            "borderLeftColor": "#2254ba",
+            "borderRightColor": "#2254ba",
+            "borderTopColor": "#2254ba",
+          },
+          {
+            "borderBottomLeftRadius": 24,
+            "borderBottomRightRadius": 24,
+            "borderTopLeftRadius": 24,
+            "borderTopRightRadius": 24,
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "marginBottom": 8,
+            "marginLeft": 8,
+            "marginRight": 8,
+            "marginTop": 8,
+          },
+        ]
+      }
+      testID="fields-button"
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 18,
+              "lineHeight": 28,
+            },
+            {
+              "textAlign": "center",
+            },
+            {
+              "fontFamily": "Nunito-Medium",
+            },
+            {
+              "marginLeft": 8,
+              "marginRight": 8,
+            },
+          ]
+        }
+      >
+        Ver mis fincas
+      </Text>
+    </View>
+  </View>
   <View
     style={
       [
@@ -170,9 +279,9 @@ exports[`Maps should render correctly 1`] = `
       region={
         {
           "latitude": 0,
-          "latitudeDelta": 0.0922,
+          "latitudeDelta": 0.01,
           "longitude": 0,
-          "longitudeDelta": 0.0421,
+          "longitudeDelta": 0.01,
         }
       }
       style={
@@ -248,8 +357,469 @@ exports[`Maps should render correctly 1`] = `
     style={
       [
         {
-          "marginLeft": 48,
-          "marginRight": 48,
+          "marginLeft": 64,
+          "marginRight": 64,
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "backgroundColor": "#272727",
+          },
+          {
+            "borderRightWidth": 8,
+          },
+          {
+            "borderLeftWidth": 8,
+          },
+          {
+            "borderBottomColor": "#2254ba",
+            "borderLeftColor": "#2254ba",
+            "borderRightColor": "#2254ba",
+            "borderTopColor": "#2254ba",
+          },
+          {
+            "borderBottomLeftRadius": 24,
+            "borderBottomRightRadius": 24,
+            "borderTopLeftRadius": 24,
+            "borderTopRightRadius": 24,
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "marginBottom": 8,
+            "marginLeft": 8,
+            "marginRight": 8,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 18,
+              "lineHeight": 28,
+            },
+            {
+              "textAlign": "center",
+            },
+            {
+              "fontFamily": "Nunito-Medium",
+            },
+            {
+              "marginLeft": 8,
+              "marginRight": 8,
+            },
+          ]
+        }
+      >
+        Guardar ubicación
+      </Text>
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;
+
+exports[`Maps should render correctly 1`] = `
+<RCTSafeAreaView
+  style={
+    [
+      {
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+      {
+        "backgroundColor": "#1c1c1c",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "marginTop": 8,
+        },
+        {
+          "paddingTop": 16,
+        },
+        {
+          "marginLeft": 16,
+          "marginRight": 16,
+        },
+        {
+          "color": "#ffffff",
+        },
+        {
+          "fontSize": 36,
+          "lineHeight": 40,
+        },
+        {
+          "fontFamily": "Nunito-Bold",
+        },
+        {
+          "borderBottomWidth": 2,
+        },
+        {
+          "borderBottomColor": "#ffffff",
+          "borderLeftColor": "#ffffff",
+          "borderRightColor": "#ffffff",
+          "borderTopColor": "#ffffff",
+        },
+      ]
+    }
+  >
+    Mapas
+  </Text>
+  <View
+    style={
+      [
+        {
+          "marginTop": 16,
+        },
+        {
+          "marginLeft": 16,
+          "marginRight": 16,
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "backgroundColor": "#272727",
+          },
+          {
+            "borderRightWidth": 8,
+          },
+          {
+            "borderLeftWidth": 8,
+          },
+          {
+            "borderBottomColor": "#2254ba",
+            "borderLeftColor": "#2254ba",
+            "borderRightColor": "#2254ba",
+            "borderTopColor": "#2254ba",
+          },
+          {
+            "borderBottomLeftRadius": 24,
+            "borderBottomRightRadius": 24,
+            "borderTopLeftRadius": 24,
+            "borderTopRightRadius": 24,
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "marginBottom": 8,
+            "marginLeft": 8,
+            "marginRight": 8,
+            "marginTop": 8,
+          },
+        ]
+      }
+      testID="fields-button"
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 18,
+              "lineHeight": 28,
+            },
+            {
+              "textAlign": "center",
+            },
+            {
+              "fontFamily": "Nunito-Medium",
+            },
+            {
+              "marginLeft": 8,
+              "marginRight": 8,
+            },
+          ]
+        }
+      >
+        Ver mis fincas
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "marginTop": 16,
+        },
+        {
+          "marginLeft": 16,
+          "marginRight": 16,
+        },
+        {
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+        {
+          "backgroundColor": "#272727",
+        },
+        {
+          "borderBottomLeftRadius": 16,
+          "borderBottomRightRadius": 16,
+          "borderTopLeftRadius": 16,
+          "borderTopRightRadius": 16,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#6bc0eb",
+          },
+          {
+            "fontSize": 20,
+            "lineHeight": 28,
+          },
+          {
+            "fontFamily": "Nunito-Medium",
+          },
+        ]
+      }
+    >
+      ◆ Selecciona la ubicación de tu explotación
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "marginTop": 8,
+          },
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontSize": 14,
+            "lineHeight": 20,
+          },
+          {
+            "fontFamily": "Nunito-Italic",
+          },
+        ]
+      }
+    >
+      Aquí puedes guardar la ubicación de tu explotación en el mapa. Se usará para centrar el mapa de las fincas de tu explotación.
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "flexBasis": "0%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+        {
+          "backgroundColor": "#272727",
+        },
+        {
+          "borderBottomWidth": 2,
+          "borderLeftWidth": 2,
+          "borderRightWidth": 2,
+          "borderTopWidth": 2,
+        },
+        {
+          "borderBottomColor": "#6bc0eb",
+          "borderLeftColor": "#6bc0eb",
+          "borderRightColor": "#6bc0eb",
+          "borderTopColor": "#6bc0eb",
+        },
+        {
+          "borderBottomLeftRadius": 16,
+          "borderBottomRightRadius": 16,
+          "borderTopLeftRadius": 16,
+          "borderTopRightRadius": 16,
+        },
+        {
+          "marginLeft": 16,
+          "marginRight": 16,
+        },
+        {
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        },
+        {
+          "marginTop": 16,
+        },
+      ]
+    }
+  >
+    <View
+      onPress={[Function]}
+      region={
+        {
+          "latitude": 0,
+          "latitudeDelta": 0.01,
+          "longitude": 0,
+          "longitudeDelta": 0.01,
+        }
+      }
+      style={
+        {
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        coordinate={
+          {
+            "latitude": 0,
+            "longitude": 0,
+          }
+        }
+        title="Tu explotación"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "flexDirection": "row",
+        },
+        {
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+        {
+          "justifyContent": "space-around",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontSize": 18,
+            "lineHeight": 28,
+          },
+        ]
+      }
+    >
+      Latitud: 
+      0.000000
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontSize": 18,
+            "lineHeight": 28,
+          },
+        ]
+      }
+    >
+      Longitud: 
+      0.000000
+    </Text>
+  </View>
+  <View
+    style={
+      [
+        {
+          "marginLeft": 64,
+          "marginRight": 64,
         },
       ]
     }
@@ -414,6 +984,115 @@ exports[`Maps should save correct location 1`] = `
           "marginLeft": 16,
           "marginRight": 16,
         },
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "backgroundColor": "#272727",
+          },
+          {
+            "borderRightWidth": 8,
+          },
+          {
+            "borderLeftWidth": 8,
+          },
+          {
+            "borderBottomColor": "#2254ba",
+            "borderLeftColor": "#2254ba",
+            "borderRightColor": "#2254ba",
+            "borderTopColor": "#2254ba",
+          },
+          {
+            "borderBottomLeftRadius": 24,
+            "borderBottomRightRadius": 24,
+            "borderTopLeftRadius": 24,
+            "borderTopRightRadius": 24,
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "marginBottom": 8,
+            "marginLeft": 8,
+            "marginRight": 8,
+            "marginTop": 8,
+          },
+        ]
+      }
+      testID="fields-button"
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 18,
+              "lineHeight": 28,
+            },
+            {
+              "textAlign": "center",
+            },
+            {
+              "fontFamily": "Nunito-Medium",
+            },
+            {
+              "marginLeft": 8,
+              "marginRight": 8,
+            },
+          ]
+        }
+      >
+        Ver mis fincas
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "marginTop": 16,
+        },
+        {
+          "marginLeft": 16,
+          "marginRight": 16,
+        },
         {
           "paddingBottom": 16,
           "paddingLeft": 16,
@@ -522,9 +1201,9 @@ exports[`Maps should save correct location 1`] = `
       region={
         {
           "latitude": 0,
-          "latitudeDelta": 0.0922,
+          "latitudeDelta": 0.01,
           "longitude": 0,
-          "longitudeDelta": 0.0421,
+          "longitudeDelta": 0.01,
         }
       }
       style={
@@ -600,8 +1279,8 @@ exports[`Maps should save correct location 1`] = `
     style={
       [
         {
-          "marginLeft": 48,
-          "marginRight": 48,
+          "marginLeft": 64,
+          "marginRight": 64,
         },
       ]
     }

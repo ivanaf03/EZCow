@@ -33,6 +33,15 @@ export const initDatabase = async () => {
             FOREIGN KEY(user_fk) REFERENCES User(id),
             FOREIGN KEY(mother_fk) REFERENCES Cow(id)
         );
+
+        CREATE TABLE IF NOT EXISTS Field (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            latitude REAL DEFAULT 43.0,
+            longitude REAL DEFAULT -7.0,
+            user_fk INTEGER NOT NULL,
+            FOREIGN KEY(user_fk) REFERENCES User(id)
+        );
     `);
 };
 
