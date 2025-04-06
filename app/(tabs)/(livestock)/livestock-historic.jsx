@@ -21,7 +21,7 @@ const LivestockHistoric = () => {
 
     React.useEffect(() => {
         loadCows();
-    }, [filterValue, cows]);
+    }, [filterValue]);
 
     const loadCows = async () => {
         let fetchedCows = [];
