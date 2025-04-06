@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Text, View, SafeAreaView } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
+import { router } from 'expo-router';
 
 import { insertFarmUbication, getFarmUbicationByUserId } from '../../model/farm';
 import { useUser } from '../../../hooks/providers/user-provider';
@@ -40,6 +41,13 @@ const Maps = () => {
             <Text className="mt-2 pt-4 mx-4 text-c_white text-4xl font-Nunito_Bold border-b-2 border-c_white">
                 Mapas
             </Text>
+            <View className="mt-4 mx-4">
+                <CustomButton
+                    text="Ver mis fincas"
+                    onPress={() => router.replace('fields')}
+                    buttonTestID={"fields-button"}
+                />
+            </View>
             <View className="mt-4 mx-4 p-4 bg-c_light_gray rounded-2xl">
                 <Text className="text-c_light_blue text-xl font-Nunito_Medium">
                     ◆ Selecciona la ubicación de tu explotación
@@ -55,14 +63,14 @@ const Maps = () => {
                     region={{
                         latitude: selectedLocation.latitude || 0,
                         longitude: selectedLocation.longitude || 0,
-                        latitudeDelta: 0.0922,
-                        longitudeDelta: 0.0421,
+                        latitudeDelta: 0.01,
+                        longitudeDelta: 0.01,
                     }}
                     onPress={handleMapPress}
                 >
-                    <Marker 
+                    <Marker
                         title="Tu explotación"
-                        coordinate={selectedLocation} 
+                        coordinate={selectedLocation}
                     />
                 </MapView>
             </View>
@@ -70,7 +78,7 @@ const Maps = () => {
                 <Text className="text-c_white text-lg">Latitud: {selectedLocation.latitude.toFixed(6)}</Text>
                 <Text className="text-c_white text-lg">Longitud: {selectedLocation.longitude.toFixed(6)}</Text>
             </View>
-            <View className="mx-12">
+            <View className="mx-16">
                 <CustomButton
                     text="Guardar ubicación"
                     onPress={handleSaveLocation}

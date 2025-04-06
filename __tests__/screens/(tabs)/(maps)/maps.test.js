@@ -1,6 +1,7 @@
 import React from "react";
 
 import { render, waitFor, fireEvent } from "@testing-library/react-native";
+import { router } from "expo-router";
 
 import Maps from "../../../../app/(tabs)/(maps)/maps";
 import { getFarmUbicationByUserId, insertFarmUbication } from "../../../../app/model/farm";
@@ -27,6 +28,11 @@ jest.mock("../../../../app/model/farm", () => ({
     insertFarmUbication: jest.fn(),
 }));
 
+jest.mock("expo-router", () => ({
+    router: {
+        replace: jest.fn(),
+    },
+}));
 
 describe("Maps", () => {
 
@@ -47,5 +53,14 @@ describe("Maps", () => {
         const saveLocationButton = tree.getByText("Guardar ubicación");
         fireEvent.press(saveLocationButton);
         await waitFor(() => expect(insertFarmUbication).toHaveBeenCalledWith("1", 0, 0));
+    });
+
+    it("should navigate to fields", async () => {
+        getFarmUbicationByUserId.mockResolvedValue({latitude: 0, longitude: 0});
+        const tree = render(<Maps />);
+        await waitFor(() => expect(tree).toMatchSnapshot());
+        const fieldsButton = tree.getByTestId("fields-button");
+        fireEvent.press(fieldsButton);
+        await waitFor(() => expect(router.replace).toHaveBeenCalledWith("fields"));
     });
 });
