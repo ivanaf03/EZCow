@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Text, View, SafeAreaView, FlatList } from "react-native";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { router } from "expo-router";
@@ -11,11 +10,13 @@ import {
   getAllCowsAvailableByUserId,
   getAllCowsAvailableByUserIdAndPhaseAndGender,
   getCalvesAvailableByUserId,
+  setExitDateByCowId,
 } from "../../model/cow";
 import { useUser } from "../../../hooks/providers/user-provider";
 import CustomPicker from "../../../components/basic/custom-picker";
 import CustomSearchBar from "../../../components/basic/custom-search-bar";
 import TabTitle from "../../../components/tabs/tab-title";
+import CustomAcceptDenyModal from "../../../components/basic/custom-accept-deny-modal";
 
 const Livestock = () => {
   const [cows, setCows] = React.useState([]);
@@ -23,6 +24,9 @@ const Livestock = () => {
   const [filterValue, setFilterValue] = React.useState("Todo");
   const [searchText, setSearchText] = React.useState("");
   const { user } = useUser();
+
+  const [modalVisible, setModalVisible] = React.useState(false);
+  const [selectedCow, setSelectedCow] = React.useState(null);
 
   React.useEffect(() => {
     loadCows();
@@ -57,11 +61,30 @@ const Livestock = () => {
       setCows(allCows);
     } else {
       setCows(
-        allCows.filter((cow) =>
-          cow.name.toLowerCase().includes(text.toLowerCase())
+        allCows.filter(
+          (cow) => cow.name && cow.name.toLowerCase().includes(text.toLowerCase())
         )
       );
     }
+  };
+
+  const confirmDeleteCow = (cow) => {
+    setSelectedCow(cow);
+    setModalVisible(true);
+  };
+
+  const handleAcceptDelete = async () => {
+    if (selectedCow) {
+      await setExitDateByCowId(selectedCow.id);
+      await loadCows();
+      setSelectedCow(null);
+      setModalVisible(false);
+    }
+  };
+
+  const handleDenyDelete = () => {
+    setSelectedCow(null);
+    setModalVisible(false);
   };
 
   return (
@@ -77,11 +100,7 @@ const Livestock = () => {
                     Dar de alta
                   </Text>
                   <View className="flex-row items-center">
-                    <FontAwesomeIcon
-                      icon={icons.faCirclePlus}
-                      size={24}
-                      color="white"
-                    />
+                    <FontAwesomeIcon icon={icons.faCirclePlus} size={24} color="white" />
                   </View>
                 </View>
               }
@@ -100,28 +119,38 @@ const Livestock = () => {
       </View>
       <View className="flex items-center justify-center my-4">
         <View className="w-[90%] space-y-2">
-          <View>
-            <CustomPicker
-              text="Filtrar por fase"
-              value={filterValue}
-              onValueChange={setFilterValue}
-              options={["Todo", "Ternero", "Vaca", "Toro"]}
-              pickerTestID="phase-picker"
-            />
-          </View>
-          <View>
-            <CustomSearchBar
-              text="Buscar por nombre"
-              value={searchText}
-              onChangeText={handleShowCowsByName}
-            />
-          </View>
+          <CustomPicker
+            text="Filtrar por fase"
+            value={filterValue}
+            onValueChange={setFilterValue}
+            options={["Todo", "Ternero", "Vaca", "Toro"]}
+            pickerTestID="phase-picker"
+          />
+          <CustomSearchBar
+            text="Buscar por nombre"
+            value={searchText}
+            onChangeText={handleShowCowsByName}
+          />
         </View>
       </View>
+
       <FlatList
         data={cows}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <CowCard cow={item} isExited={false} />}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => (
+          <CowCard cow={item} isExited={false} onDelete={confirmDeleteCow} />
+        )}
+      />
+
+      <CustomAcceptDenyModal
+        visible={modalVisible}
+        setVisible={setModalVisible}
+        title="Dar de baja"
+        text={`Seguro que quieres dar de baja a '${selectedCow?.name}'?`}
+        acceptText="Dar de baja"
+        denyText="Volver"
+        onAccept={handleAcceptDelete}
+        onDeny={handleDenyDelete}
       />
     </SafeAreaView>
   );

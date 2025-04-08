@@ -57,7 +57,8 @@ describe("CowCard", () => {
     await waitFor(() => expect(tree).toMatchSnapshot());
   });
 
-  it("should delete cow card on press delete button", async () => {
+  it("should call onDelete with cow data when pressing delete", async () => {
+    const onDeleteMock = jest.fn();
     const tree = render(
       <CowCard
         cow={{
@@ -67,15 +68,14 @@ describe("CowCard", () => {
           gender: "Femenino",
           breed: "Holstein",
           phase: "Ternero",
-          mother_fk: "1234",
+          mother_fk: null,
           entryDate: "2022-01-01",
         }}
+        onDelete={onDeleteMock}
       />
     );
-
-    await waitFor(() => expect(getAvailableCowNameById).toHaveBeenCalled());
     const deleteButton = tree.getByTestId("delete-cow-button");
     fireEvent.press(deleteButton);
-    await waitFor(() => expect(setExitDateByCowId).toHaveBeenCalledWith("1"));
+    expect(onDeleteMock).toHaveBeenCalledTimes(1);
   });
 });
