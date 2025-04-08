@@ -4,7 +4,7 @@ import { View, Text, TextInput } from 'react-native';
 
 const CustomInput = ({ text, placeholder, value, onChangeText }) => {
     return (
-        <View className="m-2 gap-y-1">
+        <View className="gap-y-1">
             <Text className="text-c_white text-sm font-Nunito_Medium">
                 {text}:
             </Text>

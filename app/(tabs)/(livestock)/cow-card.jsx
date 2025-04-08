@@ -27,9 +27,9 @@ const CowCard = ({ cow, isExited }) => {
     };
 
     return (
-        <View className="flex-col my-2 space-y-4 p-4 ml-[-10] mr-6 bg-c_light_gray rounded-r-3xl border-r-4 border-c_light_blue">
+        <View className="flex-col m-2 space-y-4 p-4 bg-c_light_gray rounded-xl border-r-4 border-c_light_blue">
             <View className="mb-2">
-                <View className="flex-row items-center space-x-4 border-y-2 border-r-2 rounded-2xl border-c_light_blue">
+                <View className="flex-row items-center space-x-4 border-y-2 border-r-2 rounded-xl border-c_light_blue overflow-hidden">
                     <Text className="text-c_white text-sm font-Nunito_Bold">
                         <FontAwesomeIcon
                             icon={icons.faCow}
@@ -37,17 +37,20 @@ const CowCard = ({ cow, isExited }) => {
                             color="white"
                         />
                     </Text>
-                    <Text className="text-c_white text-2xl font-Nunito_Bold over">
+                    <Text className="p-2 text-c_white text-2xl font-Nunito_Bold">
                         {cow.name}
                     </Text>
                 </View>
                 <View className="ml-2 mt-2 flex-col justify-between">
                     <View className="mb-2 flex-row items-center space-x-2">
-                        <Text className="text-c_light_blue text-lg font-Nunito_BoldItalic">
+                        <Text className="text-c_light_blue text-lg font-Nunito_BoldItalic underline">
                             {cow.code}
                         </Text>
                     </View>
-                    <View className="flex-col">
+                    <View className="flex-col p-2 border-l-2 border-c_white rounded-lg">
+                        <Text className="text-c_white text-xl font-Nunito_Medium mb-2">
+                            Datos:
+                        </Text>
                         <Text className="text-c_white text-sm font-Nunito_Medium">
                             Se incorporó en: {new Date(cow.entryDate).toLocaleDateString('es-ES')}
                         </Text>

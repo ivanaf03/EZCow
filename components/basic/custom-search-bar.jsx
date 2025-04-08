@@ -6,7 +6,7 @@ import icons from "../../constants/icons";
 
 const CustomSearchBar = ({ text, value, onChangeText }) => {
     return (
-        <View className="m-2 space-y-1">
+        <View className="space-y-1">
             <Text className="text-c_white text-sm font-Nunito_Light">
                 {text}:
             </Text>

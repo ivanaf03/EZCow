@@ -39,8 +39,8 @@ exports[`CustomLink should render correctly 1`] = `
           "color": "#6bc0eb",
         },
         {
-          "fontSize": 24,
-          "lineHeight": 32,
+          "fontSize": 20,
+          "lineHeight": 28,
         },
         {
           "textAlign": "center",

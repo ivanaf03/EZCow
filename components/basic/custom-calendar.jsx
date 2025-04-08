@@ -19,7 +19,7 @@ const CustomCalendar = ({ text, date, onChange }) => {
     };
 
     return (
-        <View className="m-2 gap-y-1">
+        <View className="gap-y-1">
             <Text className="text-c_white text-sm font-Nunito_Light">
                 {text}:
             </Text>

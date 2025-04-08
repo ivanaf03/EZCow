@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import { Text, View, SafeAreaView } from 'react-native';
+import { Text, View, SafeAreaView } from "react-native";
+
+import TabTitle from "../../../components/tabs/tab-title";
 
 const Health = () => {
-    return (
-        <SafeAreaView className="flex-1 bg-c_dark_gray">
-            <Text className="mt-2 pt-4 mx-4 text-c_white text-4xl font-Nunito_Bold border-b-2 border-c_white">
-                Salud
-            </Text>
-        </SafeAreaView>
-    );
+  return (
+    <SafeAreaView className="flex-1 bg-c_dark_gray">
+      <TabTitle text="Salud" />
+    </SafeAreaView>
+  );
 };
 
 export default Health;

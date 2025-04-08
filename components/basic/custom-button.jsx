@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import { Pressable, Text } from 'react-native';
+import { Pressable, Text } from "react-native";
 
-const CustomButton = ({ text, onPress, buttonTestID}) => {
-    return (
-        <Pressable
-            className="bg-c_light_gray border-r-8 border-l-8 border-c_marine_blue rounded-3xl p-4 m-2"
-            onPress={onPress}
-            testID={buttonTestID}
-        >
-            <Text className="text-c_white text-lg text-center font-Nunito_Medium mx-2">
-                {text}
-            </Text>
-        </Pressable>
-    );
+const CustomButton = ({ text, onPress, buttonTestID }) => {
+  return (
+    <Pressable
+      className="p-4 bg-c_light_gray border-x-8 border-y-2 border-c_marine_blue rounded-3xl"
+      onPress={onPress}
+      testID={buttonTestID}
+    >
+      <Text className="font-Nunito_SemiBold text-c_white text-xl text-center">
+        {text}
+      </Text>
+    </Pressable>
+  );
 };
 
 export default CustomButton;
