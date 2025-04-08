@@ -1,0 +1,352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomAcceptDenyModal should render correctly 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "flexBasis": "0%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+        {
+          "alignItems": "center",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "backgroundColor": "#1c1c1c",
+        },
+        {
+          "opacity": 0.95,
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "width": "85%",
+          },
+          {
+            "backgroundColor": "#1c1c1c",
+          },
+          {
+            "borderBottomLeftRadius": 16,
+            "borderBottomRightRadius": 16,
+            "borderTopLeftRadius": 16,
+            "borderTopRightRadius": 16,
+          },
+          {
+            "paddingLeft": 24,
+            "paddingRight": 24,
+          },
+          {
+            "paddingBottom": 32,
+            "paddingTop": 32,
+          },
+          {
+            "borderLeftWidth": 2,
+            "borderRightWidth": 2,
+          },
+          {
+            "borderBottomColor": "#ffffff",
+            "borderLeftColor": "#ffffff",
+            "borderRightColor": "#ffffff",
+            "borderTopColor": "#ffffff",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 24,
+              "lineHeight": 32,
+            },
+            {
+              "fontFamily": "Nunito-Bold",
+            },
+          ]
+        }
+      >
+        Test
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 16,
+              "lineHeight": 24,
+            },
+            {
+              "fontFamily": "Nunito-Italic",
+            },
+            [
+              {
+                "marginTop": 16,
+              },
+            ],
+          ]
+        }
+      >
+        Test
+      </Text>
+      <View
+        style={
+          [
+            {
+              "marginTop": 16,
+            },
+            [
+              {
+                "marginTop": 16,
+              },
+            ],
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "backgroundColor": "#20c33b",
+              },
+              {
+                "borderBottomLeftRadius": 12,
+                "borderBottomRightRadius": 12,
+                "borderTopLeftRadius": 12,
+                "borderTopRightRadius": 12,
+              },
+              {
+                "paddingBottom": 12,
+                "paddingTop": 12,
+              },
+              {
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+              },
+              {
+                "borderBottomColor": "#ffffff",
+                "borderLeftColor": "#ffffff",
+                "borderRightColor": "#ffffff",
+                "borderTopColor": "#ffffff",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 18,
+                  "lineHeight": 28,
+                },
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Test
+          </Text>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "backgroundColor": "#c32020",
+              },
+              {
+                "borderBottomLeftRadius": 12,
+                "borderBottomRightRadius": 12,
+                "borderTopLeftRadius": 12,
+                "borderTopRightRadius": 12,
+              },
+              {
+                "paddingBottom": 12,
+                "paddingTop": 12,
+              },
+              {
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+              },
+              {
+                "borderBottomColor": "#ffffff",
+                "borderLeftColor": "#ffffff",
+                "borderRightColor": "#ffffff",
+                "borderTopColor": "#ffffff",
+              },
+              [
+                {
+                  "marginTop": 12,
+                },
+              ],
+            ]
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 18,
+                  "lineHeight": 28,
+                },
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Test
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;

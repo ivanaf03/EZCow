@@ -251,7 +251,8 @@ exports[`CowCard should render correctly 1`] = `
             ]
           }
         >
-          Se incorporó en: 
+          Se incorporó en:
+           
           1/1/2022
         </Text>
         <Text
@@ -717,7 +718,8 @@ exports[`CowCard should render correctly when mother is null 1`] = `
             ]
           }
         >
-          Se incorporó en: 
+          Se incorporó en:
+           
           1/1/2022
         </Text>
         <Text
