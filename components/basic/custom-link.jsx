@@ -9,7 +9,7 @@ const CustomLink = ({ text, to, linkTestID }) => {
             onPress={() => router.push(to)}
             testID={linkTestID}
         >
-            <Text className={`text-c_light_blue text-2xl text-center font-Nunito_Italic underline`}>
+            <Text className="text-c_light_blue text-xl text-center font-Nunito_Italic underline">
                 {text}
             </Text>
         </Pressable>

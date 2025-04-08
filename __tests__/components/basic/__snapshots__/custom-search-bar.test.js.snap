@@ -1,18 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CustomSearchBar should render correctly 1`] = `
-<View
-  style={
-    [
-      {
-        "marginBottom": 8,
-        "marginLeft": 8,
-        "marginRight": 8,
-        "marginTop": 8,
-      },
-    ]
-  }
->
+<View>
   <Text
     style={
       [

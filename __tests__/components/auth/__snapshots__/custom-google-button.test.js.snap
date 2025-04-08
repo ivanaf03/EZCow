@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomGoogleButton should render correctly 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      },
+      {
+        "backgroundColor": "#272727",
+      },
+      {
+        "borderLeftWidth": 8,
+        "borderRightWidth": 8,
+      },
+      {
+        "borderBottomWidth": 2,
+        "borderTopWidth": 2,
+      },
+      {
+        "borderBottomColor": "#2254ba",
+        "borderLeftColor": "#2254ba",
+        "borderRightColor": "#2254ba",
+        "borderTopColor": "#2254ba",
+      },
+      {
+        "borderBottomLeftRadius": 24,
+        "borderBottomRightRadius": 24,
+        "borderTopLeftRadius": 24,
+        "borderTopRightRadius": 24,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "fontFamily": "Nunito-SemiBold",
+        },
+        {
+          "color": "#ffffff",
+        },
+        {
+          "fontSize": 20,
+          "lineHeight": 28,
+        },
+        {
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Google
+  </Text>
+</View>
+`;

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabTitle renders correctly 1`] = `
+<Text
+  style={
+    [
+      {
+        "marginTop": 16,
+      },
+      {
+        "marginLeft": 16,
+        "marginRight": 16,
+      },
+      {
+        "color": "#ffffff",
+      },
+      {
+        "fontSize": 36,
+        "lineHeight": 40,
+      },
+      {
+        "fontFamily": "Nunito-Bold",
+      },
+      {
+        "borderBottomWidth": 2,
+      },
+      {
+        "borderBottomColor": "#ffffff",
+        "borderLeftColor": "#ffffff",
+        "borderRightColor": "#ffffff",
+        "borderTopColor": "#ffffff",
+      },
+    ]
+  }
+>
+  Test
+</Text>
+`;

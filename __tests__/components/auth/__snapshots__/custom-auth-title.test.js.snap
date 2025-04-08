@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomAuthTitle renders correctly 1`] = `
+<Text
+  style={
+    [
+      {
+        "marginTop": 16,
+      },
+      {
+        "marginLeft": 16,
+        "marginRight": 16,
+      },
+      {
+        "color": "#ffffff",
+      },
+      {
+        "fontSize": 36,
+        "lineHeight": 40,
+      },
+      {
+        "fontFamily": "Nunito-Bold",
+      },
+    ]
+  }
+>
+  Test
+</Text>
+`;

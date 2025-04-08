@@ -1,11 +1,18 @@
-import * as SQLite from 'expo-sqlite';
+import * as SQLite from "expo-sqlite";
 
 let db;
 
-export const initDatabase = async () => {
-    const db = await SQLite.openDatabaseAsync('ezcow.db');
+export const getDatabase = async () => {
+  if (!db) {
+    db = await SQLite.openDatabaseAsync("ezcow.db");
+  }
+  return db;
+};
 
-    await db.execAsync(`
+export const initDatabase = async () => {
+  db = await getDatabase();
+  
+  await db.execAsync(`
         PRAGMA journal_mode = WAL;
 
         CREATE TABLE IF NOT EXISTS User (
@@ -45,26 +52,18 @@ export const initDatabase = async () => {
     `);
 };
 
-export const getDatabase = async () => {
-    if (!db) {
-        db = await SQLite.openDatabaseAsync('ezcow.db');
-    }
-
-    return db;
-};
-
 export const deleteDatabase = async () => {
-    await db.closeAsync();
-    await SQLite.deleteDatabaseAsync('ezcow.db');
+  await db.closeAsync();
+  await SQLite.deleteDatabaseAsync("ezcow.db");
 };
 
 export const closeDatabase = async () => {
-    await db.closeAsync();
-    db = null;
+  await db.closeAsync();
+  db = null;
 };
 
 export const syncDatabase = async () => {
-    await db.execAsync(`
+  await db.execAsync(`
         PRAGMA wal_checkpoint(FULL);
     `);
 };
