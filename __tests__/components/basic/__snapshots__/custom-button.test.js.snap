@@ -62,6 +62,12 @@ exports[`CustomButton should render correctly 1`] = `
         "borderTopLeftRadius": 24,
         "borderTopRightRadius": 24,
       },
+      {
+        "alignItems": "center",
+      },
+      {
+        "justifyContent": "center",
+      },
     ]
   }
 >

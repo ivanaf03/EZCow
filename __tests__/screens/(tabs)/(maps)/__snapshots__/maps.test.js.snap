@@ -134,6 +134,12 @@ exports[`Maps should navigate to fields 1`] = `
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
             },
+            {
+              "alignItems": "center",
+            },
+            {
+              "justifyContent": "center",
+            },
           ]
         }
         testID="fields-button"
@@ -473,6 +479,12 @@ exports[`Maps should navigate to fields 1`] = `
               "borderBottomRightRadius": 24,
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
+            },
+            {
+              "alignItems": "center",
+            },
+            {
+              "justifyContent": "center",
             },
           ]
         }
@@ -638,6 +650,12 @@ exports[`Maps should render correctly 1`] = `
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
             },
+            {
+              "alignItems": "center",
+            },
+            {
+              "justifyContent": "center",
+            },
           ]
         }
         testID="fields-button"
@@ -977,6 +995,12 @@ exports[`Maps should render correctly 1`] = `
               "borderBottomRightRadius": 24,
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
+            },
+            {
+              "alignItems": "center",
+            },
+            {
+              "justifyContent": "center",
             },
           ]
         }
@@ -1142,6 +1166,12 @@ exports[`Maps should save correct location 1`] = `
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
             },
+            {
+              "alignItems": "center",
+            },
+            {
+              "justifyContent": "center",
+            },
           ]
         }
         testID="fields-button"
@@ -1481,6 +1511,12 @@ exports[`Maps should save correct location 1`] = `
               "borderBottomRightRadius": 24,
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
+            },
+            {
+              "alignItems": "center",
+            },
+            {
+              "justifyContent": "center",
             },
           ]
         }

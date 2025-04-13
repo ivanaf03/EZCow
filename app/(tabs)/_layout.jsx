@@ -51,7 +51,7 @@ const TabsLayout = () => {
                 }}
             />
             <Tabs.Screen
-                name="(breeding)/breeding"
+                name="(breeding)"
                 options={{
                     title: "Crianza",
                     headerShown: false,
