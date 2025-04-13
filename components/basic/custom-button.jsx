@@ -5,7 +5,7 @@ import { Pressable, Text } from "react-native";
 const CustomButton = ({ text, onPress, buttonTestID }) => {
   return (
     <Pressable
-      className="p-4 bg-c_light_gray border-x-8 border-y-2 border-c_marine_blue rounded-3xl"
+      className="p-4 bg-c_light_gray border-x-8 border-y-2 border-c_marine_blue rounded-3xl items-center justify-center"
       onPress={onPress}
       testID={buttonTestID}
     >

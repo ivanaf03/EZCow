@@ -11,7 +11,7 @@ export const getDatabase = async () => {
 
 export const initDatabase = async () => {
   db = await getDatabase();
-  
+
   await db.execAsync(`
         PRAGMA journal_mode = WAL;
 
@@ -48,6 +48,15 @@ export const initDatabase = async () => {
             longitude REAL DEFAULT -7.0,
             user_fk INTEGER NOT NULL,
             FOREIGN KEY(user_fk) REFERENCES User(id)
+        );
+
+        CREATE TABLE IF NOT EXISTS BreedingEvent (
+            if INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            description TEXT,
+            date DATE NOT NULL,
+            cow_fk INTEGER NOT NULL,
+            FOREIGN KEY(cow_fk) REFERENCES Cow(id)
         );
     `);
 };
