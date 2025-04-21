@@ -60,8 +60,7 @@ exports[`BreedingDay should render correctly 1`] = `
             "color": "#ffffff",
           },
           {
-            "fontSize": 14,
-            "lineHeight": 20,
+            "fontWeight": "700",
           },
           {
             "fontFamily": "Nunito-Medium",
@@ -75,10 +74,14 @@ exports[`BreedingDay should render correctly 1`] = `
       style={
         [
           {
-            "flexDirection": "row",
+            "marginBottom": 8,
+            "marginTop": 8,
           },
           {
-            "alignItems": "center",
+            "flexDirection": "column",
+          },
+          {
+            "justifyContent": "space-between",
           },
         ]
       }
@@ -90,147 +93,14 @@ exports[`BreedingDay should render correctly 1`] = `
               "color": "#ffffff",
             },
             {
-              "fontSize": 14,
-              "lineHeight": 20,
+              "fontFamily": "Nunito-BoldItalic",
             },
             {
-              "fontFamily": "Nunito-Medium",
+              "textDecorationLine": "underline",
             },
           ]
         }
       >
-        Vaca Test
-         - 
-        Test
-      </Text>
-      <Text
-        style={
-          [
-            {
-              "color": "#ffffff",
-            },
-            {
-              "fontSize": 14,
-              "lineHeight": 20,
-            },
-            {
-              "fontFamily": "Nunito-Medium",
-            },
-            [
-              {
-                "marginLeft": 8,
-              },
-            ],
-          ]
-        }
-      >
-        Test description
-      </Text>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`BreedingDay should render correctly with events 1`] = `
-<View
-  style={
-    [
-      {
-        "display": "flex",
-      },
-      {
-        "alignItems": "center",
-      },
-      {
-        "justifyContent": "center",
-      },
-      {
-        "paddingBottom": 16,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 16,
-      },
-      {
-        "backgroundColor": "#272727",
-      },
-      {
-        "borderLeftWidth": 2,
-        "borderRightWidth": 2,
-      },
-      {
-        "borderBottomColor": "#6bc0eb",
-        "borderLeftColor": "#6bc0eb",
-        "borderRightColor": "#6bc0eb",
-        "borderTopColor": "#6bc0eb",
-      },
-      {
-        "borderBottomLeftRadius": 8,
-        "borderBottomRightRadius": 8,
-        "borderTopLeftRadius": 8,
-        "borderTopRightRadius": 8,
-      },
-    ]
-  }
->
-  <View
-    style={
-      [
-        {
-          "width": "100%",
-        },
-        {
-          "justifyContent": "flex-start",
-        },
-      ]
-    }
-  >
-    <Text
-      style={
-        [
-          {
-            "color": "#ffffff",
-          },
-          {
-            "fontSize": 14,
-            "lineHeight": 20,
-          },
-          {
-            "fontFamily": "Nunito-Medium",
-          },
-        ]
-      }
-    >
-      2022-01-01
-    </Text>
-    <View
-      style={
-        [
-          {
-            "flexDirection": "row",
-          },
-          {
-            "alignItems": "center",
-          },
-        ]
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "color": "#ffffff",
-            },
-            {
-              "fontSize": 14,
-              "lineHeight": 20,
-            },
-            {
-              "fontFamily": "Nunito-Medium",
-            },
-          ]
-        }
-      >
-        Vaca Test
          - 
         Prueba
       </Text>
@@ -247,11 +117,6 @@ exports[`BreedingDay should render correctly with events 1`] = `
             {
               "fontFamily": "Nunito-Medium",
             },
-            [
-              {
-                "marginLeft": 8,
-              },
-            ],
           ]
         }
       >
@@ -322,8 +187,7 @@ exports[`BreedingDay should render correctly with no events 1`] = `
             "color": "#ffffff",
           },
           {
-            "fontSize": 14,
-            "lineHeight": 20,
+            "fontWeight": "700",
           },
           {
             "fontFamily": "Nunito-Medium",
@@ -333,62 +197,6 @@ exports[`BreedingDay should render correctly with no events 1`] = `
     >
       2022-01-01
     </Text>
-    <View
-      style={
-        [
-          {
-            "flexDirection": "row",
-          },
-          {
-            "alignItems": "center",
-          },
-        ]
-      }
-    >
-      <Text
-        style={
-          [
-            {
-              "color": "#ffffff",
-            },
-            {
-              "fontSize": 14,
-              "lineHeight": 20,
-            },
-            {
-              "fontFamily": "Nunito-Medium",
-            },
-          ]
-        }
-      >
-        Vaca Test
-         - 
-        Test
-      </Text>
-      <Text
-        style={
-          [
-            {
-              "color": "#ffffff",
-            },
-            {
-              "fontSize": 14,
-              "lineHeight": 20,
-            },
-            {
-              "fontFamily": "Nunito-Medium",
-            },
-            [
-              {
-                "marginLeft": 8,
-              },
-            ],
-          ]
-        }
-      >
-        Test description
-      </Text>
-    </View>
   </View>
 </View>
 `;

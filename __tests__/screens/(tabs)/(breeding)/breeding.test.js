@@ -1,7 +1,7 @@
 import React from "react";
 
 import { render, fireEvent, waitFor } from "@testing-library/react-native";
-import { router } from "expo-router";
+import { router, useFocusEffect } from "expo-router";
 
 import Breeding from "../../../../app/(tabs)/(breeding)/breeding";
 
@@ -19,6 +19,7 @@ jest.mock("expo-router", () => ({
   router: {
     push: jest.fn(),
   },
+  useFocusEffect: jest.fn(),
 }));
 
 describe("Breeding", () => {

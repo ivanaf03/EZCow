@@ -2,15 +2,15 @@ import { getDatabase } from "./bd";
 
 export const insertBreedingEvent = async (
   cow_fk,
+  eventName,
   description,
-  date,
-  user_fk
+  date
 ) => {
   const db = await getDatabase();
   try {
     const res = await db.runAsync(
-      `INSERT INTO BreedingEvent (cow_fk, description, date, user_fk) VALUES (?, ?, ?, ?)`,
-      [cow_fk, description, date, user_fk]
+      `INSERT INTO BreedingEvent (cow_fk, eventName, description, date) VALUES (?, ?, ?, ?)`,
+      [cow_fk, eventName, description, date]
     );
     return res;
   } catch (error) {
@@ -19,12 +19,12 @@ export const insertBreedingEvent = async (
   }
 };
 
-export const getBreedingEventsByDayAnUserId = async (day, userId) => {
+export const getAllBreedingEventsByUserId = async (userId) => {
   const db = await getDatabase();
   try {
     const res = await db.getAllAsync(
-      `SELECT * FROM BreedingEvent JOIN Cow ON BreedingEvent.cow_fk = Cow.id WHERE date = ? AND user_fk = ?`,
-      [userId, day]
+      `SELECT * FROM BreedingEvent JOIN Cow ON BreedingEvent.cow_fk = Cow.id WHERE user_fk = ? and exitDate IS NULL`,
+      [userId]
     );
     return res;
   } catch (error) {

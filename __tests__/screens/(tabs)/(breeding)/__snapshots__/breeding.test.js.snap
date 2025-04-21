@@ -16,6 +16,40 @@ exports[`Breeding should render correctly 1`] = `
   }
 >
   <View>
+    <Text
+      style={
+        [
+          {
+            "marginTop": 16,
+          },
+          {
+            "marginLeft": 16,
+            "marginRight": 16,
+          },
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontSize": 36,
+            "lineHeight": 40,
+          },
+          {
+            "fontFamily": "Nunito-Bold",
+          },
+          {
+            "borderBottomWidth": 2,
+          },
+          {
+            "borderBottomColor": "#ffffff",
+            "borderLeftColor": "#ffffff",
+            "borderRightColor": "#ffffff",
+            "borderTopColor": "#ffffff",
+          },
+        ]
+      }
+    >
+      Crianza
+    </Text>
     <View
       style={
         [
@@ -239,7 +273,7 @@ exports[`Breeding should render correctly 1`] = `
             testID="date-picker-button"
           >
             <Text>
-              13/4/2025
+              22/4/2025
             </Text>
           </View>
         </View>
@@ -293,14 +327,14 @@ exports[`Breeding should render correctly 1`] = `
                     "color": "#ffffff",
                   },
                   {
-                    "fontSize": 12,
-                    "lineHeight": 16,
+                    "fontSize": 24,
+                    "lineHeight": 32,
                   },
                   {
                     "fontFamily": "Nunito-Bold",
                   },
                   {
-                    "width": 112,
+                    "width": 240,
                   },
                   {
                     "textAlign": "center",
@@ -323,14 +357,14 @@ exports[`Breeding should render correctly 1`] = `
                     "color": "#ffffff",
                   },
                   {
-                    "fontSize": 12,
-                    "lineHeight": 16,
+                    "fontSize": 24,
+                    "lineHeight": 32,
                   },
                   {
                     "fontFamily": "Nunito-Bold",
                   },
                   {
-                    "width": 112,
+                    "width": 240,
                   },
                   {
                     "textAlign": "center",
@@ -353,14 +387,14 @@ exports[`Breeding should render correctly 1`] = `
                     "color": "#ffffff",
                   },
                   {
-                    "fontSize": 12,
-                    "lineHeight": 16,
+                    "fontSize": 24,
+                    "lineHeight": 32,
                   },
                   {
                     "fontFamily": "Nunito-Bold",
                   },
                   {
-                    "width": 112,
+                    "width": 240,
                   },
                   {
                     "textAlign": "center",
@@ -383,14 +417,14 @@ exports[`Breeding should render correctly 1`] = `
                     "color": "#ffffff",
                   },
                   {
-                    "fontSize": 12,
-                    "lineHeight": 16,
+                    "fontSize": 24,
+                    "lineHeight": 32,
                   },
                   {
                     "fontFamily": "Nunito-Bold",
                   },
                   {
-                    "width": 112,
+                    "width": 240,
                   },
                   {
                     "textAlign": "center",
@@ -413,14 +447,14 @@ exports[`Breeding should render correctly 1`] = `
                     "color": "#ffffff",
                   },
                   {
-                    "fontSize": 12,
-                    "lineHeight": 16,
+                    "fontSize": 24,
+                    "lineHeight": 32,
                   },
                   {
                     "fontFamily": "Nunito-Bold",
                   },
                   {
-                    "width": 112,
+                    "width": 240,
                   },
                   {
                     "textAlign": "center",
@@ -443,14 +477,14 @@ exports[`Breeding should render correctly 1`] = `
                     "color": "#ffffff",
                   },
                   {
-                    "fontSize": 12,
-                    "lineHeight": 16,
+                    "fontSize": 24,
+                    "lineHeight": 32,
                   },
                   {
                     "fontFamily": "Nunito-Bold",
                   },
                   {
-                    "width": 112,
+                    "width": 240,
                   },
                   {
                     "textAlign": "center",
@@ -473,14 +507,14 @@ exports[`Breeding should render correctly 1`] = `
                     "color": "#ffffff",
                   },
                   {
-                    "fontSize": 12,
-                    "lineHeight": 16,
+                    "fontSize": 24,
+                    "lineHeight": 32,
                   },
                   {
                     "fontFamily": "Nunito-Bold",
                   },
                   {
-                    "width": 112,
+                    "width": 240,
                   },
                   {
                     "textAlign": "center",
@@ -533,7 +567,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -558,7 +592,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -583,7 +617,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -665,8 +699,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -684,7 +717,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -766,8 +799,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -785,7 +817,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -867,8 +899,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -886,7 +917,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -968,8 +999,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -987,7 +1017,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -1069,8 +1099,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -1108,7 +1137,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -1190,8 +1219,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -1209,7 +1237,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -1291,8 +1319,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -1310,7 +1337,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -1392,8 +1419,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -1411,7 +1437,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -1493,8 +1519,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -1512,7 +1537,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -1594,8 +1619,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -1613,7 +1637,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -1695,8 +1719,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -1714,7 +1737,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -1796,8 +1819,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -1835,7 +1857,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -1854,12 +1876,6 @@ exports[`Breeding should render correctly 1`] = `
                         "borderBottomRightRadius": 8,
                         "borderTopLeftRadius": 8,
                         "borderTopRightRadius": 8,
-                      },
-                      {
-                        "borderBottomWidth": 2,
-                        "borderLeftWidth": 2,
-                        "borderRightWidth": 2,
-                        "borderTopWidth": 2,
                       },
                     ]
                   }
@@ -1923,8 +1939,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -1942,7 +1957,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -2024,8 +2039,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -2043,7 +2057,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -2125,8 +2139,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -2144,7 +2157,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -2226,8 +2239,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -2245,7 +2257,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -2327,8 +2339,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -2346,7 +2357,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -2428,8 +2439,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -2447,7 +2457,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -2529,8 +2539,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -2568,7 +2577,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -2650,8 +2659,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -2669,7 +2677,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -2751,8 +2759,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -2770,7 +2777,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -2789,6 +2796,30 @@ exports[`Breeding should render correctly 1`] = `
                         "borderBottomRightRadius": 8,
                         "borderTopLeftRadius": 8,
                         "borderTopRightRadius": 8,
+                      },
+                      {
+                        "paddingBottom": 8,
+                        "paddingLeft": 8,
+                        "paddingRight": 8,
+                        "paddingTop": 8,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#6bc0eb",
+                        "borderLeftColor": "#6bc0eb",
+                        "borderRightColor": "#6bc0eb",
+                        "borderTopColor": "#6bc0eb",
+                      },
+                      {
+                        "borderBottomLeftRadius": 16,
+                        "borderBottomRightRadius": 16,
+                        "borderTopLeftRadius": 16,
+                        "borderTopRightRadius": 16,
                       },
                     ]
                   }
@@ -2852,8 +2883,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -2871,7 +2901,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -2953,8 +2983,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -2972,7 +3001,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -3054,8 +3083,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -3073,7 +3101,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -3155,8 +3183,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -3174,7 +3201,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -3256,8 +3283,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -3295,7 +3321,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -3377,8 +3403,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -3396,7 +3421,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -3478,8 +3503,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -3497,7 +3521,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -3579,8 +3603,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -3598,7 +3621,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -3680,8 +3703,7 @@ exports[`Breeding should render correctly 1`] = `
                               "color": "#ffffff",
                             },
                             {
-                              "fontSize": 14,
-                              "lineHeight": 20,
+                              "fontWeight": "700",
                             },
                             {
                               "fontFamily": "Nunito-Medium",
@@ -3699,7 +3721,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -3724,7 +3746,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
@@ -3749,7 +3771,7 @@ exports[`Breeding should render correctly 1`] = `
                 style={
                   [
                     {
-                      "width": 112,
+                      "width": 240,
                     },
                     [
                       {
