@@ -1,16 +1,45 @@
 import React from "react";
 import { ScrollView, View, Text } from "react-native";
-import { router } from "expo-router";
+import { router, useFocusEffect } from "expo-router";
 
 import CustomCalendar from "../../../components/basic/custom-calendar";
 import BreedingDay from "./breeding-day";
-import { getBreedingEventsByDayAnUserId } from "../../model/breeding-events";
+import { getAllBreedingEventsByUserId } from "../../model/breeding-events";
 import { useUser } from "../../../hooks/providers/user-provider";
 import CustomButton from "../../../components/basic/custom-button";
+import TabTitle from "../../../components/tabs/tab-title";
 
 const Breeding = () => {
   const [date, setDate] = React.useState(new Date());
+  const [eventsByDay, setEventsByDay] = React.useState({});
   const { user } = useUser();
+
+  useFocusEffect(
+    React.useCallback(() => {
+      const fetchEvents = async () => {
+        const allEvents = await getAllBreedingEventsByUserId(user.id);
+        const days = getDaysInMonth(date);
+        const results = {};
+
+        const formatDate = (d) => new Date(d).toLocaleDateString("es-ES");
+        const formatDay = (d) => d.toLocaleDateString("es-ES");
+
+        days.forEach((day) => {
+          const formattedDay = formatDay(day);
+
+          const dayEvents = allEvents.filter((event) => {
+            console.log(event);
+            const eventDate = formatDate(event.date);
+            return eventDate === formattedDay;
+          });
+          results[formattedDay] = dayEvents;
+        });
+
+        setEventsByDay(results);
+      };
+      fetchEvents();
+    }, [date, user.id])
+  );
 
   const handleChange = (selectedDate) => {
     setDate(selectedDate);
@@ -54,21 +83,14 @@ const Breeding = () => {
     return weeks;
   };
 
+  const formatDay = (d) => d.toLocaleDateString("es-ES");
+
   const allDays = getDaysInMonth(date);
   const weeks = groupByWeeks(allDays);
 
-  const getEventsByDay = async (day) => {
-    const events = await getBreedingEventsByDayAnUserId(day, user.id);
-    return events.map((event) => ({
-      id: event.id,
-      cowName: event.cowName,
-      name: event.name,
-      description: event.description,
-    }));
-  };
-
   return (
     <ScrollView className="flex-1 bg-c_dark_gray">
+      <TabTitle text="Crianza" />
       <View className="my-8 w-[90%] self-center">
         <CustomButton
           text="Añadir un evento de reproducción"
@@ -76,11 +98,11 @@ const Breeding = () => {
           buttonTestID="breeding-form-button"
         />
         <View className="mt-4">
-              <CustomCalendar
-        text="Selecciona un día"
-        date={date}
-        onChange={handleChange}
-      />
+          <CustomCalendar
+            text="Selecciona un día"
+            date={date}
+            onChange={handleChange}
+          />
         </View>
       </View>
       <ScrollView
@@ -90,14 +112,16 @@ const Breeding = () => {
       >
         <View>
           <View className="flex-row gap-4 mb-2 px-4">
-            {["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"].map((day, index) => (
-              <Text
-                key={index}
-                className="text-c_white text-2xl font-Nunito_Bold w-60 text-center"
-              >
-                {day}
-              </Text>
-            ))}
+            {["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"].map(
+              (day, index) => (
+                <Text
+                  key={index}
+                  className="text-c_white text-2xl font-Nunito_Bold w-60 text-center"
+                >
+                  {day}
+                </Text>
+              )
+            )}
           </View>
           <View className="flex-col gap-2">
             {weeks.map((week, i) => (
@@ -116,7 +140,7 @@ const Breeding = () => {
                       >
                         <BreedingDay
                           date={day.toLocaleDateString("es-ES")}
-                          events={() => getEventsByDay(day)}
+                          events={eventsByDay[formatDay(day)] || []}
                         />
                       </View>
                     ) : (

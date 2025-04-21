@@ -15,6 +15,8 @@ export const initDatabase = async () => {
   await db.execAsync(`
         PRAGMA journal_mode = WAL;
 
+        DROP TABLE IF EXISTS BreedingEvent;
+
         CREATE TABLE IF NOT EXISTS User (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT NOT NULL,
@@ -51,8 +53,8 @@ export const initDatabase = async () => {
         );
 
         CREATE TABLE IF NOT EXISTS BreedingEvent (
-            if INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT NOT NULL,
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            eventName TEXT NOT NULL,
             description TEXT,
             date DATE NOT NULL,
             cow_fk INTEGER NOT NULL,

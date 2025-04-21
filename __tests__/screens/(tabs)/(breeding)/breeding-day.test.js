@@ -13,12 +13,14 @@ describe("BreedingDay", () => {
     const tree = render(
       <BreedingDay
         date="2022-01-01"
-        event={{
-          id: "1",
-          cowName: "Vaca Test",
-          name: "Test",
-          description: "Test description",
-        }}
+        events={[
+          {
+            id: "1",
+            cowName: "Vaca Test",
+            name: "Prueba",
+            description: "Esto es una prueba",
+          },
+        ]}
       />
     );
     await waitFor(() => expect(tree).toMatchSnapshot());
@@ -28,27 +30,8 @@ describe("BreedingDay", () => {
     const tree = render(
       <BreedingDay
         date="2022-01-01"
-        event={{
-          id: "1",
-          cowName: "Vaca Test",
-          name: "Test",
-          description: "Test description",
-        }}
-      />
-    );
-    await waitFor(() => expect(tree).toMatchSnapshot());
-  });
-
-  it("should render correctly with events", async () => {
-    const tree = render(
-      <BreedingDay
-        date="2022-01-01"
-        event={{
-          id: "1",
-          cowName: "Vaca Test",
-          name: "Prueba",
-          description: "Esto es una prueba",
-        }}
+        events={[
+        ]}
       />
     );
     await waitFor(() => expect(tree).toMatchSnapshot());

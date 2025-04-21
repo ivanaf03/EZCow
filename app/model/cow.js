@@ -169,3 +169,17 @@ export const getAllCalvesExitedByUserId = async (userId) => {
     return null;
   }
 };
+
+export const getAllCowIdsAndNamesAvailableByUserId = async (userId) => {
+  const db = await getDatabase();
+  try {
+    const res = await db.getAllAsync(
+      `SELECT id, name FROM Cow WHERE user_fk = ? AND exitDate is NULL`,
+      [userId]
+    );
+    return res;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};

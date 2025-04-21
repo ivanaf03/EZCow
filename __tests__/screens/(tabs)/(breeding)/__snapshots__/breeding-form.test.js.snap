@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LivestockForm should render correctly 1`] = `
+exports[`BreedingForm should render correctly 1`] = `
 <RCTScrollView
   style={
     [
@@ -144,7 +144,7 @@ exports[`LivestockForm should render correctly 1`] = `
               },
             ]
           }
-          testID="livestock-button"
+          testID="breeding-button"
         >
           <Text
             style={
@@ -165,41 +165,7 @@ exports[`LivestockForm should render correctly 1`] = `
               ]
             }
           >
-            <View
-              style={
-                [
-                  {
-                    "flexDirection": "column",
-                  },
-                  {
-                    "alignItems": "center",
-                  },
-                  {
-                    "justifyContent": "center",
-                  },
-                ]
-              }
-            >
-              <View />
-              <Text
-                style={
-                  [
-                    {
-                      "color": "#ffffff",
-                    },
-                    {
-                      "fontSize": 18,
-                      "lineHeight": 28,
-                    },
-                    {
-                      "fontFamily": "Nunito-Medium",
-                    },
-                  ]
-                }
-              >
-                Ver censo
-              </Text>
-            </View>
+            Ver calendario de reproducción
           </Text>
         </View>
       </View>
@@ -262,7 +228,7 @@ exports[`LivestockForm should render correctly 1`] = `
                     "lineHeight": 20,
                   },
                   {
-                    "fontFamily": "Nunito-Medium",
+                    "fontFamily": "Nunito-Light",
                   },
                   [
                     {
@@ -272,20 +238,12 @@ exports[`LivestockForm should render correctly 1`] = `
                 ]
               }
             >
-              Código de chapa
+              Nombre de la vaca
               :
             </Text>
-            <TextInput
-              onChangeText={[Function]}
-              placeholder="Código"
+            <View
               style={
                 [
-                  {
-                    "paddingBottom": 8,
-                    "paddingLeft": 8,
-                    "paddingRight": 8,
-                    "paddingTop": 8,
-                  },
                   {
                     "backgroundColor": "#ffffff",
                   },
@@ -302,10 +260,10 @@ exports[`LivestockForm should render correctly 1`] = `
                     "borderTopColor": "#2254ba",
                   },
                   {
-                    "borderBottomLeftRadius": 16,
-                    "borderBottomRightRadius": 16,
-                    "borderTopLeftRadius": 16,
-                    "borderTopRightRadius": 16,
+                    "borderBottomLeftRadius": 24,
+                    "borderBottomRightRadius": 24,
+                    "borderTopLeftRadius": 24,
+                    "borderTopRightRadius": 24,
                   },
                   {
                     "fontFamily": "Nunito-Medium",
@@ -317,7 +275,228 @@ exports[`LivestockForm should render correctly 1`] = `
                   ],
                 ]
               }
-            />
+            >
+              <View>
+                <RNCPicker
+                  items={
+                    [
+                      {
+                        "label": "",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "",
+                      },
+                    ]
+                  }
+                  numberOfLines={1}
+                  onChange={[Function]}
+                  selectedIndex={0}
+                  style={
+                    [
+                      {
+                        "height": 216,
+                      },
+                      undefined,
+                    ]
+                  }
+                />
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "marginTop": 24,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginTop": -4,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#ffffff",
+                  },
+                  {
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "fontFamily": "Nunito-Light",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            >
+              Tipo de evento
+              :
+            </Text>
+            <View
+              style={
+                [
+                  {
+                    "backgroundColor": "#ffffff",
+                  },
+                  {
+                    "borderBottomWidth": 2,
+                    "borderLeftWidth": 2,
+                    "borderRightWidth": 2,
+                    "borderTopWidth": 2,
+                  },
+                  {
+                    "borderBottomColor": "#2254ba",
+                    "borderLeftColor": "#2254ba",
+                    "borderRightColor": "#2254ba",
+                    "borderTopColor": "#2254ba",
+                  },
+                  {
+                    "borderBottomLeftRadius": 24,
+                    "borderBottomRightRadius": 24,
+                    "borderTopLeftRadius": 24,
+                    "borderTopRightRadius": 24,
+                  },
+                  {
+                    "fontFamily": "Nunito-Medium",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            >
+              <View>
+                <RNCPicker
+                  items={
+                    [
+                      {
+                        "label": "Celo",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Celo",
+                      },
+                      {
+                        "label": "Inseminación",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Inseminación",
+                      },
+                      {
+                        "label": "Parto previsto",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Parto previsto",
+                      },
+                      {
+                        "label": "Aborto",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Aborto",
+                      },
+                      {
+                        "label": "Nacimiento hembra",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Nacimiento hembra",
+                      },
+                      {
+                        "label": "Nacimiento macho",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Nacimiento macho",
+                      },
+                      {
+                        "label": "Cría muerta",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Cría muerta",
+                      },
+                      {
+                        "label": "Parto distópico",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Parto distópico",
+                      },
+                      {
+                        "label": "Aviso de secado",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Aviso de secado",
+                      },
+                      {
+                        "label": "Ojo al celo",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Ojo al celo",
+                      },
+                      {
+                        "label": "Vaca vacía",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Vaca vacía",
+                      },
+                      {
+                        "label": "Vaca dudosa",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Vaca dudosa",
+                      },
+                      {
+                        "label": "Vaca dudosa (positivo)",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Vaca dudosa (positivo)",
+                      },
+                      {
+                        "label": "Vaca sucia",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Vaca sucia",
+                      },
+                      {
+                        "label": "Lavado",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Lavado",
+                      },
+                      {
+                        "label": "Retención de placenta",
+                        "testID": undefined,
+                        "textColor": undefined,
+                        "value": "Retención de placenta",
+                      },
+                    ]
+                  }
+                  numberOfLines={1}
+                  onChange={[Function]}
+                  selectedIndex={0}
+                  style={
+                    [
+                      {
+                        "height": 216,
+                      },
+                      undefined,
+                    ]
+                  }
+                />
+              </View>
+            </View>
           </View>
         </View>
         <View
@@ -359,12 +538,12 @@ exports[`LivestockForm should render correctly 1`] = `
                 ]
               }
             >
-              Nombre de vaca
+              Descripción
               :
             </Text>
             <TextInput
               onChangeText={[Function]}
-              placeholder="Nombre"
+              placeholder="Descripción"
               style={
                 [
                   {
@@ -446,7 +625,7 @@ exports[`LivestockForm should render correctly 1`] = `
                 ]
               }
             >
-              Fecha de incorporación
+              Fecha
               :
             </Text>
             <View
@@ -536,457 +715,6 @@ exports[`LivestockForm should render correctly 1`] = `
           }
         >
           <View
-            style={
-              [
-                {
-                  "marginTop": -4,
-                },
-              ]
-            }
-          >
-            <Text
-              style={
-                [
-                  {
-                    "color": "#ffffff",
-                  },
-                  {
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                  },
-                  {
-                    "fontFamily": "Nunito-Light",
-                  },
-                  [
-                    {
-                      "marginTop": 4,
-                    },
-                  ],
-                ]
-              }
-            >
-              Género
-              :
-            </Text>
-            <View
-              style={
-                [
-                  {
-                    "backgroundColor": "#ffffff",
-                  },
-                  {
-                    "borderBottomWidth": 2,
-                    "borderLeftWidth": 2,
-                    "borderRightWidth": 2,
-                    "borderTopWidth": 2,
-                  },
-                  {
-                    "borderBottomColor": "#2254ba",
-                    "borderLeftColor": "#2254ba",
-                    "borderRightColor": "#2254ba",
-                    "borderTopColor": "#2254ba",
-                  },
-                  {
-                    "borderBottomLeftRadius": 24,
-                    "borderBottomRightRadius": 24,
-                    "borderTopLeftRadius": 24,
-                    "borderTopRightRadius": 24,
-                  },
-                  {
-                    "fontFamily": "Nunito-Medium",
-                  },
-                  [
-                    {
-                      "marginTop": 4,
-                    },
-                  ],
-                ]
-              }
-            >
-              <View>
-                <RNCPicker
-                  items={
-                    [
-                      {
-                        "label": "Masculino",
-                        "testID": undefined,
-                        "textColor": undefined,
-                        "value": "Masculino",
-                      },
-                      {
-                        "label": "Femenino",
-                        "testID": undefined,
-                        "textColor": undefined,
-                        "value": "Femenino",
-                      },
-                    ]
-                  }
-                  numberOfLines={1}
-                  onChange={[Function]}
-                  selectedIndex={0}
-                  style={
-                    [
-                      {
-                        "height": 216,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            [
-              {
-                "marginTop": 24,
-              },
-            ]
-          }
-        >
-          <View
-            style={
-              [
-                {
-                  "marginTop": -4,
-                },
-              ]
-            }
-          >
-            <Text
-              style={
-                [
-                  {
-                    "color": "#ffffff",
-                  },
-                  {
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                  },
-                  {
-                    "fontFamily": "Nunito-Light",
-                  },
-                  [
-                    {
-                      "marginTop": 4,
-                    },
-                  ],
-                ]
-              }
-            >
-              Fase
-              :
-            </Text>
-            <View
-              style={
-                [
-                  {
-                    "backgroundColor": "#ffffff",
-                  },
-                  {
-                    "borderBottomWidth": 2,
-                    "borderLeftWidth": 2,
-                    "borderRightWidth": 2,
-                    "borderTopWidth": 2,
-                  },
-                  {
-                    "borderBottomColor": "#2254ba",
-                    "borderLeftColor": "#2254ba",
-                    "borderRightColor": "#2254ba",
-                    "borderTopColor": "#2254ba",
-                  },
-                  {
-                    "borderBottomLeftRadius": 24,
-                    "borderBottomRightRadius": 24,
-                    "borderTopLeftRadius": 24,
-                    "borderTopRightRadius": 24,
-                  },
-                  {
-                    "fontFamily": "Nunito-Medium",
-                  },
-                  [
-                    {
-                      "marginTop": 4,
-                    },
-                  ],
-                ]
-              }
-            >
-              <View>
-                <RNCPicker
-                  items={
-                    [
-                      {
-                        "label": "Ternero",
-                        "testID": undefined,
-                        "textColor": undefined,
-                        "value": "Ternero",
-                      },
-                      {
-                        "label": "Adulto",
-                        "testID": undefined,
-                        "textColor": undefined,
-                        "value": "Adulto",
-                      },
-                    ]
-                  }
-                  numberOfLines={1}
-                  onChange={[Function]}
-                  selectedIndex={0}
-                  style={
-                    [
-                      {
-                        "height": 216,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          style={
-            [
-              {
-                "marginTop": 24,
-              },
-            ]
-          }
-        >
-          <View
-            style={
-              [
-                {
-                  "marginTop": -4,
-                },
-              ]
-            }
-          >
-            <Text
-              style={
-                [
-                  {
-                    "color": "#ffffff",
-                  },
-                  {
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                  },
-                  {
-                    "fontFamily": "Nunito-Medium",
-                  },
-                  [
-                    {
-                      "marginTop": 4,
-                    },
-                  ],
-                ]
-              }
-            >
-              Raza
-              :
-            </Text>
-            <TextInput
-              onChangeText={[Function]}
-              placeholder="Raza"
-              style={
-                [
-                  {
-                    "paddingBottom": 8,
-                    "paddingLeft": 8,
-                    "paddingRight": 8,
-                    "paddingTop": 8,
-                  },
-                  {
-                    "backgroundColor": "#ffffff",
-                  },
-                  {
-                    "borderBottomWidth": 2,
-                    "borderLeftWidth": 2,
-                    "borderRightWidth": 2,
-                    "borderTopWidth": 2,
-                  },
-                  {
-                    "borderBottomColor": "#2254ba",
-                    "borderLeftColor": "#2254ba",
-                    "borderRightColor": "#2254ba",
-                    "borderTopColor": "#2254ba",
-                  },
-                  {
-                    "borderBottomLeftRadius": 16,
-                    "borderBottomRightRadius": 16,
-                    "borderTopLeftRadius": 16,
-                    "borderTopRightRadius": 16,
-                  },
-                  {
-                    "fontFamily": "Nunito-Medium",
-                  },
-                  [
-                    {
-                      "marginTop": 4,
-                    },
-                  ],
-                ]
-              }
-            />
-          </View>
-        </View>
-        <View
-          style={
-            [
-              {
-                "marginTop": 24,
-              },
-            ]
-          }
-        >
-          <View
-            style={
-              [
-                {
-                  "marginTop": -4,
-                },
-              ]
-            }
-          >
-            <Text
-              style={
-                [
-                  {
-                    "color": "#ffffff",
-                  },
-                  {
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                  },
-                  {
-                    "fontFamily": "Nunito-Light",
-                  },
-                  [
-                    {
-                      "marginTop": 4,
-                    },
-                  ],
-                ]
-              }
-            >
-              Madre
-              :
-            </Text>
-            <View
-              style={
-                [
-                  {
-                    "backgroundColor": "#ffffff",
-                  },
-                  {
-                    "borderBottomWidth": 2,
-                    "borderLeftWidth": 2,
-                    "borderRightWidth": 2,
-                    "borderTopWidth": 2,
-                  },
-                  {
-                    "borderBottomColor": "#2254ba",
-                    "borderLeftColor": "#2254ba",
-                    "borderRightColor": "#2254ba",
-                    "borderTopColor": "#2254ba",
-                  },
-                  {
-                    "borderBottomLeftRadius": 24,
-                    "borderBottomRightRadius": 24,
-                    "borderTopLeftRadius": 24,
-                    "borderTopRightRadius": 24,
-                  },
-                  {
-                    "fontFamily": "Nunito-Medium",
-                  },
-                  [
-                    {
-                      "marginTop": 4,
-                    },
-                  ],
-                ]
-              }
-            >
-              <View>
-                <RNCPicker
-                  items={
-                    [
-                      {
-                        "label": "Desconocida",
-                        "testID": undefined,
-                        "textColor": undefined,
-                        "value": "Desconocida",
-                      },
-                      {
-                        "label": "1234",
-                        "testID": undefined,
-                        "textColor": undefined,
-                        "value": "1234",
-                      },
-                      {
-                        "label": "5678",
-                        "testID": undefined,
-                        "textColor": undefined,
-                        "value": "5678",
-                      },
-                    ]
-                  }
-                  numberOfLines={1}
-                  onChange={[Function]}
-                  selectedIndex={0}
-                  style={
-                    [
-                      {
-                        "height": 216,
-                      },
-                      undefined,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-          </View>
-          <Text
-            style={
-              [
-                {
-                  "marginTop": 8,
-                },
-                {
-                  "color": "#ffffff",
-                },
-                {
-                  "paddingLeft": 16,
-                  "paddingRight": 16,
-                },
-                {
-                  "fontSize": 14,
-                  "lineHeight": 20,
-                },
-                {
-                  "fontFamily": "Nunito-LightItalic",
-                },
-              ]
-            }
-          >
-            Marcar como desconocida si el animal proviene de otra explotación o si la madre no está registrada en la explotación.
-          </Text>
-        </View>
-        <View
-          style={
-            [
-              {
-                "marginTop": 24,
-              },
-            ]
-          }
-        >
-          <View
             accessibilityState={
               {
                 "busy": undefined,
@@ -1055,7 +783,7 @@ exports[`LivestockForm should render correctly 1`] = `
                 },
               ]
             }
-            testID="handle-add-cow-button"
+            testID="handle-add-breed-button"
           >
             <Text
               style={
