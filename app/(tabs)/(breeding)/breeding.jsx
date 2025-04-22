@@ -28,7 +28,6 @@ const Breeding = () => {
           const formattedDay = formatDay(day);
 
           const dayEvents = allEvents.filter((event) => {
-            console.log(event);
             const eventDate = formatDate(event.date);
             return eventDate === formattedDay;
           });

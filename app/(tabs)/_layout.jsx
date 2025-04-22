@@ -66,7 +66,7 @@ const TabsLayout = () => {
                 }}
             />
             <Tabs.Screen
-                name="(health)/health"
+                name="(health)"
                 options={{
                     title: "Salud",
                     headerShown: false,

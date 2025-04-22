@@ -3,10 +3,10 @@ import React from "react";
 import { render, fireEvent, waitFor } from "@testing-library/react-native";
 import { router } from "expo-router";
 
-import Breeding from "../../../../app/(tabs)/(breeding)/breeding";
+import Health from "../../../../app/(tabs)/(health)/health";
 
-jest.mock("../../../../app/model/breeding-events", () => ({
-  getBreedingEventsByDayAnUserId: jest.fn(() => []),
+jest.mock("../../../../app/model/health-events", () => ({
+  getHealthEventsByDayAnUserId: jest.fn(() => []),
 }));
 
 jest.mock("../../../../hooks/providers/user-provider", () => ({
@@ -22,18 +22,18 @@ jest.mock("expo-router", () => ({
   useFocusEffect: jest.fn(),
 }));
 
-describe("Breeding", () => {
+describe("Health", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
   it("should render correctly", async () => {
-    const tree = render(<Breeding />);
+    const tree = render(<Health />);
     await waitFor(() => expect(tree).toMatchSnapshot());
   });
 
   it("should change the date when pressing the calendar", async () => {
-    const tree = render(<Breeding />);
+    const tree = render(<Health />);
     const calendarButton = tree.getByTestId("date-picker-button");
     fireEvent.press(calendarButton);
     const today = new Date().toLocaleDateString("es-ES");
@@ -41,10 +41,10 @@ describe("Breeding", () => {
     expect(highlightedDate).toBeTruthy();
   });
 
-  it("should navigate to breeding-form when pressing breeding-form button", async () => {
-    const tree = render(<Breeding />);
-    const breedingFormButton = tree.getByTestId("breeding-form-button");
-    fireEvent.press(breedingFormButton);
-    expect(router.push).toHaveBeenCalledWith("breeding-form");
+  it("should navigate to health-form when pressing health-form button", async () => {
+    const tree = render(<Health />);
+    const healthFormButton = tree.getByTestId("health-form-button");
+    fireEvent.press(healthFormButton);
+    expect(router.push).toHaveBeenCalledWith("health-form");
   });
-}); 
+});
