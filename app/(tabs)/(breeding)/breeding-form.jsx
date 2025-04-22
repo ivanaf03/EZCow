@@ -54,7 +54,7 @@ const BreedingForm = () => {
 
   return (
     <ScrollView className="flex-1 bg-c_dark_gray">
-      <TabTitle text="Añadir vacas" />
+      <TabTitle text="Añadir evento de reproducción" />
       <View className="items-center">
         <View className="mx-4 mt-4 w-[75%]">
           <CustomButton
