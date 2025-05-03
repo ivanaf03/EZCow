@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BreedingDay should render correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "display": "flex",
+      },
+      {
+        "alignItems": "center",
+      },
+      {
+        "justifyContent": "center",
+      },
+      {
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      },
+      {
+        "backgroundColor": "#272727",
+      },
+      {
+        "borderLeftWidth": 2,
+        "borderRightWidth": 2,
+      },
+      {
+        "borderBottomColor": "#6bc0eb",
+        "borderLeftColor": "#6bc0eb",
+        "borderRightColor": "#6bc0eb",
+        "borderTopColor": "#6bc0eb",
+      },
+      {
+        "borderBottomLeftRadius": 8,
+        "borderBottomRightRadius": 8,
+        "borderTopLeftRadius": 8,
+        "borderTopRightRadius": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "width": "100%",
+        },
+        {
+          "justifyContent": "flex-start",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontWeight": "700",
+          },
+          {
+            "fontFamily": "Nunito-Medium",
+          },
+        ]
+      }
+    >
+      2022-01-01
+    </Text>
+    <View
+      style={
+        [
+          {
+            "marginBottom": 8,
+            "marginTop": 8,
+          },
+          {
+            "flexDirection": "column",
+          },
+          {
+            "justifyContent": "space-between",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontFamily": "Nunito-BoldItalic",
+            },
+            {
+              "textDecorationLine": "underline",
+            },
+          ]
+        }
+      >
+         - 
+        Prueba
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 14,
+              "lineHeight": 20,
+            },
+            {
+              "fontFamily": "Nunito-Medium",
+            },
+          ]
+        }
+      >
+        Esto es una prueba
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`BreedingDay should render correctly with no events 1`] = `
+<View
+  style={
+    [
+      {
+        "display": "flex",
+      },
+      {
+        "alignItems": "center",
+      },
+      {
+        "justifyContent": "center",
+      },
+      {
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      },
+      {
+        "backgroundColor": "#272727",
+      },
+      {
+        "borderLeftWidth": 2,
+        "borderRightWidth": 2,
+      },
+      {
+        "borderBottomColor": "#6bc0eb",
+        "borderLeftColor": "#6bc0eb",
+        "borderRightColor": "#6bc0eb",
+        "borderTopColor": "#6bc0eb",
+      },
+      {
+        "borderBottomLeftRadius": 8,
+        "borderBottomRightRadius": 8,
+        "borderTopLeftRadius": 8,
+        "borderTopRightRadius": 8,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "width": "100%",
+        },
+        {
+          "justifyContent": "flex-start",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontWeight": "700",
+          },
+          {
+            "fontFamily": "Nunito-Medium",
+          },
+        ]
+      }
+    >
+      2022-01-01
+    </Text>
+  </View>
+</View>
+`;

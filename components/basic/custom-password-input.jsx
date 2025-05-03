@@ -10,13 +10,13 @@ const CustomPasswordInput = ({ text, placeholder, value, onChangeText }) => {
     const [showPassword, setShowPassword] = React.useState(false);
 
     return (
-        <View className="m-2 gap-y-1">
+        <View className="gap-y-1">
             <Text className="text-c_white text-sm font-Nunito_Light">
                 {text}:
             </Text>
             <View className="flex-row items-center">
                 <TextInput
-                    className="p-2 mr-2 bg-c_white border-2 border-c_dark_violet rounded-full flex-1"
+                    className="p-2 mr-2 bg-c_white border-2 border-c_marine_blue rounded-2xl flex-1 font-Nunito_Medium"
                     placeholder={placeholder}
                     value={value}
                     onChangeText={onChangeText}

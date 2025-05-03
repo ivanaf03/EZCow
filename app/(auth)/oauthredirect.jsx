@@ -1,16 +1,21 @@
-import React from 'react';
+import React from "react";
 
-import { Text, View } from 'react-native';
+import { Text, View, ActivityIndicator } from "react-native";
+import CustomTextDiv from "../../components/basic/custom-text-div";
 
 const OauthRedirect = () => {
-
-    return (
-        <View className="flex-1 bg-c_background items-center justify-center">
-            <Text className="mt-8 p-6 text-c_white text-3xl font-Nunito_BoldItalic">
-                Iniciando sesión con Google. Esto puede llevar unos segundos...
-            </Text>
-        </View>
-    );
+  return (
+    <View className="flex-1 bg-c_dark_gray justify-center items-center">
+      <View className="[w-90%] space-y-8">
+        <CustomTextDiv>
+          <Text className="text-c_white text-2xl font-Nunito_MediumItalic">
+            Iniciando sesión... Esto puede tardar unos segundos
+          </Text>
+        </CustomTextDiv>
+        <ActivityIndicator size="large" color="c_light_blue" />
+      </View>
+    </View>
+  );
 };
 
 export default OauthRedirect;

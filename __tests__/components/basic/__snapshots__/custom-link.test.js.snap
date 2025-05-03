@@ -36,6 +36,9 @@ exports[`CustomLink should render correctly 1`] = `
     style={
       [
         {
+          "color": "#6bc0eb",
+        },
+        {
           "fontSize": 20,
           "lineHeight": 28,
         },
@@ -43,7 +46,10 @@ exports[`CustomLink should render correctly 1`] = `
           "textAlign": "center",
         },
         {
-          "fontFamily": "Nunito-Bold",
+          "fontFamily": "Nunito-Italic",
+        },
+        {
+          "textDecorationLine": "underline",
         },
       ]
     }

@@ -77,10 +77,10 @@ exports[`TabIcon should render when is focused 1`] = `
     style={
       [
         {
-          "fontFamily": "Nunito-ExtraBold",
+          "fontFamily": "Nunito-Bold",
         },
         {
-          "color": "#a526a9",
+          "color": "#6bc0eb",
         },
         {
           "fontSize": 12,

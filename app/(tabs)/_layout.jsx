@@ -11,10 +11,10 @@ const TabsLayout = () => {
         <Tabs
             screenOptions={{
                 tabBarShowLabel: false,
-                tabBarActiveTintColor: colors.c_light_violet,
-                tabBarInactiveTintColor: colors.c_white,
+                tabBarActiveTintColor: colors.c_light_blue,
+                tabBarInactiveTintColor: colors.c_marine_blue,
                 tabBarStyle: {
-                    backgroundColor: colors.c_layout,
+                    backgroundColor: colors.c_light_gray,
                     height: 60,
                     paddingTop: 10,
                 }
@@ -36,7 +36,7 @@ const TabsLayout = () => {
             }}
             />
             <Tabs.Screen
-                name="(maps)/maps"
+                name="(maps)"
                 options={{
                     title: "Mapas",
                     headerShown: false,
@@ -51,7 +51,7 @@ const TabsLayout = () => {
                 }}
             />
             <Tabs.Screen
-                name="(breeding)/breeding"
+                name="(breeding)"
                 options={{
                     title: "Crianza",
                     headerShown: false,
@@ -66,7 +66,7 @@ const TabsLayout = () => {
                 }}
             />
             <Tabs.Screen
-                name="(health)/health"
+                name="(health)"
                 options={{
                     title: "Salud",
                     headerShown: false,
@@ -75,6 +75,21 @@ const TabsLayout = () => {
                             icon={icons.faKitMedical}
                             color={color}
                             name="Salud"
+                            focused={focused}
+                        />
+                    )
+                }}
+            />
+            <Tabs.Screen
+                name="(profile)"
+                options={{
+                    title: "Perfil",
+                    headerShown: false,
+                    tabBarIcon: ({ color, focused }) => (
+                        <TabIcon
+                            icon={icons.faUser}
+                            color={color}
+                            name="Perfil"
                             focused={focused}
                         />
                     )

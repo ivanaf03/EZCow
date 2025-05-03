@@ -1,15 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Register should render correctly 1`] = `
-<RNCSafeAreaView
-  edges={
-    {
-      "bottom": "additive",
-      "left": "additive",
-      "right": "additive",
-      "top": "additive",
-    }
-  }
+<RCTScrollView
   style={
     [
       {
@@ -18,58 +10,67 @@ exports[`Register should render correctly 1`] = `
         "flexShrink": 1,
       },
       {
-        "backgroundColor": "#22072BFF",
+        "backgroundColor": "#1c1c1c",
       },
     ]
   }
 >
-  <Text
-    style={
-      [
-        {
-          "marginTop": 32,
-        },
-        {
-          "paddingBottom": 24,
-          "paddingLeft": 24,
-          "paddingRight": 24,
-          "paddingTop": 24,
-        },
-        {
-          "color": "#ffffff",
-        },
-        {
-          "fontSize": 48,
-          "lineHeight": 48,
-        },
-        {
-          "fontFamily": "Nunito-ExtraBold",
-        },
-      ]
-    }
-  >
-    Registrarse
-  </Text>
-  <View
-    style={
-      [
-        {
-          "marginLeft": 8,
-        },
-      ]
-    }
-  >
+  <View>
+    <Text
+      style={
+        [
+          {
+            "marginTop": 16,
+          },
+          {
+            "marginLeft": 16,
+            "marginRight": 16,
+          },
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontSize": 36,
+            "lineHeight": 40,
+          },
+          {
+            "fontFamily": "Nunito-Bold",
+          },
+        ]
+      }
+    >
+      Registrarse
+    </Text>
     <View
       style={
         [
           {
-            "marginTop": 40,
+            "marginLeft": 16,
+            "marginRight": 16,
           },
           {
-            "marginRight": "auto",
+            "borderLeftWidth": 2,
           },
           {
-            "minWidth": 300,
+            "borderRightWidth": 2,
+          },
+          {
+            "borderBottomColor": "#6bc0eb",
+            "borderLeftColor": "#6bc0eb",
+            "borderRightColor": "#6bc0eb",
+            "borderTopColor": "#6bc0eb",
+          },
+          {
+            "borderBottomLeftRadius": 16,
+            "borderBottomRightRadius": 16,
+            "borderTopLeftRadius": 16,
+            "borderTopRightRadius": 16,
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
           },
         ]
       }
@@ -78,294 +79,501 @@ exports[`Register should render correctly 1`] = `
         style={
           [
             {
-              "marginBottom": 8,
               "marginLeft": 8,
-              "marginRight": 8,
-              "marginTop": 8,
-            },
-            {
-              "marginTop": -4,
             },
           ]
         }
       >
-        <Text
-          style={
-            [
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 14,
-                "lineHeight": 20,
-              },
-              {
-                "fontFamily": "Nunito-Light",
-              },
-              [
-                {
-                  "marginTop": 4,
-                },
-              ],
-            ]
-          }
-        >
-          Nombre de usuario
-          :
-        </Text>
-        <TextInput
-          onChangeText={[Function]}
-          placeholder="Nombre"
-          style={
-            [
-              {
-                "paddingBottom": 8,
-                "paddingLeft": 8,
-                "paddingRight": 8,
-                "paddingTop": 8,
-              },
-              {
-                "backgroundColor": "#ffffff",
-              },
-              {
-                "borderBottomWidth": 2,
-                "borderLeftWidth": 2,
-                "borderRightWidth": 2,
-                "borderTopWidth": 2,
-              },
-              {
-                "borderBottomColor": "#580088",
-                "borderLeftColor": "#580088",
-                "borderRightColor": "#580088",
-                "borderTopColor": "#580088",
-              },
-              {
-                "borderBottomLeftRadius": 9999,
-                "borderBottomRightRadius": 9999,
-                "borderTopLeftRadius": 9999,
-                "borderTopRightRadius": 9999,
-              },
-              [
-                {
-                  "marginTop": 4,
-                },
-              ],
-            ]
-          }
-        />
-      </View>
-    </View>
-    <View
-      style={
-        [
-          {
-            "marginTop": 40,
-          },
-          {
-            "marginRight": "auto",
-          },
-          {
-            "minWidth": 300,
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "marginBottom": 8,
-              "marginLeft": 8,
-              "marginRight": 8,
-              "marginTop": 8,
-            },
-            {
-              "marginTop": -4,
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            [
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 14,
-                "lineHeight": 20,
-              },
-              {
-                "fontFamily": "Nunito-Light",
-              },
-              [
-                {
-                  "marginTop": 4,
-                },
-              ],
-            ]
-          }
-        >
-          Email
-          :
-        </Text>
-        <TextInput
-          onChangeText={[Function]}
-          placeholder="Email"
-          style={
-            [
-              {
-                "paddingBottom": 8,
-                "paddingLeft": 8,
-                "paddingRight": 8,
-                "paddingTop": 8,
-              },
-              {
-                "backgroundColor": "#ffffff",
-              },
-              {
-                "borderBottomWidth": 2,
-                "borderLeftWidth": 2,
-                "borderRightWidth": 2,
-                "borderTopWidth": 2,
-              },
-              {
-                "borderBottomColor": "#580088",
-                "borderLeftColor": "#580088",
-                "borderRightColor": "#580088",
-                "borderTopColor": "#580088",
-              },
-              {
-                "borderBottomLeftRadius": 9999,
-                "borderBottomRightRadius": 9999,
-                "borderTopLeftRadius": 9999,
-                "borderTopRightRadius": 9999,
-              },
-              [
-                {
-                  "marginTop": 4,
-                },
-              ],
-            ]
-          }
-        />
-      </View>
-    </View>
-    <View
-      style={
-        [
-          {
-            "marginTop": 40,
-          },
-          {
-            "marginRight": "auto",
-          },
-          {
-            "minWidth": 300,
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "marginBottom": 8,
-              "marginLeft": 8,
-              "marginRight": 8,
-              "marginTop": 8,
-            },
-            {
-              "marginTop": -4,
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            [
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 14,
-                "lineHeight": 20,
-              },
-              {
-                "fontFamily": "Nunito-Light",
-              },
-              [
-                {
-                  "marginTop": 4,
-                },
-              ],
-            ]
-          }
-        >
-          Contraseña
-          :
-        </Text>
         <View
           style={
             [
               {
-                "flexDirection": "row",
+                "width": "100%",
               },
-              {
-                "alignItems": "center",
-              },
-              [
-                {
-                  "marginTop": 4,
-                },
-              ],
             ]
           }
         >
-          <TextInput
-            onChangeText={[Function]}
-            placeholder="Contraseña"
-            secureTextEntry={true}
+          <View
             style={
               [
                 {
-                  "paddingBottom": 8,
-                  "paddingLeft": 8,
-                  "paddingRight": 8,
-                  "paddingTop": 8,
-                },
-                {
-                  "marginRight": 8,
-                },
-                {
-                  "backgroundColor": "#ffffff",
-                },
-                {
-                  "borderBottomWidth": 2,
-                  "borderLeftWidth": 2,
-                  "borderRightWidth": 2,
-                  "borderTopWidth": 2,
-                },
-                {
-                  "borderBottomColor": "#580088",
-                  "borderLeftColor": "#580088",
-                  "borderRightColor": "#580088",
-                  "borderTopColor": "#580088",
-                },
-                {
-                  "borderBottomLeftRadius": 9999,
-                  "borderBottomRightRadius": 9999,
-                  "borderTopLeftRadius": 9999,
-                  "borderTopRightRadius": 9999,
-                },
-                {
-                  "flexBasis": "0%",
-                  "flexGrow": 1,
-                  "flexShrink": 1,
+                  "marginTop": -4,
                 },
               ]
             }
-          />
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#ffffff",
+                  },
+                  {
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "fontFamily": "Nunito-Medium",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            >
+              Nombre de usuario
+              :
+            </Text>
+            <TextInput
+              onChangeText={[Function]}
+              placeholder="Nombre"
+              style={
+                [
+                  {
+                    "paddingBottom": 8,
+                    "paddingLeft": 8,
+                    "paddingRight": 8,
+                    "paddingTop": 8,
+                  },
+                  {
+                    "backgroundColor": "#ffffff",
+                  },
+                  {
+                    "borderBottomWidth": 2,
+                    "borderLeftWidth": 2,
+                    "borderRightWidth": 2,
+                    "borderTopWidth": 2,
+                  },
+                  {
+                    "borderBottomColor": "#2254ba",
+                    "borderLeftColor": "#2254ba",
+                    "borderRightColor": "#2254ba",
+                    "borderTopColor": "#2254ba",
+                  },
+                  {
+                    "borderBottomLeftRadius": 16,
+                    "borderBottomRightRadius": 16,
+                    "borderTopLeftRadius": 16,
+                    "borderTopRightRadius": 16,
+                  },
+                  {
+                    "fontFamily": "Nunito-Medium",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "marginTop": 40,
+              },
+              {
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginTop": -4,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#ffffff",
+                  },
+                  {
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "fontFamily": "Nunito-Medium",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            >
+              Email
+              :
+            </Text>
+            <TextInput
+              onChangeText={[Function]}
+              placeholder="Email"
+              style={
+                [
+                  {
+                    "paddingBottom": 8,
+                    "paddingLeft": 8,
+                    "paddingRight": 8,
+                    "paddingTop": 8,
+                  },
+                  {
+                    "backgroundColor": "#ffffff",
+                  },
+                  {
+                    "borderBottomWidth": 2,
+                    "borderLeftWidth": 2,
+                    "borderRightWidth": 2,
+                    "borderTopWidth": 2,
+                  },
+                  {
+                    "borderBottomColor": "#2254ba",
+                    "borderLeftColor": "#2254ba",
+                    "borderRightColor": "#2254ba",
+                    "borderTopColor": "#2254ba",
+                  },
+                  {
+                    "borderBottomLeftRadius": 16,
+                    "borderBottomRightRadius": 16,
+                    "borderTopLeftRadius": 16,
+                    "borderTopRightRadius": 16,
+                  },
+                  {
+                    "fontFamily": "Nunito-Medium",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "marginTop": 40,
+              },
+              {
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginTop": -4,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#ffffff",
+                  },
+                  {
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "fontFamily": "Nunito-Light",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            >
+              Contraseña
+              :
+            </Text>
+            <View
+              style={
+                [
+                  {
+                    "flexDirection": "row",
+                  },
+                  {
+                    "alignItems": "center",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            >
+              <TextInput
+                onChangeText={[Function]}
+                placeholder="Contraseña"
+                secureTextEntry={true}
+                style={
+                  [
+                    {
+                      "paddingBottom": 8,
+                      "paddingLeft": 8,
+                      "paddingRight": 8,
+                      "paddingTop": 8,
+                    },
+                    {
+                      "marginRight": 8,
+                    },
+                    {
+                      "backgroundColor": "#ffffff",
+                    },
+                    {
+                      "borderBottomWidth": 2,
+                      "borderLeftWidth": 2,
+                      "borderRightWidth": 2,
+                      "borderTopWidth": 2,
+                    },
+                    {
+                      "borderBottomColor": "#2254ba",
+                      "borderLeftColor": "#2254ba",
+                      "borderRightColor": "#2254ba",
+                      "borderTopColor": "#2254ba",
+                    },
+                    {
+                      "borderBottomLeftRadius": 16,
+                      "borderBottomRightRadius": 16,
+                      "borderTopLeftRadius": 16,
+                      "borderTopRightRadius": 16,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                    {
+                      "fontFamily": "Nunito-Medium",
+                    },
+                  ]
+                }
+              />
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                testID="eye-icon"
+              />
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "marginTop": 40,
+              },
+              {
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginTop": -4,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#ffffff",
+                  },
+                  {
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "fontFamily": "Nunito-Light",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            >
+              Confirmar contraseña
+              :
+            </Text>
+            <View
+              style={
+                [
+                  {
+                    "flexDirection": "row",
+                  },
+                  {
+                    "alignItems": "center",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            >
+              <TextInput
+                onChangeText={[Function]}
+                placeholder="Contraseña"
+                secureTextEntry={true}
+                style={
+                  [
+                    {
+                      "paddingBottom": 8,
+                      "paddingLeft": 8,
+                      "paddingRight": 8,
+                      "paddingTop": 8,
+                    },
+                    {
+                      "marginRight": 8,
+                    },
+                    {
+                      "backgroundColor": "#ffffff",
+                    },
+                    {
+                      "borderBottomWidth": 2,
+                      "borderLeftWidth": 2,
+                      "borderRightWidth": 2,
+                      "borderTopWidth": 2,
+                    },
+                    {
+                      "borderBottomColor": "#2254ba",
+                      "borderLeftColor": "#2254ba",
+                      "borderRightColor": "#2254ba",
+                      "borderTopColor": "#2254ba",
+                    },
+                    {
+                      "borderBottomLeftRadius": 16,
+                      "borderBottomRightRadius": 16,
+                      "borderTopLeftRadius": 16,
+                      "borderTopRightRadius": 16,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                    {
+                      "fontFamily": "Nunito-Medium",
+                    },
+                  ]
+                }
+              />
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                testID="eye-icon"
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "flexDirection": "row",
+            },
+            {
+              "justifyContent": "center",
+            },
+            {
+              "marginTop": 48,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "width": "90%",
+              },
+            ]
+          }
+        >
           <View
             accessibilityState={
               {
@@ -396,189 +604,120 @@ exports[`Register should render correctly 1`] = `
             onResponderTerminate={[Function]}
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
-            testID="eye-icon"
-          />
-        </View>
-      </View>
-    </View>
-    <View
-      style={
-        [
-          {
-            "marginTop": 40,
-          },
-          {
-            "marginRight": "auto",
-          },
-          {
-            "minWidth": 300,
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "marginBottom": 8,
-              "marginLeft": 8,
-              "marginRight": 8,
-              "marginTop": 8,
-            },
-            {
-              "marginTop": -4,
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            [
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 14,
-                "lineHeight": 20,
-              },
-              {
-                "fontFamily": "Nunito-Light",
-              },
-              [
-                {
-                  "marginTop": 4,
-                },
-              ],
-            ]
-          }
-        >
-          Confirmar contraseña
-          :
-        </Text>
-        <View
-          style={
-            [
-              {
-                "flexDirection": "row",
-              },
-              {
-                "alignItems": "center",
-              },
-              [
-                {
-                  "marginTop": 4,
-                },
-              ],
-            ]
-          }
-        >
-          <TextInput
-            onChangeText={[Function]}
-            placeholder="Contraseña"
-            secureTextEntry={true}
             style={
               [
                 {
-                  "paddingBottom": 8,
-                  "paddingLeft": 8,
-                  "paddingRight": 8,
-                  "paddingTop": 8,
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
                 },
                 {
-                  "marginRight": 8,
+                  "backgroundColor": "#272727",
                 },
                 {
-                  "backgroundColor": "#ffffff",
+                  "borderLeftWidth": 8,
+                  "borderRightWidth": 8,
                 },
                 {
                   "borderBottomWidth": 2,
-                  "borderLeftWidth": 2,
-                  "borderRightWidth": 2,
                   "borderTopWidth": 2,
                 },
                 {
-                  "borderBottomColor": "#580088",
-                  "borderLeftColor": "#580088",
-                  "borderRightColor": "#580088",
-                  "borderTopColor": "#580088",
+                  "borderBottomColor": "#2254ba",
+                  "borderLeftColor": "#2254ba",
+                  "borderRightColor": "#2254ba",
+                  "borderTopColor": "#2254ba",
                 },
                 {
-                  "borderBottomLeftRadius": 9999,
-                  "borderBottomRightRadius": 9999,
-                  "borderTopLeftRadius": 9999,
-                  "borderTopRightRadius": 9999,
+                  "borderBottomLeftRadius": 24,
+                  "borderBottomRightRadius": 24,
+                  "borderTopLeftRadius": 24,
+                  "borderTopRightRadius": 24,
                 },
                 {
-                  "flexBasis": "0%",
-                  "flexGrow": 1,
-                  "flexShrink": 1,
+                  "alignItems": "center",
+                },
+                {
+                  "justifyContent": "center",
                 },
               ]
             }
-          />
-          <View
-            accessibilityState={
-              {
-                "busy": undefined,
-                "checked": undefined,
-                "disabled": undefined,
-                "expanded": undefined,
-                "selected": undefined,
+            testID="sign-up-button"
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Nunito-SemiBold",
+                  },
+                  {
+                    "color": "#ffffff",
+                  },
+                  {
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  },
+                  {
+                    "textAlign": "center",
+                  },
+                ]
               }
-            }
-            accessibilityValue={
-              {
-                "max": undefined,
-                "min": undefined,
-                "now": undefined,
-                "text": undefined,
-              }
-            }
-            accessible={true}
-            collapsable={false}
-            focusable={true}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            testID="eye-icon"
-          />
+            >
+              Registrarse
+            </Text>
+          </View>
         </View>
       </View>
     </View>
-  </View>
-  <View
-    style={
-      [
-        {
-          "flexDirection": "row",
-        },
-        {
-          "justifyContent": "center",
-        },
-        {
-          "marginTop": 64,
-        },
-      ]
-    }
-  >
     <View
       style={
         [
           {
-            "minWidth": 230,
+            "marginTop": 32,
+          },
+          {
+            "width": "100%",
+          },
+          {
+            "marginBottom": 56,
+          },
+          {
+            "flexDirection": "row",
           },
           {
             "justifyContent": "center",
           },
+          {
+            "alignItems": "center",
+          },
         ]
       }
     >
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 20,
+              "lineHeight": 28,
+            },
+            {
+              "fontFamily": "Nunito-Medium",
+            },
+            {
+              "textAlign": "center",
+            },
+            {
+              "marginRight": 8,
+            },
+          ]
+        }
+      >
+        Ya tienes una cuenta?
+      </Text>
       <View
         accessibilityState={
           {
@@ -609,38 +748,13 @@ exports[`Register should render correctly 1`] = `
         onResponderTerminate={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
-        style={
-          [
-            {
-              "backgroundColor": "#75009d",
-            },
-            {
-              "borderBottomLeftRadius": 9999,
-              "borderBottomRightRadius": 9999,
-              "borderTopLeftRadius": 9999,
-              "borderTopRightRadius": 9999,
-            },
-            {
-              "paddingBottom": 16,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 16,
-            },
-            {
-              "marginBottom": 8,
-              "marginLeft": 8,
-              "marginRight": 8,
-              "marginTop": 8,
-            },
-          ]
-        }
-        testID="sign-up-button"
+        testID="sign-in-link"
       >
         <Text
           style={
             [
               {
-                "color": "#ffffff",
+                "color": "#6bc0eb",
               },
               {
                 "fontSize": 20,
@@ -650,113 +764,18 @@ exports[`Register should render correctly 1`] = `
                 "textAlign": "center",
               },
               {
-                "fontFamily": "Nunito-Bold",
+                "fontFamily": "Nunito-Italic",
               },
               {
-                "marginLeft": 8,
-                "marginRight": 8,
+                "textDecorationLine": "underline",
               },
             ]
           }
         >
-          Registrarse
+          Iniciar sesión
         </Text>
       </View>
     </View>
   </View>
-  <View
-    style={
-      [
-        {
-          "marginTop": 48,
-        },
-        {
-          "flexDirection": "row",
-        },
-        {
-          "justifyContent": "center",
-        },
-        {
-          "alignItems": "center",
-        },
-      ]
-    }
-  >
-    <Text
-      style={
-        [
-          {
-            "color": "#ffffff",
-          },
-          {
-            "fontSize": 16,
-            "lineHeight": 24,
-          },
-          {
-            "fontFamily": "Nunito-ExtraBold",
-          },
-          {
-            "textAlign": "center",
-          },
-          {
-            "marginRight": 8,
-          },
-        ]
-      }
-    >
-      Ya tienes una cuenta?
-    </Text>
-    <View
-      accessibilityState={
-        {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessibilityValue={
-        {
-          "max": undefined,
-          "min": undefined,
-          "now": undefined,
-          "text": undefined,
-        }
-      }
-      accessible={true}
-      collapsable={false}
-      focusable={true}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      testID="sign-in-link"
-    >
-      <Text
-        style={
-          [
-            {
-              "fontSize": 20,
-              "lineHeight": 28,
-            },
-            {
-              "textAlign": "center",
-            },
-            {
-              "fontFamily": "Nunito-Bold",
-            },
-          ]
-        }
-      >
-        Iniciar sesión
-      </Text>
-    </View>
-  </View>
-</RNCSafeAreaView>
+</RCTScrollView>
 `;

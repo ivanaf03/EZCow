@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MapCard should render correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      {
+        "marginBottom": 8,
+        "marginTop": 8,
+      },
+      {
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      },
+      {
+        "marginLeft": -10,
+      },
+      {
+        "marginRight": 24,
+      },
+      {
+        "backgroundColor": "#272727",
+      },
+      {
+        "borderBottomRightRadius": 24,
+        "borderTopRightRadius": 24,
+      },
+      {
+        "borderRightWidth": 4,
+      },
+      {
+        "borderBottomColor": "#6bc0eb",
+        "borderLeftColor": "#6bc0eb",
+        "borderRightColor": "#6bc0eb",
+        "borderTopColor": "#6bc0eb",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#ffffff",
+        },
+        {
+          "marginLeft": 8,
+        },
+        {
+          "fontSize": 18,
+          "lineHeight": 28,
+        },
+        {
+          "fontFamily": "Nunito-Bold",
+        },
+      ]
+    }
+  >
+    Mapa Test
+  </Text>
+  <View
+    style={
+      [
+        {
+          "height": 300,
+        },
+        {
+          "backgroundColor": "#272727",
+        },
+        {
+          "borderBottomWidth": 2,
+          "borderLeftWidth": 2,
+          "borderRightWidth": 2,
+          "borderTopWidth": 2,
+        },
+        {
+          "borderBottomColor": "#6bc0eb",
+          "borderLeftColor": "#6bc0eb",
+          "borderRightColor": "#6bc0eb",
+          "borderTopColor": "#6bc0eb",
+        },
+        {
+          "borderBottomLeftRadius": 16,
+          "borderBottomRightRadius": 16,
+          "borderTopLeftRadius": 16,
+          "borderTopRightRadius": 16,
+        },
+        {
+          "marginLeft": 16,
+          "marginRight": 16,
+        },
+        {
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        },
+        {
+          "marginTop": 16,
+        },
+        [
+          {
+            "marginTop": 16,
+          },
+        ],
+      ]
+    }
+  >
+    <AIRMap
+      initialRegion={null}
+      mapType="satellite"
+      onChange={[Function]}
+      onMapReady={[Function]}
+      region={
+        {
+          "latitude": 10,
+          "latitudeDelta": 0.01,
+          "longitude": 10,
+          "longitudeDelta": 0.01,
+        }
+      }
+      style={
+        {
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    >
+      <AIRMapMarker
+        coordinate={
+          {
+            "latitude": 10,
+            "longitude": 10,
+          }
+        }
+        onPress={[Function]}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "position": "absolute",
+            },
+            undefined,
+          ]
+        }
+        title="Mapa Test"
+      />
+    </AIRMap>
+  </View>
+</View>
+`;

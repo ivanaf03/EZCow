@@ -10,43 +10,88 @@ exports[`OauthRedirect should render correctly 1`] = `
         "flexShrink": 1,
       },
       {
-        "backgroundColor": "#22072BFF",
-      },
-      {
-        "alignItems": "center",
+        "backgroundColor": "#1c1c1c",
       },
       {
         "justifyContent": "center",
       },
+      {
+        "alignItems": "center",
+      },
     ]
   }
 >
-  <Text
-    style={
-      [
-        {
-          "marginTop": 32,
-        },
-        {
-          "paddingBottom": 24,
-          "paddingLeft": 24,
-          "paddingRight": 24,
-          "paddingTop": 24,
-        },
-        {
-          "color": "#ffffff",
-        },
-        {
-          "fontSize": 30,
-          "lineHeight": 36,
-        },
-        {
-          "fontFamily": "Nunito-BoldItalic",
-        },
-      ]
-    }
-  >
-    Iniciando sesión con Google. Esto puede llevar unos segundos...
-  </Text>
+  <View>
+    <View
+      style={
+        [
+          {
+            "display": "flex",
+          },
+          {
+            "alignItems": "center",
+          },
+          {
+            "justifyContent": "center",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "backgroundColor": "#272727",
+          },
+          {
+            "borderLeftWidth": 2,
+            "borderRightWidth": 2,
+          },
+          {
+            "borderBottomColor": "#6bc0eb",
+            "borderLeftColor": "#6bc0eb",
+            "borderRightColor": "#6bc0eb",
+            "borderTopColor": "#6bc0eb",
+          },
+          {
+            "borderBottomLeftRadius": 8,
+            "borderBottomRightRadius": 8,
+            "borderTopLeftRadius": 8,
+            "borderTopRightRadius": 8,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 24,
+              "lineHeight": 32,
+            },
+            {
+              "fontFamily": "Nunito-MediumItalic",
+            },
+          ]
+        }
+      >
+        Iniciando sesión... Esto puede tardar unos segundos
+      </Text>
+    </View>
+    <ActivityIndicator
+      color="c_light_blue"
+      size="large"
+      style={
+        [
+          {
+            "marginTop": 32,
+          },
+        ]
+      }
+    />
+  </View>
 </View>
 `;

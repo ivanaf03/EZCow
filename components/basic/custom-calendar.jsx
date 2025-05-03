@@ -19,12 +19,12 @@ const CustomCalendar = ({ text, date, onChange }) => {
     };
 
     return (
-        <View className="m-2 gap-y-1">
+        <View className="gap-y-1">
             <Text className="text-c_white text-sm font-Nunito_Light">
                 {text}:
             </Text>
             <Pressable 
-                className="p-2 bg-c_white border-2 border-c_dark_violet rounded-full"
+                className="p-2 bg-c_white border-2 border-c_marine_blue rounded-2xl font-Nunito_Medium"
                 onPress={togglePicker}
                 testID="date-picker-button"
             >
