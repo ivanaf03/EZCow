@@ -2,7 +2,7 @@ import React from "react";
 
 import { Stack } from "expo-router";
 
-import { initDatabase } from "../../model/bd";
+import { initDatabase } from "../model/bd";
 import UserProvider from "../store/user-provider";
 import FontProvider from "../store/font-provider";
 
