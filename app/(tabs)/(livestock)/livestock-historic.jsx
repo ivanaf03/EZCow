@@ -12,7 +12,7 @@ import {
   getAllCowsExitedByUserId,
   getAllCowsExitedByUserIdAndPhaseAndGender,
 } from "../../model/cow";
-import { useUser } from "../../../hooks/providers/user-provider";
+import { useUser } from "../../../store/user-provider";
 import CustomPicker from "../../../components/basic/custom-picker";
 import CustomSearchBar from "../../../components/basic/custom-search-bar";
 import TabTitle from "../../../components/tabs/tab-title";

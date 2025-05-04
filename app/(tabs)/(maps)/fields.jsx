@@ -5,7 +5,7 @@ import { router } from "expo-router";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 
 import CustomButton from "../../../components/basic/custom-button";
-import { useUser } from "../../../hooks/providers/user-provider";
+import { useUser } from "../../../store/user-provider";
 import MapCard from "./map-card";
 import { getAllFieldsByUserId } from "../../model/field";
 import icons from "../../../constants/icons";

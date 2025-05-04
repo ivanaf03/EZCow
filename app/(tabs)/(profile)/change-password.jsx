@@ -9,7 +9,7 @@ import CustomInput from "../../../components/basic/custom-input";
 import CustomPasswordInput from "../../../components/basic/custom-password-input";
 import icons from "../../../constants/icons";
 import { changePassword } from "../../model/users";
-import { useUser } from "../../../hooks/providers/user-provider";
+import { useUser } from "../../../store/user-provider";
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomTextDiv from "../../../components/basic/custom-text-div";
 import CustomFormDiv from "../../../components/basic/custom-form-div";

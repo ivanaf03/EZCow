@@ -8,7 +8,7 @@ import {
   insertFarmUbication,
   getFarmUbicationByUserId,
 } from "../../model/farm";
-import { useUser } from "../../../hooks/providers/user-provider";
+import { useUser } from "../../../store/user-provider";
 import CustomButton from "../../../components/basic/custom-button";
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomTextDiv from "../../../components/basic/custom-text-div";

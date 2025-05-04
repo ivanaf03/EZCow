@@ -16,7 +16,7 @@ jest.mock("expo-router", () => ({
   },
 }));
 
-jest.mock("../../../../hooks/providers/user-provider", () => ({
+jest.mock("../../../../store/user-provider", () => ({
   useUser: jest.fn(() => ({
     user: { id: "1", name: "TestUser", email: "test@test.com" },
   })),

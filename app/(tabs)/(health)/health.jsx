@@ -5,7 +5,7 @@ import { router, useFocusEffect } from "expo-router";
 import CustomCalendar from "../../../components/basic/custom-calendar";
 import HealthDay from "./health-day";
 import { getAllHealthEventsByUserId } from "../../model/health-events";
-import { useUser } from "../../../hooks/providers/user-provider";
+import { useUser } from "../../../store/user-provider";
 import CustomButton from "../../../components/basic/custom-button";
 import TabTitle from "../../../components/tabs/tab-title";
 

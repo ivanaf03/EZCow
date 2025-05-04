@@ -15,7 +15,7 @@ jest.mock("../../../../app/model/cow", () => ({
   getAllCowIdsAndNamesAvailableByUserId: jest.fn(),
 }));
 
-jest.mock("../../../../hooks/providers/user-provider", () => ({
+jest.mock("../../../../store/user-provider", () => ({
   useUser: jest.fn(() => ({
     user: { id: "1", name: "TestUser", email: "test@test.com" },
   })),

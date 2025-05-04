@@ -32,7 +32,7 @@ jest.mock('jwt-decode', () => ({
     }),
   }));
 
-jest.mock("../../../hooks/providers/user-provider", () => ({
+jest.mock("../../../store/user-provider", () => ({
     useUser: jest.fn(() => ({
         login: jest.fn(),
     })),

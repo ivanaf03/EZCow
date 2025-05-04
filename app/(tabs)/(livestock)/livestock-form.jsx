@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 
 import CustomInput from "../../../components/basic/custom-input";
 import CustomCalendar from "../../../components/basic/custom-calendar";
-import { useUser } from "../../../hooks/providers/user-provider";
+import { useUser } from "../../../store/user-provider";
 import CustomButton from "../../../components/basic/custom-button";
 import {
   insertCow,

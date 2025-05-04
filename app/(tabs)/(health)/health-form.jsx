@@ -13,7 +13,7 @@ import TabTitle from "../../../components/tabs/tab-title";
 import {
   getAllCowIdsAndNamesAvailableByUserId,
 } from "../../model/cow";
-import { useUser } from "../../../hooks/providers/user-provider";
+import { useUser } from "../../../store/user-provider";
 
 const HealthForm = () => {
   const [formData, setFormData] = React.useState({

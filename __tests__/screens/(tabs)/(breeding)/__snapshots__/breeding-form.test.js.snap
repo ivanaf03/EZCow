@@ -700,7 +700,7 @@ exports[`BreedingForm should render correctly 1`] = `
               testID="date-picker-button"
             >
               <Text>
-                23/4/2025
+                4/5/2025
               </Text>
             </View>
           </View>

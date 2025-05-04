@@ -6,7 +6,7 @@ import { router } from "expo-router";
 import Maps from "../../../../app/(tabs)/(maps)/maps";
 import { getFarmUbicationByUserId, insertFarmUbication } from "../../../../app/model/farm";
 
-jest.mock("../../../../hooks/providers/user-provider", () => ({
+jest.mock("../../../../store/user-provider", () => ({
     useUser: jest.fn(() => ({
         user: {id: "1", name: "TestUser", email: "test@test.com"},
     })),
