@@ -6,13 +6,13 @@ import { router } from "expo-router";
 import CustomInput from "../../../components/basic/custom-input";
 import CustomCalendar from "../../../components/basic/custom-calendar";
 import CustomButton from "../../../components/basic/custom-button";
-import { insertBreedingEvent } from "../../model/breeding-events";
+import { insertBreedingEvent } from "../../../model/breeding-events";
 import CustomPicker from "../../../components/basic/custom-picker";
 import CustomFormDiv from "../../../components/basic/custom-form-div";
 import TabTitle from "../../../components/tabs/tab-title";
 import {
   getAllCowIdsAndNamesAvailableByUserId,
-} from "../../model/cow";
+} from "../../../model/cow";
 import { useUser } from "../../../store/user-provider";
 
 const BreedingForm = () => {

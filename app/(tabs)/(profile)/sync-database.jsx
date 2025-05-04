@@ -7,7 +7,7 @@ import CryptoJS from "crypto-js";
 import CustomButton from "../../../components/basic/custom-button";
 import CustomInput from "../../../components/basic/custom-input";
 import CustomPasswordInput from "../../../components/basic/custom-password-input";
-import { closeDatabase, syncDatabase, getDatabase } from "../../model/bd";
+import { closeDatabase, syncDatabase, getDatabase } from "../../../model/bd";
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomTextDiv from "../../../components/basic/custom-text-div";
 import CustomFormDiv from "../../../components/basic/custom-form-div";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
-import { getAvailableCowNameById } from "../../model/cow";
+import { getAvailableCowNameById } from "../../../model/cow";
 
 import icons from "../../../constants/icons";
 import CustomButton from "../../../components/basic/custom-button";

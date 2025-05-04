@@ -11,7 +11,7 @@ import {
   getAllCalvesExitedByUserId,
   getAllCowsExitedByUserId,
   getAllCowsExitedByUserIdAndPhaseAndGender,
-} from "../../model/cow";
+} from "../../../model/cow";
 import { useUser } from "../../../store/user-provider";
 import CustomPicker from "../../../components/basic/custom-picker";
 import CustomSearchBar from "../../../components/basic/custom-search-bar";

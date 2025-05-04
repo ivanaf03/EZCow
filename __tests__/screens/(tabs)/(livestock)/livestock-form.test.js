@@ -8,7 +8,7 @@ import LivestockForm from "../../../../app/(tabs)/(livestock)/livestock-form";
 import {
   insertCow,
   getAvailableCowCodeByUserId,
-} from "../../../../app/model/cow";
+} from "../../../../model/cow";
 
 jest.mock("expo-router", () => ({
   router: {
@@ -22,7 +22,7 @@ jest.mock("../../../../store/user-provider", () => ({
   })),
 }));
 
-jest.mock("../../../../app/model/cow", () => ({
+jest.mock("../../../../model/cow", () => ({
   insertCow: jest.fn(),
   getAvailableCowCodeByUserId: jest.fn(() => ["1234", "5678"]),
   getCowIdByCode: jest.fn(() => "ES1234"),

@@ -11,7 +11,7 @@ import CustomGoogleButton from "../../components/auth/custom-google-button";
 import CustomPasswordInput from "../../components/basic/custom-password-input";
 import CustomButton from "../../components/basic/custom-button";
 import CustomLink from "../../components/basic/custom-link";
-import { getUserByEmail, insertUserGoogle } from "../model/users";
+import { getUserByEmail, insertUserGoogle } from "../../model/users";
 import { useUser } from "../../store/user-provider";
 import CustomAuthTitle from "../../components/auth/custom-auth-title";
 import CustomFormDiv from "../../components/basic/custom-form-div";

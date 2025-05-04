@@ -5,7 +5,7 @@ import { router } from "expo-router";
 
 import Breeding from "../../../../app/(tabs)/(breeding)/breeding";
 
-jest.mock("../../../../app/model/breeding-events", () => ({
+jest.mock("../../../../model/breeding-events", () => ({
   getBreedingEventsByDayAnUserId: jest.fn(() => []),
 }));
 

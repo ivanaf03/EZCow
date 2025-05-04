@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import CustomButton from "../../../components/basic/custom-button";
 import { useUser } from "../../../store/user-provider";
 import MapCard from "./map-card";
-import { getAllFieldsByUserId } from "../../model/field";
+import { getAllFieldsByUserId } from "../../../model/field";
 import icons from "../../../constants/icons";
 import TabTitle from "../../../components/tabs/tab-title";
 

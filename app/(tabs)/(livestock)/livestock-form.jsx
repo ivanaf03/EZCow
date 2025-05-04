@@ -12,7 +12,7 @@ import {
   insertCow,
   getAvailableCowCodeByUserId,
   getCowIdByCode,
-} from "../../model/cow";
+} from "../../../model/cow";
 import CustomPicker from "../../../components/basic/custom-picker";
 import icons from "../../../constants/icons";
 import CustomFormDiv from "../../../components/basic/custom-form-div";

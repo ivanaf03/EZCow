@@ -914,28 +914,7 @@ exports[`LivestockForm should render correctly 1`] = `
             >
               <View>
                 <RNCPicker
-                  items={
-                    [
-                      {
-                        "label": "Desconocida",
-                        "testID": undefined,
-                        "textColor": undefined,
-                        "value": "Desconocida",
-                      },
-                      {
-                        "label": "1234",
-                        "testID": undefined,
-                        "textColor": undefined,
-                        "value": "1234",
-                      },
-                      {
-                        "label": "5678",
-                        "testID": undefined,
-                        "textColor": undefined,
-                        "value": "5678",
-                      },
-                    ]
-                  }
+                  items={[]}
                   numberOfLines={1}
                   onChange={[Function]}
                   selectedIndex={0}

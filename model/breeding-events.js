@@ -1,6 +1,6 @@
-import { getDatabase } from "./bd";
+import { getDatabase } from "../model/bd";
 
-export const insertHealthEvent = async (
+export const insertBreedingEvent = async (
   cow_fk,
   eventName,
   description,
@@ -9,7 +9,7 @@ export const insertHealthEvent = async (
   const db = await getDatabase();
   try {
     const res = await db.runAsync(
-      `INSERT INTO HealthEvent (cow_fk, eventName, description, date) VALUES (?, ?, ?, ?)`,
+      `INSERT INTO BreedingEvent (cow_fk, eventName, description, date) VALUES (?, ?, ?, ?)`,
       [cow_fk, eventName, description, date]
     );
     return res;
@@ -19,11 +19,11 @@ export const insertHealthEvent = async (
   }
 };
 
-export const getAllHealthEventsByUserId = async (userId) => {
+export const getAllBreedingEventsByUserId = async (userId) => {
   const db = await getDatabase();
   try {
     const res = await db.getAllAsync(
-      `SELECT * FROM HealthEvent JOIN Cow ON HealthEvent.cow_fk = Cow.id WHERE user_fk = ? and exitDate IS NULL`,
+      `SELECT * FROM BreedingEvent JOIN Cow ON BreedingEvent.cow_fk = Cow.id WHERE user_fk = ? and exitDate IS NULL`,
       [userId]
     );
     return res;

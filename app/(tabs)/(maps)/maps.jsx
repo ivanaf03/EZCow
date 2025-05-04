@@ -7,7 +7,7 @@ import { router } from "expo-router";
 import {
   insertFarmUbication,
   getFarmUbicationByUserId,
-} from "../../model/farm";
+} from "../../../model/farm";
 import { useUser } from "../../../store/user-provider";
 import CustomButton from "../../../components/basic/custom-button";
 import TabTitle from "../../../components/tabs/tab-title";

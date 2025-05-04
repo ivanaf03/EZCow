@@ -1,5 +1,5 @@
 import CryptoJS from "crypto-js";
-import { getDatabase } from "./bd";
+import { getDatabase } from "../model/bd";
 
 const hashPassword = (password) => {
   return CryptoJS.SHA256(password).toString();

@@ -4,14 +4,14 @@ import { render, fireEvent, waitFor } from "@testing-library/react-native";
 import { router } from "expo-router";
 
 import HealthForm from "../../../../app/(tabs)/(health)/health-form";
-import { getAllCowIdsAndNamesAvailableByUserId } from "../../../../app/model/cow";
-import { insertHealthEvent } from "../../../../app/model/health-events";
+import { getAllCowIdsAndNamesAvailableByUserId } from "../../../../model/cow";
+import { insertHealthEvent } from "../../../../model/health-events";
 
-jest.mock("../../../../app/model/health-events", () => ({
+jest.mock("../../../../model/health-events", () => ({
   insertHealthEvent: jest.fn(),
 }));
 
-jest.mock("../../../../app/model/cow", () => ({
+jest.mock("../../../../model/cow", () => ({
   getAllCowIdsAndNamesAvailableByUserId: jest.fn(),
 }));
 

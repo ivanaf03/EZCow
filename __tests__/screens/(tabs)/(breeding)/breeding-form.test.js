@@ -4,14 +4,14 @@ import { render, fireEvent, waitFor } from "@testing-library/react-native";
 import { router } from "expo-router";
 
 import BreedingForm from "../../../../app/(tabs)/(breeding)/breeding-form";
-import { getAllCowIdsAndNamesAvailableByUserId } from "../../../../app/model/cow";
-import { insertBreedingEvent } from "../../../../app/model/breeding-events";
+import { getAllCowIdsAndNamesAvailableByUserId } from "../../../../model/cow";
+import { insertBreedingEvent } from "../../../../model/breeding-events";
 
-jest.mock("../../../../app/model/breeding-events", () => ({
+jest.mock("../../../../model/breeding-events", () => ({
   insertBreedingEvent: jest.fn(),
 }));
 
-jest.mock("../../../../app/model/cow", () => ({
+jest.mock("../../../../model/cow", () => ({
   getAllCowIdsAndNamesAvailableByUserId: jest.fn(),
 }));
 

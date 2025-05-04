@@ -8,7 +8,7 @@ import CustomButton from "../../../components/basic/custom-button";
 import CustomInput from "../../../components/basic/custom-input";
 import CustomPasswordInput from "../../../components/basic/custom-password-input";
 import icons from "../../../constants/icons";
-import { changePassword } from "../../model/users";
+import { changePassword } from "../../../model/users";
 import { useUser } from "../../../store/user-provider";
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomTextDiv from "../../../components/basic/custom-text-div";

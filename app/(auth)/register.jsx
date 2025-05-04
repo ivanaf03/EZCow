@@ -7,7 +7,7 @@ import CustomInput from "../../components/basic/custom-input";
 import CustomPasswordInput from "../../components/basic/custom-password-input";
 import CustomButton from "../../components/basic/custom-button";
 import CustomLink from "../../components/basic/custom-link";
-import { insertUser, getUserByEmail } from "../model/users";
+import { insertUser, getUserByEmail } from "../../model/users";
 import { useUser } from "../../store/user-provider";
 import CustomAuthTitle from "../../components/auth/custom-auth-title";
 

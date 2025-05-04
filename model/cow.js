@@ -1,4 +1,4 @@
-import { getDatabase } from "./bd";
+import { getDatabase } from "../model/bd";
 
 export const insertCow = async (
   code,

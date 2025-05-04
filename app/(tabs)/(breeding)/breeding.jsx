@@ -4,7 +4,7 @@ import { router, useFocusEffect } from "expo-router";
 
 import CustomCalendar from "../../../components/basic/custom-calendar";
 import BreedingDay from "./breeding-day";
-import { getAllBreedingEventsByUserId } from "../../model/breeding-events";
+import { getAllBreedingEventsByUserId } from "../../../model/breeding-events";
 import { useUser } from "../../../store/user-provider";
 import CustomButton from "../../../components/basic/custom-button";
 import TabTitle from "../../../components/tabs/tab-title";

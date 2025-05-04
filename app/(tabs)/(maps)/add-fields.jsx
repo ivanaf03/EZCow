@@ -6,8 +6,8 @@ import { router } from "expo-router";
 
 import CustomButton from "../../../components/basic/custom-button";
 import CustomInput from "../../../components/basic/custom-input";
-import { getFarmUbicationByUserId } from "../../model/farm";
-import { insertField } from "../../model/field";
+import { getFarmUbicationByUserId } from "../../../model/farm";
+import { insertField } from "../../../model/field";
 import { useUser } from "../../../store/user-provider";
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomFormDiv from "../../../components/basic/custom-form-div";

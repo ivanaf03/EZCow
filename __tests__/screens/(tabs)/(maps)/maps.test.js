@@ -4,7 +4,7 @@ import { render, waitFor, fireEvent } from "@testing-library/react-native";
 import { router } from "expo-router";
 
 import Maps from "../../../../app/(tabs)/(maps)/maps";
-import { getFarmUbicationByUserId, insertFarmUbication } from "../../../../app/model/farm";
+import { getFarmUbicationByUserId, insertFarmUbication } from "../../../../model/farm";
 
 jest.mock("../../../../store/user-provider", () => ({
     useUser: jest.fn(() => ({
@@ -23,7 +23,7 @@ jest.mock("react-native-maps", () => {
     };
 });
 
-jest.mock("../../../../app/model/farm", () => ({
+jest.mock("../../../../model/farm", () => ({
     getFarmUbicationByUserId: jest.fn(), 
     insertFarmUbication: jest.fn(),
 }));

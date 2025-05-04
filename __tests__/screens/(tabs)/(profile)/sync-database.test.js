@@ -9,11 +9,11 @@ jest.mock("@fortawesome/react-native-fontawesome", () => ({
   FontAwesomeIcon: () => null,
 }));
 
-jest.mock("../../../../app/model/users", () => ({
+jest.mock("../../../../model/users", () => ({
   getUserByEmail: jest.fn(),
 }));
 
-jest.mock("../../../../app/model/bd", () => ({
+jest.mock("../../../../model/bd", () => ({
   closeDatabase: jest.fn(),
   syncDatabase: jest.fn(),
   getDatabase: jest.fn(),
