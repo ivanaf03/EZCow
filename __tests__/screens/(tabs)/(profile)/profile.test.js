@@ -4,7 +4,7 @@ import { render } from "@testing-library/react-native";
 
 import Profile from "../../../../app/(tabs)/(profile)/profile";
 
-jest.mock("../../../../hooks/providers/user-provider", () => ({
+jest.mock("../../../../store/user-provider", () => ({
   useUser: jest.fn(() => ({
     user: { id: "1", name: "TestUser", email: "test@test.com" },
   })),
@@ -16,7 +16,7 @@ jest.mock("@fortawesome/react-native-fontawesome", () => ({
 
 jest.mock("");
 
-jest.mock("../../../../hooks/providers/user-provider", () => ({
+jest.mock("../../../../store/user-provider", () => ({
   useUser: jest.fn(() => ({
     user: {
       id: "1",

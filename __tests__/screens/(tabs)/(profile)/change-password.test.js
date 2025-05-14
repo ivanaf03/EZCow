@@ -5,9 +5,9 @@ import { router } from "expo-router";
 import { Alert } from "react-native";
 
 import ChangePassword from "../../../../app/(tabs)/(profile)/change-password";
-import { getUserByEmail, changePassword } from "../../../../app/model/users";
+import { getUserByEmail, changePassword } from "../../../../model/users";
 
-jest.mock("../../../../hooks/providers/user-provider", () => ({
+jest.mock("../../../../store/user-provider", () => ({
   useUser: jest.fn(() => ({
     user: {
       id: "1",
@@ -30,7 +30,7 @@ jest.mock("@fortawesome/react-native-fontawesome", () => ({
   FontAwesomeIcon: () => null,
 }));
 
-jest.mock("../../../../app/model/users", () => ({
+jest.mock("../../../../model/users", () => ({
   getUserByEmail: jest.fn(),
   changePassword: jest.fn(),
 }));
@@ -69,7 +69,7 @@ describe("ChangePassword", () => {
 
   it("should show an error if user is logged with google", async () => {
     const useUserMock =
-      require("../../../../hooks/providers/user-provider").useUser;
+      require("../../../../store/user-provider").useUser;
     useUserMock.mockReturnValue({
       user: {
         id: "1",
@@ -101,7 +101,7 @@ describe("ChangePassword", () => {
 
   it("should show an error if actual password is empty", async () => {
     const useUserMock =
-      require("../../../../hooks/providers/user-provider").useUser;
+      require("../../../../store/user-provider").useUser;
     useUserMock.mockReturnValue({
       user: {
         id: "1",

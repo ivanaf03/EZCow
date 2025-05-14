@@ -4,17 +4,16 @@ import { render, fireEvent } from "@testing-library/react-native";
 import { Alert } from "react-native";
 
 import DownloadDatabase from "../../../../app/(tabs)/(profile)/download-database";
-import { getUserByEmail } from "../../../../app/model/users";
 
 jest.mock("@fortawesome/react-native-fontawesome", () => ({
   FontAwesomeIcon: () => null,
 }));
 
-jest.mock("../../../../app/model/users", () => ({
+jest.mock("../../../../model/users", () => ({
   getUserByEmail: jest.fn(),
 }));
 
-jest.mock("../../../../app/model/bd", () => ({
+jest.mock("../../../../model/bd", () => ({
   closeDatabase: jest.fn(),
   getDatabase: jest.fn(),
 }));

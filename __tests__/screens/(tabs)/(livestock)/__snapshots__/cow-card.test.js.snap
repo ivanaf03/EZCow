@@ -53,10 +53,17 @@ exports[`CowCard should render correctly 1`] = `
       style={
         [
           {
+            "paddingLeft": 16,
+            "paddingRight": 16,
+          },
+          {
             "flexDirection": "row",
           },
           {
             "alignItems": "center",
+          },
+          {
+            "justifyContent": "space-between",
           },
           {
             "borderBottomWidth": 2,
@@ -118,11 +125,6 @@ exports[`CowCard should render correctly 1`] = `
             {
               "fontFamily": "Nunito-Bold",
             },
-            [
-              {
-                "marginLeft": 16,
-              },
-            ],
           ]
         }
       >
@@ -169,7 +171,7 @@ exports[`CowCard should render correctly 1`] = `
                 "color": "#6bc0eb",
               },
               {
-                "fontSize": 18,
+                "fontSize": 20,
                 "lineHeight": 28,
               },
               {
@@ -221,32 +223,11 @@ exports[`CowCard should render correctly 1`] = `
                 "color": "#ffffff",
               },
               {
-                "fontSize": 20,
+                "fontSize": 18,
                 "lineHeight": 28,
               },
               {
-                "fontFamily": "Nunito-Medium",
-              },
-              {
-                "marginBottom": 8,
-              },
-            ]
-          }
-        >
-          Datos:
-        </Text>
-        <Text
-          style={
-            [
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 14,
-                "lineHeight": 20,
-              },
-              {
-                "fontFamily": "Nunito-Medium",
+                "fontFamily": "Nunito-Light",
               },
             ]
           }
@@ -262,30 +243,11 @@ exports[`CowCard should render correctly 1`] = `
                 "color": "#ffffff",
               },
               {
-                "fontSize": 14,
-                "lineHeight": 20,
+                "fontSize": 18,
+                "lineHeight": 28,
               },
               {
-                "fontFamily": "Nunito-Medium",
-              },
-            ]
-          }
-        >
-          Sexo: 
-          Femenino
-        </Text>
-        <Text
-          style={
-            [
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 14,
-                "lineHeight": 20,
-              },
-              {
-                "fontFamily": "Nunito-Medium",
+                "fontFamily": "Nunito-Light",
               },
             ]
           }
@@ -300,11 +262,11 @@ exports[`CowCard should render correctly 1`] = `
                 "color": "#ffffff",
               },
               {
-                "fontSize": 14,
-                "lineHeight": 20,
+                "fontSize": 18,
+                "lineHeight": 28,
               },
               {
-                "fontFamily": "Nunito-Medium",
+                "fontFamily": "Nunito-Light",
               },
             ]
           }
@@ -319,11 +281,11 @@ exports[`CowCard should render correctly 1`] = `
                 "color": "#ffffff",
               },
               {
-                "fontSize": 14,
-                "lineHeight": 20,
+                "fontSize": 18,
+                "lineHeight": 28,
               },
               {
-                "fontFamily": "Nunito-Medium",
+                "fontFamily": "Nunito-Light",
               },
             ]
           }
@@ -367,6 +329,18 @@ exports[`CowCard should render correctly 1`] = `
     style={
       [
         {
+          "display": "flex",
+        },
+        {
+          "flexDirection": "row",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "alignItems": "center",
+        },
+        {
           "paddingBottom": 16,
           "paddingLeft": 16,
           "paddingRight": 16,
@@ -376,30 +350,22 @@ exports[`CowCard should render correctly 1`] = `
           "backgroundColor": "#272727",
         },
         {
-          "borderLeftWidth": 8,
-          "borderRightWidth": 8,
-        },
-        {
           "borderBottomWidth": 2,
+          "borderLeftWidth": 2,
+          "borderRightWidth": 2,
           "borderTopWidth": 2,
         },
         {
-          "borderBottomColor": "#2254ba",
-          "borderLeftColor": "#2254ba",
-          "borderRightColor": "#2254ba",
-          "borderTopColor": "#2254ba",
+          "borderBottomColor": "#6bc0eb",
+          "borderLeftColor": "#6bc0eb",
+          "borderRightColor": "#6bc0eb",
+          "borderTopColor": "#6bc0eb",
         },
         {
           "borderBottomLeftRadius": 24,
           "borderBottomRightRadius": 24,
           "borderTopLeftRadius": 24,
           "borderTopRightRadius": 24,
-        },
-        {
-          "alignItems": "center",
-        },
-        {
-          "justifyContent": "center",
         },
       ]
     }
@@ -418,56 +384,15 @@ exports[`CowCard should render correctly 1`] = `
             "fontSize": 20,
             "lineHeight": 28,
           },
-          {
-            "textAlign": "center",
-          },
+          [
+            {
+              "marginLeft": 16,
+            },
+          ],
         ]
       }
     >
-      <View
-        style={
-          [
-            {
-              "flexDirection": "row",
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "width": "65%",
-            },
-          ]
-        }
-      >
-        <View
-          style={
-            [
-              {
-                "paddingLeft": 8,
-                "paddingRight": 8,
-              },
-            ]
-          }
-        />
-        <Text
-          style={
-            [
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 18,
-                "lineHeight": 28,
-              },
-              {
-                "fontFamily": "Nunito-Medium",
-              },
-            ]
-          }
-        >
-          Dar de baja
-        </Text>
-      </View>
+      Dar de baja
     </Text>
   </View>
 </View>
@@ -526,10 +451,17 @@ exports[`CowCard should render correctly when mother is null 1`] = `
       style={
         [
           {
+            "paddingLeft": 16,
+            "paddingRight": 16,
+          },
+          {
             "flexDirection": "row",
           },
           {
             "alignItems": "center",
+          },
+          {
+            "justifyContent": "space-between",
           },
           {
             "borderBottomWidth": 2,
@@ -591,11 +523,6 @@ exports[`CowCard should render correctly when mother is null 1`] = `
             {
               "fontFamily": "Nunito-Bold",
             },
-            [
-              {
-                "marginLeft": 16,
-              },
-            ],
           ]
         }
       >
@@ -642,7 +569,7 @@ exports[`CowCard should render correctly when mother is null 1`] = `
                 "color": "#6bc0eb",
               },
               {
-                "fontSize": 18,
+                "fontSize": 20,
                 "lineHeight": 28,
               },
               {
@@ -694,32 +621,11 @@ exports[`CowCard should render correctly when mother is null 1`] = `
                 "color": "#ffffff",
               },
               {
-                "fontSize": 20,
+                "fontSize": 18,
                 "lineHeight": 28,
               },
               {
-                "fontFamily": "Nunito-Medium",
-              },
-              {
-                "marginBottom": 8,
-              },
-            ]
-          }
-        >
-          Datos:
-        </Text>
-        <Text
-          style={
-            [
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 14,
-                "lineHeight": 20,
-              },
-              {
-                "fontFamily": "Nunito-Medium",
+                "fontFamily": "Nunito-Light",
               },
             ]
           }
@@ -735,30 +641,11 @@ exports[`CowCard should render correctly when mother is null 1`] = `
                 "color": "#ffffff",
               },
               {
-                "fontSize": 14,
-                "lineHeight": 20,
+                "fontSize": 18,
+                "lineHeight": 28,
               },
               {
-                "fontFamily": "Nunito-Medium",
-              },
-            ]
-          }
-        >
-          Sexo: 
-          Femenino
-        </Text>
-        <Text
-          style={
-            [
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 14,
-                "lineHeight": 20,
-              },
-              {
-                "fontFamily": "Nunito-Medium",
+                "fontFamily": "Nunito-Light",
               },
             ]
           }
@@ -773,11 +660,11 @@ exports[`CowCard should render correctly when mother is null 1`] = `
                 "color": "#ffffff",
               },
               {
-                "fontSize": 14,
-                "lineHeight": 20,
+                "fontSize": 18,
+                "lineHeight": 28,
               },
               {
-                "fontFamily": "Nunito-Medium",
+                "fontFamily": "Nunito-Light",
               },
             ]
           }
@@ -792,11 +679,11 @@ exports[`CowCard should render correctly when mother is null 1`] = `
                 "color": "#ffffff",
               },
               {
-                "fontSize": 14,
-                "lineHeight": 20,
+                "fontSize": 18,
+                "lineHeight": 28,
               },
               {
-                "fontFamily": "Nunito-Medium",
+                "fontFamily": "Nunito-Light",
               },
             ]
           }
@@ -840,6 +727,18 @@ exports[`CowCard should render correctly when mother is null 1`] = `
     style={
       [
         {
+          "display": "flex",
+        },
+        {
+          "flexDirection": "row",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "alignItems": "center",
+        },
+        {
           "paddingBottom": 16,
           "paddingLeft": 16,
           "paddingRight": 16,
@@ -849,30 +748,22 @@ exports[`CowCard should render correctly when mother is null 1`] = `
           "backgroundColor": "#272727",
         },
         {
-          "borderLeftWidth": 8,
-          "borderRightWidth": 8,
-        },
-        {
           "borderBottomWidth": 2,
+          "borderLeftWidth": 2,
+          "borderRightWidth": 2,
           "borderTopWidth": 2,
         },
         {
-          "borderBottomColor": "#2254ba",
-          "borderLeftColor": "#2254ba",
-          "borderRightColor": "#2254ba",
-          "borderTopColor": "#2254ba",
+          "borderBottomColor": "#6bc0eb",
+          "borderLeftColor": "#6bc0eb",
+          "borderRightColor": "#6bc0eb",
+          "borderTopColor": "#6bc0eb",
         },
         {
           "borderBottomLeftRadius": 24,
           "borderBottomRightRadius": 24,
           "borderTopLeftRadius": 24,
           "borderTopRightRadius": 24,
-        },
-        {
-          "alignItems": "center",
-        },
-        {
-          "justifyContent": "center",
         },
       ]
     }
@@ -891,56 +782,15 @@ exports[`CowCard should render correctly when mother is null 1`] = `
             "fontSize": 20,
             "lineHeight": 28,
           },
-          {
-            "textAlign": "center",
-          },
+          [
+            {
+              "marginLeft": 16,
+            },
+          ],
         ]
       }
     >
-      <View
-        style={
-          [
-            {
-              "flexDirection": "row",
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "width": "65%",
-            },
-          ]
-        }
-      >
-        <View
-          style={
-            [
-              {
-                "paddingLeft": 8,
-                "paddingRight": 8,
-              },
-            ]
-          }
-        />
-        <Text
-          style={
-            [
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 18,
-                "lineHeight": 28,
-              },
-              {
-                "fontFamily": "Nunito-Medium",
-              },
-            ]
-          }
-        >
-          Dar de baja
-        </Text>
-      </View>
+      Dar de baja
     </Text>
   </View>
 </View>

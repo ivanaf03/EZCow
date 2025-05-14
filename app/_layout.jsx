@@ -2,13 +2,16 @@ import React from "react";
 
 import { Stack } from "expo-router";
 
-import { initDatabase } from "./model/bd";
-import UserProvider from "../hooks/providers/user-provider";
-import FontProvider from "../hooks/providers/font-provider";
+import { initDatabase } from "../model/bd";
+import UserProvider from "../store/user-provider";
+import FontProvider from "../store/font-provider";
 
 const RootLayout = () => {
   React.useEffect(() => {
-    initDatabase();
+    const initData = async () => {
+      await initDatabase();
+    };
+    initData();
   }, []);
 
   return (

@@ -3,7 +3,7 @@ import React from "react";
 import { render, fireEvent, waitFor } from "@testing-library/react-native";
 import CowCard from "../../../../app/(tabs)/(livestock)/cow-card";
 
-jest.mock("../../../../app/model/cow", () => ({
+jest.mock("../../../../model/cow", () => ({
   getAvailableCowNameById: jest.fn(() => "Vaca Test"),
   setExitDateByCowId: jest.fn(),
 }));

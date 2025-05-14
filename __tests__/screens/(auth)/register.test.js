@@ -5,7 +5,7 @@ import { router } from 'expo-router';
 import { Alert } from "react-native";
 
 import Register from "../../../app/(auth)/register";
-import { getUserByEmail } from "../../../app/model/users";
+import { getUserByEmail } from "../../../model/users";
 
 jest.mock("expo-router", () => ({
     router: {
@@ -14,7 +14,7 @@ jest.mock("expo-router", () => ({
     },
 }));
 
-jest.mock("../../../app/model/users", () => ({
+jest.mock("../../../model/users", () => ({
     insertUser: jest.fn(),
     getUserByEmail: jest.fn(),
 }));
@@ -23,7 +23,7 @@ jest.mock("@fortawesome/react-native-fontawesome", () => ({
     FontAwesomeIcon: () => null
 }));
 
-jest.mock("../../../hooks/providers/user-provider", () => ({
+jest.mock("../../../store/user-provider", () => ({
     useUser: jest.fn(() => ({
         login: jest.fn(),
     })),

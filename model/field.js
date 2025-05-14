@@ -1,4 +1,4 @@
-import { getDatabase } from "./bd";
+import { getDatabase } from "../model/bd";
 
 export const insertField = async (name, latitude, longitude, user_fk) => {
   const db = await getDatabase();

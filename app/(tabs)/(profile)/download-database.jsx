@@ -4,13 +4,14 @@ import { View, Text, Alert, ScrollView } from "react-native";
 import * as FileSystem from "expo-file-system";
 import CryptoJS from "crypto-js";
 
-import CustomButton from "../../../components/basic/custom-button";
 import CustomInput from "../../../components/basic/custom-input";
 import CustomPasswordInput from "../../../components/basic/custom-password-input";
-import { closeDatabase, getDatabase } from "../../model/bd";
+import { closeDatabase, getDatabase } from "../../../model/bd";
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomTextDiv from "../../../components/basic/custom-text-div";
 import CustomFormDiv from "../../../components/basic/custom-form-div";
+import CustomPressable from "../../../components/basic/custom-pressable";
+import icons from "../../../constants/icons";
 
 const SERVER_URL = "http://192.168.1.29:2345";
 
@@ -135,10 +136,11 @@ const DownloadDatabase = () => {
             />
           </View>
           <View>
-            <CustomButton
+            <CustomPressable
               text="Descargar base de datos"
               onPress={handleDownloadDatabase}
-              buttonTestID={"download-database-button"}
+              buttonTestID="download-database-button"
+              icon={icons.faDownload}
             />
           </View>
         </CustomFormDiv>
