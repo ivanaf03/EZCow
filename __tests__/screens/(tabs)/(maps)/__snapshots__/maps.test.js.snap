@@ -106,6 +106,18 @@ exports[`Maps should navigate to fields 1`] = `
         style={
           [
             {
+              "display": "flex",
+            },
+            {
+              "flexDirection": "row",
+            },
+            {
+              "justifyContent": "space-between",
+            },
+            {
+              "alignItems": "center",
+            },
+            {
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -115,30 +127,22 @@ exports[`Maps should navigate to fields 1`] = `
               "backgroundColor": "#272727",
             },
             {
-              "borderLeftWidth": 8,
-              "borderRightWidth": 8,
-            },
-            {
               "borderBottomWidth": 2,
+              "borderLeftWidth": 2,
+              "borderRightWidth": 2,
               "borderTopWidth": 2,
             },
             {
-              "borderBottomColor": "#2254ba",
-              "borderLeftColor": "#2254ba",
-              "borderRightColor": "#2254ba",
-              "borderTopColor": "#2254ba",
+              "borderBottomColor": "#6bc0eb",
+              "borderLeftColor": "#6bc0eb",
+              "borderRightColor": "#6bc0eb",
+              "borderTopColor": "#6bc0eb",
             },
             {
               "borderBottomLeftRadius": 24,
               "borderBottomRightRadius": 24,
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "justifyContent": "center",
             },
           ]
         }
@@ -196,15 +200,6 @@ exports[`Maps should navigate to fields 1`] = `
         style={
           [
             {
-              "display": "flex",
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "justifyContent": "center",
-            },
-            {
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -214,20 +209,22 @@ exports[`Maps should navigate to fields 1`] = `
               "backgroundColor": "#272727",
             },
             {
-              "borderLeftWidth": 2,
-              "borderRightWidth": 2,
-            },
-            {
-              "borderBottomColor": "#6bc0eb",
-              "borderLeftColor": "#6bc0eb",
-              "borderRightColor": "#6bc0eb",
-              "borderTopColor": "#6bc0eb",
-            },
-            {
               "borderBottomLeftRadius": 8,
               "borderBottomRightRadius": 8,
               "borderTopLeftRadius": 8,
               "borderTopRightRadius": 8,
+            },
+            {
+              "borderBottomWidth": 2,
+              "borderLeftWidth": 2,
+              "borderRightWidth": 2,
+              "borderTopWidth": 2,
+            },
+            {
+              "borderBottomColor": "#ffffff",
+              "borderLeftColor": "#ffffff",
+              "borderRightColor": "#ffffff",
+              "borderTopColor": "#ffffff",
             },
           ]
         }
@@ -282,22 +279,10 @@ exports[`Maps should navigate to fields 1`] = `
           "backgroundColor": "#272727",
         },
         {
-          "borderBottomWidth": 2,
-          "borderLeftWidth": 2,
-          "borderRightWidth": 2,
-          "borderTopWidth": 2,
-        },
-        {
-          "borderBottomColor": "#6bc0eb",
-          "borderLeftColor": "#6bc0eb",
-          "borderRightColor": "#6bc0eb",
-          "borderTopColor": "#6bc0eb",
-        },
-        {
-          "borderBottomLeftRadius": 16,
-          "borderBottomRightRadius": 16,
-          "borderTopLeftRadius": 16,
-          "borderTopRightRadius": 16,
+          "borderBottomLeftRadius": 8,
+          "borderBottomRightRadius": 8,
+          "borderTopLeftRadius": 8,
+          "borderTopRightRadius": 8,
         },
         {
           "marginLeft": 16,
@@ -452,6 +437,18 @@ exports[`Maps should navigate to fields 1`] = `
         style={
           [
             {
+              "display": "flex",
+            },
+            {
+              "flexDirection": "row",
+            },
+            {
+              "justifyContent": "center",
+            },
+            {
+              "alignItems": "center",
+            },
+            {
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -461,18 +458,16 @@ exports[`Maps should navigate to fields 1`] = `
               "backgroundColor": "#272727",
             },
             {
-              "borderLeftWidth": 8,
-              "borderRightWidth": 8,
-            },
-            {
               "borderBottomWidth": 2,
+              "borderLeftWidth": 2,
+              "borderRightWidth": 2,
               "borderTopWidth": 2,
             },
             {
-              "borderBottomColor": "#2254ba",
-              "borderLeftColor": "#2254ba",
-              "borderRightColor": "#2254ba",
-              "borderTopColor": "#2254ba",
+              "borderBottomColor": "#6bc0eb",
+              "borderLeftColor": "#6bc0eb",
+              "borderRightColor": "#6bc0eb",
+              "borderTopColor": "#6bc0eb",
             },
             {
               "borderBottomLeftRadius": 24,
@@ -480,14 +475,9 @@ exports[`Maps should navigate to fields 1`] = `
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
             },
-            {
-              "alignItems": "center",
-            },
-            {
-              "justifyContent": "center",
-            },
           ]
         }
+        testID="save-location-button"
       >
         <Text
           style={
@@ -502,9 +492,11 @@ exports[`Maps should navigate to fields 1`] = `
                 "fontSize": 20,
                 "lineHeight": 28,
               },
-              {
-                "textAlign": "center",
-              },
+              [
+                {
+                  "marginLeft": 16,
+                },
+              ],
             ]
           }
         >
@@ -622,6 +614,18 @@ exports[`Maps should render correctly 1`] = `
         style={
           [
             {
+              "display": "flex",
+            },
+            {
+              "flexDirection": "row",
+            },
+            {
+              "justifyContent": "space-between",
+            },
+            {
+              "alignItems": "center",
+            },
+            {
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -631,30 +635,22 @@ exports[`Maps should render correctly 1`] = `
               "backgroundColor": "#272727",
             },
             {
-              "borderLeftWidth": 8,
-              "borderRightWidth": 8,
-            },
-            {
               "borderBottomWidth": 2,
+              "borderLeftWidth": 2,
+              "borderRightWidth": 2,
               "borderTopWidth": 2,
             },
             {
-              "borderBottomColor": "#2254ba",
-              "borderLeftColor": "#2254ba",
-              "borderRightColor": "#2254ba",
-              "borderTopColor": "#2254ba",
+              "borderBottomColor": "#6bc0eb",
+              "borderLeftColor": "#6bc0eb",
+              "borderRightColor": "#6bc0eb",
+              "borderTopColor": "#6bc0eb",
             },
             {
               "borderBottomLeftRadius": 24,
               "borderBottomRightRadius": 24,
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "justifyContent": "center",
             },
           ]
         }
@@ -712,15 +708,6 @@ exports[`Maps should render correctly 1`] = `
         style={
           [
             {
-              "display": "flex",
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "justifyContent": "center",
-            },
-            {
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -730,20 +717,22 @@ exports[`Maps should render correctly 1`] = `
               "backgroundColor": "#272727",
             },
             {
-              "borderLeftWidth": 2,
-              "borderRightWidth": 2,
-            },
-            {
-              "borderBottomColor": "#6bc0eb",
-              "borderLeftColor": "#6bc0eb",
-              "borderRightColor": "#6bc0eb",
-              "borderTopColor": "#6bc0eb",
-            },
-            {
               "borderBottomLeftRadius": 8,
               "borderBottomRightRadius": 8,
               "borderTopLeftRadius": 8,
               "borderTopRightRadius": 8,
+            },
+            {
+              "borderBottomWidth": 2,
+              "borderLeftWidth": 2,
+              "borderRightWidth": 2,
+              "borderTopWidth": 2,
+            },
+            {
+              "borderBottomColor": "#ffffff",
+              "borderLeftColor": "#ffffff",
+              "borderRightColor": "#ffffff",
+              "borderTopColor": "#ffffff",
             },
           ]
         }
@@ -798,22 +787,10 @@ exports[`Maps should render correctly 1`] = `
           "backgroundColor": "#272727",
         },
         {
-          "borderBottomWidth": 2,
-          "borderLeftWidth": 2,
-          "borderRightWidth": 2,
-          "borderTopWidth": 2,
-        },
-        {
-          "borderBottomColor": "#6bc0eb",
-          "borderLeftColor": "#6bc0eb",
-          "borderRightColor": "#6bc0eb",
-          "borderTopColor": "#6bc0eb",
-        },
-        {
-          "borderBottomLeftRadius": 16,
-          "borderBottomRightRadius": 16,
-          "borderTopLeftRadius": 16,
-          "borderTopRightRadius": 16,
+          "borderBottomLeftRadius": 8,
+          "borderBottomRightRadius": 8,
+          "borderTopLeftRadius": 8,
+          "borderTopRightRadius": 8,
         },
         {
           "marginLeft": 16,
@@ -968,6 +945,18 @@ exports[`Maps should render correctly 1`] = `
         style={
           [
             {
+              "display": "flex",
+            },
+            {
+              "flexDirection": "row",
+            },
+            {
+              "justifyContent": "center",
+            },
+            {
+              "alignItems": "center",
+            },
+            {
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -977,18 +966,16 @@ exports[`Maps should render correctly 1`] = `
               "backgroundColor": "#272727",
             },
             {
-              "borderLeftWidth": 8,
-              "borderRightWidth": 8,
-            },
-            {
               "borderBottomWidth": 2,
+              "borderLeftWidth": 2,
+              "borderRightWidth": 2,
               "borderTopWidth": 2,
             },
             {
-              "borderBottomColor": "#2254ba",
-              "borderLeftColor": "#2254ba",
-              "borderRightColor": "#2254ba",
-              "borderTopColor": "#2254ba",
+              "borderBottomColor": "#6bc0eb",
+              "borderLeftColor": "#6bc0eb",
+              "borderRightColor": "#6bc0eb",
+              "borderTopColor": "#6bc0eb",
             },
             {
               "borderBottomLeftRadius": 24,
@@ -996,14 +983,9 @@ exports[`Maps should render correctly 1`] = `
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
             },
-            {
-              "alignItems": "center",
-            },
-            {
-              "justifyContent": "center",
-            },
           ]
         }
+        testID="save-location-button"
       >
         <Text
           style={
@@ -1018,9 +1000,11 @@ exports[`Maps should render correctly 1`] = `
                 "fontSize": 20,
                 "lineHeight": 28,
               },
-              {
-                "textAlign": "center",
-              },
+              [
+                {
+                  "marginLeft": 16,
+                },
+              ],
             ]
           }
         >
@@ -1138,6 +1122,18 @@ exports[`Maps should save correct location 1`] = `
         style={
           [
             {
+              "display": "flex",
+            },
+            {
+              "flexDirection": "row",
+            },
+            {
+              "justifyContent": "space-between",
+            },
+            {
+              "alignItems": "center",
+            },
+            {
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -1147,30 +1143,22 @@ exports[`Maps should save correct location 1`] = `
               "backgroundColor": "#272727",
             },
             {
-              "borderLeftWidth": 8,
-              "borderRightWidth": 8,
-            },
-            {
               "borderBottomWidth": 2,
+              "borderLeftWidth": 2,
+              "borderRightWidth": 2,
               "borderTopWidth": 2,
             },
             {
-              "borderBottomColor": "#2254ba",
-              "borderLeftColor": "#2254ba",
-              "borderRightColor": "#2254ba",
-              "borderTopColor": "#2254ba",
+              "borderBottomColor": "#6bc0eb",
+              "borderLeftColor": "#6bc0eb",
+              "borderRightColor": "#6bc0eb",
+              "borderTopColor": "#6bc0eb",
             },
             {
               "borderBottomLeftRadius": 24,
               "borderBottomRightRadius": 24,
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "justifyContent": "center",
             },
           ]
         }
@@ -1228,15 +1216,6 @@ exports[`Maps should save correct location 1`] = `
         style={
           [
             {
-              "display": "flex",
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "justifyContent": "center",
-            },
-            {
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -1246,20 +1225,22 @@ exports[`Maps should save correct location 1`] = `
               "backgroundColor": "#272727",
             },
             {
-              "borderLeftWidth": 2,
-              "borderRightWidth": 2,
-            },
-            {
-              "borderBottomColor": "#6bc0eb",
-              "borderLeftColor": "#6bc0eb",
-              "borderRightColor": "#6bc0eb",
-              "borderTopColor": "#6bc0eb",
-            },
-            {
               "borderBottomLeftRadius": 8,
               "borderBottomRightRadius": 8,
               "borderTopLeftRadius": 8,
               "borderTopRightRadius": 8,
+            },
+            {
+              "borderBottomWidth": 2,
+              "borderLeftWidth": 2,
+              "borderRightWidth": 2,
+              "borderTopWidth": 2,
+            },
+            {
+              "borderBottomColor": "#ffffff",
+              "borderLeftColor": "#ffffff",
+              "borderRightColor": "#ffffff",
+              "borderTopColor": "#ffffff",
             },
           ]
         }
@@ -1314,22 +1295,10 @@ exports[`Maps should save correct location 1`] = `
           "backgroundColor": "#272727",
         },
         {
-          "borderBottomWidth": 2,
-          "borderLeftWidth": 2,
-          "borderRightWidth": 2,
-          "borderTopWidth": 2,
-        },
-        {
-          "borderBottomColor": "#6bc0eb",
-          "borderLeftColor": "#6bc0eb",
-          "borderRightColor": "#6bc0eb",
-          "borderTopColor": "#6bc0eb",
-        },
-        {
-          "borderBottomLeftRadius": 16,
-          "borderBottomRightRadius": 16,
-          "borderTopLeftRadius": 16,
-          "borderTopRightRadius": 16,
+          "borderBottomLeftRadius": 8,
+          "borderBottomRightRadius": 8,
+          "borderTopLeftRadius": 8,
+          "borderTopRightRadius": 8,
         },
         {
           "marginLeft": 16,
@@ -1484,6 +1453,18 @@ exports[`Maps should save correct location 1`] = `
         style={
           [
             {
+              "display": "flex",
+            },
+            {
+              "flexDirection": "row",
+            },
+            {
+              "justifyContent": "center",
+            },
+            {
+              "alignItems": "center",
+            },
+            {
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -1493,18 +1474,16 @@ exports[`Maps should save correct location 1`] = `
               "backgroundColor": "#272727",
             },
             {
-              "borderLeftWidth": 8,
-              "borderRightWidth": 8,
-            },
-            {
               "borderBottomWidth": 2,
+              "borderLeftWidth": 2,
+              "borderRightWidth": 2,
               "borderTopWidth": 2,
             },
             {
-              "borderBottomColor": "#2254ba",
-              "borderLeftColor": "#2254ba",
-              "borderRightColor": "#2254ba",
-              "borderTopColor": "#2254ba",
+              "borderBottomColor": "#6bc0eb",
+              "borderLeftColor": "#6bc0eb",
+              "borderRightColor": "#6bc0eb",
+              "borderTopColor": "#6bc0eb",
             },
             {
               "borderBottomLeftRadius": 24,
@@ -1512,14 +1491,9 @@ exports[`Maps should save correct location 1`] = `
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
             },
-            {
-              "alignItems": "center",
-            },
-            {
-              "justifyContent": "center",
-            },
           ]
         }
+        testID="save-location-button"
       >
         <Text
           style={
@@ -1534,9 +1508,11 @@ exports[`Maps should save correct location 1`] = `
                 "fontSize": 20,
                 "lineHeight": 28,
               },
-              {
-                "textAlign": "center",
-              },
+              [
+                {
+                  "marginLeft": 16,
+                },
+              ],
             ]
           }
         >

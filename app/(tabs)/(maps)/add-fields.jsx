@@ -11,6 +11,8 @@ import { insertField } from "../../../model/field";
 import { useUser } from "../../../store/user-provider";
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomFormDiv from "../../../components/basic/custom-form-div";
+import CustomPressable from "../../../components/basic/custom-pressable";
+import icons from "../../../constants/icons";
 
 const AddFields = () => {
   const [name, setName] = React.useState("");
@@ -50,9 +52,18 @@ const AddFields = () => {
   return (
     <ScrollView className="flex-1 bg-c_dark_gray">
       <TabTitle text="Añadir una finca" />
+      <View className="flex items-center mt-4">
+        <View className="w-[75%]">
+          <CustomButton
+            text="Ver mis fincas"
+            onPress={() => router.replace("fields")}
+            buttonTestID={"fields-button"}
+          />
+        </View>
+      </View>
       <View className="px-4 mt-4">
         <CustomFormDiv>
-          <View className="h-[300px] bg-c_light_gray border-2 border-c_light_blue rounded-2xl mx-4 p-2 mt-4">
+          <View className="h-80 bg-c_light_gray mx-4 mt-4">
             <MapView
               style={{ width: "100%", height: "100%" }}
               region={{
@@ -67,7 +78,7 @@ const AddFields = () => {
               <Marker title={name} coordinate={selectedLocation} />
             </MapView>
           </View>
-          <View className=" my-4">
+          <View className="my-4">
             <CustomInput
               text="Nombre de la finca"
               placeholder="Nombre"
@@ -75,28 +86,14 @@ const AddFields = () => {
               value={name}
             />
           </View>
-          <CustomButton text="Guardar ubicación" onPress={handleSaveLocation} />
+          <CustomPressable
+            text="Añadir"
+            onPress={handleSaveLocation}
+            buttonTestID="add-field-button"
+            icon={icons.faPlus}
+          />
         </CustomFormDiv>
       </View>
-      <View className="items-center mt-4">
-      <View className="w-[75%] space-y-4">
-        <View>
-          <CustomButton
-            text="Mis fincas"
-            onPress={() => router.replace("fields")}
-            buttonTestID="fields-button"
-          />
-        </View>
-        <View>
-          <CustomButton
-            text="Mi explotación"
-            onPress={() => router.replace("maps")}
-            buttonTestID="my-farm-button"
-          />
-        </View>
-      </View>
-      </View>
-
     </ScrollView>
   );
 };

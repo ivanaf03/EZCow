@@ -1,6 +1,6 @@
 import React from "react";
 
-import { View, ScrollView } from "react-native";
+import { View, ScrollView, Alert } from "react-native";
 import { router } from "expo-router";
 
 import CustomInput from "../../../components/basic/custom-input";
@@ -10,9 +10,7 @@ import { insertHealthEvent } from "../../../model/health-events";
 import CustomPicker from "../../../components/basic/custom-picker";
 import CustomFormDiv from "../../../components/basic/custom-form-div";
 import TabTitle from "../../../components/tabs/tab-title";
-import {
-  getAllCowIdsAndNamesAvailableByUserId,
-} from "../../../model/cow";
+import { getAllCowIdsAndNamesAvailableByUserId } from "../../../model/cow";
 import { useUser } from "../../../store/user-provider";
 
 const HealthForm = () => {
@@ -34,6 +32,7 @@ const HealthForm = () => {
   const loadCowNames = async () => {
     const names = await getAllCowIdsAndNamesAvailableByUserId(user.id);
     setCowNames(names);
+    setFormData((prev) => ({ ...prev, cowName: names[0].id }));
   };
 
   const handleChange = (key) => async (value) => {
@@ -46,6 +45,16 @@ const HealthForm = () => {
   };
 
   const handleAddHealthEvent = async () => {
+    if (
+      !formData.cowName ||
+      !formData.eventName ||
+      !formData.description ||
+      !formData.date
+    ) {
+      Alert.alert("Error", "Por favor, rellena todos los campos.");
+      return;
+    }
+
     const { cowName, eventName, description, date } = formData;
     const formattedDate = date.toISOString().split("T")[0];
     await insertHealthEvent(cowName, eventName, description, formattedDate);
@@ -79,11 +88,7 @@ const HealthForm = () => {
               text="Tipo de evento"
               value={formData.eventName}
               onValueChange={handleChange("eventName")}
-              options={[
-                    "Vacuna",
-                    "Enfermedad",
-                    "Medicación",
-              ]}
+              options={["Vacuna", "Enfermedad", "Medicación"]}
             />
           </View>
           <View>

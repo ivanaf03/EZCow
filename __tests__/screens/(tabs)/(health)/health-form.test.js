@@ -2,6 +2,7 @@ import React from "react";
 
 import { render, fireEvent, waitFor } from "@testing-library/react-native";
 import { router } from "expo-router";
+import { Alert } from "react-native";
 
 import HealthForm from "../../../../app/(tabs)/(health)/health-form";
 import { getAllCowIdsAndNamesAvailableByUserId } from "../../../../model/cow";
@@ -21,11 +22,21 @@ jest.mock("../../../../store/user-provider", () => ({
   })),
 }));
 
+jest.mock("@fortawesome/react-native-fontawesome", () => ({
+  FontAwesomeIcon: () => null,
+}));
+
 jest.mock("expo-router", () => ({
   router: {
     replace: jest.fn(),
   },
 }));
+
+jest.mock("@fortawesome/react-native-fontawesome", () => ({
+  FontAwesomeIcon: () => null,
+}));
+
+jest.spyOn(Alert, "alert");
 
 describe("HealthForm", () => {  
   beforeEach(() => {
@@ -56,5 +67,18 @@ describe("HealthForm", () => {
       expect.stringMatching(/\d{4}-\d{2}-\d{2}/)
     ));
     await waitFor(() => expect(router.replace).toHaveBeenCalledWith("health"));
+  });
+
+  it("should show an error if fields are empty", async () => {
+    const { getByText, getByTestId } = render(<HealthForm />);
+    const addHealthEventButton = getByTestId("handle-add-health-button");
+    await waitFor(() => expect(getAllCowIdsAndNamesAvailableByUserId).toHaveBeenCalled());
+    fireEvent(getByText("Nombre de la vaca:"), "onValueChange", "Vaca 1");
+    fireEvent(getByText("Tipo de evento:"), "onValueChange", "Vacuna");
+    fireEvent.press(addHealthEventButton);
+    await waitFor(() => expect(Alert.alert).toHaveBeenCalledWith(
+      "Error",
+      "Por favor, rellena todos los campos."
+    ));
   });
 }); 

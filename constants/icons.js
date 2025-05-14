@@ -11,6 +11,13 @@ import {
     faUser,
     faTriangleExclamation,
     faMagnifyingGlass,
+    faArrowRight,
+    faVenus,
+    faMars,
+    faPlus,
+    faBookmark,
+    faDownload,
+    faUpload,
 } from '@fortawesome/free-solid-svg-icons';
 
 export default {
@@ -26,4 +33,11 @@ export default {
     faUser,
     faTriangleExclamation,
     faMagnifyingGlass,
+    faArrowRight,
+    faVenus,
+    faMars,
+    faPlus,
+    faBookmark,
+    faDownload,
+    faUpload,
 };

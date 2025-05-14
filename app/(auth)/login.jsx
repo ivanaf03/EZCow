@@ -10,11 +10,12 @@ import CustomInput from "../../components/basic/custom-input";
 import CustomGoogleButton from "../../components/auth/custom-google-button";
 import CustomPasswordInput from "../../components/basic/custom-password-input";
 import CustomButton from "../../components/basic/custom-button";
-import CustomLink from "../../components/basic/custom-link";
+import CustomAuthNavigationLink from "../../components/auth/custom-auth-navigation-link";
 import { getUserByEmail, insertUserGoogle } from "../../model/users";
 import { useUser } from "../../store/user-provider";
 import CustomAuthTitle from "../../components/auth/custom-auth-title";
 import CustomFormDiv from "../../components/basic/custom-form-div";
+import { checkPasswordLength, checkEmail } from "../../utils/form-checkers";
 
 const Login = () => {
   const [formData, setFormData] = React.useState({
@@ -59,26 +60,18 @@ const Login = () => {
     handleGoogleLogin();
   }, [response]);
 
-  const checkPasswordLength = () => {
-    return formData.password.length >= 8;
-  };
-
-  const checkEmail = () => {
-    return formData.email.includes("@") && formData.email.includes(".");
-  };
-
   const handleLogin = async () => {
     if (!formData.email || !formData.password) {
       Alert.alert("Error", "Por favor, rellena todos los campos.");
       return;
     }
 
-    if (!checkEmail()) {
+    if (!checkEmail(formData.email)) {
       Alert.alert("Error", "El email no es válido.");
       return;
     }
 
-    if (!checkPasswordLength()) {
+    if (!checkPasswordLength(formData.password)) {
       Alert.alert("Error", "La contraseña debe tener al menos 8 caracteres.");
       return;
     }
@@ -100,7 +93,7 @@ const Login = () => {
     } catch (error) {
       Alert.alert(
         "Error",
-        "Error al iniciar sesión. Inténtalo de nuevo. Comprueba que el email es correcto."
+        error.message
       );
     }
   };
@@ -145,16 +138,12 @@ const Login = () => {
           </View>
         </CustomFormDiv>
       </View>
-      <View className="mt-10 w-full mb-10 flex-row justify-center items-center">
-        <Text className="text-c_white text-xl font-Nunito_Medium text-center mr-2">
-          Todavía no tienes una cuenta?
-        </Text>
-        <CustomLink
-          text="Regístrate"
-          to="register"
-          linkTestID={"sign-up-link"}
-        />
-      </View>
+      <CustomAuthNavigationLink
+        text="Todavía no tienes una cuenta?"
+        linkText="Registarse"
+        to="register"
+        testID="sign-up-link"
+      />
     </ScrollView>
   );
 };

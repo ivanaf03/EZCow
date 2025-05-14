@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CustomButton should render correctly 1`] = `
+exports[`CustomPressable should render correctly 1`] = `
 <View
   accessibilityState={
     {
@@ -40,7 +40,7 @@ exports[`CustomButton should render correctly 1`] = `
         "flexDirection": "row",
       },
       {
-        "justifyContent": "space-between",
+        "justifyContent": "center",
       },
       {
         "alignItems": "center",
@@ -88,9 +88,11 @@ exports[`CustomButton should render correctly 1`] = `
           "fontSize": 20,
           "lineHeight": 28,
         },
-        {
-          "textAlign": "center",
-        },
+        [
+          {
+            "marginLeft": 16,
+          },
+        ],
       ]
     }
   >

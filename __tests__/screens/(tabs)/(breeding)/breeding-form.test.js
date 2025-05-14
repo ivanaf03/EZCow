@@ -2,6 +2,7 @@ import React from "react";
 
 import { render, fireEvent, waitFor } from "@testing-library/react-native";
 import { router } from "expo-router";
+import { Alert } from "react-native";
 
 import BreedingForm from "../../../../app/(tabs)/(breeding)/breeding-form";
 import { getAllCowIdsAndNamesAvailableByUserId } from "../../../../model/cow";
@@ -26,6 +27,12 @@ jest.mock("expo-router", () => ({
     replace: jest.fn(),
   },
 }));
+
+jest.mock("@fortawesome/react-native-fontawesome", () => ({
+  FontAwesomeIcon: () => null,
+}));
+
+jest.spyOn(Alert, "alert");
 
 describe("BreedingForm", () => {
   beforeEach(() => {
@@ -56,5 +63,18 @@ describe("BreedingForm", () => {
       expect.stringMatching(/\d{4}-\d{2}-\d{2}/)
     ));
     await waitFor(() => expect(router.replace).toHaveBeenCalledWith("breeding"));
+  });
+
+  it("should show an error if fields are empty", async () => {
+    const { getByText, getByTestId } = render(<BreedingForm />);
+    const addBreedingEventButton = getByTestId("handle-add-breed-button");
+    await waitFor(() => expect(getAllCowIdsAndNamesAvailableByUserId).toHaveBeenCalled());
+    fireEvent(getByText("Nombre de la vaca:"), "onValueChange", "Vaca 1");
+    fireEvent(getByText("Tipo de evento:"), "onValueChange", "Celo");
+    fireEvent.press(addBreedingEventButton);
+    await waitFor(() => expect(Alert.alert).toHaveBeenCalledWith(
+      "Error",
+      "Por favor, rellena todos los campos."
+    ));
   });
 });

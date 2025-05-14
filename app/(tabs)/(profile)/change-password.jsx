@@ -86,15 +86,17 @@ const ChangePassword = () => {
       <View className="flex items-center mt-8">
         <View className="w-[90%]">
           <CustomTextDiv>
-            <FontAwesomeIcon
-              icon={icons.faTriangleExclamation}
-              size={36}
-              color="white"
-            />
-            <Text className="p-2 text-c_white text-center text-lg font-Nunito_Medium">
-              Atención! Solo podrás cambiar la contraseña si no has iniciado
-              sesión con Google
-            </Text>
+            <View className="flex-row items-center space-x-4">
+              <FontAwesomeIcon
+                icon={icons.faTriangleExclamation}
+                size={36}
+                color="white"
+              />
+              <Text className="p-2 text-c_white text-lg font-Nunito_Medium">
+                Atención! Solo podrás cambiar la contraseña si no has iniciado
+                sesión con Google
+              </Text>
+            </View>
           </CustomTextDiv>
         </View>
       </View>

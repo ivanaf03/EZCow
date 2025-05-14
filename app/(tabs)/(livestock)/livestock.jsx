@@ -17,6 +17,7 @@ import CustomPicker from "../../../components/basic/custom-picker";
 import CustomSearchBar from "../../../components/basic/custom-search-bar";
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomAcceptDenyModal from "../../../components/basic/custom-accept-deny-modal";
+import CustomPressable from "../../../components/basic/custom-pressable";
 
 const Livestock = () => {
   const [cows, setCows] = React.useState([]);
@@ -62,7 +63,8 @@ const Livestock = () => {
     } else {
       setCows(
         allCows.filter(
-          (cow) => cow.name && cow.name.toLowerCase().includes(text.toLowerCase())
+          (cow) =>
+            cow.name && cow.name.toLowerCase().includes(text.toLowerCase())
         )
       );
     }
@@ -93,19 +95,11 @@ const Livestock = () => {
       <View className="items-center">
         <View className="flex-row justify-center items-center space-x-4 mt-4 w-[90%]">
           <View className="w-[50%]">
-            <CustomButton
-              text={
-                <View className="flex-row items-center space-x-2">
-                  <Text className="text-c_white text-xl font-Nunito_Medium">
-                    Dar de alta
-                  </Text>
-                  <View className="flex-row items-center">
-                    <FontAwesomeIcon icon={icons.faCirclePlus} size={24} color="white" />
-                  </View>
-                </View>
-              }
+            <CustomPressable
+              text="Dar de alta"
               onPress={() => router.push("livestock-form")}
               buttonTestID="livestock-form-button"
+              icon={icons.faPlus}
             />
           </View>
           <View className="w-[50%]">
@@ -118,22 +112,25 @@ const Livestock = () => {
         </View>
       </View>
       <View className="flex items-center justify-center my-4">
-        <View className="w-[90%] space-y-2">
-          <CustomPicker
-            text="Filtrar por fase"
-            value={filterValue}
-            onValueChange={setFilterValue}
-            options={["Todo", "Ternero", "Vaca", "Toro"]}
-            pickerTestID="phase-picker"
-          />
-          <CustomSearchBar
-            text="Buscar por nombre"
-            value={searchText}
-            onChangeText={handleShowCowsByName}
-          />
+        <View className="w-[90%] space-y-4">
+          <View>
+            <CustomPicker
+              text="Filtrar por fase"
+              value={filterValue}
+              onValueChange={setFilterValue}
+              options={["Todo", "Ternero", "Vaca", "Toro"]}
+              pickerTestID="phase-picker"
+            />
+          </View>
+          <View>
+            <CustomSearchBar
+              text="Buscar por nombre"
+              value={searchText}
+              onChangeText={handleShowCowsByName}
+            />
+          </View>
         </View>
       </View>
-
       <FlatList
         data={cows}
         keyExtractor={(item) => item.id.toString()}
@@ -141,7 +138,6 @@ const Livestock = () => {
           <CowCard cow={item} isExited={false} onDelete={confirmDeleteCow} />
         )}
       />
-
       <CustomAcceptDenyModal
         visible={modalVisible}
         setVisible={setModalVisible}

@@ -8,7 +8,10 @@ import FontProvider from "../store/font-provider";
 
 const RootLayout = () => {
   React.useEffect(() => {
-    initDatabase();
+    const initData = async () => {
+      await initDatabase();
+    };
+    initData();
   }, []);
 
   return (

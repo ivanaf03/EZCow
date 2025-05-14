@@ -53,7 +53,7 @@ const LivestockHistoric = () => {
 
   const handleShowCowsByName = (text) => {
     setSearchText(text);
-    if (text === "" ) {
+    if (text === "") {
       setCows(allCows);
     } else {
       setCows(
@@ -71,27 +71,14 @@ const LivestockHistoric = () => {
         <View className="items-center">
           <View className="mx-4 mt-4 w-[75%]">
             <CustomButton
-              text={
-                <View className="flex-col items-center justify-center">
-                  <View>
-                    <FontAwesomeIcon
-                      icon={icons.faCow}
-                      size={30}
-                      color="white"
-                    />
-                  </View>
-                  <Text className="text-c_white text-lg font-Nunito_Medium">
-                    Ver censo
-                  </Text>
-                </View>
-              }
+              text="Ver censo"
               onPress={() => router.replace("livestock")}
               buttonTestID="livestock-button"
             />
           </View>
         </View>
         <View className="flex items-center justify-center my-4">
-          <View className="w-[90%] space-y-2">
+          <View className="w-[90%] space-y-4">
             <View>
               <CustomPicker
                 text="Filtrar por fase"

@@ -99,6 +99,18 @@ exports[`Health should render correctly 1`] = `
         style={
           [
             {
+              "display": "flex",
+            },
+            {
+              "flexDirection": "row",
+            },
+            {
+              "justifyContent": "space-between",
+            },
+            {
+              "alignItems": "center",
+            },
+            {
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -108,30 +120,22 @@ exports[`Health should render correctly 1`] = `
               "backgroundColor": "#272727",
             },
             {
-              "borderLeftWidth": 8,
-              "borderRightWidth": 8,
-            },
-            {
               "borderBottomWidth": 2,
+              "borderLeftWidth": 2,
+              "borderRightWidth": 2,
               "borderTopWidth": 2,
             },
             {
-              "borderBottomColor": "#2254ba",
-              "borderLeftColor": "#2254ba",
-              "borderRightColor": "#2254ba",
-              "borderTopColor": "#2254ba",
+              "borderBottomColor": "#6bc0eb",
+              "borderLeftColor": "#6bc0eb",
+              "borderRightColor": "#6bc0eb",
+              "borderTopColor": "#6bc0eb",
             },
             {
               "borderBottomLeftRadius": 24,
               "borderBottomRightRadius": 24,
               "borderTopLeftRadius": 24,
               "borderTopRightRadius": 24,
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "justifyContent": "center",
             },
           ]
         }
@@ -273,7 +277,7 @@ exports[`Health should render correctly 1`] = `
             testID="date-picker-button"
           >
             <Text>
-              4/5/2025
+              14/5/2025
             </Text>
           </View>
         </View>
@@ -299,7 +303,18 @@ exports[`Health should render correctly 1`] = `
       }
     >
       <View>
-        <View>
+        <View
+          style={
+            [
+              {
+                "paddingBottom": 8,
+                "paddingLeft": 8,
+                "paddingRight": 8,
+                "paddingTop": 8,
+              },
+            ]
+          }
+        >
           <View
             style={
               [
@@ -307,15 +322,7 @@ exports[`Health should render correctly 1`] = `
                   "flexDirection": "row",
                 },
                 {
-                  "marginLeft": -16,
-                  "marginTop": -16,
-                },
-                {
-                  "marginBottom": 8,
-                },
-                {
-                  "paddingLeft": 16,
-                  "paddingRight": 16,
+                  "justifyContent": "space-around",
                 },
               ]
             }
@@ -339,12 +346,6 @@ exports[`Health should render correctly 1`] = `
                   {
                     "textAlign": "center",
                   },
-                  [
-                    {
-                      "marginLeft": 16,
-                      "marginTop": 16,
-                    },
-                  ],
                 ]
               }
             >
@@ -369,12 +370,6 @@ exports[`Health should render correctly 1`] = `
                   {
                     "textAlign": "center",
                   },
-                  [
-                    {
-                      "marginLeft": 16,
-                      "marginTop": 16,
-                    },
-                  ],
                 ]
               }
             >
@@ -399,12 +394,6 @@ exports[`Health should render correctly 1`] = `
                   {
                     "textAlign": "center",
                   },
-                  [
-                    {
-                      "marginLeft": 16,
-                      "marginTop": 16,
-                    },
-                  ],
                 ]
               }
             >
@@ -429,12 +418,6 @@ exports[`Health should render correctly 1`] = `
                   {
                     "textAlign": "center",
                   },
-                  [
-                    {
-                      "marginLeft": 16,
-                      "marginTop": 16,
-                    },
-                  ],
                 ]
               }
             >
@@ -459,12 +442,6 @@ exports[`Health should render correctly 1`] = `
                   {
                     "textAlign": "center",
                   },
-                  [
-                    {
-                      "marginLeft": 16,
-                      "marginTop": 16,
-                    },
-                  ],
                 ]
               }
             >
@@ -489,12 +466,6 @@ exports[`Health should render correctly 1`] = `
                   {
                     "textAlign": "center",
                   },
-                  [
-                    {
-                      "marginLeft": 16,
-                      "marginTop": 16,
-                    },
-                  ],
                 ]
               }
             >
@@ -519,12 +490,6 @@ exports[`Health should render correctly 1`] = `
                   {
                     "textAlign": "center",
                   },
-                  [
-                    {
-                      "marginLeft": 16,
-                      "marginTop": 16,
-                    },
-                  ],
                 ]
               }
             >
@@ -537,10 +502,6 @@ exports[`Health should render correctly 1`] = `
                 {
                   "flexDirection": "column",
                 },
-                {
-                  "marginLeft": -8,
-                  "marginTop": -8,
-                },
               ]
             }
           >
@@ -550,16 +511,6 @@ exports[`Health should render correctly 1`] = `
                   {
                     "flexDirection": "row",
                   },
-                  {
-                    "marginLeft": -16,
-                    "marginTop": -16,
-                  },
-                  [
-                    {
-                      "marginLeft": 8,
-                      "marginTop": 8,
-                    },
-                  ],
                 ]
               }
             >
@@ -569,12 +520,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -582,7 +532,9 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "height": 64,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
                       },
                     ]
                   }
@@ -594,12 +546,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -607,7 +558,9 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "height": 64,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
                       },
                     ]
                   }
@@ -619,12 +572,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -632,7 +584,9 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "height": 64,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
                       },
                     ]
                   }
@@ -644,12 +598,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -657,7 +610,9 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "height": 64,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
                       },
                     ]
                   }
@@ -669,12 +624,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -682,336 +636,21 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        1/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  [
-                    {
-                      "width": 240,
-                    },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        2/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  [
-                    {
-                      "width": 240,
-                    },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        3/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-            </View>
-            <View
-              style={
-                [
-                  {
-                    "flexDirection": "row",
-                  },
-                  {
-                    "marginLeft": -16,
-                    "marginTop": -16,
-                  },
-                  [
-                    {
-                      "marginLeft": 8,
-                      "marginTop": 8,
-                    },
-                  ],
-                ]
-              }
-            >
-              <View
-                style={
-                  [
-                    {
-                      "width": 240,
-                    },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
                       },
                       {
-                        "paddingBottom": 8,
-                        "paddingLeft": 8,
-                        "paddingRight": 8,
-                        "paddingTop": 8,
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
                       },
                       {
                         "borderBottomWidth": 2,
@@ -1020,91 +659,935 @@ exports[`Health should render correctly 1`] = `
                         "borderTopWidth": 2,
                       },
                       {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    1/5/2025
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    2/5/2025
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    3/5/2025
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "flexDirection": "row",
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    4/5/2025
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    5/5/2025
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    6/5/2025
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    7/5/2025
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    8/5/2025
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    9/5/2025
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    10/5/2025
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                [
+                  {
+                    "flexDirection": "row",
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    11/5/2025
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    12/5/2025
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      [
+                        {
+                          "color": "#ffffff",
+                        },
+                        {
+                          "fontWeight": "700",
+                        },
+                        {
+                          "fontFamily": "Nunito-Medium",
+                        },
+                      ]
+                    }
+                  >
+                    13/5/2025
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  [
+                    {
+                      "width": 240,
+                    },
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    [
+                      {
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 8,
+                        "borderLeftWidth": 8,
+                        "borderRightWidth": 8,
+                        "borderTopWidth": 8,
+                      },
+                      {
                         "borderBottomColor": "#6bc0eb",
                         "borderLeftColor": "#6bc0eb",
                         "borderRightColor": "#6bc0eb",
                         "borderTopColor": "#6bc0eb",
                       },
-                      {
-                        "borderBottomLeftRadius": 16,
-                        "borderBottomRightRadius": 16,
-                        "borderTopLeftRadius": 16,
-                        "borderTopRightRadius": 16,
-                      },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        4/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    14/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -1113,12 +1596,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -1126,85 +1608,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        5/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    15/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -1213,12 +1664,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -1226,85 +1676,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        6/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    16/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -1313,112 +1732,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        7/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  [
                     {
-                      "width": 240,
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
                   ]
                 }
               >
@@ -1426,285 +1744,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        8/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  [
-                    {
-                      "width": 240,
-                    },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        9/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  [
-                    {
-                      "width": 240,
-                    },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        10/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    17/5/2025
+                  </Text>
                 </View>
               </View>
             </View>
@@ -1714,16 +1801,6 @@ exports[`Health should render correctly 1`] = `
                   {
                     "flexDirection": "row",
                   },
-                  {
-                    "marginLeft": -16,
-                    "marginTop": -16,
-                  },
-                  [
-                    {
-                      "marginLeft": 8,
-                      "marginTop": 8,
-                    },
-                  ],
                 ]
               }
             >
@@ -1733,12 +1810,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -1746,85 +1822,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        11/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    18/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -1833,12 +1878,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -1846,85 +1890,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        12/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    19/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -1933,12 +1946,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -1946,85 +1958,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        13/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    20/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -2033,12 +2014,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -2046,85 +2026,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        14/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    21/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -2133,12 +2082,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -2146,85 +2094,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        15/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    22/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -2233,12 +2150,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -2246,85 +2162,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        16/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    23/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -2333,12 +2218,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -2346,85 +2230,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        17/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    24/5/2025
+                  </Text>
                 </View>
               </View>
             </View>
@@ -2434,16 +2287,6 @@ exports[`Health should render correctly 1`] = `
                   {
                     "flexDirection": "row",
                   },
-                  {
-                    "marginLeft": -16,
-                    "marginTop": -16,
-                  },
-                  [
-                    {
-                      "marginLeft": 8,
-                      "marginTop": 8,
-                    },
-                  ],
                 ]
               }
             >
@@ -2453,12 +2296,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -2466,85 +2308,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        18/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    25/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -2553,12 +2364,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -2566,85 +2376,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        19/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    26/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -2653,12 +2432,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -2666,85 +2444,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        20/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    27/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -2753,12 +2500,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -2766,85 +2512,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        21/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    28/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -2853,12 +2568,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -2866,85 +2580,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        22/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    29/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -2953,12 +2636,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -2966,85 +2648,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        23/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    30/5/2025
+                  </Text>
                 </View>
               </View>
               <View
@@ -3053,12 +2704,11 @@ exports[`Health should render correctly 1`] = `
                     {
                       "width": 240,
                     },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
+                    {
+                      "flexBasis": "0%",
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                    },
                   ]
                 }
               >
@@ -3066,805 +2716,54 @@ exports[`Health should render correctly 1`] = `
                   style={
                     [
                       {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
+                        "flexBasis": "0%",
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                      },
+                      {
+                        "width": "100%",
+                      },
+                      {
+                        "justifyContent": "flex-start",
+                      },
+                      {
+                        "paddingBottom": 16,
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 16,
+                      },
+                      {
+                        "borderBottomWidth": 2,
+                        "borderLeftWidth": 2,
+                        "borderRightWidth": 2,
+                        "borderTopWidth": 2,
+                      },
+                      {
+                        "borderBottomColor": "#ffffff",
+                        "borderLeftColor": "#ffffff",
+                        "borderRightColor": "#ffffff",
+                        "borderTopColor": "#ffffff",
                       },
                     ]
                   }
                 >
-                  <View
+                  <Text
                     style={
                       [
                         {
-                          "display": "flex",
+                          "color": "#ffffff",
                         },
                         {
-                          "alignItems": "center",
+                          "fontWeight": "700",
                         },
                         {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
+                          "fontFamily": "Nunito-Medium",
                         },
                       ]
                     }
                   >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        24/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-            </View>
-            <View
-              style={
-                [
-                  {
-                    "flexDirection": "row",
-                  },
-                  {
-                    "marginLeft": -16,
-                    "marginTop": -16,
-                  },
-                  [
-                    {
-                      "marginLeft": 8,
-                      "marginTop": 8,
-                    },
-                  ],
-                ]
-              }
-            >
-              <View
-                style={
-                  [
-                    {
-                      "width": 240,
-                    },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        25/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  [
-                    {
-                      "width": 240,
-                    },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        26/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  [
-                    {
-                      "width": 240,
-                    },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        27/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  [
-                    {
-                      "width": 240,
-                    },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        28/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  [
-                    {
-                      "width": 240,
-                    },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        29/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  [
-                    {
-                      "width": 240,
-                    },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        30/5/2025
-                      </Text>
-                    </View>
-                  </View>
-                </View>
-              </View>
-              <View
-                style={
-                  [
-                    {
-                      "width": 240,
-                    },
-                    [
-                      {
-                        "marginLeft": 16,
-                        "marginTop": 16,
-                      },
-                    ],
-                  ]
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "borderBottomLeftRadius": 8,
-                        "borderBottomRightRadius": 8,
-                        "borderTopLeftRadius": 8,
-                        "borderTopRightRadius": 8,
-                      },
-                    ]
-                  }
-                >
-                  <View
-                    style={
-                      [
-                        {
-                          "display": "flex",
-                        },
-                        {
-                          "alignItems": "center",
-                        },
-                        {
-                          "justifyContent": "center",
-                        },
-                        {
-                          "paddingBottom": 16,
-                          "paddingLeft": 16,
-                          "paddingRight": 16,
-                          "paddingTop": 16,
-                        },
-                        {
-                          "backgroundColor": "#272727",
-                        },
-                        {
-                          "borderLeftWidth": 2,
-                          "borderRightWidth": 2,
-                        },
-                        {
-                          "borderBottomColor": "#6bc0eb",
-                          "borderLeftColor": "#6bc0eb",
-                          "borderRightColor": "#6bc0eb",
-                          "borderTopColor": "#6bc0eb",
-                        },
-                        {
-                          "borderBottomLeftRadius": 8,
-                          "borderBottomRightRadius": 8,
-                          "borderTopLeftRadius": 8,
-                          "borderTopRightRadius": 8,
-                        },
-                      ]
-                    }
-                  >
-                    <View
-                      style={
-                        [
-                          {
-                            "width": "100%",
-                          },
-                          {
-                            "justifyContent": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <Text
-                        style={
-                          [
-                            {
-                              "color": "#ffffff",
-                            },
-                            {
-                              "fontWeight": "700",
-                            },
-                            {
-                              "fontFamily": "Nunito-Medium",
-                            },
-                          ]
-                        }
-                      >
-                        31/5/2025
-                      </Text>
-                    </View>
-                  </View>
+                    31/5/2025
+                  </Text>
                 </View>
               </View>
             </View>

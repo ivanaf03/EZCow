@@ -17,6 +17,7 @@ import CustomPicker from "../../../components/basic/custom-picker";
 import icons from "../../../constants/icons";
 import CustomFormDiv from "../../../components/basic/custom-form-div";
 import TabTitle from "../../../components/tabs/tab-title";
+import CustomPressable from "../../../components/basic/custom-pressable";
 
 const LivestockForm = () => {
   const [formData, setFormData] = React.useState({
@@ -102,16 +103,7 @@ const LivestockForm = () => {
       <View className="items-center">
         <View className="mx-4 mt-4 w-[75%]">
           <CustomButton
-            text={
-              <View className="flex-col items-center justify-center">
-                <View>
-                  <FontAwesomeIcon icon={icons.faCow} size={30} color="white" />
-                </View>
-                <Text className="text-c_white text-lg font-Nunito_Medium">
-                  Ver censo
-                </Text>
-              </View>
-            }
+            text="Ver censo"
             onPress={() => router.replace("livestock")}
             buttonTestID="livestock-button"
           />
@@ -179,10 +171,11 @@ const LivestockForm = () => {
             </Text>
           </View>
           <View>
-            <CustomButton
+            <CustomPressable
               text="Añadir"
               onPress={handleAddCow}
               buttonTestID="handle-add-cow-button"
+              icon={icons.faPlus}
             />
           </View>
         </CustomFormDiv>
