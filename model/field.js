@@ -25,3 +25,13 @@ export const getAllFieldsByUserId = async (userId) => {
     return null;
   }
 };
+
+export const deleteFieldById = async (id) => {
+  const db = await getDatabase();
+  try {
+    await db.runAsync(`DELETE FROM Field WHERE id = ?`, [id]);
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};

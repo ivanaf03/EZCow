@@ -626,7 +626,7 @@ exports[`HealthForm should render correctly 1`] = `
               testID="date-picker-button"
             >
               <Text>
-                14/5/2025
+                15/5/2025
               </Text>
             </View>
           </View>

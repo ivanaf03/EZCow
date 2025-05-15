@@ -18,6 +18,7 @@ import {
     faBookmark,
     faDownload,
     faUpload,
+    faLocationDot,
 } from '@fortawesome/free-solid-svg-icons';
 
 export default {
@@ -40,4 +41,5 @@ export default {
     faBookmark,
     faDownload,
     faUpload,
+    faLocationDot,
 };

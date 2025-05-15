@@ -213,7 +213,7 @@ exports[`CustomAcceptDenyModal should render correctly 1`] = `
           style={
             [
               {
-                "backgroundColor": "#20c33b",
+                "backgroundColor": "#6bc0eb",
               },
               {
                 "borderBottomLeftRadius": 12,
@@ -226,8 +226,10 @@ exports[`CustomAcceptDenyModal should render correctly 1`] = `
                 "paddingTop": 12,
               },
               {
+                "borderBottomWidth": 2,
                 "borderLeftWidth": 2,
                 "borderRightWidth": 2,
+                "borderTopWidth": 2,
               },
               {
                 "borderBottomColor": "#ffffff",
@@ -306,8 +308,10 @@ exports[`CustomAcceptDenyModal should render correctly 1`] = `
                 "paddingTop": 12,
               },
               {
+                "borderBottomWidth": 2,
                 "borderLeftWidth": 2,
                 "borderRightWidth": 2,
+                "borderTopWidth": 2,
               },
               {
                 "borderBottomColor": "#ffffff",

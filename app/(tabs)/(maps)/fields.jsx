@@ -5,24 +5,46 @@ import { router } from "expo-router";
 
 import { useUser } from "../../../store/user-provider";
 import MapCard from "./map-card";
-import { getAllFieldsByUserId } from "../../../model/field";
+import { getAllFieldsByUserId, deleteFieldById } from "../../../model/field";
 import icons from "../../../constants/icons";
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomPressable from "../../../components/basic/custom-pressable";
+import CustomAcceptDenyModal from "../../../components/basic/custom-accept-deny-modal";
 
 const Fields = () => {
   const [fields, setFields] = React.useState([]);
-
-  React.useEffect(() => {
-    const getFields = async () => {
-      const res = await getAllFieldsByUserId(user.id);
-      setFields(res);
-    };
-
-    getFields();
-  }, []);
+  const [selectedField, setSelectedField] = React.useState(null);
+  const [modalVisible, setModalVisible] = React.useState(false);
 
   const { user } = useUser();
+
+  const loadFields = async () => {
+    const res = await getAllFieldsByUserId(user.id);
+    setFields(res);
+  };
+
+  React.useEffect(() => {
+    loadFields();
+  }, []);
+
+  const confirmDeleteField = (field) => {
+    setSelectedField(field);
+    setModalVisible(true);
+  };
+
+  const handleAcceptDelete = async () => {
+    if (selectedField) {
+      await deleteFieldById(selectedField.id);
+      await loadFields();
+      setSelectedField(null);
+      setModalVisible(false);
+    }
+  };
+
+  const handleDenyDelete = () => {
+    setSelectedField(null);
+    setModalVisible(false);
+  };
 
   return (
     <SafeAreaView className="flex-1 bg-c_dark_gray">
@@ -39,9 +61,22 @@ const Fields = () => {
         <FlatList
           data={fields}
           keyExtractor={(item) => item.id}
-          renderItem={({ item }) => <MapCard map={item} />}
+          renderItem={({ item }) => (
+            <MapCard map={item} onDelete={confirmDeleteField} />
+          )}
         />
       </View>
+
+      <CustomAcceptDenyModal
+        visible={modalVisible}
+        setVisible={setModalVisible}
+        title="Borrar finca"
+        text={`¿Estás seguro de que quieres borrar '${selectedField?.name}'?`}
+        acceptText="Borrar"
+        denyText="Cancelar"
+        onAccept={handleAcceptDelete}
+        onDeny={handleDenyDelete}
+      />
     </SafeAreaView>
   );
 };
