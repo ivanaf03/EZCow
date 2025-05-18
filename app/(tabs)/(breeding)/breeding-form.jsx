@@ -58,6 +58,20 @@ const BreedingForm = () => {
     const { cowName, eventName, description, date } = formData;
     const formattedDate = date.toISOString().split("T")[0];
     await insertBreedingEvent(cowName, eventName, description, formattedDate);
+
+    if (eventName === "Celo" || eventName === "Inseminación") {
+      const birthDate = new Date(date);
+      birthDate.setDate(birthDate.getDate() + 283);
+      const formattedBirthDate = birthDate.toISOString().split("T")[0];
+
+      await insertBreedingEvent(
+        cowName,
+        "Vaca cumplida",
+        "Meses de gestación cumplidos, parto próximo",
+        formattedBirthDate
+      );
+    }
+
     router.replace("breeding");
   };
 
