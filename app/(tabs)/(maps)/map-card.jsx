@@ -11,7 +11,7 @@ const MapCard = ({ map, onDelete }) => {
   return (
     <View className="flex-col my-2 space-y-4 p-4 mr-6 bg-c_light_gray rounded-r-3xl border-r-4 border-c_light_blue">
       <View className="flex-row items-center justify-between">
-        <View className="flex-row items-center space-x-2 max-w-[50%] overflow-hidden">
+        <View className="flex-row items-center space-x-2 max-w-[40%] overflow-hidden">
           <Text className="text-c_white text-sm font-Nunito_Bold">
             <FontAwesomeIcon icon={icons.faLocationDot} size={30} color="white" />
           </Text>
