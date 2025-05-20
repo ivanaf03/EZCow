@@ -73,102 +73,211 @@ exports[`Maps should navigate to fields 1`] = `
         ]
       }
     >
-      <View
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": undefined,
-            "expanded": undefined,
-            "selected": undefined,
+      <View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
           }
-        }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
           }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          [
-            {
-              "display": "flex",
-            },
-            {
-              "flexDirection": "row",
-            },
-            {
-              "justifyContent": "space-between",
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "paddingBottom": 16,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 16,
-            },
-            {
-              "backgroundColor": "#272727",
-            },
-            {
-              "borderBottomWidth": 2,
-              "borderLeftWidth": 2,
-              "borderRightWidth": 2,
-              "borderTopWidth": 2,
-            },
-            {
-              "borderBottomColor": "#6bc0eb",
-              "borderLeftColor": "#6bc0eb",
-              "borderRightColor": "#6bc0eb",
-              "borderTopColor": "#6bc0eb",
-            },
-            {
-              "borderBottomLeftRadius": 24,
-              "borderBottomRightRadius": 24,
-              "borderTopLeftRadius": 24,
-              "borderTopRightRadius": 24,
-            },
-          ]
-        }
-        testID="fields-button"
-      >
-        <Text
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             [
               {
-                "fontFamily": "Nunito-SemiBold",
+                "display": "flex",
               },
               {
-                "color": "#ffffff",
+                "flexDirection": "row",
               },
               {
-                "fontSize": 20,
-                "lineHeight": 28,
+                "justifyContent": "space-between",
               },
               {
-                "textAlign": "center",
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
               },
             ]
           }
+          testID="fields-button"
         >
-          Ver mis fincas
-        </Text>
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver ubicaciones
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "marginTop": 8,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "display": "flex",
+              },
+              {
+                "flexDirection": "row",
+              },
+              {
+                "justifyContent": "space-between",
+              },
+              {
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+              },
+            ]
+          }
+          testID="cadastral-fields-button"
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver parcelas
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -581,102 +690,211 @@ exports[`Maps should render correctly 1`] = `
         ]
       }
     >
-      <View
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": undefined,
-            "expanded": undefined,
-            "selected": undefined,
+      <View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
           }
-        }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
           }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          [
-            {
-              "display": "flex",
-            },
-            {
-              "flexDirection": "row",
-            },
-            {
-              "justifyContent": "space-between",
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "paddingBottom": 16,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 16,
-            },
-            {
-              "backgroundColor": "#272727",
-            },
-            {
-              "borderBottomWidth": 2,
-              "borderLeftWidth": 2,
-              "borderRightWidth": 2,
-              "borderTopWidth": 2,
-            },
-            {
-              "borderBottomColor": "#6bc0eb",
-              "borderLeftColor": "#6bc0eb",
-              "borderRightColor": "#6bc0eb",
-              "borderTopColor": "#6bc0eb",
-            },
-            {
-              "borderBottomLeftRadius": 24,
-              "borderBottomRightRadius": 24,
-              "borderTopLeftRadius": 24,
-              "borderTopRightRadius": 24,
-            },
-          ]
-        }
-        testID="fields-button"
-      >
-        <Text
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             [
               {
-                "fontFamily": "Nunito-SemiBold",
+                "display": "flex",
               },
               {
-                "color": "#ffffff",
+                "flexDirection": "row",
               },
               {
-                "fontSize": 20,
-                "lineHeight": 28,
+                "justifyContent": "space-between",
               },
               {
-                "textAlign": "center",
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
               },
             ]
           }
+          testID="fields-button"
         >
-          Ver mis fincas
-        </Text>
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver ubicaciones
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "marginTop": 8,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "display": "flex",
+              },
+              {
+                "flexDirection": "row",
+              },
+              {
+                "justifyContent": "space-between",
+              },
+              {
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+              },
+            ]
+          }
+          testID="cadastral-fields-button"
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver parcelas
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -1089,102 +1307,211 @@ exports[`Maps should save correct location 1`] = `
         ]
       }
     >
-      <View
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": undefined,
-            "expanded": undefined,
-            "selected": undefined,
+      <View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
           }
-        }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
           }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          [
-            {
-              "display": "flex",
-            },
-            {
-              "flexDirection": "row",
-            },
-            {
-              "justifyContent": "space-between",
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "paddingBottom": 16,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 16,
-            },
-            {
-              "backgroundColor": "#272727",
-            },
-            {
-              "borderBottomWidth": 2,
-              "borderLeftWidth": 2,
-              "borderRightWidth": 2,
-              "borderTopWidth": 2,
-            },
-            {
-              "borderBottomColor": "#6bc0eb",
-              "borderLeftColor": "#6bc0eb",
-              "borderRightColor": "#6bc0eb",
-              "borderTopColor": "#6bc0eb",
-            },
-            {
-              "borderBottomLeftRadius": 24,
-              "borderBottomRightRadius": 24,
-              "borderTopLeftRadius": 24,
-              "borderTopRightRadius": 24,
-            },
-          ]
-        }
-        testID="fields-button"
-      >
-        <Text
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             [
               {
-                "fontFamily": "Nunito-SemiBold",
+                "display": "flex",
               },
               {
-                "color": "#ffffff",
+                "flexDirection": "row",
               },
               {
-                "fontSize": 20,
-                "lineHeight": 28,
+                "justifyContent": "space-between",
               },
               {
-                "textAlign": "center",
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
               },
             ]
           }
+          testID="fields-button"
         >
-          Ver mis fincas
-        </Text>
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver ubicaciones
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "marginTop": 8,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "display": "flex",
+              },
+              {
+                "flexDirection": "row",
+              },
+              {
+                "justifyContent": "space-between",
+              },
+              {
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+              },
+            ]
+          }
+          testID="cadastral-fields-button"
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver parcelas
+          </Text>
+        </View>
       </View>
     </View>
   </View>

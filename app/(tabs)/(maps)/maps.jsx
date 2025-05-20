@@ -52,12 +52,21 @@ const Maps = () => {
     <SafeAreaView className="flex-1 bg-c_dark_gray">
       <TabTitle text="Mi explotación" />
       <View className="flex items-center mt-4">
-        <View className="w-[75%]">
-          <CustomButton
-            text="Ver mis fincas"
-            onPress={() => router.replace("fields")}
-            buttonTestID={"fields-button"}
-          />
+        <View className="w-[75%] space-y-2">
+          <View>
+            <CustomButton
+              text="Ver ubicaciones"
+              onPress={() => router.replace("fields")}
+              buttonTestID={"fields-button"}
+            />
+          </View>
+          <View>
+            <CustomButton
+              text="Ver parcelas"
+              onPress={() => router.replace("cadastral-fields")}
+              buttonTestID={"cadastral-fields-button"}
+            />
+          </View>
         </View>
       </View>
       <View className="flex items-center mt-4">
