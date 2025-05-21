@@ -141,7 +141,7 @@ exports[`CustomAcceptDenyModal should render correctly 1`] = `
           ]
         }
       >
-        Test
+        Test Title
       </Text>
       <Text
         style={
@@ -164,7 +164,7 @@ exports[`CustomAcceptDenyModal should render correctly 1`] = `
           ]
         }
       >
-        Test
+        Test Text
       </Text>
       <View
         style={
@@ -259,7 +259,7 @@ exports[`CustomAcceptDenyModal should render correctly 1`] = `
               ]
             }
           >
-            Test
+            Accept
           </Text>
         </View>
         <View
@@ -346,7 +346,7 @@ exports[`CustomAcceptDenyModal should render correctly 1`] = `
               ]
             }
           >
-            Test
+            Deny
           </Text>
         </View>
       </View>

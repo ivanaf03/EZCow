@@ -4,15 +4,22 @@ import { router } from "expo-router";
 
 import { useUser } from "../../../store/user-provider";
 import { getAllFieldsByUserId, deleteFieldById } from "../../../model/field";
-import MapCard from "./map-card";
+import { getUserCoordinatesById } from "../../../model/users";
+import { fetchCadastral } from "../../../utils/map-cadastral-fetch";
+
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomPressable from "../../../components/basic/custom-pressable";
 import CustomAcceptDenyModal from "../../../components/basic/custom-accept-deny-modal";
+import CadastralMapCard from "./cadastral-map-card";
 import icons from "../../../constants/icons";
 import CustomButton from "../../../components/basic/custom-button";
 
-const Fields = () => {
+const CadastralFields = () => {
   const [fields, setFields] = React.useState([]);
+  const [userCoordinates, setUserCoordinates] = React.useState({
+    latitude: 0,
+    longitude: 0,
+  });
   const [selectedField, setSelectedField] = React.useState(null);
   const [modalVisible, setModalVisible] = React.useState(false);
 
@@ -20,11 +27,33 @@ const Fields = () => {
 
   const loadFields = async () => {
     const res = await getAllFieldsByUserId(user.id);
-    setFields(res.filter((f) => !f.cadastralReference));
+    const cadastralFields = res.filter((f) => f.cadastralReference);
+
+    const coords = await Promise.all(
+      cadastralFields.map(async (f) => {
+        try {
+          return await fetchCadastral(f.cadastralReference);
+        } catch {
+          return null;
+        }
+      })
+    );
+
+    const enriched = cadastralFields
+      .map((f, i) => ({ ...f, coordinates: coords[i] }))
+      .filter((f) => f.coordinates && f.coordinates.length > 0);
+
+    setFields(enriched);
+  };
+
+  const getUserCoords = async () => {
+    const coords = await getUserCoordinatesById(user.id);
+    setUserCoordinates(coords);
   };
 
   React.useEffect(() => {
     loadFields();
+    getUserCoords();
   }, []);
 
   const confirmDeleteField = (field) => {
@@ -43,20 +72,20 @@ const Fields = () => {
 
   return (
     <SafeAreaView className="flex-1 bg-c_dark_gray">
-      <TabTitle text="Mis fincas" />
+      <TabTitle text="Mis fincas (catastro)" />
       <View className="mx-4 mt-4 space-y-2">
         <View>
           <CustomPressable
-            text="Añadir con ubicación"
-            onPress={() => router.push("add-fields")}
+            text="Añadir con referencia catastral"
+            onPress={() => router.push("add-fields-cadastral")}
             icon={icons.faPlus}
           />
         </View>
         <View>
           <CustomButton
-            text="Ver parcelas"
-            onPress={() => router.replace("cadastral-fields")}
-            buttonTestID={"cadastral-fields-button"}
+            text="Ver ubicaciones"
+            onPress={() => router.replace("fields")}
+            buttonTestID={"fields-button"}
             icon={icons.faArrowRight}
           />
         </View>
@@ -66,7 +95,13 @@ const Fields = () => {
           data={fields}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
-            <MapCard map={item} onDelete={confirmDeleteField} />
+            <CadastralMapCard
+              map={item}
+              coordinates={item.coordinates}
+              onDelete={confirmDeleteField}
+              latitude={userCoordinates.latitude}
+              longitude={userCoordinates.longitude}
+            />
           )}
           showsVerticalScrollIndicator={true}
         />
@@ -85,4 +120,4 @@ const Fields = () => {
   );
 };
 
-export default Fields;
+export default CadastralFields;

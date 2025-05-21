@@ -23,7 +23,6 @@ npm install tailwindcss@3.3.2
 
 ### 2.Project configuration
 Create the file `tailwind.config.js` in the root of the project:
-
 ```
 npx tailwindcss init
 ```

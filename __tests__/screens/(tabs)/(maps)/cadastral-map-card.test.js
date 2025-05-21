@@ -1,33 +1,25 @@
 import React from "react";
 
 import { render, waitFor, fireEvent } from "@testing-library/react-native";
-import MapCard from "../../../../app/(tabs)/(maps)/map-card";
+import CadastralMapCard from "../../../../app/(tabs)/(maps)/cadastral-map-card";
 
 jest.mock("@fortawesome/react-native-fontawesome", () => ({
   FontAwesomeIcon: () => null,
 }));
 
-describe("MapCard", () => {
+describe("CadastralMapCard", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
   it("should render correctly", async () => {
-    const onDeleteMock = jest.fn();
     const tree = render(
-      <MapCard
+      <CadastralMapCard
         map={{
           name: "Mapa Test",
           latitude: 10,
           longitude: 10,
         }}
-        coordinates={[
-          [0, 0],
-          [1, 1],
-        ]}
-        onDelete={onDeleteMock}
-        latitude={10}
-        longitude={10}
       />
     );
     await waitFor(() => expect(tree).toMatchSnapshot());
@@ -36,19 +28,13 @@ describe("MapCard", () => {
   it("should call onDelete with map data when pressing delete", async () => {
     const onDeleteMock = jest.fn();
     const tree = render(
-      <MapCard
+      <CadastralMapCard
         map={{
           name: "Mapa Test",
           latitude: 10,
           longitude: 10,
         }}
-        coordinates={[
-          [0, 0],
-          [1, 1],
-        ]}
         onDelete={onDeleteMock}
-        latitude={10}
-        longitude={10}
       />
     );
     const deleteButton = tree.getByTestId("delete-map-button");

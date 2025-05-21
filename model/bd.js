@@ -46,6 +46,7 @@ export const initDatabase = async () => {
             name TEXT NOT NULL,
             latitude REAL DEFAULT 43.0,
             longitude REAL DEFAULT -7.0,
+            cadastralReference TEXT,
             user_fk INTEGER NOT NULL,
             FOREIGN KEY(user_fk) REFERENCES User(id)
         );

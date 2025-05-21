@@ -68,3 +68,17 @@ export const changePassword = async (email, password) => {
     return null;
   }
 };
+
+export const getUserCoordinatesById = async (id) => {
+  const db = await getDatabase();
+  try {
+    const res = await db.getFirstAsync(
+      `SELECT latitude, longitude FROM User WHERE id = ?`,
+      [id]
+    );
+    return res;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};

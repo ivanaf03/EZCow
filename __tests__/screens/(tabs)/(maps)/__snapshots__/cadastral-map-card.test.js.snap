@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MapCard should render correctly 1`] = `
+exports[`CadastralMapCard should render correctly 1`] = `
 <View
   style={
     [
@@ -249,9 +249,9 @@ exports[`MapCard should render correctly 1`] = `
       onMapReady={[Function]}
       region={
         {
-          "latitude": 10,
+          "latitude": undefined,
           "latitudeDelta": 0.01,
-          "longitude": 10,
+          "longitude": undefined,
           "longitudeDelta": 0.01,
         }
       }
@@ -262,6 +262,11 @@ exports[`MapCard should render correctly 1`] = `
         }
       }
     >
+      <AIRMapPolygon
+        fillColor="rgba(255, 0, 0, 0.2)"
+        strokeColor="red"
+        strokeWidth={1}
+      />
       <AIRMapMarker
         coordinate={
           {
