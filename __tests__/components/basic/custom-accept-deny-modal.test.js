@@ -9,55 +9,49 @@ describe("CustomAcceptDenyModal", () => {
     jest.clearAllMocks();
   });
 
+  const baseProps = {
+    visible: true,
+    setVisible: jest.fn(),
+    title: "Test Title",
+    text: "Test Text",
+    acceptText: "Accept",
+    denyText: "Deny",
+    onAccept: jest.fn(),
+    onDeny: jest.fn(),
+  };
+
   it("should render correctly", () => {
-    const tree = render(
-      <CustomAcceptDenyModal
-        visible={true}
-        setVisible={jest.fn()}
-        title="Test"
-        text="Test"
-        acceptText="Test"
-        denyText="Test"
-        onAccept={jest.fn()}
-        onDeny={jest.fn()}
-      />
-    );
+    const tree = render(<CustomAcceptDenyModal {...baseProps} />);
     expect(tree).toMatchSnapshot();
   });
 
   it("should call onAccept when pressing accept button", () => {
     const onAccept = jest.fn();
     const tree = render(
-      <CustomAcceptDenyModal
-        visible={true}
-        setVisible={jest.fn()}
-        title="Test"
-        text="Test"
-        acceptText="Yes"
-        denyText="No"
-        onAccept={onAccept}
-        onDeny={jest.fn()}
-      />
+      <CustomAcceptDenyModal {...baseProps} onAccept={onAccept} />
     );
-    fireEvent.press(tree.getByText("Yes"));
+    fireEvent.press(tree.getByText("Accept"));
     expect(onAccept).toHaveBeenCalledTimes(1);
   });
 
   it("should call onDeny when pressing deny button", () => {
     const onDeny = jest.fn();
     const tree = render(
-      <CustomAcceptDenyModal
-        visible={true}
-        setVisible={jest.fn()}
-        title="Test"
-        text="Test"
-        acceptText="Yes"
-        denyText="No"
-        onAccept={jest.fn()}
-        onDeny={onDeny}
-      />
+      <CustomAcceptDenyModal {...baseProps} onDeny={onDeny} />
     );
-    fireEvent.press(tree.getByText("No"));
+    fireEvent.press(tree.getByText("Deny"));
     expect(onDeny).toHaveBeenCalledTimes(1);
   });
+
+  it("should call setVisible(false) when pressing the outer background", () => {
+    const setVisible = jest.fn();
+    const tree = render(
+      <CustomAcceptDenyModal {...baseProps} setVisible={setVisible} />
+    );
+
+    const pressables = tree.UNSAFE_getAllByType(require("react-native").Pressable);
+    fireEvent.press(pressables[0]); 
+    expect(setVisible).toHaveBeenCalledWith(false);
+  });
+
 });

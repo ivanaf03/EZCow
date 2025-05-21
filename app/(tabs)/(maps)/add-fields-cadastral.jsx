@@ -22,18 +22,6 @@ const AddFieldsCadastral = () => {
 
   const { user } = useUser();
 
-  React.useEffect(() => {
-    const fetchLocation = async () => {
-      const location = await getFarmUbicationByUserId(user.id);
-      setSelectedLocation({
-        latitude: location.latitude,
-        longitude: location.longitude,
-      });
-    };
-
-    fetchLocation();
-  }, [user.id]);
-
   const handleChange = (key) => (value) => {
     setFormData((prev) => ({ ...prev, [key]: value }));
   };
@@ -51,7 +39,7 @@ const AddFieldsCadastral = () => {
         <View className="w-[75%]">
           <CustomButton
             text="Ver mis fincas"
-            onPress={() => router.replace("fields")}
+            onPress={() => router.replace("cadastral-fields")}
             buttonTestID={"fields-button"}
           />
         </View>

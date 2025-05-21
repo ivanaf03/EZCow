@@ -15,7 +15,7 @@ const CadastralMapCard = ({ map, coordinates, onDelete, latitude, longitude }) =
           <Text className="text-c_white text-sm font-Nunito_Bold">
             <FontAwesomeIcon icon={icons.faLocationDot} size={30} color="white" />
           </Text>
-          <Text className="text-c_white text-lg font-Nunito_Bold">
+          <Text className="text-c_white text-sm font-Nunito_Bold">
             {map.name}
           </Text>
         </View>

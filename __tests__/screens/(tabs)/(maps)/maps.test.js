@@ -67,4 +67,13 @@ describe("Maps", () => {
         fireEvent.press(fieldsButton);
         await waitFor(() => expect(router.replace).toHaveBeenCalledWith("fields"));
     });
+
+    it("should navigate to cadastral-fields", async () => {
+        getFarmUbicationByUserId.mockResolvedValue({latitude: 0, longitude: 0});
+        const tree = render(<Maps />);
+        await waitFor(() => expect(tree).toMatchSnapshot());
+        const cadastralFieldsButton = tree.getByTestId("cadastral-fields-button");
+        fireEvent.press(cadastralFieldsButton);
+        await waitFor(() => expect(router.replace).toHaveBeenCalledWith("cadastral-fields"));
+    });
 });
