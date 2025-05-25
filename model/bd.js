@@ -26,6 +26,11 @@ export const initDatabase = async () => {
             CHECK (password IS NOT NULL OR google_id IS NOT NULL)
         );
 
+        CREATE TABLE IF NOT EXISTS CowGroup (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL
+        );
+
         CREATE TABLE IF NOT EXISTS Cow (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             code TEXT NOT NULL UNIQUE,
@@ -37,8 +42,10 @@ export const initDatabase = async () => {
             phase TEXT NOT NULL,
             user_fk INTEGER NOT NULL,
             mother_fk INTEGER DEFAULT NULL,
+            group_fk INTEGER DEFAULT NULL,
             FOREIGN KEY(user_fk) REFERENCES User(id),
-            FOREIGN KEY(mother_fk) REFERENCES Cow(id)
+            FOREIGN KEY(mother_fk) REFERENCES Cow(id),
+            FOREIGN KEY(group_fk) REFERENCES CowGroup(id)
         );
 
         CREATE TABLE IF NOT EXISTS Field (
@@ -67,6 +74,16 @@ export const initDatabase = async () => {
             date DATE NOT NULL,
             cow_fk INTEGER NOT NULL,
             FOREIGN KEY(cow_fk) REFERENCES Cow(id)
+        );
+
+        CREATE TABLE IF NOT EXISTS Grazing (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            initialDate DATE NOT NULL,
+            endDate DATE,
+            field_fk INTEGER NOT NULL,
+            group_fk INTEGER NOT NULL,
+            FOREIGN KEY(field_fk) REFERENCES Field(id),
+            FOREIGN KEY(group_fk) REFERENCES CowGroup(id)
         );
     `);
 };
