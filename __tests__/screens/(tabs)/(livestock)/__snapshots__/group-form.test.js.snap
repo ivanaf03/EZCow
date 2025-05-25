@@ -1,0 +1,406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GroupForm should render correctly 1`] = `
+<RCTScrollView
+  style={
+    [
+      {
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+      {
+        "backgroundColor": "#1c1c1c",
+      },
+    ]
+  }
+>
+  <View>
+    <Text
+      style={
+        [
+          {
+            "marginTop": 16,
+          },
+          {
+            "marginLeft": 16,
+            "marginRight": 16,
+          },
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontSize": 36,
+            "lineHeight": 40,
+          },
+          {
+            "fontFamily": "Nunito-Bold",
+          },
+          {
+            "borderBottomWidth": 2,
+          },
+          {
+            "borderBottomColor": "#ffffff",
+            "borderLeftColor": "#ffffff",
+            "borderRightColor": "#ffffff",
+            "borderTopColor": "#ffffff",
+          },
+        ]
+      }
+    >
+      Añadir vacas
+    </Text>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "marginLeft": 16,
+              "marginRight": 16,
+            },
+            {
+              "marginTop": 16,
+            },
+            {
+              "width": "75%",
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "display": "flex",
+              },
+              {
+                "flexDirection": "row",
+              },
+              {
+                "justifyContent": "space-between",
+              },
+              {
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+              },
+            ]
+          }
+          testID="livestock-button"
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver censo
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "marginTop": 16,
+          },
+          {
+            "paddingLeft": 16,
+            "paddingRight": 16,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "display": "flex",
+            },
+            {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            },
+            {
+              "backgroundColor": "#272727",
+            },
+            {
+              "borderBottomLeftRadius": 8,
+              "borderBottomRightRadius": 8,
+              "borderTopLeftRadius": 8,
+              "borderTopRightRadius": 8,
+            },
+          ]
+        }
+      >
+        <View>
+          <View
+            style={
+              [
+                {
+                  "marginTop": -4,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#ffffff",
+                  },
+                  {
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                  },
+                  {
+                    "fontFamily": "Nunito-Medium",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            >
+              Nombre de grupo
+              :
+            </Text>
+            <TextInput
+              onChangeText={[Function]}
+              placeholder="Nombre"
+              style={
+                [
+                  {
+                    "paddingBottom": 8,
+                    "paddingLeft": 8,
+                    "paddingRight": 8,
+                    "paddingTop": 8,
+                  },
+                  {
+                    "backgroundColor": "#ffffff",
+                  },
+                  {
+                    "borderBottomWidth": 2,
+                    "borderLeftWidth": 2,
+                    "borderRightWidth": 2,
+                    "borderTopWidth": 2,
+                  },
+                  {
+                    "borderBottomColor": "#2254ba",
+                    "borderLeftColor": "#2254ba",
+                    "borderRightColor": "#2254ba",
+                    "borderTopColor": "#2254ba",
+                  },
+                  {
+                    "borderBottomLeftRadius": 16,
+                    "borderBottomRightRadius": 16,
+                    "borderTopLeftRadius": 16,
+                    "borderTopRightRadius": 16,
+                  },
+                  {
+                    "fontFamily": "Nunito-Medium",
+                  },
+                  [
+                    {
+                      "marginTop": 4,
+                    },
+                  ],
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "marginTop": 24,
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              [
+                {
+                  "display": "flex",
+                },
+                {
+                  "flexDirection": "row",
+                },
+                {
+                  "justifyContent": "center",
+                },
+                {
+                  "alignItems": "center",
+                },
+                {
+                  "paddingBottom": 16,
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                  "paddingTop": 16,
+                },
+                {
+                  "backgroundColor": "#272727",
+                },
+                {
+                  "borderBottomWidth": 2,
+                  "borderLeftWidth": 2,
+                  "borderRightWidth": 2,
+                  "borderTopWidth": 2,
+                },
+                {
+                  "borderBottomColor": "#6bc0eb",
+                  "borderLeftColor": "#6bc0eb",
+                  "borderRightColor": "#6bc0eb",
+                  "borderTopColor": "#6bc0eb",
+                },
+                {
+                  "borderBottomLeftRadius": 24,
+                  "borderBottomRightRadius": 24,
+                  "borderTopLeftRadius": 24,
+                  "borderTopRightRadius": 24,
+                },
+              ]
+            }
+            testID="handle-add-group-button"
+          >
+            <Text
+              style={
+                [
+                  {
+                    "fontFamily": "Nunito-SemiBold",
+                  },
+                  {
+                    "color": "#ffffff",
+                  },
+                  {
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  },
+                  [
+                    {
+                      "marginLeft": 16,
+                    },
+                  ],
+                ]
+              }
+            >
+              Añadir
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

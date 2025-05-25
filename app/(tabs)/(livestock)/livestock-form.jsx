@@ -2,7 +2,6 @@ import React from "react";
 
 import { View, ScrollView, Alert, Text } from "react-native";
 import { router } from "expo-router";
-import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 
 import CustomInput from "../../../components/basic/custom-input";
 import CustomCalendar from "../../../components/basic/custom-calendar";
