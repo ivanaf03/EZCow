@@ -112,12 +112,23 @@ const Livestock = () => {
           </View>
         </View>
       </View>
-      <View className="mt-2 px-2 w-full self-center">
-        <CustomButton
-          text="Ver histórico"
-          onPress={() => router.push("livestock-historic")}
-          buttonTestID="livestock-historic-button"
-        />
+      <View className="items-center">
+        <View className="flex-row justify-center items-center space-x-4 mt-4 w-[90%]">
+          <View className="w-[50%]">
+            <CustomButton
+              text="Ver grupos"
+              onPress={() => router.push("groups")}
+              buttonTestID="groups-button"
+            />
+          </View>
+          <View className="w-[50%]">
+            <CustomButton
+              text="Ver histórico"
+              onPress={() => router.push("livestock-historic")}
+              buttonTestID="livestock-historic-button"
+            />
+          </View>
+        </View>
       </View>
       <View className="flex items-center justify-center my-4">
         <View className="w-[90%] space-y-4">

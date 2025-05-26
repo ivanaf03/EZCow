@@ -64,6 +64,20 @@ export const getAvailableCowCodeByUserId = async (userId) => {
   }
 };
 
+export const getAvailableCodeByUserId = async (userId) => {
+  const db = await getDatabase();
+  try {
+    const res = await db.getAllAsync(
+      `SELECT code FROM Cow WHERE user_fk = ? AND exitDate is NULL`,
+      [userId]
+    );
+    return res.map((cow) => cow.code);
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};
+
 export const getAllCowsAvailableByUserId = async (userId) => {
   const db = await getDatabase();
   try {
