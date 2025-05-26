@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GroupCard should render correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+      {
+        "alignItems": "center",
+      },
+      {
+        "justifyContent": "space-between",
+      },
+      {
+        "marginBottom": 16,
+        "marginTop": 16,
+      },
+      {
+        "paddingLeft": 16,
+        "paddingRight": 16,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#ffffff",
+        },
+        {
+          "fontSize": 18,
+          "lineHeight": 28,
+        },
+        {
+          "fontFamily": "Nunito-Medium",
+        },
+      ]
+    }
+  >
+    TestGroup
+  </Text>
+  <View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "display": "flex",
+          },
+          {
+            "flexDirection": "row",
+          },
+          {
+            "justifyContent": "center",
+          },
+          {
+            "alignItems": "center",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "backgroundColor": "#272727",
+          },
+          {
+            "borderBottomWidth": 2,
+            "borderLeftWidth": 2,
+            "borderRightWidth": 2,
+            "borderTopWidth": 2,
+          },
+          {
+            "borderBottomColor": "#6bc0eb",
+            "borderLeftColor": "#6bc0eb",
+            "borderRightColor": "#6bc0eb",
+            "borderTopColor": "#6bc0eb",
+          },
+          {
+            "borderBottomLeftRadius": 24,
+            "borderBottomRightRadius": 24,
+            "borderTopLeftRadius": 24,
+            "borderTopRightRadius": 24,
+          },
+        ]
+      }
+      testID="delete-group-button"
+    >
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Nunito-SemiBold",
+            },
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 20,
+              "lineHeight": 28,
+            },
+            [
+              {
+                "marginLeft": 16,
+              },
+            ],
+          ]
+        }
+      >
+        Borrar
+      </Text>
+    </View>
+  </View>
+</View>
+`;
