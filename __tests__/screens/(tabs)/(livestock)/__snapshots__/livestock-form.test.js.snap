@@ -491,7 +491,7 @@ exports[`LivestockForm should render correctly 1`] = `
               testID="date-picker-button"
             >
               <Text>
-                21/5/2025
+                27/5/2025
               </Text>
             </View>
           </View>
@@ -602,6 +602,7 @@ exports[`LivestockForm should render correctly 1`] = `
                       undefined,
                     ]
                   }
+                  testID="gender-picker"
                 />
               </View>
             </View>
@@ -713,6 +714,7 @@ exports[`LivestockForm should render correctly 1`] = `
                       undefined,
                     ]
                   }
+                  testID="phase-picker"
                 />
               </View>
             </View>
@@ -917,6 +919,7 @@ exports[`LivestockForm should render correctly 1`] = `
                       undefined,
                     ]
                   }
+                  testID="mother-picker"
                 />
               </View>
             </View>

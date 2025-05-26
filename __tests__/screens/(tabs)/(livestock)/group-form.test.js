@@ -5,7 +5,16 @@ import { router } from "expo-router";
 import { Alert } from "react-native";
 
 import GroupForm from "../../../../app/(tabs)/(livestock)/group-form";
-import { insertGroup } from "../../../../model/grazing";
+import {
+  insertGroup,
+  insertCowInGroup,
+  getGroupIdByName,
+} from "../../../../model/grazing";
+
+import {
+  getAvailableCodeByUserId,
+  getCowIdByCode,
+} from "../../../../model/cow";
 
 jest.mock("expo-router", () => ({
   router: {
@@ -21,6 +30,13 @@ jest.mock("../../../../store/user-provider", () => ({
 
 jest.mock("../../../../model/grazing", () => ({
   insertGroup: jest.fn(),
+  insertCowInGroup: jest.fn(),
+  getGroupIdByName: jest.fn(),
+}));
+
+jest.mock("../../../../model/cow", () => ({
+  getAvailableCodeByUserId: jest.fn(() => ["1234", "5678"]),
+  getCowIdByCode: jest.fn(),
 }));
 
 jest.mock("@fortawesome/react-native-fontawesome", () => ({
@@ -29,44 +45,66 @@ jest.mock("@fortawesome/react-native-fontawesome", () => ({
 
 jest.spyOn(Alert, "alert");
 
+global.setImmediate = (fn, ...args) => setTimeout(fn, 0, ...args);
+
 describe("GroupForm", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
   it("should render correctly", async () => {
+    getAvailableCodeByUserId.mockResolvedValueOnce([]);
     const tree = render(<GroupForm />);
     expect(tree).toMatchSnapshot();
   });
 
   it("should show an error if name is empty", async () => {
+    getAvailableCodeByUserId.mockResolvedValueOnce([]);
     const { getByTestId } = render(<GroupForm />);
-
-    const handleAddGroupButton = getByTestId("handle-add-group-button");
-    fireEvent.press(handleAddGroupButton);
-
+    fireEvent.press(getByTestId("handle-add-group-button"));
     expect(Alert.alert).toHaveBeenCalledWith(
       "Error",
       "Por favor, rellena todos los campos."
     );
   });
 
-  it("should call insertGroup on valid submission", async () => {
-    const { getByPlaceholderText, getByTestId } = render(<GroupForm />);
-
+  it("should show an error if no cows are added", async () => {
+    getAvailableCodeByUserId.mockResolvedValueOnce([]);
+    const { getByTestId, getByPlaceholderText } = render(<GroupForm />);
     fireEvent.changeText(getByPlaceholderText("Nombre"), "Grupo Test");
     fireEvent.press(getByTestId("handle-add-group-button"));
-
-    await waitFor(() => {
-      expect(insertGroup).toHaveBeenCalledWith("Grupo Test");
-      expect(router.replace).toHaveBeenCalledWith("livestock");
-    });
+    expect(Alert.alert).toHaveBeenCalledWith(
+      "Error",
+      "Por favor, añade al menos una vaca."
+    );
   });
 
   it("should navigate to livestock when pressing livestock button", async () => {
+    getAvailableCodeByUserId.mockResolvedValueOnce([]);
     const { getByTestId } = render(<GroupForm />);
-    const handleAddGroupButton = getByTestId("livestock-button");
-    fireEvent.press(handleAddGroupButton);
+    fireEvent.press(getByTestId("livestock-button"));
     expect(router.replace).toHaveBeenCalledWith("livestock");
+  });
+
+  it("should add a cow to a group when pressing add button", async () => {
+    const { getByTestId, getByPlaceholderText } = render(<GroupForm />);
+
+    await waitFor(() => expect(getAvailableCodeByUserId).toHaveBeenCalled());
+    getCowIdByCode.mockResolvedValueOnce("1");
+    getGroupIdByName.mockResolvedValueOnce(1);
+
+    fireEvent.changeText(getByPlaceholderText("Nombre"), "Grupo Test 1");
+    fireEvent(getByTestId("cow-picker"), "onValueChange", "1234");
+    fireEvent.press(getByTestId("add-cow-button"));
+    await waitFor(() => {
+      expect(getCowIdByCode).toHaveBeenCalledWith("1234");
+    });
+    fireEvent.press(getByTestId("handle-add-group-button"));
+
+    await waitFor(() => {
+      expect(insertCowInGroup).toHaveBeenCalledWith("1", 1);
+      expect(insertGroup).toHaveBeenCalledWith("Grupo Test 1");
+      expect(router.replace).toHaveBeenCalledWith("livestock");
+    });
   });
 });

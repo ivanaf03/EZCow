@@ -1,11 +1,9 @@
 import React from "react";
 
-import { Text, View, SafeAreaView, FlatList } from "react-native";
-import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+import { View, SafeAreaView, FlatList } from "react-native";
 import { router } from "expo-router";
 
 import CustomButton from "../../../components/basic/custom-button";
-import icons from "../../../constants/icons";
 import CowCard from "./cow-card";
 import {
   getAllCalvesExitedByUserId,

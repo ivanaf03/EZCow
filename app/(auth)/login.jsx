@@ -91,10 +91,7 @@ const Login = () => {
         Alert.alert("Error", "Contraseña incorrecta.");
       }
     } catch (error) {
-      Alert.alert(
-        "Error",
-        error.message
-      );
+      Alert.alert("Error", "Contraseña incorrecta.");
     }
   };
 

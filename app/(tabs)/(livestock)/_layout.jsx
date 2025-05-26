@@ -29,6 +29,12 @@ const LivestockLayout = () => {
                     headerShown: false,
                 }}
             />
+            <Stack.Screen
+                name="groups"
+                options={{
+                    headerShown: false,
+                }}
+            />
         </Stack>
     );
 };
