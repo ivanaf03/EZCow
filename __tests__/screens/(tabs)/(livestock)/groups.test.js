@@ -5,10 +5,7 @@ import { router } from "expo-router";
 import { Alert } from "react-native";
 
 import Groups from "../../../../app/(tabs)/(livestock)/groups";
-import {
-  getAllGroups,
-  deleteGroup,
-} from "../../../../model/grazing";
+import { getAllGroups } from "../../../../model/grazing";
 
 jest.mock("expo-router", () => ({
   router: {
@@ -25,6 +22,14 @@ jest.mock("../../../../store/user-provider", () => ({
 jest.mock("../../../../model/grazing", () => ({
   getAllGroups: jest.fn(),
   deleteGroup: jest.fn(),
+  insertGroup: jest.fn(),
+  getCowsInGroup: jest.fn(),
+  insertCowInGroup: jest.fn(),
+}));
+
+jest.mock("../../../../model/cow", () => ({
+  getAvailableCodeByUserId: jest.fn(() => ["1234", "5678"]),
+  getCowIdByCode: jest.fn(),
 }));
 
 jest.mock("@fortawesome/react-native-fontawesome", () => ({
@@ -61,5 +66,4 @@ describe("Groups", () => {
     fireEvent.press(handleAddGroupButton);
     expect(router.replace).toHaveBeenCalledWith("livestock");
   });
-
 });

@@ -18,7 +18,7 @@ export const getAllGroups = async (userId) => {
   try {
     const res = await db.getAllAsync(
       `SELECT DISTINCT CowGroup.id AS groupId,CowGroup.name AS groupName
-       FROM CowGroup JOIN Cow ON CowGroup.id = Cow.group_fk WHERE Cow.user_fk = ?`,
+       FROM CowGroup JOIN Cow ON CowGroup.id = Cow.group_fk WHERE Cow.user_fk = ? AND CowGroup.exitDate IS NULL`,
       [userId]
     );
     return res;
@@ -28,12 +28,13 @@ export const getAllGroups = async (userId) => {
   }
 };
 
-export const deleteGroup = async (groupId) => {
+export const setExitDateByGroupId = async (groupId) => {
   const db = await getDatabase();
   try {
-    const res = await db.runAsync(`DELETE FROM CowGroup WHERE id = ?`, [
-      groupId,
-    ]);
+    const res = await db.runAsync(
+      `UPDATE CowGroup SET exitDate = CURRENT_DATE WHERE id = ?`,
+      [groupId]
+    );
     return res;
   } catch (error) {
     console.log(error);
@@ -44,10 +45,10 @@ export const deleteGroup = async (groupId) => {
 export const insertCowInGroup = async (cowId, groupId) => {
   const db = await getDatabase();
   try {
-    const res = await db.runAsync(
-      `UPDATE Cow SET group_fk = ? WHERE id = ?`,
-      [groupId, cowId]
-    );
+    const res = await db.runAsync(`UPDATE Cow SET group_fk = ? WHERE id = ?`, [
+      groupId,
+      cowId,
+    ]);
     return res;
   } catch (error) {
     console.log(error);
@@ -68,3 +69,20 @@ export const getGroupIdByName = async (name) => {
     return null;
   }
 };
+
+export const getCowsInGroup = async (groupId) => {
+  const db = await getDatabase();
+  try {
+    const res = await db.getAllAsync(
+      `SELECT Cow.id AS cowId,Cow.name AS cowName,Cow.code AS cowCode,Cow.group_fk AS groupId
+       FROM Cow WHERE group_fk = ?`,
+      [groupId]
+    );
+    return res;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};
+
+

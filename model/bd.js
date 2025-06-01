@@ -28,7 +28,8 @@ export const initDatabase = async () => {
 
         CREATE TABLE IF NOT EXISTS CowGroup (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT NOT NULL
+            name TEXT NOT NULL,
+            exitDate DATE DEFAULT NULL
         );
 
         CREATE TABLE IF NOT EXISTS Cow (

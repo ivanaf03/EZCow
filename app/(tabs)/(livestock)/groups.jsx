@@ -3,7 +3,7 @@ import { View, SafeAreaView, FlatList } from "react-native";
 import { router } from "expo-router";
 
 import GroupCard from "./group-card";
-import { getAllGroups, deleteGroup } from "../../../model/grazing";
+import { getAllGroups, setExitDateByGroupId } from "../../../model/grazing";
 import { useUser } from "../../../store/user-provider";
 import CustomButton from "../../../components/basic/custom-button";
 import TabTitle from "../../../components/tabs/tab-title";
@@ -32,7 +32,7 @@ const Groups = () => {
 
   const handleAcceptDelete = async () => {
     if (selectedGroup) {
-      await deleteGroup(selectedGroup.groupId); 
+      await setExitDateByGroupId(selectedGroup.groupId); 
       await loadGroups();
       setSelectedGroup(null);
       setModalVisible(false);
@@ -46,8 +46,8 @@ const Groups = () => {
 
   return (
     <SafeAreaView className="flex-1 bg-c_dark_gray">
-      <TabTitle text="Grupos" />
-      <View className="items-center">
+      <TabTitle text="Ver grupos" />
+      <View className="items-center my-2">
         <View className="mx-4 mt-4 w-[75%]">
           <CustomButton
             text="Ver censo"
@@ -68,7 +68,7 @@ const Groups = () => {
         setVisible={setModalVisible}
         title="Borrar grupo"
         text={`Seguro que quieres borrar el grupo '${selectedGroup?.groupName}'?`}
-        acceptText="Borrar"
+        acceptText="Borrar grupo"
         denyText="Volver"
         onAccept={handleAcceptDelete}
         onDeny={handleDenyDelete}
