@@ -4,6 +4,10 @@ import { render, fireEvent } from "@testing-library/react-native";
 
 import CustomButton from "../../../components/basic/custom-button";
 
+jest.mock("@fortawesome/react-native-fontawesome", () => ({
+  FontAwesomeIcon: () => null,
+}));
+
 describe("CustomButton", () => {
   beforeEach(() => {
     jest.clearAllMocks();

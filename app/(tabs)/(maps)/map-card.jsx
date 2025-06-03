@@ -2,14 +2,31 @@ import React from "react";
 
 import { View, Text } from "react-native";
 import MapView, { Marker } from "react-native-maps";
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 
-const MapCard = ({ map }) => {
+import icons from "../../../constants/icons";
+import CustomPressable from "../../../components/basic/custom-pressable";
+
+const MapCard = ({ map, onDelete }) => {
   return (
-    <View className="flex-col my-2 space-y-4 p-4 ml-[-10] mr-6 bg-c_light_gray rounded-r-3xl border-r-4 border-c_light_blue">
-      <Text className="text-c_white ml-2 text-lg font-Nunito_Bold">
-        {map.name}
-      </Text>
-      <View className="h-[300px] bg-c_light_gray border-2 border-c_light_blue rounded-2xl mx-4 p-2 mt-4">
+    <View className="flex-col my-2 space-y-4 p-4 mr-6 bg-c_light_gray rounded-r-3xl border-r-4 border-c_light_blue">
+      <View className="flex-row items-center justify-between">
+        <View className="flex-row items-center space-x-2 max-w-[40%] overflow-hidden">
+          <Text className="text-c_white text-sm font-Nunito_Bold">
+            <FontAwesomeIcon icon={icons.faLocationDot} size={30} color="white" />
+          </Text>
+          <Text className="text-c_white text-sm font-Nunito_Bold">
+            {map.name}
+          </Text>
+        </View>
+        <CustomPressable
+          text="Borrar finca"
+          onPress={() => onDelete(map)}
+          buttonTestID="delete-map-button"
+          icon={icons.faTrash}
+        />
+      </View>
+      <View className="h-44 bg-c_light_gray rounded-2xl mx-4 mt-4">
         <MapView
           style={{ width: "100%", height: "100%" }}
           region={{

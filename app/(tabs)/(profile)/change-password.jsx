@@ -8,8 +8,8 @@ import CustomButton from "../../../components/basic/custom-button";
 import CustomInput from "../../../components/basic/custom-input";
 import CustomPasswordInput from "../../../components/basic/custom-password-input";
 import icons from "../../../constants/icons";
-import { changePassword } from "../../model/users";
-import { useUser } from "../../../hooks/providers/user-provider";
+import { changePassword } from "../../../model/users";
+import { useUser } from "../../../store/user-provider";
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomTextDiv from "../../../components/basic/custom-text-div";
 import CustomFormDiv from "../../../components/basic/custom-form-div";
@@ -86,15 +86,17 @@ const ChangePassword = () => {
       <View className="flex items-center mt-8">
         <View className="w-[90%]">
           <CustomTextDiv>
-            <FontAwesomeIcon
-              icon={icons.faTriangleExclamation}
-              size={36}
-              color="white"
-            />
-            <Text className="p-2 text-c_white text-center text-lg font-Nunito_Medium">
-              Atención! Solo podrás cambiar la contraseña si no has iniciado
-              sesión con Google
-            </Text>
+            <View className="flex-row items-center space-x-4">
+              <FontAwesomeIcon
+                icon={icons.faTriangleExclamation}
+                size={36}
+                color="white"
+              />
+              <Text className="p-2 text-c_white text-lg font-Nunito_Medium">
+                Atención! Solo podrás cambiar la contraseña si no has iniciado
+                sesión con Google
+              </Text>
+            </View>
           </CustomTextDiv>
         </View>
       </View>

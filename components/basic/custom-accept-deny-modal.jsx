@@ -35,7 +35,7 @@ const CustomAcceptDenyModal = ({
           </Text>
           <View className="mt-4 space-y-3">
             <Pressable
-              className="bg-[#20c33b] rine_blue rounded-xl py-3 border-x-2 border-c_white"
+              className="bg-c_light_blue rine_blue rounded-xl py-3 border-2 border-c_white"
               onPress={onAccept}
             >
               <Text className="text-c_white text-lg font-Nunito_SemiBold text-center">
@@ -43,7 +43,7 @@ const CustomAcceptDenyModal = ({
               </Text>
             </Pressable>
             <Pressable
-              className="bg-[#c32020] rounded-xl py-3 border-x-2 border-c_white"
+              className="bg-[#c32020] rounded-xl py-3 border-2 border-c_white"
               onPress={onDeny}
             >
               <Text className="text-c_white text-lg font-Nunito_SemiBold text-center">

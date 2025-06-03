@@ -6,7 +6,7 @@ import { Alert } from "react-native";
 import * as Google from 'expo-auth-session/providers/google';
 
 import Login from "../../../app/(auth)/login";
-import { getUserByEmail, insertUserGoogle } from "../../../app/model/users";
+import { getUserByEmail, insertUserGoogle } from "../../../model/users";
 
 jest.mock("expo-router", () => ({
     router: {
@@ -15,7 +15,7 @@ jest.mock("expo-router", () => ({
     },
 }));
 
-jest.mock("../../../app/model/users", () => ({
+jest.mock("../../../model/users", () => ({
     getUserByEmail: jest.fn(),
     insertUserGoogle: jest.fn(),
 }));
@@ -32,7 +32,7 @@ jest.mock('jwt-decode', () => ({
     }),
   }));
 
-jest.mock("../../../hooks/providers/user-provider", () => ({
+jest.mock("../../../store/user-provider", () => ({
     useUser: jest.fn(() => ({
         login: jest.fn(),
     })),

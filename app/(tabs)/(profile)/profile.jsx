@@ -2,7 +2,7 @@ import React from "react";
 
 import { Text, View, ScrollView, Image } from "react-native";
 
-import { useUser } from "../../../hooks/providers/user-provider";
+import { useUser } from "../../../store/user-provider";
 import CustomPasswordView from "../../../components/basic/custom-password-view";
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomTextDiv from "../../../components/basic/custom-text-div";

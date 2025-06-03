@@ -1,18 +1,16 @@
 import React from "react";
 
-import { Text, View, SafeAreaView, FlatList } from "react-native";
-import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+import { View, SafeAreaView, FlatList } from "react-native";
 import { router } from "expo-router";
 
 import CustomButton from "../../../components/basic/custom-button";
-import icons from "../../../constants/icons";
 import CowCard from "./cow-card";
 import {
   getAllCalvesExitedByUserId,
   getAllCowsExitedByUserId,
   getAllCowsExitedByUserIdAndPhaseAndGender,
-} from "../../model/cow";
-import { useUser } from "../../../hooks/providers/user-provider";
+} from "../../../model/cow";
+import { useUser } from "../../../store/user-provider";
 import CustomPicker from "../../../components/basic/custom-picker";
 import CustomSearchBar from "../../../components/basic/custom-search-bar";
 import TabTitle from "../../../components/tabs/tab-title";
@@ -53,7 +51,7 @@ const LivestockHistoric = () => {
 
   const handleShowCowsByName = (text) => {
     setSearchText(text);
-    if (text === "" ) {
+    if (text === "") {
       setCows(allCows);
     } else {
       setCows(
@@ -71,27 +69,14 @@ const LivestockHistoric = () => {
         <View className="items-center">
           <View className="mx-4 mt-4 w-[75%]">
             <CustomButton
-              text={
-                <View className="flex-col items-center justify-center">
-                  <View>
-                    <FontAwesomeIcon
-                      icon={icons.faCow}
-                      size={30}
-                      color="white"
-                    />
-                  </View>
-                  <Text className="text-c_white text-lg font-Nunito_Medium">
-                    Ver censo
-                  </Text>
-                </View>
-              }
+              text="Ver censo"
               onPress={() => router.replace("livestock")}
               buttonTestID="livestock-button"
             />
           </View>
         </View>
         <View className="flex items-center justify-center my-4">
-          <View className="w-[90%] space-y-2">
+          <View className="w-[90%] space-y-4">
             <View>
               <CustomPicker
                 text="Filtrar por fase"

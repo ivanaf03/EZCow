@@ -23,6 +23,18 @@ const LivestockLayout = () => {
                     headerShown: false 
                 }}
             />
+            <Stack.Screen
+                name="group-form"
+                options={{
+                    headerShown: false,
+                }}
+            />
+            <Stack.Screen
+                name="groups"
+                options={{
+                    headerShown: false,
+                }}
+            />
         </Stack>
     );
 };

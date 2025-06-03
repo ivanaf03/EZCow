@@ -1,0 +1,292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CadastralMapCard should render correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      {
+        "marginBottom": 8,
+        "marginTop": 8,
+      },
+      {
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      },
+      {
+        "marginRight": 24,
+      },
+      {
+        "backgroundColor": "#272727",
+      },
+      {
+        "borderBottomRightRadius": 24,
+        "borderTopRightRadius": 24,
+      },
+      {
+        "borderRightWidth": 4,
+      },
+      {
+        "borderBottomColor": "#6bc0eb",
+        "borderLeftColor": "#6bc0eb",
+        "borderRightColor": "#6bc0eb",
+        "borderTopColor": "#6bc0eb",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "flexDirection": "row",
+        },
+        {
+          "alignItems": "center",
+        },
+        {
+          "justifyContent": "space-between",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "flexDirection": "row",
+          },
+          {
+            "alignItems": "center",
+          },
+          {
+            "maxWidth": "40%",
+          },
+          {
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 14,
+              "lineHeight": 20,
+            },
+            {
+              "fontFamily": "Nunito-Bold",
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 14,
+              "lineHeight": 20,
+            },
+            {
+              "fontFamily": "Nunito-Bold",
+            },
+            [
+              {
+                "marginLeft": 8,
+              },
+            ],
+          ]
+        }
+      >
+        Mapa Test
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "display": "flex",
+          },
+          {
+            "flexDirection": "row",
+          },
+          {
+            "justifyContent": "center",
+          },
+          {
+            "alignItems": "center",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "backgroundColor": "#272727",
+          },
+          {
+            "borderBottomWidth": 2,
+            "borderLeftWidth": 2,
+            "borderRightWidth": 2,
+            "borderTopWidth": 2,
+          },
+          {
+            "borderBottomColor": "#6bc0eb",
+            "borderLeftColor": "#6bc0eb",
+            "borderRightColor": "#6bc0eb",
+            "borderTopColor": "#6bc0eb",
+          },
+          {
+            "borderBottomLeftRadius": 24,
+            "borderBottomRightRadius": 24,
+            "borderTopLeftRadius": 24,
+            "borderTopRightRadius": 24,
+          },
+        ]
+      }
+      testID="delete-map-button"
+    >
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Nunito-SemiBold",
+            },
+            {
+              "color": "#ffffff",
+            },
+            {
+              "fontSize": 20,
+              "lineHeight": 28,
+            },
+            [
+              {
+                "marginLeft": 16,
+              },
+            ],
+          ]
+        }
+      >
+        Borrar finca
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "height": 176,
+        },
+        {
+          "backgroundColor": "#272727",
+        },
+        {
+          "borderBottomLeftRadius": 16,
+          "borderBottomRightRadius": 16,
+          "borderTopLeftRadius": 16,
+          "borderTopRightRadius": 16,
+        },
+        {
+          "marginLeft": 16,
+          "marginRight": 16,
+        },
+        {
+          "marginTop": 16,
+        },
+        [
+          {
+            "marginTop": 16,
+          },
+        ],
+      ]
+    }
+  >
+    <AIRMap
+      initialRegion={null}
+      mapType="satellite"
+      onChange={[Function]}
+      onMapReady={[Function]}
+      region={
+        {
+          "latitude": undefined,
+          "latitudeDelta": 0.01,
+          "longitude": undefined,
+          "longitudeDelta": 0.01,
+        }
+      }
+      style={
+        {
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    >
+      <AIRMapPolygon
+        fillColor="rgba(255, 0, 0, 0.2)"
+        strokeColor="red"
+        strokeWidth={1}
+      />
+      <AIRMapMarker
+        coordinate={
+          {
+            "latitude": 10,
+            "longitude": 10,
+          }
+        }
+        onPress={[Function]}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "position": "absolute",
+            },
+            undefined,
+          ]
+        }
+        title="Mapa Test"
+      />
+    </AIRMap>
+  </View>
+</View>
+`;

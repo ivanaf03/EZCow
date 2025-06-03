@@ -1,17 +1,19 @@
 import React from "react";
 
-import { Text, View, SafeAreaView } from "react-native";
+import { Text, View, SafeAreaView, Alert } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 import { router } from "expo-router";
 
 import {
   insertFarmUbication,
   getFarmUbicationByUserId,
-} from "../../model/farm";
-import { useUser } from "../../../hooks/providers/user-provider";
+} from "../../../model/farm";
+import { useUser } from "../../../store/user-provider";
 import CustomButton from "../../../components/basic/custom-button";
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomTextDiv from "../../../components/basic/custom-text-div";
+import CustomPressable from "../../../components/basic/custom-pressable";
+import icons from "../../../constants/icons";
 
 const Maps = () => {
   const [selectedLocation, setSelectedLocation] = React.useState({
@@ -43,19 +45,28 @@ const Maps = () => {
       selectedLocation.latitude,
       selectedLocation.longitude
     );
-    router.replace("fields");
+    Alert.alert("Guardado", "La ubicación ha sido guardada correctamente.");
   };
 
   return (
     <SafeAreaView className="flex-1 bg-c_dark_gray">
       <TabTitle text="Mi explotación" />
       <View className="flex items-center mt-4">
-        <View className="w-[75%]">
-          <CustomButton
-            text="Ver mis fincas"
-            onPress={() => router.replace("fields")}
-            buttonTestID={"fields-button"}
-          />
+        <View className="w-[75%] space-y-2">
+          <View>
+            <CustomButton
+              text="Ver ubicaciones"
+              onPress={() => router.replace("fields")}
+              buttonTestID={"fields-button"}
+            />
+          </View>
+          <View>
+            <CustomButton
+              text="Ver parcelas"
+              onPress={() => router.replace("cadastral-fields")}
+              buttonTestID={"cadastral-fields-button"}
+            />
+          </View>
         </View>
       </View>
       <View className="flex items-center mt-4">
@@ -71,7 +82,7 @@ const Maps = () => {
           </CustomTextDiv>
         </View>
       </View>
-      <View className="flex-1 bg-c_light_gray border-2 border-c_light_blue rounded-2xl mx-4 p-2 mt-4">
+      <View className="flex-1 bg-c_light_gray rounded-lg mx-4 p-2 mt-4">
         <MapView
           style={{ width: "100%", height: "100%" }}
           region={{
@@ -85,7 +96,7 @@ const Maps = () => {
           <Marker title="Tu explotación" coordinate={selectedLocation} />
         </MapView>
       </View>
-      <View className="flex-row p-4 bg-c_gray justify-around">
+      <View className="flex-row p-4 justify-around">
         <Text className="text-c_white text-lg">
           Latitud: {selectedLocation.latitude.toFixed(6)}
         </Text>
@@ -95,7 +106,12 @@ const Maps = () => {
       </View>
       <View className="flex items-center my-4">
         <View className="w-[75%]">
-          <CustomButton text="Guardar ubicación" onPress={handleSaveLocation} />
+          <CustomPressable
+            text="Guardar ubicación"
+            onPress={handleSaveLocation}
+            buttonTestID="save-location-button"
+            icon={icons.faBookmark}
+          />
         </View>
       </View>
     </SafeAreaView>

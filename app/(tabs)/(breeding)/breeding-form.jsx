@@ -1,19 +1,17 @@
 import React from "react";
 
-import { View, ScrollView } from "react-native";
+import { View, ScrollView, Alert } from "react-native";
 import { router } from "expo-router";
 
 import CustomInput from "../../../components/basic/custom-input";
 import CustomCalendar from "../../../components/basic/custom-calendar";
 import CustomButton from "../../../components/basic/custom-button";
-import { insertBreedingEvent } from "../../model/breeding-events";
+import { insertBreedingEvent } from "../../../model/breeding-events";
 import CustomPicker from "../../../components/basic/custom-picker";
 import CustomFormDiv from "../../../components/basic/custom-form-div";
 import TabTitle from "../../../components/tabs/tab-title";
-import {
-  getAllCowIdsAndNamesAvailableByUserId,
-} from "../../model/cow";
-import { useUser } from "../../../hooks/providers/user-provider";
+import { getAllCowIdsAndNamesAvailableByUserId } from "../../../model/cow";
+import { useUser } from "../../../store/user-provider";
 
 const BreedingForm = () => {
   const [formData, setFormData] = React.useState({
@@ -34,6 +32,7 @@ const BreedingForm = () => {
   const loadCowNames = async () => {
     const names = await getAllCowIdsAndNamesAvailableByUserId(user.id);
     setCowNames(names);
+    setFormData((prev) => ({ ...prev, cowName: names[0].id }));
   };
 
   const handleChange = (key) => async (value) => {
@@ -46,9 +45,33 @@ const BreedingForm = () => {
   };
 
   const handleAddBreedingEvent = async () => {
+    if (
+      !formData.cowName ||
+      !formData.eventName ||
+      !formData.description ||
+      !formData.date
+    ) {
+      Alert.alert("Error", "Por favor, rellena todos los campos.");
+      return;
+    }
+
     const { cowName, eventName, description, date } = formData;
     const formattedDate = date.toISOString().split("T")[0];
     await insertBreedingEvent(cowName, eventName, description, formattedDate);
+
+    if (eventName === "Celo" || eventName === "Inseminación") {
+      const birthDate = new Date(date);
+      birthDate.setDate(birthDate.getDate() + 283);
+      const formattedBirthDate = birthDate.toISOString().split("T")[0];
+
+      await insertBreedingEvent(
+        cowName,
+        "Vaca cumplida",
+        "Meses de gestación cumplidos, parto próximo",
+        formattedBirthDate
+      );
+    }
+
     router.replace("breeding");
   };
 

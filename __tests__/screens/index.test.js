@@ -15,6 +15,10 @@ jest.mock("expo-router", () => ({
     },
 }));
 
+jest.mock("@fortawesome/react-native-fontawesome", () => ({
+    FontAwesomeIcon: () => null
+}));
+
 describe("App", () => {
 
     beforeEach(() => {
