@@ -60,6 +60,15 @@ describe("Fields", () => {
         await waitFor(() => expect(router.replace).toHaveBeenCalledWith("cadastral-fields"));
     });
 
+    it("should navigate to grazing", async () => {
+        getAllFieldsByUserId.mockResolvedValue([{id: 1, name: "TestField", cadastralReference: "12345678", latitude: 0, longitude: 0}]);
+        const tree = render(<Fields />);
+        await waitFor(() => expect(tree).toMatchSnapshot());
+        const grazingButton = tree.getByTestId("grazing-button");
+        fireEvent.press(grazingButton);
+        await waitFor(() => expect(router.replace).toHaveBeenCalledWith("grazing"));
+    });
+
     it("should navigate to add-fields", async () => {
         getAllFieldsByUserId.mockResolvedValue([{id: 1, name: "TestField", cadastralReference: "12345678", latitude: 0, longitude: 0}]);
         const tree = render(<Fields />);

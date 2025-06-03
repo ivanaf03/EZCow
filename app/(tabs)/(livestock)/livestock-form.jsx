@@ -50,7 +50,6 @@ const LivestockForm = () => {
   };
 
   const handleAddCow = async () => {
-    try {
       if (
         !formData.code ||
         !formData.name ||
@@ -91,9 +90,6 @@ const LivestockForm = () => {
       loadCowCodes();
 
       router.replace("livestock");
-    } catch (error) {
-      Alert.alert("Error", "Error al añadir el animal. Inténtalo de nuevo.");
-    }
   };
 
   return (
