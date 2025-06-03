@@ -52,7 +52,7 @@ describe("Groups", () => {
     ]);
     const tree = render(<Groups />);
     await waitFor(() => expect(getAllGroups).toHaveBeenCalled());
-    expect(tree).toMatchSnapshot();
+    await waitFor(() => expect(tree).toMatchSnapshot());
   });
 
   it("should navigate to livestock when pressing livestock button", async () => {
@@ -64,6 +64,6 @@ describe("Groups", () => {
     await waitFor(() => expect(getAllGroups).toHaveBeenCalled());
     const handleAddGroupButton = getByTestId("livestock-button");
     fireEvent.press(handleAddGroupButton);
-    expect(router.replace).toHaveBeenCalledWith("livestock");
+    await waitFor(() => expect(router.replace).toHaveBeenCalledWith("livestock"));
   });
 });

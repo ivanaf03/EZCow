@@ -1,0 +1,424 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GrazingCard should render correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "marginBottom": 8,
+        "marginLeft": 8,
+        "marginRight": 8,
+        "marginTop": 8,
+      },
+      {
+        "display": "flex",
+      },
+      {
+        "flexDirection": "column",
+      },
+      {
+        "alignItems": "center",
+      },
+      {
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      },
+      {
+        "backgroundColor": "#272727",
+      },
+      {
+        "borderLeftWidth": 4,
+        "borderRightWidth": 4,
+      },
+      {
+        "borderBottomColor": "#6bc0eb",
+        "borderLeftColor": "#6bc0eb",
+        "borderRightColor": "#6bc0eb",
+        "borderTopColor": "#6bc0eb",
+      },
+      {
+        "borderBottomLeftRadius": 16,
+        "borderBottomRightRadius": 16,
+        "borderTopLeftRadius": 16,
+        "borderTopRightRadius": 16,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "flexDirection": "row",
+        },
+        {
+          "alignItems": "center",
+        },
+        {
+          "justifyContent": "space-between",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "flexBasis": "0%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Nunito-SemiBold",
+            },
+            {
+              "color": "#ffffff",
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Nunito-SemiBold",
+            },
+            {
+              "color": "#ffffff",
+            },
+            [
+              {
+                "marginTop": 8,
+              },
+            ],
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "flexDirection": "row",
+          },
+          {
+            "alignItems": "flex-start",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Nunito-SemiBold",
+            },
+            {
+              "color": "#ffffff",
+            },
+          ]
+        }
+      >
+        2022-01-01
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Nunito-SemiBold",
+            },
+            {
+              "color": "#ffffff",
+            },
+          ]
+        }
+      >
+         : 
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Nunito-SemiBold",
+            },
+            {
+              "color": "#ffffff",
+            },
+          ]
+        }
+      >
+        2022-01-02
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "display": "flex",
+        },
+        {
+          "flexDirection": "row",
+        },
+        {
+          "justifyContent": "center",
+        },
+        {
+          "alignItems": "center",
+        },
+        {
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+        {
+          "backgroundColor": "#272727",
+        },
+        {
+          "borderBottomWidth": 2,
+          "borderLeftWidth": 2,
+          "borderRightWidth": 2,
+          "borderTopWidth": 2,
+        },
+        {
+          "borderBottomColor": "#6bc0eb",
+          "borderLeftColor": "#6bc0eb",
+          "borderRightColor": "#6bc0eb",
+          "borderTopColor": "#6bc0eb",
+        },
+        {
+          "borderBottomLeftRadius": 24,
+          "borderBottomRightRadius": 24,
+          "borderTopLeftRadius": 24,
+          "borderTopRightRadius": 24,
+        },
+      ]
+    }
+    testID="delete-grazing-button"
+  >
+    <Text
+      style={
+        [
+          {
+            "fontFamily": "Nunito-SemiBold",
+          },
+          {
+            "color": "#ffffff",
+          },
+          {
+            "fontSize": 20,
+            "lineHeight": 28,
+          },
+          [
+            {
+              "marginLeft": 16,
+            },
+          ],
+        ]
+      }
+    >
+      Finalizar pastoreo
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`GrazingCard should render correctly expired 1`] = `
+<View
+  style={
+    [
+      {
+        "marginBottom": 8,
+        "marginLeft": 8,
+        "marginRight": 8,
+        "marginTop": 8,
+      },
+      {
+        "display": "flex",
+      },
+      {
+        "flexDirection": "column",
+      },
+      {
+        "alignItems": "center",
+      },
+      {
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      },
+      {
+        "backgroundColor": "#272727",
+      },
+      {
+        "borderLeftWidth": 4,
+        "borderRightWidth": 4,
+      },
+      {
+        "borderBottomColor": "#6bc0eb",
+        "borderLeftColor": "#6bc0eb",
+        "borderRightColor": "#6bc0eb",
+        "borderTopColor": "#6bc0eb",
+      },
+      {
+        "borderBottomLeftRadius": 16,
+        "borderBottomRightRadius": 16,
+        "borderTopLeftRadius": 16,
+        "borderTopRightRadius": 16,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "flexDirection": "row",
+        },
+        {
+          "alignItems": "center",
+        },
+        {
+          "justifyContent": "space-between",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "flexBasis": "0%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Nunito-SemiBold",
+            },
+            {
+              "color": "#ffffff",
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Nunito-SemiBold",
+            },
+            {
+              "color": "#ffffff",
+            },
+            [
+              {
+                "marginTop": 8,
+              },
+            ],
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        [
+          {
+            "flexDirection": "row",
+          },
+          {
+            "alignItems": "flex-start",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Nunito-SemiBold",
+            },
+            {
+              "color": "#ffffff",
+            },
+          ]
+        }
+      >
+        2022-01-01
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Nunito-SemiBold",
+            },
+            {
+              "color": "#ffffff",
+            },
+          ]
+        }
+      >
+         : 
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "fontFamily": "Nunito-SemiBold",
+            },
+            {
+              "color": "#ffffff",
+            },
+          ]
+        }
+      >
+        2022-01-02
+      </Text>
+    </View>
+  </View>
+</View>
+`;

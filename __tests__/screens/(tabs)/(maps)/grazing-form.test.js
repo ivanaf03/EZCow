@@ -58,7 +58,7 @@ describe("GrazingForm", () => {
   it("should show an error if group is empty", async () => {
     getGroupNames.mockResolvedValue([]);
     getFieldNames.mockResolvedValue(["TestField"]);
-    const { getByTestId } = render(<GrazingForm />);
+    const { getByTestId, getByText } = render(<GrazingForm />);
     await waitFor(() => expect(getGroupNames).toHaveBeenCalled());
     fireEvent(getByText("Fincas:"), "onValueChange", "TestField");
     const handleAddGrazingButton = getByTestId("handle-add-grazing-button");

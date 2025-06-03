@@ -69,10 +69,10 @@ describe("GroupCard", () => {
 
     const handleDeleteGroupButton = getByTestId("delete-group-button");
     fireEvent.press(handleDeleteGroupButton);
-    expect(onDelete).toHaveBeenCalledWith({
+    await waitFor(() => expect(onDelete).toHaveBeenCalledWith({
       groupId: 1,
-      groupName: "TestGroup",
-    });
+      groupName: "TestGroup"
+    }));
   });
 
   it("should call insertCowInGroup when pressing add cow button", async () => {
@@ -124,6 +124,6 @@ describe("GroupCard", () => {
       );
     });
 
-    expect(getCowIdByCode).not.toHaveBeenCalled();
+    await waitFor(() => expect(getCowIdByCode).not.toHaveBeenCalled());
   });
 });

@@ -55,16 +55,18 @@ describe("GroupForm", () => {
   it("should render correctly", async () => {
     getAvailableCodeByUserId.mockResolvedValueOnce([]);
     const tree = render(<GroupForm />);
-    expect(tree).toMatchSnapshot();
+    await waitFor(() => expect(tree).toMatchSnapshot());
   });
 
   it("should show an error if name is empty", async () => {
     getAvailableCodeByUserId.mockResolvedValueOnce([]);
     const { getByTestId } = render(<GroupForm />);
     fireEvent.press(getByTestId("handle-add-group-button"));
-    expect(Alert.alert).toHaveBeenCalledWith(
-      "Error",
-      "Por favor, rellena todos los campos."
+    await waitFor(() =>
+      expect(Alert.alert).toHaveBeenCalledWith(
+        "Error",
+        "Por favor, rellena todos los campos."
+      )
     );
   });
 
@@ -73,9 +75,11 @@ describe("GroupForm", () => {
     const { getByTestId, getByPlaceholderText } = render(<GroupForm />);
     fireEvent.changeText(getByPlaceholderText("Nombre"), "Grupo Test");
     fireEvent.press(getByTestId("handle-add-group-button"));
-    expect(Alert.alert).toHaveBeenCalledWith(
-      "Error",
-      "Por favor, añade al menos una vaca."
+    await waitFor(() =>
+      expect(Alert.alert).toHaveBeenCalledWith(
+        "Error",
+        "Por favor, añade al menos una vaca."
+      )
     );
   });
 
@@ -83,7 +87,9 @@ describe("GroupForm", () => {
     getAvailableCodeByUserId.mockResolvedValueOnce([]);
     const { getByTestId } = render(<GroupForm />);
     fireEvent.press(getByTestId("livestock-button"));
-    expect(router.replace).toHaveBeenCalledWith("livestock");
+    await waitFor(() =>
+      expect(router.replace).toHaveBeenCalledWith("livestock")
+    );
   });
 
   it("should add a cow to a group when pressing add button", async () => {
