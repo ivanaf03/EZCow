@@ -113,7 +113,7 @@ const Livestock = () => {
         </View>
       </View>
       <View className="items-center">
-        <View className="flex-row justify-center items-center space-x-4 mt-4 w-[90%]">
+        <View className="flex-row justify-center items-center space-x-4 mt-2 w-[90%]">
           <View className="w-[50%]">
             <CustomButton
               text="Ver grupos"

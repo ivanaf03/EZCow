@@ -81,13 +81,21 @@ const CadastralFields = () => {
             icon={icons.faPlus}
           />
         </View>
-        <View>
-          <CustomButton
-            text="Ver ubicaciones"
-            onPress={() => router.replace("fields")}
-            buttonTestID={"fields-button"}
-            icon={icons.faArrowRight}
-          />
+        <View className="flex-row items-center">
+          <View className="w-[50%] pr-2">
+            <CustomButton
+              text="Ver ubicaciones"
+              onPress={() => router.replace("fields")}
+              buttonTestID={"fields-button"}
+            />
+          </View>
+          <View className="w-[50%] pl-2">
+            <CustomButton
+              text="Ver pastoreo"
+              onPress={() => router.replace("grazing")}
+              buttonTestID={"grazing-button"}
+            />
+          </View>
         </View>
       </View>
       <View className="flex-1 mt-4 mx-2">

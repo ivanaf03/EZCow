@@ -52,13 +52,21 @@ const Fields = () => {
             icon={icons.faPlus}
           />
         </View>
-        <View>
-          <CustomButton
-            text="Ver parcelas"
-            onPress={() => router.replace("cadastral-fields")}
-            buttonTestID={"cadastral-fields-button"}
-            icon={icons.faArrowRight}
-          />
+        <View className="flex-row items-center">
+          <View className="w-[50%] pr-2">
+            <CustomButton
+              text="Ver parcelas"
+              onPress={() => router.replace("cadastral-fields")}
+              buttonTestID={"cadastral-fields-button"}
+            />
+          </View>
+          <View className="w-[50%] pl-2">
+            <CustomButton
+              text="Ver pastoreo"
+              onPress={() => router.replace("grazing")}
+              buttonTestID={"grazing-button"}
+            />
+          </View>
         </View>
       </View>
       <View className="flex-1 mt-4 mx-2">

@@ -35,6 +35,18 @@ const MapsLayout = () => {
           headerShown: false,
         }}
       />
+      <Stack.Screen
+        name="grazing-form"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="grazing"
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack>
   );
 };

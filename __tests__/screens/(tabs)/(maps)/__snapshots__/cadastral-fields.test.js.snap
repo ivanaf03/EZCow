@@ -166,107 +166,238 @@ exports[`CadastralFields should navigate to add-fields 1`] = `
       style={
         [
           {
-            "marginTop": 8,
+            "flexDirection": "row",
           },
+          {
+            "alignItems": "center",
+          },
+          [
+            {
+              "marginTop": 8,
+            },
+          ],
         ]
       }
     >
       <View
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": undefined,
-            "expanded": undefined,
-            "selected": undefined,
-          }
-        }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           [
             {
-              "display": "flex",
+              "width": "50%",
             },
             {
-              "flexDirection": "row",
-            },
-            {
-              "justifyContent": "space-between",
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "paddingBottom": 16,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 16,
-            },
-            {
-              "backgroundColor": "#272727",
-            },
-            {
-              "borderBottomWidth": 2,
-              "borderLeftWidth": 2,
-              "borderRightWidth": 2,
-              "borderTopWidth": 2,
-            },
-            {
-              "borderBottomColor": "#6bc0eb",
-              "borderLeftColor": "#6bc0eb",
-              "borderRightColor": "#6bc0eb",
-              "borderTopColor": "#6bc0eb",
-            },
-            {
-              "borderBottomLeftRadius": 24,
-              "borderBottomRightRadius": 24,
-              "borderTopLeftRadius": 24,
-              "borderTopRightRadius": 24,
+              "paddingRight": 8,
             },
           ]
         }
-        testID="fields-button"
       >
-        <Text
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             [
               {
-                "fontFamily": "Nunito-SemiBold",
+                "display": "flex",
               },
               {
-                "color": "#ffffff",
+                "flexDirection": "row",
               },
               {
-                "fontSize": 20,
-                "lineHeight": 28,
+                "justifyContent": "space-between",
               },
               {
-                "textAlign": "center",
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
               },
             ]
           }
+          testID="fields-button"
         >
-          Ver ubicaciones
-        </Text>
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver ubicaciones
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "width": "50%",
+            },
+            {
+              "paddingLeft": 8,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "display": "flex",
+              },
+              {
+                "flexDirection": "row",
+              },
+              {
+                "justifyContent": "space-between",
+              },
+              {
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+              },
+            ]
+          }
+          testID="grazing-button"
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver pastoreo
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -479,11 +610,347 @@ exports[`CadastralFields should navigate to fields 1`] = `
       style={
         [
           {
-            "marginTop": 8,
+            "flexDirection": "row",
           },
+          {
+            "alignItems": "center",
+          },
+          [
+            {
+              "marginTop": 8,
+            },
+          ],
         ]
       }
     >
+      <View
+        style={
+          [
+            {
+              "width": "50%",
+            },
+            {
+              "paddingRight": 8,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "display": "flex",
+              },
+              {
+                "flexDirection": "row",
+              },
+              {
+                "justifyContent": "space-between",
+              },
+              {
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+              },
+            ]
+          }
+          testID="fields-button"
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver ubicaciones
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "width": "50%",
+            },
+            {
+              "paddingLeft": 8,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "display": "flex",
+              },
+              {
+                "flexDirection": "row",
+              },
+              {
+                "justifyContent": "space-between",
+              },
+              {
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+              },
+            ]
+          }
+          testID="grazing-button"
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver pastoreo
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "flexBasis": "0%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+        {
+          "marginTop": 16,
+        },
+        {
+          "marginLeft": 8,
+          "marginRight": 8,
+        },
+      ]
+    }
+  >
+    <RCTScrollView
+      data={[]}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      keyExtractor={[Function]}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={0.0001}
+      showsVerticalScrollIndicator={true}
+      stickyHeaderIndices={[]}
+      viewabilityConfigCallbackPairs={[]}
+    >
+      <View />
+    </RCTScrollView>
+  </View>
+</RCTSafeAreaView>
+`;
+
+exports[`CadastralFields should navigate to grazing 1`] = `
+<RCTSafeAreaView
+  style={
+    [
+      {
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+      {
+        "backgroundColor": "#1c1c1c",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "marginTop": 16,
+        },
+        {
+          "marginLeft": 16,
+          "marginRight": 16,
+        },
+        {
+          "color": "#ffffff",
+        },
+        {
+          "fontSize": 36,
+          "lineHeight": 40,
+        },
+        {
+          "fontFamily": "Nunito-Bold",
+        },
+        {
+          "borderBottomWidth": 2,
+        },
+        {
+          "borderBottomColor": "#ffffff",
+          "borderLeftColor": "#ffffff",
+          "borderRightColor": "#ffffff",
+          "borderTopColor": "#ffffff",
+        },
+      ]
+    }
+  >
+    Mis fincas (catastro)
+  </Text>
+  <View
+    style={
+      [
+        {
+          "marginLeft": 16,
+          "marginRight": 16,
+        },
+        {
+          "marginTop": 16,
+        },
+      ]
+    }
+  >
+    <View>
       <View
         accessibilityState={
           {
@@ -523,7 +990,7 @@ exports[`CadastralFields should navigate to fields 1`] = `
               "flexDirection": "row",
             },
             {
-              "justifyContent": "space-between",
+              "justifyContent": "center",
             },
             {
               "alignItems": "center",
@@ -557,7 +1024,6 @@ exports[`CadastralFields should navigate to fields 1`] = `
             },
           ]
         }
-        testID="fields-button"
       >
         <Text
           style={
@@ -572,14 +1038,254 @@ exports[`CadastralFields should navigate to fields 1`] = `
                 "fontSize": 20,
                 "lineHeight": 28,
               },
-              {
-                "textAlign": "center",
-              },
+              [
+                {
+                  "marginLeft": 16,
+                },
+              ],
             ]
           }
         >
-          Ver ubicaciones
+          Añadir con referencia catastral
         </Text>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "flexDirection": "row",
+          },
+          {
+            "alignItems": "center",
+          },
+          [
+            {
+              "marginTop": 8,
+            },
+          ],
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "width": "50%",
+            },
+            {
+              "paddingRight": 8,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "display": "flex",
+              },
+              {
+                "flexDirection": "row",
+              },
+              {
+                "justifyContent": "space-between",
+              },
+              {
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+              },
+            ]
+          }
+          testID="fields-button"
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver ubicaciones
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "width": "50%",
+            },
+            {
+              "paddingLeft": 8,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "display": "flex",
+              },
+              {
+                "flexDirection": "row",
+              },
+              {
+                "justifyContent": "space-between",
+              },
+              {
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+              },
+            ]
+          }
+          testID="grazing-button"
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver pastoreo
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -792,107 +1498,238 @@ exports[`CadastralFields should render correctly 1`] = `
       style={
         [
           {
-            "marginTop": 8,
+            "flexDirection": "row",
           },
+          {
+            "alignItems": "center",
+          },
+          [
+            {
+              "marginTop": 8,
+            },
+          ],
         ]
       }
     >
       <View
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": undefined,
-            "expanded": undefined,
-            "selected": undefined,
-          }
-        }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           [
             {
-              "display": "flex",
+              "width": "50%",
             },
             {
-              "flexDirection": "row",
-            },
-            {
-              "justifyContent": "space-between",
-            },
-            {
-              "alignItems": "center",
-            },
-            {
-              "paddingBottom": 16,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 16,
-            },
-            {
-              "backgroundColor": "#272727",
-            },
-            {
-              "borderBottomWidth": 2,
-              "borderLeftWidth": 2,
-              "borderRightWidth": 2,
-              "borderTopWidth": 2,
-            },
-            {
-              "borderBottomColor": "#6bc0eb",
-              "borderLeftColor": "#6bc0eb",
-              "borderRightColor": "#6bc0eb",
-              "borderTopColor": "#6bc0eb",
-            },
-            {
-              "borderBottomLeftRadius": 24,
-              "borderBottomRightRadius": 24,
-              "borderTopLeftRadius": 24,
-              "borderTopRightRadius": 24,
+              "paddingRight": 8,
             },
           ]
         }
-        testID="fields-button"
       >
-        <Text
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             [
               {
-                "fontFamily": "Nunito-SemiBold",
+                "display": "flex",
               },
               {
-                "color": "#ffffff",
+                "flexDirection": "row",
               },
               {
-                "fontSize": 20,
-                "lineHeight": 28,
+                "justifyContent": "space-between",
               },
               {
-                "textAlign": "center",
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
               },
             ]
           }
+          testID="fields-button"
         >
-          Ver ubicaciones
-        </Text>
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver ubicaciones
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "width": "50%",
+            },
+            {
+              "paddingLeft": 8,
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "display": "flex",
+              },
+              {
+                "flexDirection": "row",
+              },
+              {
+                "justifyContent": "space-between",
+              },
+              {
+                "alignItems": "center",
+              },
+              {
+                "paddingBottom": 16,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+              },
+              {
+                "backgroundColor": "#272727",
+              },
+              {
+                "borderBottomWidth": 2,
+                "borderLeftWidth": 2,
+                "borderRightWidth": 2,
+                "borderTopWidth": 2,
+              },
+              {
+                "borderBottomColor": "#6bc0eb",
+                "borderLeftColor": "#6bc0eb",
+                "borderRightColor": "#6bc0eb",
+                "borderTopColor": "#6bc0eb",
+              },
+              {
+                "borderBottomLeftRadius": 24,
+                "borderBottomRightRadius": 24,
+                "borderTopLeftRadius": 24,
+                "borderTopRightRadius": 24,
+              },
+            ]
+          }
+          testID="grazing-button"
+        >
+          <Text
+            style={
+              [
+                {
+                  "fontFamily": "Nunito-SemiBold",
+                },
+                {
+                  "color": "#ffffff",
+                },
+                {
+                  "fontSize": 20,
+                  "lineHeight": 28,
+                },
+                {
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Ver pastoreo
+          </Text>
+        </View>
       </View>
     </View>
   </View>
