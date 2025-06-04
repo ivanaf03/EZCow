@@ -62,105 +62,103 @@ exports[`CadastralFields should navigate to add-fields 1`] = `
       ]
     }
   >
-    <View>
-      <View
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": undefined,
-            "expanded": undefined,
-            "selected": undefined,
-          }
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
         }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
-          }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
         }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "display": "flex",
+          },
+          {
+            "flexDirection": "row",
+          },
+          {
+            "justifyContent": "center",
+          },
+          {
+            "alignItems": "center",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "backgroundColor": "#272727",
+          },
+          {
+            "borderBottomWidth": 2,
+            "borderLeftWidth": 2,
+            "borderRightWidth": 2,
+            "borderTopWidth": 2,
+          },
+          {
+            "borderBottomColor": "#6bc0eb",
+            "borderLeftColor": "#6bc0eb",
+            "borderRightColor": "#6bc0eb",
+            "borderTopColor": "#6bc0eb",
+          },
+          {
+            "borderBottomLeftRadius": 24,
+            "borderBottomRightRadius": 24,
+            "borderTopLeftRadius": 24,
+            "borderTopRightRadius": 24,
+          },
+        ]
+      }
+    >
+      <Text
         style={
           [
             {
-              "display": "flex",
+              "fontFamily": "Nunito-SemiBold",
             },
             {
-              "flexDirection": "row",
+              "color": "#ffffff",
             },
             {
-              "justifyContent": "center",
+              "fontSize": 20,
+              "lineHeight": 28,
             },
-            {
-              "alignItems": "center",
-            },
-            {
-              "paddingBottom": 16,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 16,
-            },
-            {
-              "backgroundColor": "#272727",
-            },
-            {
-              "borderBottomWidth": 2,
-              "borderLeftWidth": 2,
-              "borderRightWidth": 2,
-              "borderTopWidth": 2,
-            },
-            {
-              "borderBottomColor": "#6bc0eb",
-              "borderLeftColor": "#6bc0eb",
-              "borderRightColor": "#6bc0eb",
-              "borderTopColor": "#6bc0eb",
-            },
-            {
-              "borderBottomLeftRadius": 24,
-              "borderBottomRightRadius": 24,
-              "borderTopLeftRadius": 24,
-              "borderTopRightRadius": 24,
-            },
+            [
+              {
+                "marginLeft": 16,
+              },
+            ],
           ]
         }
       >
-        <Text
-          style={
-            [
-              {
-                "fontFamily": "Nunito-SemiBold",
-              },
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 20,
-                "lineHeight": 28,
-              },
-              [
-                {
-                  "marginLeft": 16,
-                },
-              ],
-            ]
-          }
-        >
-          Añadir con referencia catastral
-        </Text>
-      </View>
+        Añadir con referencia catastral
+      </Text>
     </View>
     <View
       style={
@@ -419,27 +417,28 @@ exports[`CadastralFields should navigate to add-fields 1`] = `
       ]
     }
   >
-    <RCTScrollView
-      data={[]}
-      getItem={[Function]}
-      getItemCount={[Function]}
-      keyExtractor={[Function]}
-      onContentSizeChange={[Function]}
-      onLayout={[Function]}
-      onMomentumScrollBegin={[Function]}
-      onMomentumScrollEnd={[Function]}
-      onScroll={[Function]}
-      onScrollBeginDrag={[Function]}
-      onScrollEndDrag={[Function]}
-      removeClippedSubviews={false}
-      renderItem={[Function]}
-      scrollEventThrottle={0.0001}
-      showsVerticalScrollIndicator={true}
-      stickyHeaderIndices={[]}
-      viewabilityConfigCallbackPairs={[]}
+    <View
+      style={
+        [
+          {
+            "flexBasis": "0%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+          {
+            "justifyContent": "center",
+          },
+          {
+            "alignItems": "center",
+          },
+        ]
+      }
     >
-      <View />
-    </RCTScrollView>
+      <ActivityIndicator
+        color="#ffffff"
+        size="large"
+      />
+    </View>
   </View>
 </RCTSafeAreaView>
 `;
@@ -506,105 +505,103 @@ exports[`CadastralFields should navigate to fields 1`] = `
       ]
     }
   >
-    <View>
-      <View
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": undefined,
-            "expanded": undefined,
-            "selected": undefined,
-          }
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
         }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
-          }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
         }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "display": "flex",
+          },
+          {
+            "flexDirection": "row",
+          },
+          {
+            "justifyContent": "center",
+          },
+          {
+            "alignItems": "center",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "backgroundColor": "#272727",
+          },
+          {
+            "borderBottomWidth": 2,
+            "borderLeftWidth": 2,
+            "borderRightWidth": 2,
+            "borderTopWidth": 2,
+          },
+          {
+            "borderBottomColor": "#6bc0eb",
+            "borderLeftColor": "#6bc0eb",
+            "borderRightColor": "#6bc0eb",
+            "borderTopColor": "#6bc0eb",
+          },
+          {
+            "borderBottomLeftRadius": 24,
+            "borderBottomRightRadius": 24,
+            "borderTopLeftRadius": 24,
+            "borderTopRightRadius": 24,
+          },
+        ]
+      }
+    >
+      <Text
         style={
           [
             {
-              "display": "flex",
+              "fontFamily": "Nunito-SemiBold",
             },
             {
-              "flexDirection": "row",
+              "color": "#ffffff",
             },
             {
-              "justifyContent": "center",
+              "fontSize": 20,
+              "lineHeight": 28,
             },
-            {
-              "alignItems": "center",
-            },
-            {
-              "paddingBottom": 16,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 16,
-            },
-            {
-              "backgroundColor": "#272727",
-            },
-            {
-              "borderBottomWidth": 2,
-              "borderLeftWidth": 2,
-              "borderRightWidth": 2,
-              "borderTopWidth": 2,
-            },
-            {
-              "borderBottomColor": "#6bc0eb",
-              "borderLeftColor": "#6bc0eb",
-              "borderRightColor": "#6bc0eb",
-              "borderTopColor": "#6bc0eb",
-            },
-            {
-              "borderBottomLeftRadius": 24,
-              "borderBottomRightRadius": 24,
-              "borderTopLeftRadius": 24,
-              "borderTopRightRadius": 24,
-            },
+            [
+              {
+                "marginLeft": 16,
+              },
+            ],
           ]
         }
       >
-        <Text
-          style={
-            [
-              {
-                "fontFamily": "Nunito-SemiBold",
-              },
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 20,
-                "lineHeight": 28,
-              },
-              [
-                {
-                  "marginLeft": 16,
-                },
-              ],
-            ]
-          }
-        >
-          Añadir con referencia catastral
-        </Text>
-      </View>
+        Añadir con referencia catastral
+      </Text>
     </View>
     <View
       style={
@@ -863,27 +860,28 @@ exports[`CadastralFields should navigate to fields 1`] = `
       ]
     }
   >
-    <RCTScrollView
-      data={[]}
-      getItem={[Function]}
-      getItemCount={[Function]}
-      keyExtractor={[Function]}
-      onContentSizeChange={[Function]}
-      onLayout={[Function]}
-      onMomentumScrollBegin={[Function]}
-      onMomentumScrollEnd={[Function]}
-      onScroll={[Function]}
-      onScrollBeginDrag={[Function]}
-      onScrollEndDrag={[Function]}
-      removeClippedSubviews={false}
-      renderItem={[Function]}
-      scrollEventThrottle={0.0001}
-      showsVerticalScrollIndicator={true}
-      stickyHeaderIndices={[]}
-      viewabilityConfigCallbackPairs={[]}
+    <View
+      style={
+        [
+          {
+            "flexBasis": "0%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+          {
+            "justifyContent": "center",
+          },
+          {
+            "alignItems": "center",
+          },
+        ]
+      }
     >
-      <View />
-    </RCTScrollView>
+      <ActivityIndicator
+        color="#ffffff"
+        size="large"
+      />
+    </View>
   </View>
 </RCTSafeAreaView>
 `;
@@ -950,105 +948,103 @@ exports[`CadastralFields should navigate to grazing 1`] = `
       ]
     }
   >
-    <View>
-      <View
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": undefined,
-            "expanded": undefined,
-            "selected": undefined,
-          }
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
         }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
-          }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
         }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "display": "flex",
+          },
+          {
+            "flexDirection": "row",
+          },
+          {
+            "justifyContent": "center",
+          },
+          {
+            "alignItems": "center",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "backgroundColor": "#272727",
+          },
+          {
+            "borderBottomWidth": 2,
+            "borderLeftWidth": 2,
+            "borderRightWidth": 2,
+            "borderTopWidth": 2,
+          },
+          {
+            "borderBottomColor": "#6bc0eb",
+            "borderLeftColor": "#6bc0eb",
+            "borderRightColor": "#6bc0eb",
+            "borderTopColor": "#6bc0eb",
+          },
+          {
+            "borderBottomLeftRadius": 24,
+            "borderBottomRightRadius": 24,
+            "borderTopLeftRadius": 24,
+            "borderTopRightRadius": 24,
+          },
+        ]
+      }
+    >
+      <Text
         style={
           [
             {
-              "display": "flex",
+              "fontFamily": "Nunito-SemiBold",
             },
             {
-              "flexDirection": "row",
+              "color": "#ffffff",
             },
             {
-              "justifyContent": "center",
+              "fontSize": 20,
+              "lineHeight": 28,
             },
-            {
-              "alignItems": "center",
-            },
-            {
-              "paddingBottom": 16,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 16,
-            },
-            {
-              "backgroundColor": "#272727",
-            },
-            {
-              "borderBottomWidth": 2,
-              "borderLeftWidth": 2,
-              "borderRightWidth": 2,
-              "borderTopWidth": 2,
-            },
-            {
-              "borderBottomColor": "#6bc0eb",
-              "borderLeftColor": "#6bc0eb",
-              "borderRightColor": "#6bc0eb",
-              "borderTopColor": "#6bc0eb",
-            },
-            {
-              "borderBottomLeftRadius": 24,
-              "borderBottomRightRadius": 24,
-              "borderTopLeftRadius": 24,
-              "borderTopRightRadius": 24,
-            },
+            [
+              {
+                "marginLeft": 16,
+              },
+            ],
           ]
         }
       >
-        <Text
-          style={
-            [
-              {
-                "fontFamily": "Nunito-SemiBold",
-              },
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 20,
-                "lineHeight": 28,
-              },
-              [
-                {
-                  "marginLeft": 16,
-                },
-              ],
-            ]
-          }
-        >
-          Añadir con referencia catastral
-        </Text>
-      </View>
+        Añadir con referencia catastral
+      </Text>
     </View>
     <View
       style={
@@ -1307,27 +1303,28 @@ exports[`CadastralFields should navigate to grazing 1`] = `
       ]
     }
   >
-    <RCTScrollView
-      data={[]}
-      getItem={[Function]}
-      getItemCount={[Function]}
-      keyExtractor={[Function]}
-      onContentSizeChange={[Function]}
-      onLayout={[Function]}
-      onMomentumScrollBegin={[Function]}
-      onMomentumScrollEnd={[Function]}
-      onScroll={[Function]}
-      onScrollBeginDrag={[Function]}
-      onScrollEndDrag={[Function]}
-      removeClippedSubviews={false}
-      renderItem={[Function]}
-      scrollEventThrottle={0.0001}
-      showsVerticalScrollIndicator={true}
-      stickyHeaderIndices={[]}
-      viewabilityConfigCallbackPairs={[]}
+    <View
+      style={
+        [
+          {
+            "flexBasis": "0%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+          {
+            "justifyContent": "center",
+          },
+          {
+            "alignItems": "center",
+          },
+        ]
+      }
     >
-      <View />
-    </RCTScrollView>
+      <ActivityIndicator
+        color="#ffffff"
+        size="large"
+      />
+    </View>
   </View>
 </RCTSafeAreaView>
 `;
@@ -1394,105 +1391,103 @@ exports[`CadastralFields should render correctly 1`] = `
       ]
     }
   >
-    <View>
-      <View
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": undefined,
-            "expanded": undefined,
-            "selected": undefined,
-          }
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
         }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
-          }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
         }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "display": "flex",
+          },
+          {
+            "flexDirection": "row",
+          },
+          {
+            "justifyContent": "center",
+          },
+          {
+            "alignItems": "center",
+          },
+          {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "backgroundColor": "#272727",
+          },
+          {
+            "borderBottomWidth": 2,
+            "borderLeftWidth": 2,
+            "borderRightWidth": 2,
+            "borderTopWidth": 2,
+          },
+          {
+            "borderBottomColor": "#6bc0eb",
+            "borderLeftColor": "#6bc0eb",
+            "borderRightColor": "#6bc0eb",
+            "borderTopColor": "#6bc0eb",
+          },
+          {
+            "borderBottomLeftRadius": 24,
+            "borderBottomRightRadius": 24,
+            "borderTopLeftRadius": 24,
+            "borderTopRightRadius": 24,
+          },
+        ]
+      }
+    >
+      <Text
         style={
           [
             {
-              "display": "flex",
+              "fontFamily": "Nunito-SemiBold",
             },
             {
-              "flexDirection": "row",
+              "color": "#ffffff",
             },
             {
-              "justifyContent": "center",
+              "fontSize": 20,
+              "lineHeight": 28,
             },
-            {
-              "alignItems": "center",
-            },
-            {
-              "paddingBottom": 16,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "paddingTop": 16,
-            },
-            {
-              "backgroundColor": "#272727",
-            },
-            {
-              "borderBottomWidth": 2,
-              "borderLeftWidth": 2,
-              "borderRightWidth": 2,
-              "borderTopWidth": 2,
-            },
-            {
-              "borderBottomColor": "#6bc0eb",
-              "borderLeftColor": "#6bc0eb",
-              "borderRightColor": "#6bc0eb",
-              "borderTopColor": "#6bc0eb",
-            },
-            {
-              "borderBottomLeftRadius": 24,
-              "borderBottomRightRadius": 24,
-              "borderTopLeftRadius": 24,
-              "borderTopRightRadius": 24,
-            },
+            [
+              {
+                "marginLeft": 16,
+              },
+            ],
           ]
         }
       >
-        <Text
-          style={
-            [
-              {
-                "fontFamily": "Nunito-SemiBold",
-              },
-              {
-                "color": "#ffffff",
-              },
-              {
-                "fontSize": 20,
-                "lineHeight": 28,
-              },
-              [
-                {
-                  "marginLeft": 16,
-                },
-              ],
-            ]
-          }
-        >
-          Añadir con referencia catastral
-        </Text>
-      </View>
+        Añadir con referencia catastral
+      </Text>
     </View>
     <View
       style={
@@ -1751,27 +1746,28 @@ exports[`CadastralFields should render correctly 1`] = `
       ]
     }
   >
-    <RCTScrollView
-      data={[]}
-      getItem={[Function]}
-      getItemCount={[Function]}
-      keyExtractor={[Function]}
-      onContentSizeChange={[Function]}
-      onLayout={[Function]}
-      onMomentumScrollBegin={[Function]}
-      onMomentumScrollEnd={[Function]}
-      onScroll={[Function]}
-      onScrollBeginDrag={[Function]}
-      onScrollEndDrag={[Function]}
-      removeClippedSubviews={false}
-      renderItem={[Function]}
-      scrollEventThrottle={0.0001}
-      showsVerticalScrollIndicator={true}
-      stickyHeaderIndices={[]}
-      viewabilityConfigCallbackPairs={[]}
+    <View
+      style={
+        [
+          {
+            "flexBasis": "0%",
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+          {
+            "justifyContent": "center",
+          },
+          {
+            "alignItems": "center",
+          },
+        ]
+      }
     >
-      <View />
-    </RCTScrollView>
+      <ActivityIndicator
+        color="#ffffff"
+        size="large"
+      />
+    </View>
   </View>
 </RCTSafeAreaView>
 `;
