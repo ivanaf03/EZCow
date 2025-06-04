@@ -11,5 +11,7 @@ EZCow is designed to be user-friendly and intuitive, with a clean and modern int
 ![App preview](./img/censo.jpg)
 
 ### Installation
-You can clone the zip file and install it on your phone or simulator. But I recommend to install the APK file from the following link:
+You can clone the zip file and install it on your phone or simulator. But I recommend to install the APK file from the following link: 
+
++ https://drive.google.com/file/d/1YWI2JWy2nBFNI9kVmE8cKLjDDC-8KOvA/view?usp=sharing
 
