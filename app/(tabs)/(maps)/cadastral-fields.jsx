@@ -1,6 +1,6 @@
 import React from "react";
 
-import { View, SafeAreaView, FlatList } from "react-native";
+import { View, SafeAreaView, FlatList, ActivityIndicator } from "react-native";
 import { router } from "expo-router";
 
 import { useUser } from "../../../store/user-provider";
@@ -22,6 +22,7 @@ const CadastralFields = () => {
   });
   const [selectedField, setSelectedField] = React.useState(null);
   const [modalVisible, setModalVisible] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
 
   const { user } = useUser();
 
@@ -31,11 +32,7 @@ const CadastralFields = () => {
 
     const coords = await Promise.all(
       cadastralFields.map(async (f) => {
-        try {
-          return await fetchCadastral(f.cadastralReference);
-        } catch {
-          return null;
-        }
+        return await fetchCadastral(f.cadastralReference);
       })
     );
 
@@ -52,8 +49,14 @@ const CadastralFields = () => {
   };
 
   React.useEffect(() => {
-    loadFields();
-    getUserCoords();
+    const init = async () => {
+      setLoading(true);
+      await getUserCoords();
+      await loadFields();
+      setLoading(false);
+    };
+
+    init();
   }, []);
 
   const confirmDeleteField = (field) => {
@@ -66,54 +69,68 @@ const CadastralFields = () => {
       await deleteFieldById(selectedField.id);
       setSelectedField(null);
       setModalVisible(false);
-      loadFields();
+      setLoading(true);
+      await loadFields();
+      setLoading(false);
     }
   };
 
   return (
     <SafeAreaView className="flex-1 bg-c_dark_gray">
       <TabTitle text="Mis fincas (catastro)" />
+
       <View className="mx-4 mt-4 space-y-2">
-        <View>
-          <CustomPressable
-            text="Añadir con referencia catastral"
-            onPress={() => router.push("add-fields-cadastral")}
-            icon={icons.faPlus}
-          />
-        </View>
+        <CustomPressable
+          text="Añadir con referencia catastral"
+          onPress={() => router.push("add-fields-cadastral")}
+          icon={icons.faPlus}
+        />
+
         <View className="flex-row items-center">
           <View className="w-[50%] pr-2">
             <CustomButton
               text="Ver ubicaciones"
               onPress={() => router.replace("fields")}
-              buttonTestID={"fields-button"}
+              buttonTestID="fields-button"
             />
           </View>
           <View className="w-[50%] pl-2">
             <CustomButton
               text="Ver pastoreo"
               onPress={() => router.replace("grazing")}
-              buttonTestID={"grazing-button"}
+              buttonTestID="grazing-button"
             />
           </View>
         </View>
       </View>
+
       <View className="flex-1 mt-4 mx-2">
-        <FlatList
-          data={fields}
-          keyExtractor={(item) => item.id}
-          renderItem={({ item }) => (
-            <CadastralMapCard
-              map={item}
-              coordinates={item.coordinates}
-              onDelete={confirmDeleteField}
-              latitude={userCoordinates.latitude}
-              longitude={userCoordinates.longitude}
-            />
-          )}
-          showsVerticalScrollIndicator={true}
-        />
+        {loading ? (
+          <View className="flex-1 justify-center items-center">
+            <ActivityIndicator size="large" color="#ffffff" />
+          </View>
+        ) : (
+          <FlatList
+            data={fields}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={({ item }) =>
+              item.coordinates?.length > 2 &&
+              userCoordinates.latitude !== 0 &&
+              userCoordinates.longitude !== 0 ? (
+                <CadastralMapCard
+                  map={item}
+                  coordinates={item.coordinates}
+                  onDelete={confirmDeleteField}
+                  latitude={userCoordinates.latitude}
+                  longitude={userCoordinates.longitude}
+                />
+              ) : null
+            }
+            showsVerticalScrollIndicator={true}
+          />
+        )}
       </View>
+
       <CustomAcceptDenyModal
         visible={modalVisible}
         setVisible={setModalVisible}
