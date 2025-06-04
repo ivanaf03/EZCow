@@ -1,4 +1,5 @@
 import React from "react";
+
 import { View, SafeAreaView, FlatList } from "react-native";
 import { router } from "expo-router";
 
@@ -6,7 +7,6 @@ import { useUser } from "../../../store/user-provider";
 import { getAllFieldsByUserId, deleteFieldById } from "../../../model/field";
 import { getUserCoordinatesById } from "../../../model/users";
 import { fetchCadastral } from "../../../utils/map-cadastral-fetch";
-
 import TabTitle from "../../../components/tabs/tab-title";
 import CustomPressable from "../../../components/basic/custom-pressable";
 import CustomAcceptDenyModal from "../../../components/basic/custom-accept-deny-modal";

@@ -44,7 +44,7 @@ import { XMLParser } from "fast-xml-parser";
 */
 
 export const fetchCadastral = async (cadastralReference) => {
-  const URL = `http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&version=2&request=getfeature&STOREDQUERIE_ID=GetParcel&refcat=${cadastralReference}&srsname=EPSG:4326`;
+  const URL = `https://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&version=2&request=getfeature&STOREDQUERIE_ID=GetParcel&refcat=${cadastralReference}&srsname=EPSG:4326`;
 
   const response = await fetch(URL);
 
