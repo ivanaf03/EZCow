@@ -13,5 +13,5 @@ EZCow is designed to be user-friendly and intuitive, with a clean and modern int
 ### Installation
 You can clone the zip file and install it on your phone or simulator. But I recommend to install the APK file from the following link: 
 
-+ [EZCow](https://drive.google.com/file/d/1jopPZ0pFw3Vn6kZqB9s_6D-HdBwyDoPf/view?usp=sharing)
++ [EZCow](https://drive.google.com/file/d/1wb4n99q55IsbYZhWQaGRQ9EbNbZ_ABFM/view?usp=sharing)
 
